@@ -53,53 +53,54 @@ a {
 // example: p-0 p-10 px-10 py-10 pt-10 pb-10 pl-10 pr-10
 @include spacing("p", "padding");
 
+//Move to tech branch!!!
 
-//Makes design adaptive for different iPads
-@media screen and (min-width: 1023px) {
-  #app {
-    transform: scale(0.7496);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 1112px) {
-  #app {
-    transform: scale(0.814056);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 1366px) {
-  #app {
-    transform: scale(1);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 2048px) {
-  #app {
-    transform: scale(1.4993);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 2160px) {
-  #app {
-    transform: scale(1.58126);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 2224px) {
-  #app {
-    transform: scale(1.6281);
-    transform-origin: top left;
-  }
-}
-
-@media screen and (min-width: 2732px) {
-  #app {
-    transform: scale(2);
-    transform-origin: top left;
-  }
-}
+////Makes design adaptive for different iPads
+//@media screen and (min-width: 1023px) {
+//  #app {
+//    transform: scale(0.7496);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 1112px) {
+//  #app {
+//    transform: scale(0.814056);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 1366px) {
+//  #app {
+//    transform: scale(1);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 2048px) {
+//  #app {
+//    transform: scale(1.4993);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 2160px) {
+//  #app {
+//    transform: scale(1.58126);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 2224px) {
+//  #app {
+//    transform: scale(1.6281);
+//    transform-origin: top left;
+//  }
+//}
+//
+//@media screen and (min-width: 2732px) {
+//  #app {
+//    transform: scale(2);
+//    transform-origin: top left;
+//  }
+//}

@@ -21,6 +21,7 @@ import WeeklyView from '@/content/pages/13_Weekly_view/index.mdx';
 import MonthlyView from '@/content/pages/14_Monthly_view/index.mdx';
 import HealthcareProviders from '@/content/pages/15_Healthcare_providers/index.mdx';
 import FamilyFriends from '@/content/pages/16_Family_friends/index.mdx';
+import R00Home from '@/content/pages/R.0.0_Home/index.mdx';
 
 type AppProps = {
   tab: string;
@@ -102,6 +103,10 @@ function App({ tab }: AppProps) {
             <Route
               path='/16_Family_friends'
               component={() => <Page component={FamilyFriends} />}
+            />
+            <Route
+              path='/R.0.0_Home'
+              component={() => <Page component={R00Home} />}
             />
           </Layout>
         </PageContext.Provider>
