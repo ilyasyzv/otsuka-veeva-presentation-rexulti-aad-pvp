@@ -1,0 +1,64 @@
+@import "@base/variables";
+
+.isi-tray {
+  border-top: 1px solid $grey-dark;
+}
+
+#drawer-isi {
+  background-color: $white;
+  height: 168px;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 0 58px 15px 35px;
+  box-sizing: border-box;
+}
+
+#drawer-isi,
+.modal-wrapper {
+  .isi {
+    &-header {
+      color: $green;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 24px;
+      padding: 10px 0 0;
+    }
+
+    &-body {
+      &,
+      p {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      ul.list {
+        line-height: inherit;
+        font-size: inherit;
+        padding-left: 24px;
+
+        li {
+          &::before {
+            background-color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-wrapper .isi-header {
+  padding: 0;
+}
+
+#drawer-isi {
+  .isi-body {
+    p.paragraph-2 {
+      padding-top: 1px;
+      padding-bottom: 0;
+    }
+
+    p {
+      line-height: 14px;
+    }
+  }
+}

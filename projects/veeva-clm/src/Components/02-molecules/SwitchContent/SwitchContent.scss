@@ -1,0 +1,63 @@
+@import "../../00-base/variables";
+
+.switch-title {
+  align-self: start;
+  color: $base;
+  font-size: 38px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin-top: 10px;
+  margin-bottom: 42px;
+  margin-left: 70px;
+
+  @at-root {
+    .modal {
+      &-wrapper {
+        &__small {
+          border-radius: 0;
+          width: 810px;
+          height: 301px;
+        }
+
+        .modal-hide {
+          top: 70px;
+          right: 77px;
+        }
+      }
+    }
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+
+  .button {
+    border: 1px solid $black;
+    background-color: $white;
+    color: $base;
+    font-size: 22px;
+    font-weight: 700;
+    font-style: normal;
+    height: 56px;
+    letter-spacing: 0;
+    text-align: left;
+    line-height: 30px;
+    margin: 0 36px;
+    padding: 16px 38px;
+    width: 224px;
+
+    &__switch {
+      background-color: $black;
+      color: $white;
+    }
+
+    &__remain {
+      padding-left: 58px;
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "@base/variables";
+
+hr {
+  &.horizontal-line {
+    height: 1px;
+    border-width: 0;
+
+    &.line {
+      @include bg-color;
+    }
+  }
+}

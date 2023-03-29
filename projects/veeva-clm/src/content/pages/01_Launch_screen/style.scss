@@ -1,0 +1,59 @@
+@import "@base/variables";
+
+.page--01_Launch_screen {
+  .page__wrapper {
+    position: relative;
+  }
+
+  .content {
+    overflow: hidden;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  .btn-container {
+    position: absolute;
+    left: 130px;
+    top: 660px;
+
+    .button {
+      background-color: $blue-gulf;
+      height: 60px;
+      min-width: 190px;
+      font-family: $font-open-sans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 32px;
+      letter-spacing: 2px;
+    }
+
+    .begin-btn-01 {
+      cursor: pointer;
+    }
+
+    .begin-btn-02 {
+      display: none;
+    }
+  }
+
+  .bottom-text {
+    position: absolute;
+    font-family: $font-open-sans;
+    line-height: 17px;
+    color: $white;
+    font-size: 10px;
+    bottom: 21px;
+    left: 346px;
+    display: flex;
+    width: 893px;
+    justify-content: space-between;
+
+    .month{
+      padding-right: 29px;
+    }
+  }
+}

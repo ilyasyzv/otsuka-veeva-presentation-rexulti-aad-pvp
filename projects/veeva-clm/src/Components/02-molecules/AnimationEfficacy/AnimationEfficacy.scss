@@ -1,0 +1,215 @@
+.graph {
+  position: relative;
+}
+
+.click-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.chart-wrapper {
+  position: relative;
+  width: 100%;
+  height: 535px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.chart {
+  position: relative;
+  margin: 0 auto;
+  width: 836px;
+  height: 502px;
+  background: url("./img/efficacy_chart.png") no-repeat left top transparent;
+  background-size: contain;
+  transform-origin: top left;
+
+  .point {
+    position: absolute;
+    background: no-repeat center center transparent;
+    background-size: contain;
+    width: 11px;
+    height: 11px;
+    z-index: 2;
+    opacity: 0;
+
+    &.point-0 {
+      background-image: url("./img/rectangle.svg");
+      position: absolute;
+      top: 195px;
+      left: 314px;
+      opacity: 1;
+    }
+  }
+
+  .line-text {
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+  }
+
+  .line-text-n {
+    font-size: 11px;
+    opacity: 0;
+  }
+
+  .line-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 319px;
+    width: 195px;
+    height: 174px;
+
+    .line {
+      width: 0;
+      height: 100%;
+      background: no-repeat left top transparent;
+      background-size: 195px 174px;
+    }
+
+    &.grey {
+      .line {
+        background-image: url("./img/line_grey.svg");
+      }
+
+      .point {
+        background-image: url("./img/rectangle.svg");
+
+        &:nth-child(1) {
+          top: 27px;
+          left: 29px;
+        }
+
+        &:nth-child(2) {
+          top: 59px;
+          left: 61px;
+        }
+
+        &:nth-child(3) {
+          top: 76px;
+          left: 93px;
+        }
+
+        &:nth-child(4) {
+          top: 86px;
+          left: 125px;
+        }
+
+        &:nth-child(5) {
+          top: 99px;
+          left: 157px;
+        }
+
+        &:nth-child(6) {
+          top: 99px;
+          left: 191px;
+        }
+      }
+
+      .line-text {
+        position: absolute;
+        top: 78px;
+        left: 181px;
+      }
+    }
+
+    &.green {
+      .line {
+        background-image: url("./img/line_green.svg");
+      }
+
+      .point {
+        width: 12px;
+        height: 12px;
+        background-image: url("./img/triangle.svg");
+
+        &:nth-child(1) {
+          top: 57px;
+          left: 29px;
+        }
+
+        &:nth-child(2) {
+          top: 94px;
+          left: 61px;
+        }
+
+        &:nth-child(3) {
+          top: 130px;
+          left: 93px;
+        }
+
+        &:nth-child(4) {
+          top: 145px;
+          left: 125px;
+        }
+
+        &:nth-child(5) {
+          top: 166px;
+          left: 157px;
+        }
+
+        &:nth-child(6) {
+          top: 163px;
+          left: 191px;
+        }
+      }
+
+      .line-text {
+        position: absolute;
+        top: 182px;
+        left: 181px;
+      }
+
+      .line-text-n {
+        position: absolute;
+        top: 75px;
+        left: 6px;
+      }
+    }
+  }
+
+  .concat {
+    position: absolute;
+    top: 302px;
+    left: 526px;
+    width: 15px;
+    height: 69px;
+    background: url("./img/concat.svg") no-repeat left top transparent;
+    background-size: contain;
+    opacity: 0;
+  }
+}
+
+.percent {
+  position: absolute;
+  top: 163px;
+  left: 616px;
+  width: 216px;
+  height: 328px;
+  background: url("./img/percent.png") no-repeat left top transparent;
+  background-size: contain;
+  opacity: 0;
+}
+
+.disable-animation {
+  .chart {
+    .point,
+    .line-text,
+    .line-text-n,
+    .concat {
+      opacity: 1;
+    }
+
+    .line {
+      width: 100%;
+    }
+  }
+
+  .percent {
+    opacity: 1;
+  }
+}

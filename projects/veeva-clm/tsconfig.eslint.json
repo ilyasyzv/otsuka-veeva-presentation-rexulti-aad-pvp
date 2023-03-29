@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src",
+    "webpack",
+    "babel.config.js",
+    "cypress",
+    "cypress.config.js",
+    "webpack.config.js"
+  ]
+}

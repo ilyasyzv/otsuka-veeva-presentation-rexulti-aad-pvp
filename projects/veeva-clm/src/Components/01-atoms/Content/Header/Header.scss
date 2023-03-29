@@ -1,0 +1,41 @@
+@import "@base/variables";
+
+.heading {
+  padding: 0;
+
+  &.font {
+    @include font-color;
+
+    &-bg-color {
+      @include bg-color;
+    }
+  }
+
+  &[class*="-bg-color-"] {
+    padding: 4px 14px;
+  }
+}
+
+h1.heading {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: -0.3907px;
+
+  sup {
+    font-size: 18px;
+  }
+}
+
+h2.heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.3125px;
+}
+
+h3.heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}

@@ -1,0 +1,74 @@
+@import "@base/variables";
+
+.page--06_Home_check_in {
+  .phone-vertical {
+    .screen,
+    .sticky-content {
+      background-color: $blue;
+    }
+
+    .horizontal-btn {
+      z-index: 102;
+    }
+  }
+
+  .home--top {
+    position: relative;
+    height: 250px;
+
+    &__image {
+      position: absolute;
+      top: 121px;
+      left: 40px;
+    }
+
+    .badge {
+      position: absolute;
+      right: 10px;
+      top: 85px;
+      width: 155px;
+    }
+  }
+
+  .home--main {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white-ghost;
+
+    &__btn-2 {
+      position: absolute;
+      top: 1080px;
+      left: 40px;
+    }
+  }
+
+  .home--main__image {
+    width: 389px;
+    margin-left: -2px;
+    line-height: 0;
+  }
+
+  .popup--box {
+    position: sticky;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 375px;
+    z-index: 101;
+
+    .button {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 110px;
+      z-index: 1;
+    }
+  }
+
+  .popup--button {
+    position: absolute;
+    top: 586px;
+    left: 25px;
+  }
+}

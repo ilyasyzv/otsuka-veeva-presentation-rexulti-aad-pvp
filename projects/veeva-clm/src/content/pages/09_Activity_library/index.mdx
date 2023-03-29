@@ -1,0 +1,29 @@
+import React from 'react';
+
+import './style.scss';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import AppBar from '@atoms/Content/AppBar/AppBar'
+import ButtonBackNavigation
+  from '@templates/ButtonBackNavigation/ButtonBackNavigation';
+import Column1 from './img/09_Activity_library_column1.png?format=webp';
+import Column2 from './img/09_Activity_library_column2.png?format=webp';
+import Link from '@organisms/Routing/Link/Link';
+
+<PageWrapper type={'vertical'} stickyContent={
+  <>
+    <AppBar/>
+    <ButtonBackNavigation to={'/08_Activity_short'}/>
+  </>
+}>
+  <div className={'title'}>
+    Coping Library
+  </div>
+  <div className={'columns'}>
+    <img src={Column1.src}/>
+    <img src={Column2.src}/>
+    <Link to={'/10_Indoor_outdoor_walk'} custom={'link'}></Link>
+  </div>
+  <div className={'footer'}>
+    Check back again for new<br/>coping strategies!
+  </div>
+</PageWrapper>

@@ -1,0 +1,22 @@
+.footnote {
+  font-size: 12px;
+  line-height: 12px;
+
+  p {
+    margin: 0;
+  }
+
+  sup {
+    font-size: 8px;
+    line-height: normal;
+  }
+
+  &-small {
+    font-size: 8px;
+    line-height: 8px;
+  }
+
+  sup {
+    font-size: 10px;
+  }
+}

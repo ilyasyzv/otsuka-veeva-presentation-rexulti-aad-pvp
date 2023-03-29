@@ -1,0 +1,214 @@
+/**
+animation page
+*/
+@import "https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap";
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.photos {
+  margin-top: 400px;
+
+  img {
+    height: 500px;
+  }
+}
+
+.menu-btn {
+  background: rgb(255 255 255 / 30%);
+  padding: 15px;
+  border-radius: 20px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* height: 40px; */
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+#home {
+  /* overflow: hidden; */
+  padding-bottom: 150px;
+}
+
+#home .content-area {
+  height: calc(100vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .info-section {
+  width: 50%;
+}
+
+#home .info-section h1 {
+  font-size: 5rem;
+  font-weight: 900;
+
+  //color: white;
+  color: #142c1d;
+  margin-bottom: 2rem;
+}
+
+#home .info-section h4 {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #8e27ff;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+}
+
+#home .info-section .call-actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.action-btn,
+.action-ghost-btn {
+  padding: 20px;
+  border-radius: 30px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.action-btn {
+  background: white;
+  color: #8e27ff;
+  margin-right: 20px;
+}
+
+.action-ghost-btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+#home .photos {
+  width: 50%;
+  position: relative;
+  height: 400px;
+}
+
+#home .photos .girl {
+  position: absolute;
+
+  /* height: 0;
+  width: 400px; */
+  height: 600px;
+  width: 0;
+  z-index: 1;
+  transform: translate3d(0, -200px, 0);
+  object-fit: cover;
+  object-position: top;
+  transition: filter 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#home .photos .boy {
+  position: absolute;
+  width: 400px;
+  height: 0;
+  z-index: 2;
+  object-fit: cover;
+  object-position: top;
+  transform: translate3d(300px, 100px, 0);
+  transition: filter 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+#home .photos .boy:hover,
+#home .photos .girl:hover {
+  filter: blur(35px);
+}
+
+.shape1 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border: 2px dashed grey;
+  transform: translate3d(100px, 0, 0);
+}
+
+.shape2 {
+  opacity: 0.3;
+  border: 2px dashed green;
+  background-color: yellow;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate3d(600px, -300px, 0);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.shape3 {
+  opacity: 0.6;
+  background-color: darkblue;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  transform: translate3d(0, 300px, 0);
+  border: 1px dashed white;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* Scroll Sections */
+
+#main-services {
+}
+
+#main-services .black-bg {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: black;
+}
+
+#main-services h2 {
+  font-size: 3rem;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#main-services .services {
+  display: grid;
+  color: white;
+  min-width: 1200px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+#main-services .services .service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-services .services .service .icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: red;
+  width: 100px;
+  border-radius: 50%;
+}
+
+#test {
+  background: #1b1b1b;
+  height: 100vh;
+}

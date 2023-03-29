@@ -1,0 +1,21 @@
+{
+  "name": "otsuka-veeva-presentation-rexulti",
+  "private": true,
+  "workspaces": [
+    "projects/*"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "boot": "npm run clean;npm run bootstrap",
+    "dev": "lerna run dev",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lerna": "^5.4.0",
+    "lint-staged": "^13.0.3",
+    "nx": "^14.5.4"
+  }
+}

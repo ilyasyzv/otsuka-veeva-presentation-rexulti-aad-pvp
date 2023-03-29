@@ -1,0 +1,50 @@
+# How to use?
+
+import { List } from './List';
+
+<List
+  content={{
+    columns: 'columns-2' /*optional*/,
+    type: 'triangle',
+    marker_color: 'green' /*optional*/,
+    data: [
+      {
+        text: (
+          <>
+            This is an <strong>HTML</strong> string.
+          </>
+        ),
+      },
+      {
+        text: "I'm a second text",
+      },
+      {
+        text: "I'm a third text",
+      },
+      {
+        text: (
+          <>
+            And I'm 4<sup>th</sup> text.
+          </>
+        ),
+      },
+    ],
+  }}
+/>
+
+<List
+  content={{
+    type: 'circle',
+    custom: 'm-10 px-5',
+    data: [
+      {
+        text: "I'm a first item",
+        custom_style: 'py-3',
+      },
+      {
+        text: "I'm a second item",
+        custom_style: 'py-3',
+      },
+    ],
+  }}
+/>

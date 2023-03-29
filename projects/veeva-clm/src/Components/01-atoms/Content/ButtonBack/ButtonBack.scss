@@ -1,0 +1,12 @@
+@import "@base/variables";
+
+.button-back {
+  display: inline-block;
+  background-color: $white-coconut;
+  background-image: url("img/arrow_left.svg");
+  background-repeat: no-repeat, repeat;
+  border-radius: 6px;
+  background-position: center;
+  width: 44px;
+  height: 32px;
+}

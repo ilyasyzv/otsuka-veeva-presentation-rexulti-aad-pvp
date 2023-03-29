@@ -1,0 +1,50 @@
+@import "@base/variables";
+
+.page--02_Home {
+  .phone-vertical {
+    .sticky-content,
+    .screen {
+      background-color: $blue;
+    }
+  }
+
+  .home--top {
+    position: relative;
+    height: 250px;
+
+    &__image {
+      position: absolute;
+      top: 121px;
+      left: 40px;
+    }
+  }
+
+  .home--main {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white-ghost;
+
+    &__btn-1,
+    &__btn-2 {
+      position: absolute;
+    }
+
+    &__btn-1 {
+      top: 206px;
+      left: 40px;
+    }
+
+    &__btn-2 {
+      top: 990px;
+      left: 40px;
+    }
+  }
+
+  .home--main__image {
+    height: 2406px;
+    width: 389px;
+    margin-left: -2px;
+    line-height: 0;
+  }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLM | React with Webpack</title>
+
+    <!-- Pull in static files served from your Static directory or the internet -->
+    <!-- For Banners only-->
+    <!-- <script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script> -->
+    <!-- <script src="./console-log-div.js"></script> -->
+    <script src="./veeva-library.js"></script>
+    <script>
+      function goToPage(page) {
+        console.log(`transition to the ${page}`);
+        com.veeva.clm.gotoSlide(`${page}.zip`, "");
+      }
+
+      function goToMaintena() {
+        console.log("transition to the Maintena");
+        com.veeva.clm.gotoSlide("MaintenaCLM.zip", "CLM5");
+      }
+
+      function goToNextSlide() {
+        console.log("next page");
+        com.veeva.clm.nextSlide();
+      }
+
+      function goToPrevSlide() {
+        console.log("prev page");
+        com.veeva.clm.prevSlide();
+      }
+    </script>
+  </head>
+
+  <body style="position: relative">
+    <!--TODO: delete relative-->
+    <div
+      id="app"
+      data-page="<%= htmlWebpackPlugin.options.current_page %>"
+    ></div>
+    <div class="temporary console-collapse" style="">
+      <h4>Console Debugging:</h4>
+      <button
+        class="btn btn-primary btn__first"
+        data-toggle="collapse"
+        data-target=".console-log-container"
+        data-text="Collapse"
+      >
+        Open Log
+      </button>
+      <fieldset
+        id="console-log-div"
+        class="console-log-container"
+        styles="border:1px solid red; margin: 20px; padding:20px; font-size: 25px; color:red;"
+      ></fieldset>
+    </div>
+    <style>
+      .console-collapse {
+        /*display: block;*/
+        display: none;
+        position: absolute;
+        top: 550px;
+        background: #f0f8ffd4;
+      }
+
+      .console-collapse.show {
+        max-height: 99em;
+        transition: max-height 0.5s ease-in-out;
+      }
+
+      .console-log-container {
+        overflow: hidden;
+        transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+      }
+
+      .console-log-div {
+        margin-top: 10px;
+        background: #f5f5f5;
+        padding: 0;
+      }
+    </style>
+    <script>
+      // Handler that uses various data-* attributes to trigger
+      // specific actions, mimicing bootstraps attributes
+      const triggers = Array.from(
+        document.querySelectorAll('[data-toggle="collapse"]'),
+      );
+
+      window.addEventListener(
+        "click",
+        (ev) => {
+          const elm = ev.target;
+          if (triggers.includes(elm)) {
+            const selector = elm.getAttribute("data-target");
+            collapse(selector, "toggle");
+          }
+        },
+        false,
+      );
+
+      const fnmap = {
+        toggle: "toggle",
+        show: "add",
+        hide: "remove",
+      };
+      const collapse = (selector, cmd) => {
+        const targets = Array.from(document.querySelectorAll(selector));
+        targets.forEach((target) => {
+          target.classList[fnmap[cmd]]("show");
+        });
+      };
+    </script>
+  </body>
+</html>

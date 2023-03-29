@@ -1,0 +1,48 @@
+import React from 'react';
+
+import './style.scss';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import SidebarMenu from '@templates/SidebarMenu/SidebarMenu';
+import AppBar from "@atoms/Content/AppBar/AppBar";
+import Button from '@atoms/Content/Button/button';
+import Link from '@organisms/Routing/Link/Link';
+import Indicator from '@atoms/Content/HeaderIndicator/Indicator';
+import Badge from '@atoms/Content/Badge/Badge';
+import nextStep from "./NextStep.jsx";
+import { AlertMsg, completeActivity } from "./AlertMsg.jsx";
+import { SetHomeState } from '@atoms/CheckRedirection/CheckRedirection.jsx';
+
+import HeadingImage from './img/02_Heading.png?format=webp';
+import HomeCompleteAlertMsgImage from './img/11_Home_complete_alert_msg.png?format=webp';
+import HomeCompleteImage from './img/11_Home_complete.png?format=webp';
+import HomeCompleteImage2 from './img/11_Home_complete_2.png?format=webp';
+
+<AlertMsg/>
+<SetHomeState state='11_Home_complete'/>
+<PageWrapper pageWrapperDidMount={completeActivity} type={'vertical'}
+             stickyContent={
+               <>
+                 <AppBar theme={'dark'}/>
+                 <SidebarMenu/>
+                 <Indicator/>
+               </>
+             }
+>
+
+  <div className='home--top'>
+    <img className='home--top__image' src={HeadingImage.src} width={136} alt=""/>
+    <Badge/>
+  </div>
+
+  <img id='home-complete-alert-msg' src={HomeCompleteAlertMsgImage.src} alt=""/>
+
+  <div className='home-complete--main'>
+    <div className={'btn-yes-container'} onClick={nextStep}>
+      <Button custom={'btn-yes'} text={'Yes'}/>
+    </div>
+    <Link custom='btn-view-insights button' to={'12_Insights'}>View All Insights</Link>
+    <img className='home-complete' src={HomeCompleteImage.src} alt=""/>
+    <img className='home-complete-2' src={HomeCompleteImage2.src} alt=""/>
+  </div>
+
+</PageWrapper>
