@@ -1,0 +1,8 @@
+**/*.min.js
+node_modules
+dist
+.idea
+src/console-log-div.js
+src/veeva-library.js
+src/Components/03-organisms/Routing/matchPath/matchPath.js
+src/assets/lottie-animation/*

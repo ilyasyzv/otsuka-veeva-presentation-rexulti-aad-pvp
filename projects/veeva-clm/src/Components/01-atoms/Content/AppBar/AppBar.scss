@@ -1,0 +1,19 @@
+@import "@base/variables";
+
+.app-bar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 14px 14px 29px;
+  align-items: center;
+
+  .time {
+    font-size: 15px;
+    color: $black;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+
+    &-dark {
+      color: $white;
+    }
+  }
+}

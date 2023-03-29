@@ -1,0 +1,123 @@
+@import "@base/variables";
+
+.sidebar-menu {
+  position: absolute;
+  left: 0;
+  top: 46px;
+
+  .hamburger {
+    padding: 8px 16px;
+
+    .icon {
+      content: url("icons/hamburger.svg");
+    }
+  }
+
+  .menu {
+    background-color: $gray-whisper;
+    width: 270px;
+    height: 713px;
+    border-bottom-left-radius: 35px;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 0 11px;
+
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 56px;
+        font-family: $font-standard-ct;
+        background-color: $white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 19px;
+
+        &:not(:last-child)::after {
+          content: "";
+          width: 80%;
+          height: 1px;
+          border-bottom: 1px solid $gray-whisper;
+        }
+
+        &:active {
+          background-color: rgba($white, 0.5);
+        }
+
+        > span {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        a {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 0;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: $black;
+        }
+
+        a,
+        span {
+          span {
+            margin-left: 16px;
+            margin-right: 6px;
+          }
+        }
+
+        &.home {
+          color: $white;
+          background-color: $orange;
+
+          .icon {
+            content: url("icons/home.svg");
+          }
+        }
+
+        &.weekly-view {
+          .icon {
+            content: url("icons/calendar_weekly.svg");
+          }
+        }
+
+        &.monthly-view {
+          .icon {
+            content: url("icons/calendar_weekly.svg");
+          }
+        }
+
+        &.profile {
+          .icon {
+            content: url("icons/profile.svg");
+          }
+        }
+
+        &.healthcare-providers {
+          .icon {
+            content: url("icons/hcp.svg");
+          }
+        }
+
+        &.family-friends {
+          .icon {
+            content: url("icons/family_friends.svg");
+          }
+        }
+
+        &.sign_out {
+          .icon {
+            content: url("icons/sign_out.svg");
+          }
+        }
+      }
+    }
+  }
+}

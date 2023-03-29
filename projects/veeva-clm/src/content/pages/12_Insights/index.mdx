@@ -1,0 +1,19 @@
+import React from 'react';
+
+import './style.scss';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import AppBar from '@atoms/Content/AppBar/AppBar';
+import Tabs from '@organisms/Tabs/Tabs';
+import ButtonBackNavigation from '@templates/ButtonBackNavigation/ButtonBackNavigation';
+import { CheckRedirection } from "@atoms/CheckRedirection/CheckRedirection.jsx";
+import tabsContent from './12_Insights';
+
+<PageWrapper type={'vertical'} stickyContent={
+  <>
+    <AppBar/>
+    <ButtonBackNavigation to={CheckRedirection()}/>
+  </>
+}>
+  <div className={'insights--title'}>Insights</div>
+  <Tabs tabs={tabsContent}/>
+</PageWrapper>

@@ -1,0 +1,16 @@
+import React, {useRef} from 'react';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import RestLevel from './RestLevel.jsx';
+import AppBar from '@atoms/Content/AppBar/AppBar.jsx';
+import ButtonBackNavigation from '@templates/ButtonBackNavigation/ButtonBackNavigation';
+
+<PageWrapper
+  type={'vertical'}
+  stickyContent={
+    <>
+      <AppBar/>
+      <ButtonBackNavigation to={'04_Contributor_selections'}/>
+    </>
+  }>
+  <RestLevel />
+</PageWrapper>

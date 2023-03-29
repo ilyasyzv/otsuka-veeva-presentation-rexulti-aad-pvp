@@ -1,0 +1,13 @@
+# Ignore artifacts:
+build
+coverage
+node_modules
+dist
+.out
+.coverage
+*.min.js
+src/console-log-div.js
+src/veeva-library.js
+storybook-static
+*.mdx
+src/assets/lottie-animation/*

@@ -1,0 +1,59 @@
+@import "@base/variables";
+
+.page--11_Home_complete {
+  .phone-vertical {
+    .sticky-content,
+    .screen {
+      background-color: $blue;
+    }
+  }
+
+  #home-complete-alert-msg {
+    max-width: 100%;
+    position: absolute;
+    top: 86px;
+    z-index: 50;
+  }
+
+  .home--top {
+    position: relative;
+    height: 250px;
+
+    &__image {
+      position: absolute;
+      top: 121px;
+      left: 40px;
+    }
+  }
+
+  .home-complete--main {
+    img {
+      max-width: 100%;
+    }
+
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: $white-ghost;
+
+    .home-complete-2 {
+      display: none;
+    }
+
+    .btn-yes {
+      position: absolute;
+      top: 320px;
+      left: 40px;
+    }
+
+    .btn-view-insights {
+      position: absolute;
+      top: 1280px;
+      left: 40px;
+
+      &.new-position {
+        top: 1150px;
+      }
+    }
+  }
+}

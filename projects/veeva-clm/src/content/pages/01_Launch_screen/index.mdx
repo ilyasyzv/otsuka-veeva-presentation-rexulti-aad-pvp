@@ -1,0 +1,34 @@
+import React from 'react';
+
+import './style.scss';
+import Button from '@atoms/Content/Button/button';
+import Link from '@organisms/Routing/Link/Link';
+
+import nextStep from "./NextStep.jsx";
+import LaunchScreenImage from './img/01_Launch_Screen.png?format=webp';
+
+import {Modal} from '@templates/Layouts/Modal';
+import {Page} from '@pages/Page';
+import ISIContent from '@/content/isi/isi-short.mdx';
+
+<div className={'content'}>
+  <img src={LaunchScreenImage.src} alt=""/>
+</div>
+
+<div className={'btn-container'} onClick={nextStep}>
+  <Modal link={<Button custom={'begin-btn-01'} text={'BEGIN NOW'}></Button>}
+         showPlus={false} isExpanded withFooter>
+    <Page component={ISIContent}/>
+  </Modal>
+  <Link to={'02_Home'} custom={'begin-btn-02 button'}>
+    BEGIN NOW
+  </Link>
+</div>
+
+<div className="bottom-text">
+  <div className="bottom-text__left">© 2023 Otsuka America Pharmaceutical, Inc. All rights reserved.</div>
+  <div className="bottom-text__right">
+    <span className="month">January 2023</span>
+    <span className="code">12US22EBP0077</span>
+  </div>
+</div>

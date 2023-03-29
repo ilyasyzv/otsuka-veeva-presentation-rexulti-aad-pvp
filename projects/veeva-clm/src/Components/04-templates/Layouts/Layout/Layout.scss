@@ -1,0 +1,36 @@
+@import "@base/main";
+
+.page {
+  width: 1366px;
+  height: 1024px;
+  overflow: hidden;
+  background: $black;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 60px);
+
+    .right-pane {
+      width: 901px;
+      height: 100%;
+      position: relative;
+
+      .content {
+        box-sizing: border-box;
+        padding: 10px 5px 0 30px;
+        margin-bottom: 8px;
+      }
+
+      .image-expand {
+        margin: -20px -20px 0;
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

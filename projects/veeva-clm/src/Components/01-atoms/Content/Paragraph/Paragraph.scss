@@ -1,0 +1,92 @@
+@import "@base/variables";
+
+p.paragraph {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+  padding: 4px 0;
+
+  sup {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  &.font {
+    @include font-color;
+
+    &-xx-small {
+      font-size: 8px;
+      line-height: 12px;
+    }
+
+    &-x-small {
+      font-size: 10px;
+      line-height: 12px;
+
+      sup {
+        font-size: 6px;
+      }
+    }
+
+    &-small {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.035px;
+
+      sup {
+        font-size: 8px;
+      }
+    }
+
+    &-large {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    &-x-large {
+      font-size: 20px;
+      line-height: 22px;
+    }
+
+    &-xx-large {
+      font-size: 22px;
+      line-height: 24px;
+    }
+
+    &-bold {
+      font-weight: 700;
+
+      sup {
+        font-weight: 400;
+      }
+    }
+
+    &-semibold {
+      font-weight: 600;
+
+      sup {
+        font-weight: 400;
+      }
+    }
+
+    &-medium {
+      font-weight: 500;
+
+      sup {
+        font-weight: 500;
+      }
+    }
+
+    &-left {
+      text-align: left;
+    }
+
+    &-center {
+      text-align: center;
+    }
+
+    &-right {
+      text-align: right;
+    }
+  }
+}

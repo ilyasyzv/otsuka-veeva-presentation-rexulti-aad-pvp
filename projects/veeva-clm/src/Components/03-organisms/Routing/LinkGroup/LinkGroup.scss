@@ -1,0 +1,93 @@
+@import "@base/variables";
+
+.main-nav {
+  font-size: 12px;
+  margin-top: 5px;
+
+  &__link {
+    box-sizing: border-box;
+
+    & > a {
+      display: flex;
+      padding: 20px 0 20px 21px;
+      align-items: center;
+      text-decoration: none;
+      border-right: 8px solid transparent;
+      color: $base;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 600;
+      font-style: normal;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    ul {
+      padding: 0;
+      display: none;
+    }
+
+    &.active {
+      & > a {
+        background: $emerald;
+        border-right: 5px solid $yellow;
+        color: $white;
+        font-weight: 900;
+      }
+
+      ul {
+        display: block;
+      }
+    }
+
+    &.schizophrenia {
+      &.active a {
+        border-color: $orange;
+      }
+    }
+
+    &.bipolar {
+      &.active a {
+        border-color: $blue-navy;
+      }
+    }
+  }
+
+  &__sublink {
+    display: flex;
+    align-items: center;
+    padding: 13.5px 0;
+    font-size: 14px;
+    line-height: 14px;
+    list-style: none;
+
+    &.current {
+      a {
+        @include triangle;
+
+        color: $emerald;
+        font-weight: 700;
+        text-decoration: underline;
+        padding-left: 28px;
+
+        &::before {
+          border-width: 0.6em 0 0.6em 0.9em;
+          top: 0;
+        }
+      }
+    }
+
+    a {
+      align-items: center;
+      color: $base;
+      display: flex;
+      font-size: 14px;
+      font-weight: 500;
+      font-style: normal;
+      letter-spacing: 0;
+      padding-left: 40px;
+      text-align: left;
+      text-decoration: none;
+    }
+  }
+}

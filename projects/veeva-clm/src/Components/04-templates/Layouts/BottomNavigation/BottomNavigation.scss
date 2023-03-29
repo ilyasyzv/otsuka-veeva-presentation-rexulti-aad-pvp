@@ -1,0 +1,42 @@
+@import "@base/variables";
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+  background: $blue-gulf;
+  padding-left: calc(3.5% + 86px);
+  padding-right: 568px;
+  justify-content: space-between;
+  height: 60px;
+
+  &__item {
+    font-family: $font-open-sans;
+    color: $white;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0;
+    text-align: left;
+
+    > a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+
+  .modal-link-wrapper {
+    border-bottom: 4px solid transparent;
+    padding: 12px 8px 8px;
+
+    &.active {
+      font-weight: 700;
+
+      //border-color: $white;
+    }
+  }
+
+  .modal-wrapper {
+    font-weight: normal;
+    color: $black;
+  }
+}

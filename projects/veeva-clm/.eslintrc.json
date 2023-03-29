@@ -1,0 +1,83 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "env": {
+    "browser": true,
+    "es2022": true,
+    "jest": true
+  },
+  "globals": {
+    "React": true
+  },
+  //"parser": "@babel/eslint-parser",
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 13,
+    "sourceType": "module",
+    "project": "./tsconfig.eslint.json"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ],
+  "rules": {
+    "strict": 0,
+    "no-unused-vars": [0, { "vars": "local", "args": "after-used" }],
+    "camelcase": "error",
+    "no-plusplus": 0,
+    "object-curly-newline": 0,
+    "react/function-component-definition": 0,
+    "react/no-array-index-key": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "react/jsx-props-no-spreading": 0,
+    "prettier/prettier": ["error"],
+    "react/prop-types": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "no-console": "off",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.stories.*", "**/.storybook/**/*.*"],
+        "peerDependencies": true
+      }
+    ],
+    "import/no-named-as-default": "off",
+    "import/no-cycle": "off"
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  }
+}

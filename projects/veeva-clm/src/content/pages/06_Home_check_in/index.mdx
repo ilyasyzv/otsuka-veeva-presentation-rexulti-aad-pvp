@@ -1,0 +1,46 @@
+import React from 'react';
+
+import './style.scss';
+import Link from '@organisms/Routing/Link/Link';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import SidebarMenu from '@templates/SidebarMenu/SidebarMenu';
+import AppBar from "@atoms/Content/AppBar/AppBar";
+import Popup from "@atoms/Content/Popup/Popup";
+import Indicator from '@atoms/Content/HeaderIndicator/Indicator';
+import Badge from '@atoms/Content/Badge/Badge';
+import { SetHomeState } from '@atoms/CheckRedirection/CheckRedirection.jsx';
+
+import HeadingImage from './img/02_Heading.png?format=webp';
+import HomeImage from './img/06_Home_check_in.png?format=webp';
+import PopupImage from './img/06_Popup.png?format=webp';
+import ActivityButtonImage from './img/06_Activity_button.png?format=webp';
+
+<SetHomeState state='06_Home_check_in'/>
+<PageWrapper type={'vertical'} scroll={false}
+             stickyContent={
+               <>
+                 <AppBar theme={'dark'}/>
+                 <SidebarMenu/>
+                 <Indicator/>
+               </>
+             }
+>
+  <div className='home--top'>
+    <img className='home--top__image' src={HeadingImage.src} width={136} alt=""/>
+    <Badge/>
+  </div>
+  <div className='home--main'>
+    <Link custom='home--main__btn-2 button' to={'12_Insights'}> View All Insights </Link>
+    <img className='home--main__image' src={HomeImage.src} alt=""/>
+  </div>
+
+  <Popup link={<img src={ActivityButtonImage.src}  width={327}/>}
+         content={
+           <>
+             <img src={PopupImage.src} width={375}/>
+             <Link custom='button' to={'07_Energy_level'}> Let's Do It! </Link>
+           </>
+         }
+  />
+
+</PageWrapper>

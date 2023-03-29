@@ -1,0 +1,155 @@
+@import "@base/variables";
+
+.page--05_Rest_level {
+  .content-container {
+    padding: 15px 15px 50px;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    height: calc(100% - 100px);
+
+    .description-container {
+      margin-left: 8px;
+
+      > .title {
+        color: $blue;
+        font-size: 24px;
+        line-height: 27px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .slider-container {
+      display: flex;
+      margin: 100px 0 0;
+
+      .button-container {
+        user-select: none;
+        flex-grow: 1;
+
+        button {
+          border: none;
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+          padding: 0 15px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .slider {
+        border-radius: 100px;
+        display: flex;
+        position: relative;
+        height: 25px;
+        width: 265px;
+
+        .slider-item {
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+          background-color: $gray-whisper;
+          justify-content: center;
+          position: relative;
+
+          &::after {
+            content: "";
+            display: block;
+            position: relative;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $blue-light;
+            z-index: 20;
+          }
+
+          &.active {
+            background-color: $blue-maya;
+          }
+
+          &.selected {
+            background: linear-gradient(
+              270deg,
+              $gray-whisper 0%,
+              $gray-whisper 49%,
+              $blue-maya 50%,
+              $blue-maya 100%
+            );
+
+            &::before {
+              content: "";
+              z-index: 10;
+              width: 48px;
+              height: 48px;
+              position: absolute;
+              display: block;
+              left: calc(50% - 24px);
+              top: calc(50% - 24px);
+              border-radius: 50%;
+              background-color: $blue-light;
+            }
+
+            &::after {
+              background-color: $white;
+            }
+
+            .tooltip-info {
+              display: block;
+            }
+          }
+
+          &:first-child {
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+          }
+
+          .tooltip-info {
+            display: none;
+            position: absolute;
+            width: max-content;
+            top: -68px;
+            border-radius: 8px;
+            right: var(--tooltip-right, -50%);
+            padding: 4px 12px;
+            background-color: $butter-muffin;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 29px;
+            color: $blue;
+
+            &::after {
+              content: "";
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 22px 22px 0 0;
+              border-color: $butter-muffin transparent transparent transparent;
+              background-color: transparent;
+              position: absolute;
+              z-index: 100;
+              bottom: -10px;
+              left: var(--arrow-left, 50%);
+            }
+          }
+        }
+      }
+    }
+
+    .submit-container {
+      margin-top: auto;
+      text-align: center;
+
+      .submit {
+        width: 328px;
+      }
+    }
+  }
+}

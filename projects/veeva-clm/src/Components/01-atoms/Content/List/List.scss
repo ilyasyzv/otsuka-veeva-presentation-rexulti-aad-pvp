@@ -1,0 +1,45 @@
+@import "@base/variables";
+
+ul.list {
+  list-style: none;
+  padding-left: 10px;
+
+  sup {
+    font-size: 10px;
+    line-height: normal;
+  }
+
+  &.numeric {
+    list-style: decimal;
+  }
+
+  &.triangle li {
+    @include triangle;
+  }
+
+  &.circle li {
+    @include circle;
+    @include list-marker-color;
+  }
+
+  &.square li {
+    @include square;
+    @include list-marker-color;
+  }
+
+  &.square-small li {
+    @include square-small;
+    @include list-marker-color;
+  }
+
+  @for $i from 1 through 4 {
+    &.columns-#{$i} {
+      column-count: $i;
+
+      li {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}

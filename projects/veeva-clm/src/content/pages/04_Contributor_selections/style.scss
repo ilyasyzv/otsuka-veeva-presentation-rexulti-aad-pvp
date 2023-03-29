@@ -1,0 +1,30 @@
+@import "@base/variables";
+
+.page--04_Contributor_selections {
+  img {
+    max-width: 100%;
+  }
+
+  .contributor-selected,
+  .btn-continue {
+    display: none;
+  }
+
+  .submit-container {
+    text-align: center;
+    background-color: rgba($white, 0.9);
+    height: 100px;
+    position: sticky;
+    bottom: 0;
+    padding-top: 10px;
+
+    .button {
+      width: 328px;
+
+      &.btn-inactive {
+        background-color: $white-ghost;
+        color: $gray-shingle;
+      }
+    }
+  }
+}

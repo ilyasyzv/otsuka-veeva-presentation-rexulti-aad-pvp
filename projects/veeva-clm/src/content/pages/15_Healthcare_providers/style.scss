@@ -1,0 +1,21 @@
+@import "@base/variables";
+
+.page--15_Healthcare_providers {
+  .screen {
+    overflow-y: hidden;
+  }
+
+  .title {
+    position: absolute;
+    top: 63px;
+    left: 108px;
+    font-size: 17px;
+    font-weight: 700;
+    color: $blue;
+    z-index: 34;
+  }
+
+  .image {
+    width: 375px;
+  }
+}

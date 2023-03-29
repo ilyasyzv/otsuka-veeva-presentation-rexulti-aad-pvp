@@ -1,0 +1,257 @@
+.graph {
+  position: relative;
+}
+
+.click-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+.chart-wrapper-2 {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  padding-top: 0;
+  box-sizing: border-box;
+}
+
+.chart-2 {
+  position: relative;
+  margin: 0 auto;
+  width: 890px;
+  height: 420px;
+  background: url("./img/post-hoc-analysis_chart.png") no-repeat left top
+    transparent;
+  background-size: contain;
+
+  .line-wrapper {
+    position: absolute;
+    top: 116px;
+    width: 246px;
+    height: 191px;
+    transform: scale(0.95);
+
+    &.first {
+      left: 89px;
+    }
+
+    &.second {
+      left: 482px;
+    }
+
+    .line {
+      width: 0;
+      height: 100%;
+      background: no-repeat left top transparent;
+      background-size: 246px 147px;
+    }
+
+    .point {
+      position: absolute;
+      background: no-repeat center center transparent;
+      background-size: contain;
+      width: 10px;
+      height: 10px;
+      z-index: 2;
+      opacity: 0;
+
+      &:nth-child(1) {
+        left: -5px;
+      }
+
+      &:nth-child(2) {
+        left: 29px;
+      }
+
+      &:nth-child(3) {
+        left: 72px;
+      }
+
+      &:nth-child(4) {
+        left: 113px;
+      }
+
+      &:nth-child(5) {
+        left: 156px;
+      }
+
+      &:nth-child(6) {
+        left: 199px;
+      }
+
+      &:nth-child(7) {
+        left: 241px;
+      }
+    }
+
+    &.grey {
+      .point {
+        background-image: url("./img/rectangle_2.svg");
+      }
+
+      &.first {
+        .line {
+          background-image: url("./img/line_grey_1.svg");
+        }
+
+        .point {
+          &:nth-child(1) {
+            top: -5px;
+          }
+
+          &:nth-child(2) {
+            top: 26px;
+          }
+
+          &:nth-child(3) {
+            top: 50px;
+          }
+
+          &:nth-child(4) {
+            top: 78px;
+          }
+
+          &:nth-child(5) {
+            top: 93px;
+          }
+
+          &:nth-child(6) {
+            top: 101px;
+          }
+
+          &:nth-child(7) {
+            top: 103px;
+          }
+        }
+      }
+
+      &.second {
+        .line {
+          background-image: url("./img/line_grey_2.svg");
+        }
+
+        .point {
+          &:nth-child(1) {
+            top: -5px;
+          }
+
+          &:nth-child(2) {
+            top: 26px;
+          }
+
+          &:nth-child(3) {
+            top: 49px;
+          }
+
+          &:nth-child(4) {
+            top: 59px;
+          }
+
+          &:nth-child(5) {
+            top: 77px;
+          }
+
+          &:nth-child(6) {
+            top: 82px;
+          }
+
+          &:nth-child(7) {
+            top: 92px;
+          }
+        }
+      }
+    }
+
+    &.green {
+      .point {
+        background-image: url("./img/triangle_2.svg");
+      }
+
+      &.first {
+        .line {
+          background-image: url("./img/line_green_1.svg");
+        }
+
+        .point {
+          &:nth-child(1) {
+            top: -5px;
+          }
+
+          &:nth-child(2) {
+            top: 37px;
+          }
+
+          &:nth-child(3) {
+            top: 75px;
+          }
+
+          &:nth-child(4) {
+            top: 99px;
+          }
+
+          &:nth-child(5) {
+            top: 117px;
+          }
+
+          &:nth-child(6) {
+            top: 135px;
+          }
+
+          &:nth-child(7) {
+            top: 141px;
+          }
+        }
+      }
+
+      &.second {
+        .line {
+          background-image: url("./img/line_green_2.svg");
+        }
+
+        .point {
+          &:nth-child(1) {
+            top: -5px;
+          }
+
+          &:nth-child(2) {
+            top: 37px;
+          }
+
+          &:nth-child(3) {
+            top: 67px;
+          }
+
+          &:nth-child(4) {
+            top: 91px;
+          }
+
+          &:nth-child(5) {
+            top: 108px;
+          }
+
+          &:nth-child(6) {
+            top: 119px;
+          }
+
+          &:nth-child(7) {
+            top: 127px;
+          }
+        }
+      }
+    }
+  }
+
+  .disable-animation & {
+    .point {
+      opacity: 1;
+    }
+
+    .line {
+      width: 100%;
+    }
+  }
+}

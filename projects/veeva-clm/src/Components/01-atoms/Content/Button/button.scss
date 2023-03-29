@@ -1,0 +1,24 @@
+@import "@base/variables";
+
+.button {
+  box-sizing: border-box;
+  height: 46px;
+  min-width: 172px;
+  padding: 15px 19px;
+  font-size: 17px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100px;
+  color: $white;
+  background-color: $blue-light;
+  text-align: center;
+  line-height: 19px;
+  font-weight: 700;
+
+  &-secondary {
+    height: 37px;
+    padding: 11px 19px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

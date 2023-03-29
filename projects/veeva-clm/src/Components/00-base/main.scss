@@ -1,0 +1,105 @@
+@charset "UTF-8";
+@import "variables";
+@import "_fonts";
+
+// reset
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+// General styles
+body {
+  font-family: $font-standard-ct;
+  font-size: 16px;
+  line-height: 1.2;
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $grey-light;
+    border-radius: 5px;
+  }
+}
+
+a {
+  color: $green;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+// Font color. Globally accessed
+// example: class="font-matisse"
+.font {
+  @include font-color;
+}
+
+// Background color. Globally accessed
+// example: class="bg-matisse"
+.bg {
+  @include bg-color;
+}
+
+// Spacings like in Bootstrap. Globally accessed
+// example: m-0 m-10 mx-10 my-10 mt-10 mb-10 ml-10 mr-10
+@include spacing("m", "margin");
+
+// example: p-0 p-10 px-10 py-10 pt-10 pb-10 pl-10 pr-10
+@include spacing("p", "padding");
+
+
+//Makes design adaptive for different iPads
+@media screen and (min-width: 1023px) {
+  #app {
+    transform: scale(0.7496);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 1112px) {
+  #app {
+    transform: scale(0.814056);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  #app {
+    transform: scale(1);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 2048px) {
+  #app {
+    transform: scale(1.4993);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 2160px) {
+  #app {
+    transform: scale(1.58126);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 2224px) {
+  #app {
+    transform: scale(1.6281);
+    transform-origin: top left;
+  }
+}
+
+@media screen and (min-width: 2732px) {
+  #app {
+    transform: scale(2);
+    transform-origin: top left;
+  }
+}

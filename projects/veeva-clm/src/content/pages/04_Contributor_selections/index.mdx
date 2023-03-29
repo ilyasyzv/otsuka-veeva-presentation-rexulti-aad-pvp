@@ -1,0 +1,31 @@
+import React from 'react';
+
+import './style.scss';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import AppBar from '@atoms/Content/AppBar/AppBar.jsx'
+import ButtonBackNavigation from '@templates/ButtonBackNavigation/ButtonBackNavigation';
+import Button from '@atoms/Content/Button/button';
+import Link from '@organisms/Routing/Link/Link';
+
+import nextStep from "./NextStep.jsx";
+import ContributorImage from './img/04_Contributor_selections.png?format=webp';
+import ContributorSelectedImage from './img/04_Contributor_selections_selected.png?format=webp';
+
+<PageWrapper type={'vertical'} scroll={false}
+             stickyContent={
+               <>
+                 <AppBar/>
+                 <ButtonBackNavigation to={'03_Daily_checkin'}/>
+               </>
+             }
+>
+
+  <img className='contributor' src={ContributorImage.src} alt="" onClick={nextStep}/>
+  <img className='contributor-selected' src={ContributorSelectedImage.src} alt=""/>
+
+  <div className='submit-container'>
+    <Button custom={'btn-inactive'} text={'Continue'}/>
+    <Link to={'05_Rest_level'} custom={'btn-continue button'}>Continue</Link>
+  </div>
+
+</PageWrapper>

@@ -1,0 +1,59 @@
+$fonts-path: "@/assets/fonts";
+
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap";
+
+// google webfonts helper
+// font-face generator & fonts download
+// https://google-webfonts-helper.herokuapp.com/fonts/montserrat?subsets=latin
+
+// prettier-ignore
+@font-face {
+  font-family: "Standard CT";
+  src:
+    url("#{$fonts-path}/StandardCT-500Medium.woff2") format("woff2"),
+    url("#{$fonts-path}/StandardCT-500Medium.woff") format("woff"),
+    url("#{$fonts-path}/StandardCT-500Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+}
+
+@font-face {
+  font-family: "Standard CT";
+  src: url("#{$fonts-path}/StandardCT-400Regular.woff2") format("woff2"),
+    url("#{$fonts-path}/StandardCT-400Regular.woff") format("woff"),
+    url("#{$fonts-path}/StandardCT-400Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+}
+
+@font-face {
+  font-family: "Standard CT";
+  src: url("#{$fonts-path}/StandardCT-800ExtraBold.woff2") format("woff2"),
+    url("#{$fonts-path}/StandardCT-800ExtraBold.woff") format("woff"),
+    url("#{$fonts-path}/StandardCT-800ExtraBold.otf") format("otf");
+  font-weight: 800;
+  font-style: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+}
+
+@font-face {
+  font-family: "Standard CT";
+  src: url("#{$fonts-path}/StandardCT-700Bold.woff2") format("woff2"),
+    url("#{$fonts-path}/StandardCT-700Bold.woff") format("woff"),
+    url("#{$fonts-path}/StandardCT-700Bold.otf") format("otf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+}
+
+@font-face {
+  font-family: "Standard CT Cond";
+  src: url("#{$fonts-path}/StandardCT-Cond500Medium.woff2") format("woff2"),
+    url("#{$fonts-path}/StandardCT-Cond500Medium.woff") format("woff"),
+    url("#{$fonts-path}/StandardCT-Cond500Medium.otf") format("otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+}

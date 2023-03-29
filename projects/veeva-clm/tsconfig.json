@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "sourceMap": true,
+    "jsx": "react-jsx",
+    // To Work with strict mode.
+    "strict": true,
+    // "alwaysStrict": false,
+    // "strictFunctionTypes": false,
+    // "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@base": ["./src/Components/00-base"],
+      "@atoms": ["./src/Components/01-atoms"],
+      "@molecules": ["./src/Components/02-molecules"],
+      "@organisms": ["./src/Components/03-organisms"],
+      "@templates": ["./src/Components/04-templates"],
+      "@pages": ["./src/Components/05-pages"]
+    }
+  },
+  "include": ["src"],
+  "typedocOptions": {
+    "entryPoints": ["src"],
+    "out": "docs"
+  }
+}

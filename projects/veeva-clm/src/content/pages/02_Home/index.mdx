@@ -1,0 +1,35 @@
+import React from 'react';
+
+import './style.scss';
+import Link from '@organisms/Routing/Link/Link';
+import PageWrapper from '@templates/PageWrapper/PageWrapper';
+import SidebarMenu from '@templates/SidebarMenu/SidebarMenu';
+import AppBar from '@atoms/Content/AppBar/AppBar';
+import Indicator from '@atoms/Content/HeaderIndicator/Indicator';
+import Badge from '@atoms/Content/Badge/Badge';
+import { SetHomeState } from '@atoms/CheckRedirection/CheckRedirection.jsx';
+
+import HomeImage from './img/02_Home_image.png?format=webp';
+import HeadingImage from './img/02_Heading.png?format=webp';
+
+<SetHomeState state='02_Home'/>
+
+<PageWrapper type={'vertical'}
+             stickyContent={
+               <>
+                 <AppBar theme={'dark'}/>
+                 <SidebarMenu/>
+                 <Indicator/>
+               </>
+             }
+>
+  <div className='home--top'>
+    <img className='home--top__image' src={HeadingImage.src} width={136} alt=""/>
+    <Badge/>
+  </div>
+  <div className='home--main'>
+    <Link custom='home--main__btn-1 button' to={'03_Daily_checkin'}> Check In Now </Link>
+    <Link custom='home--main__btn-2 button' to={'12_Insights'}> View All Insights </Link>
+    <img className='home--main__image' src={HomeImage.src} alt=""/>
+  </div>
+</PageWrapper>

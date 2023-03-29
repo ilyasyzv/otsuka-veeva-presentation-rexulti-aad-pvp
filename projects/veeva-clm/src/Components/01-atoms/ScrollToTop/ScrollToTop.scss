@@ -1,0 +1,41 @@
+@import "../../00-base/variables";
+
+.scroll-container {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+  padding-right: 110px;
+  color: $charcoal-dark;
+
+  &__button {
+    position: absolute;
+    max-width: 60px;
+    right: 25px;
+    bottom: 21px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+
+    svg {
+      color: $base;
+      padding: 5px;
+    }
+
+    &--on-top {
+      flex-direction: column-reverse;
+      right: 32px;
+    }
+
+    &--on-bottom {
+      flex-direction: column;
+      max-width: 68px;
+
+      svg {
+        margin-bottom: 9px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

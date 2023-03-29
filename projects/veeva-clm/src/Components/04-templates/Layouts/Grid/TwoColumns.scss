@@ -1,0 +1,22 @@
+.two-columns {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  &__left-pane {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  &__right-pane {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
