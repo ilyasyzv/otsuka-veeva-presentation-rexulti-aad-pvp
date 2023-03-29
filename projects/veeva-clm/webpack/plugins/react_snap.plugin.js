@@ -32,6 +32,7 @@ const defaultOptions = {
     '/14_Monthly_view/index.html',
     '/15_Healthcare_providers/index.html',
     '/16_Family_friends/index.html',
+    '/R.0.0_Home/index.html',
   ],
   viewport: {
     width: 1080,

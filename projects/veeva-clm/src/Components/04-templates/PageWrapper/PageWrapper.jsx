@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './PageWrapper.scss';
 
+//Todo: Delete this unused component
 const classNames = require('classnames');
 
 export const PageWrapper = ({

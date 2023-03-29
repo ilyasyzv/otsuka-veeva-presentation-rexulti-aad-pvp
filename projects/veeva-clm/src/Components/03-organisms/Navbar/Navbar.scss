@@ -1,0 +1,15 @@
+@import "@base/variables";
+
+.navigation {
+  &__arrows {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+    height: 58px;
+    background-color: $emerald;
+
+    a {
+      color: $white;
+    }
+  }
+}
