@@ -9,25 +9,19 @@ export const mainMenu = {
   data: [
     {
       name: 'Executive Summary',
-      url: '/R.1.0_Pharmacology',
-      children: [
-        {
-          name: 'Pharmacodynamic Profile',
-          url: '/R.1.1_Pharmacodynamic_Profile',
-        },
-      ],
+      url: '/R.1.0_Executive_summary',
     },
     {
       name: 'AAD Overview',
       url: '/R.2.0_AAD_overview',
       children: [
         {
-          name: 'Kimberly',
-          url: '/R.2.1_Patient_profile_Kimberly',
+          name: 'Old home',
+          url: '/02_Home',
         },
         {
-          name: 'Alexis',
-          url: '/R.2.2_Patient_profile_Alexis',
+          name: 'old dayly',
+          url: '/03_Daily_checkin',
         },
         {
           name: 'Justin',
