@@ -22,7 +22,7 @@ export const Modal = ({
   id = null,
   link = LinkDefault,
   children,
-  showPlus = true,
+  showPlus = false,
   isExpanded = false,
   withFooter = false,
   isSwitchPopup = false,

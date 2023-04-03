@@ -4,6 +4,7 @@ import PageContext from '../../../../context/PageContext';
 import Navbar from "@/Components/03-organisms/Navbar/Navbar";
 import EndIcon from './img/end-icon.png?format=webp';
 import StartIcon from './img/start-icon.png?format=webp';
+import NavArrows from "@/Components/01-atoms/NavArrows/NavArrows";
 
 type LayoutProps = {
   pageid?: string;
@@ -23,6 +24,7 @@ export const Layout = ({ pageid, children = <>Loading</> }: LayoutProps) => {
           <Navbar />
         </div>
         <div className='right-pane'>{children}</div>
+        <NavArrows />
         <img className='icon-start' src={StartIcon.src} alt="end icon"/>
         <img className='icon-end' src={EndIcon.src} alt="end icon"/>
       </div>
