@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@atoms/Content/Button/Button';
 import { Header } from '@atoms/Content/Header/Header';
-import { FootNote } from '@atoms/Content/FootNote/FootNote';
+import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
 import { Modal } from '@templates/Layouts/Modal/Modal';
 import { Text } from '@/Components/01-atoms/Content/Text/Text';
 import List from '@/Components/01-atoms/Content/List/List';
