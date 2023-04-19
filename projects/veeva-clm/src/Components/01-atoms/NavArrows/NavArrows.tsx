@@ -1,12 +1,10 @@
 import React, { useContext } from 'react';
-import './NavArrows.scss';
 import { PageContext } from '@/context/PageContext';
 import { navigateLocal } from '@/Components/03-organisms/Routing/Link/Link';
 import { flatLinksList, mainMenu } from '@/utils/processNavigation';
+import './NavArrows.scss';
 
-type NavArrowsProps = {};
-
-export const NavArrows = ({}: NavArrowsProps) => {
+export const NavArrows = () => {
   const { currentPage, changePage } = useContext(PageContext);
 
   const { currentPosition, paths } = flatLinksList(
