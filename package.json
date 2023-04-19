@@ -10,6 +10,7 @@
     "bootstrap": "lerna bootstrap",
     "boot": "npm run clean;npm run bootstrap",
     "dev": "lerna run dev",
+    "format": "lerna run format",
     "build": "lerna run build"
   },
   "devDependencies": {
