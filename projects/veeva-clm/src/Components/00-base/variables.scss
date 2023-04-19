@@ -1,27 +1,9 @@
-// Fonts
+// Don't use these fonts, will be removed soon.
 $font-open-sans: "Open Sans", sans-serif;
 $font-standard-ct: "Standard CT", sans-serif;
 $font-standard-ct-cond: "Standard CT Cond", sans-serif;
 
-// Colors
-$base: #414042;
-$black: #101010;
-$white: #fff;
-$grey: #f3f3f3;
-$grey-lighter: #D8D8D8;
-$grey-light: #D4D4D4;
-$grey-dark: #979797;
-$emerald: #07412C;
-$charcoal-dark: #2f2f2f;
-$green: #42711e;
-$green-light: #0e7850;
-$green-dark: #142c1d;
-$orange-dark: #E6A600;
-$orange: #FFB718;
-$yellow: #FCCF00;
-
-
-// Colors prev - to delete
+// Don't use these color, will be removed soon.
 $black: #000;
 $white: #fff;
 $white-ghost: #f7f8fb;
@@ -50,19 +32,92 @@ $orange: #f59121;
 $butter-muffin: #f9dfb3;
 $aqua-spray: #a4dfdc;
 $blue-navy: #0077c8;
+$base: #414042;
+$black: #101010;
+$white: #fff;
+$grey: #f3f3f3;
+$grey-lighter: #D8D8D8;
+$grey-light: #D4D4D4;
+$grey-dark: #979797;
+$emerald: #07412C;
+$charcoal-dark: #2f2f2f;
+$green: #42711e;
+$green-light: #0e7850;
+$green-dark: #142c1d;
+$orange-dark: #E6A600;
+$orange: #FFB718;
+$yellow: #FCCF00;
 
+// Use these fonts.
+$font-whitney: "Whitney", sans-serif;
+$font-arial: "Arial";
+
+// Use these color.
+
+// White
+$white: #fff;
+
+// Black
+$black: #000;
+$black-100: #414042;
+$black-300: #101010;
+
+// Grey
+$grey-10: #F3F3F3;
+$gray-100: #F4F4F4;
+$gray-200: #EFEFEF;
+$gray-300: #E2E2E2;
+$gray-500: #D8D8D8;
+$gray-600: #D4D4D4;
+$gray-700: #979797;
+$gray-900: #2F2F2F;
+
+// Green
+$green-100: #0E7850;
+$green-200: #4D6F2C;
+$green-300: #42711E;
+$green-400: #3B6E17;
+$green-500: #294339;
+$green-600: #07412C;
+$green-700: #142C1D;
+
+// Yellow
+$yellow-100: #FADA40;
+$yellow-200: #FDCF00;
+$yellow-300: #FCCF00;
+$yellow-400: #FFB718;
+$yellow-500: #E6A600;
+
+// Orange
+$orange-300: #FFA05E;
 
 // Colors array for loops in mixins
 $colors: (
-  "black": $black,
   "white": $white,
-  "gray": $gray,
-  "gray-darker": $gray-darker,
-  "gray-whisper": $gray-whisper,
-  "green": $green,
-  "blue": $blue,
-  "blue-light": $blue-light,
-  "orange": $orange,
+  "black": $black,
+  "black-100": $black-100,
+  "black-300": $black-300,
+  "grey-10": $grey-10 ,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-900": $gray-900,
+  "green-100": $green-100,
+  "green-200": $green-200,
+  "green-300": $green-300,
+  "green-400": $green-400,
+  "green-500": $green-500,
+  "green-600": $green-600,
+  "green-700": $green-700,
+  "yellow-100": $yellow-100,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
+  "yellow-400": $yellow-400,
+  "yellow-500": $yellow-500,
+  "orange-300": $orange-300,
 );
 
 // Shadows
