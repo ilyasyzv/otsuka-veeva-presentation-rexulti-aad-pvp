@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@atoms/Content/Button/button';
+import { Button } from '@atoms/Content/Button/Button';
 import './SwitchContent.scss';
 
 export const SwitchContent = ({ closeHandler }) => {

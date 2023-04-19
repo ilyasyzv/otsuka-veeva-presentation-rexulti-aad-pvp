@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text } from '@/Components/01-atoms/Content/Text/Text';
-import Button from '@/Components/01-atoms/Content/Button/button';
+import Button from '@/Components/01-atoms/Content/Button/Button';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import List from '@/Components/01-atoms/Content/List/List';

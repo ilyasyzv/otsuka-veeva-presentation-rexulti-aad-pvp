@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@atoms/Content/Button/button';
+import { Button } from '@atoms/Content/Button/Button';
 import { Header } from '@atoms/Content/Header/Header';
 import { FootNote } from '@atoms/Content/FootNote/FootNote';
 import { Modal } from '@templates/Layouts/Modal/Modal';

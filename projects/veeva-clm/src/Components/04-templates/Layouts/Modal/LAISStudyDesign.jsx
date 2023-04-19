@@ -4,7 +4,7 @@ import { Text } from '@/Components/01-atoms/Content/Text/Text';
 import List from '@/Components/01-atoms/Content/List/List';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
-import Button from '@/Components/01-atoms/Content/Button/button';
+import Button from '@/Components/01-atoms/Content/Button/Button';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 
 const blockName = 'modal';
