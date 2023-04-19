@@ -1,0 +1,47 @@
+@import "@base/variables";
+
+.A-0-Home {
+
+  &_wrapper {
+    width: 807px;
+  }
+
+  &-header{
+    font-size:42px !important;
+    letter-spacing: -2px;
+    line-height: 39px !important;
+  }
+  &-sup {
+    font-size: 22px !important;
+  }
+  &-underline {
+    width:610px ;
+  }
+
+  &-secondary-header {
+    width: 634px;
+    font-weight: normal !important;
+  }
+  &-underline{
+    width: 607px
+  }
+
+  &-trademark{
+    width: 350px;
+    font-size: 11px;
+  }
+  &-sign__wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &-logo__wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-txt {
+    font-weight: bold;
+  }
+}

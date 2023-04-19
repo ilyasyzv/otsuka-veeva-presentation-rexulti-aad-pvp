@@ -1,0 +1,18 @@
+.A-2-1-2_S_Overview {
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 847px;
+  }
+  &-text {
+    font-size: 14px;
+  }
+  &-img2{
+    position: absolute;
+    left: -78px;
+    bottom: -112px;
+    max-width: 930px !important;
+  }
+}

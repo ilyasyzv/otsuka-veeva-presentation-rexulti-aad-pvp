@@ -1,12 +1,17 @@
 import React, { useContext } from 'react';
+
 import { PageContext } from '@/context/PageContext';
+import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
+import { findPathInMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
+import SlideMenu from '@/Components/03-organisms/SlideMenu/SlideMenu';
+
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
 const classNames = require('classnames');
 
-export const LinkGroup = ({ linkGroup }) => {
-  const [currentPage] = useContext(PageContext);
+export const LinkGroup = ({ linkGroup, parentNav = false }) => {
+  const { currentPage } = useContext(PageContext);
 
   const linksGroup = () => {
     const urls = [linkGroup.url.replace('/', '')];
@@ -19,29 +24,12 @@ export const LinkGroup = ({ linkGroup }) => {
     return urls;
   };
 
-  const isActive = () => linksGroup().includes(currentPage);
-
-  const isCurrent = (url) => url.replace('/', '') === currentPage;
-
-  const makeSublinks = (children) => {
-    if (!children) {
-      return null;
+  const isActive = () => {
+    if (parentNav) {
+      const { parent } = findPathInMenu(currentPage, mainMenu.data);
+      return linkGroup.url.includes(parent);
     }
-
-    return (
-      <ul>
-        {children.map((sublink, i) => (
-          <li
-            key={i}
-            className={`main-nav__sublink ${
-              isCurrent(sublink.url) ? 'current' : ''
-            }`}
-          >
-            <Link to={sublink.url}>{sublink.name}</Link>
-          </li>
-        ))}
-      </ul>
-    );
+    return linksGroup().includes(currentPage);
   };
 
   const { addClass } = linkGroup;
@@ -53,8 +41,16 @@ export const LinkGroup = ({ linkGroup }) => {
 
   return (
     <li className={`${mainLinkClass} ${addClass || ''}`}>
-      <Link to={linkGroup.url}>{linkGroup.name}</Link>
-      {makeSublinks(linkGroup.children)}
+      <div className='main-nav__link__wrapper'>
+        {linkGroup.slide ? (
+          <SlideMenu data={linkGroup} />
+        ) : (
+          <>
+            <Link to={linkGroup.url}>{linkGroup.name}</Link>
+            <UpperSubNavBar link={linkGroup.url} />
+          </>
+        )}
+      </div>
     </li>
   );
 };

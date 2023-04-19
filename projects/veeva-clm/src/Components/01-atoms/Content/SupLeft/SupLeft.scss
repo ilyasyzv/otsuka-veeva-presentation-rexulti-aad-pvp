@@ -1,7 +1,10 @@
-.sup-left {
-  position: relative;
-  top: 0;
-  margin-left: -6px;
-  font-size: 10px;
-  line-height: 10px;
+sup.sup-left {
+  position: absolute;
+  right: 100%;
+  font-size: 8px;
+  line-height: 1;
+
+  &.big {
+    font-size: 11px;
+  }
 }

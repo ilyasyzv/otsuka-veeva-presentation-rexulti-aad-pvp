@@ -3,6 +3,10 @@
 ul.list {
   list-style: none;
   padding-left: 10px;
+  max-width: 823px;
+  font-size: 16px;
+  letter-spacing: -0.16px;
+  line-height: 1.2;
 
   sup {
     font-size: 10px;
@@ -13,22 +17,13 @@ ul.list {
     list-style: decimal;
   }
 
-  &.triangle li {
-    @include triangle;
-  }
-
   &.circle li {
     @include circle;
     @include list-marker-color;
   }
 
-  &.square li {
-    @include square;
-    @include list-marker-color;
-  }
-
-  &.square-small li {
-    @include square-small;
+  &.rectangle li {
+    @include rectangle;
     @include list-marker-color;
   }
 

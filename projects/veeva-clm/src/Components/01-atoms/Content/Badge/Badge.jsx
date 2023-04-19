@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import Lottie from 'react-lottie-player';
-import lottieJson from '../../../../assets/lottie-animation/badge-animation.json';
+import lottieJson from '@assets/lottie-animation/badge-animation.json';
 import './style.scss';
 
 const Badge = () => {

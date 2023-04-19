@@ -1,0 +1,19 @@
+.A_3_2_1_Efficacy {
+
+  &_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 856px;
+  }
+
+  &-header {
+    letter-spacing: -0.8px;
+  }
+
+  &-img{
+    margin-left: 35px;
+    width: 760px;
+  }
+}

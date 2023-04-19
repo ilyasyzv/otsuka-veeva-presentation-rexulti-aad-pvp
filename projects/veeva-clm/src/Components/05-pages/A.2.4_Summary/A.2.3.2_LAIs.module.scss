@@ -1,0 +1,12 @@
+// We connect only .page as scss module. all other styles will be global wrapped by .page class.
+.page {
+  :global {
+    img.pageImg {
+      margin-left: -66px;
+      width: 942px;
+      margin-top: 4px;
+      max-width: 942px;
+      max-height: inherit;
+    }
+  }
+}

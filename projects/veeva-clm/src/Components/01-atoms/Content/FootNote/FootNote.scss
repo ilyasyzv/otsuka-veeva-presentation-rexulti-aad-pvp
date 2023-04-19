@@ -1,22 +1,46 @@
 .footnote {
-  font-size: 12px;
-  line-height: 12px;
+  max-width: 822px;
+  font-size: 11px;
+  line-height: 13px;
+
+  ul, ol {
+    list-style: none;
+
+    li {
+      position: relative;
+      line-height: 15px;
+    }
+  }
 
   p {
     margin: 0;
   }
 
+  sup,
+  sub {
+    vertical-align: baseline;
+    position: relative;
+  }
+
   sup {
     font-size: 8px;
-    line-height: normal;
+
+    &.big {
+      font-size: 11px;
+    }
+  }
+
+  sup:not(.sup-left) {
+    top: -0.4em;
+  }
+
+  sub {
+    font-size: 6px;
+    top: 0.4em;
   }
 
   &-small {
     font-size: 8px;
     line-height: 8px;
-  }
-
-  sup {
-    font-size: 10px;
   }
 }
