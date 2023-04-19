@@ -3,8 +3,6 @@ import { AppStorybook } from '@pages/AppStorybook';
 import './style.scss';
 import Link from '@/Components/03-organisms/Routing/Link/Link';
 import { Header } from '@/Components/01-atoms/Content/Header/Header';
-import MaintenaLogo from '@/assets/maintena-logo.png';
-import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import PageContent from './A.3.5.1_Additional';
 
 export default {

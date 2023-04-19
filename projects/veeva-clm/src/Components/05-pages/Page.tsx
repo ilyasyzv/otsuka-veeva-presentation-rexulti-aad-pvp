@@ -10,7 +10,8 @@ type TPage = {
 };
 
 // assign a custom component to (some) markdown elements
-// this object will serve as the props for the 'MDXProvider' that will pass it down through the component tree
+// this object will serve as the props for the 'MDXProvider' that will pass it
+// down through the component tree
 const componentsMap = {
   p: ParagraphWrapper,
 };

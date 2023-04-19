@@ -1,4 +1,5 @@
 @import "@base/variables";
+
 .page--A_3_5_5_Additional {
   .content-background {
     padding-top: 50px;
@@ -10,42 +11,52 @@
       right: 199px;
       bottom: 126px;
     }
+
     &:nth-child(2n) {
       position: absolute;
       right: 199px;
       bottom: 72px;
     }
+
     &:nth-child(3n) {
       position: absolute;
       right: 27px;
       bottom: 126px;
     }
   }
+
   .placebo {
     width: 28.5%;
   }
+
   .graphic {
     width: 68.5%;
   }
+
   .list {
     width: 56%;
     font-size: 14px;
     word-spacing: 1px;
     line-height: 1;
     margin-top: 4px;
+
     li:nth-child(1n) {
       margin-top: -4px;
     }
   }
+
   .footnote {
     &__list {
       width: 60%;
+
       li:nth-child(1n) {
         margin-bottom: 5px;
       }
+
       li:nth-child(2n) {
         line-height: 7.9px;
         margin-bottom: 0;
+
         sup {
           top: -2px;
           font-size: 6px;

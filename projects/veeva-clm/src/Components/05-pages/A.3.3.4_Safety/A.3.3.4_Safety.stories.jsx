@@ -6,7 +6,6 @@ import MetabolicSafetyImg from '@/Components/05-pages/A.3.3.4_Safety/img/Metabol
 import MaintenaLogo from '@assets/maintena-logo.png';
 
 import './A.3.3.4_Safety.scss';
-import List from '@/Components/01-atoms/Content/List/List';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 

@@ -3,10 +3,8 @@ import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 
 import SafetyTableImg from '@/Components/05-pages/A.3.3.1_Safety/img/SafetyTable.png?format=webp';
-import { Button } from '@/Components/01-atoms/Content/Button/Button';
 
 import './A.3.3.1_Safety.scss';
-import List from '@/Components/01-atoms/Content/List/List';
 import MaintenaLogo from '@/assets/maintena-logo.png';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';

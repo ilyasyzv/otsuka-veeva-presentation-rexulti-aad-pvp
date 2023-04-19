@@ -1,13 +1,15 @@
 @import "@base/variables";
+
 .page--A_5_1_Patients_support_providers {
   .page__wrapper {
-    .right-pane{
+    .right-pane {
       .support {
         max-width: 70%;
         margin: auto;
         display: block;
         padding-right: 53px;
       }
+
       .background-grey-blue {
         background: #D9E6EA;
         border-radius: 9px;

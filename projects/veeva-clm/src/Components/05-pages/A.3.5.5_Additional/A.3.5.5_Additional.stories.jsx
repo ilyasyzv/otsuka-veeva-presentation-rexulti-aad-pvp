@@ -2,10 +2,9 @@ import { AppStorybook } from '@pages/AppStorybook';
 import React from 'react';
 import { Header } from '@/Components/01-atoms/Content/Header/Header';
 import {
-  StudyDesign1,
-  Relapse,
-  FullRecurrenceDefinition,
   BaselineCharacteristics,
+  FullRecurrenceDefinition,
+  StudyDesign1,
 } from '@templates/Layouts/Modal/Modal.stories';
 
 import { List } from '@atoms/Content/List/List';

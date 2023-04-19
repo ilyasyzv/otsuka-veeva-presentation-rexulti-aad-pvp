@@ -1,7 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
-import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
 import SchizophreniaImg1 from './img/Component 40 – 12.png?format=webp';
 import SchizophreniaImg2 from './img/Component 41 – 13.png?format=webp';
 

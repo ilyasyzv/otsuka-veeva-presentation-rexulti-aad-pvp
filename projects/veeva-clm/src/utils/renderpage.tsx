@@ -1,5 +1,5 @@
 import React from 'react';
-import { hydrateRoot, createRoot } from 'react-dom/client';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 
 export const renderPage = (сomponent: any, containerId = 'app') => {
   const container = document.getElementById(containerId) as HTMLElement;

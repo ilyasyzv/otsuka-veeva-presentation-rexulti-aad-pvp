@@ -1,40 +1,57 @@
 import React from 'react';
-import {Button} from './Button';
+import { Button } from './Button';
 
 export default {
   title: 'CLM/Atoms/Button',
   component: Button,
 };
 
-const TemplateDefault = (args) => <Button {...args}/>;
+const TemplateDefault = (args) => <Button {...args} />;
 
 const Template = () => (
-    <>
-      <p>Default State:</p>
-      <Button text='Model Estimates' custom={'button__type-a'}/>
-      <p>Active State 1:</p>
-      <Button text='Model Estimates' custom={'button__type-a--active'}/>
-      <p>Active State 2:</p>
-      <Button text='Model Estimates'
-              custom={'button__type-a--active button__type-a--active-right'}/>
-    </>
+  <>
+    <p>Default State:</p>
+    <Button text='Model Estimates' custom={'button__type-a'} />
+    <p>Active State 1:</p>
+    <Button text='Model Estimates' custom={'button__type-a--active'} />
+    <p>Active State 2:</p>
+    <Button
+      text='Model Estimates'
+      custom={'button__type-a--active button__type-a--active-right'}
+    />
+  </>
 );
 
 const TemplateС = () => (
-    <>
-      <p>Default State:</p>
-      <Button text='Continue' custom={'button__type-c'}/>
-      <p className={'mt-20 mb-5'}>Disabled State:</p>
-      <Button text='Continue' custom={'button__type-c button__type-c--disabled'}/>
-      <p className={'mt-20 mb-5'}>Large:</p>
-      <Button text='Short-term Study: Schizophrenia' custom={'button__type-c button__type-c-large'}/>
-      <p className={'mt-20 mb-5'}>Large Blue:</p>
-      <Button text='Long-term Study: Schizophrenia' custom={'button__type-c button__type-c-large button__type-c-large-blue'}/>
-      <p className={'mt-20 mb-5'}>Large Gray:</p>
-      <Button text='Long-term Study: Bipolar I Disorder' custom={'button__type-c button__type-c-large button__type-c-large-gray'}/>
-      <p className={'mt-20 mb-5'}>Large Dark:</p>
-      <Button text='Long-term Study: Bipolar I Disorder' custom={'button__type-c button__type-c-large button__type-c-large-dark'}/>
-    </>
+  <>
+    <p>Default State:</p>
+    <Button text='Continue' custom={'button__type-c'} />
+    <p className={'mt-20 mb-5'}>Disabled State:</p>
+    <Button
+      text='Continue'
+      custom={'button__type-c button__type-c--disabled'}
+    />
+    <p className={'mt-20 mb-5'}>Large:</p>
+    <Button
+      text='Short-term Study: Schizophrenia'
+      custom={'button__type-c button__type-c-large'}
+    />
+    <p className={'mt-20 mb-5'}>Large Blue:</p>
+    <Button
+      text='Long-term Study: Schizophrenia'
+      custom={'button__type-c button__type-c-large button__type-c-large-blue'}
+    />
+    <p className={'mt-20 mb-5'}>Large Gray:</p>
+    <Button
+      text='Long-term Study: Bipolar I Disorder'
+      custom={'button__type-c button__type-c-large button__type-c-large-gray'}
+    />
+    <p className={'mt-20 mb-5'}>Large Dark:</p>
+    <Button
+      text='Long-term Study: Bipolar I Disorder'
+      custom={'button__type-c button__type-c-large button__type-c-large-dark'}
+    />
+  </>
 );
 
 export const TypeA = Template.bind({});
@@ -52,4 +69,3 @@ export const TypeB = {
     text: 'Adverse Reactions Table',
   },
 };
-
