@@ -1,0 +1,86 @@
+@import "@base/variables";
+
+.carousel-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  .slider-items {
+    position: relative;
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+
+    .slider-item {
+      flex: 1 0 100%;
+      height: 100%;
+    }
+  }
+
+  .slider-dots {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 0 0 20px 20px;
+    border-top: 0;
+    padding: 10px;
+    z-index: 100;
+
+    & > button {
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+      border-radius: 50%;
+      background-color: #ccc;
+      border: none;
+      outline: none;
+      cursor: pointer;
+
+      &.active {
+        background-color: #333;
+      }
+    }
+  }
+
+  .slider-arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 16px;
+    top: 29px;
+    width: 84px;
+    height: 32px;
+
+    .slider-arrow {
+      border: none;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background: url('img/circle-blue-arrow.svg') no-repeat center center transparent;
+      background-size: contain;
+      font-size: 0;
+
+      &.right {
+        transform: rotate(180deg);
+
+        &::before {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 30px;
+          position: absolute;
+          left: 41px;
+          top: 0;
+          background: $blue-300;
+        }
+      }
+    }
+  }
+
+}

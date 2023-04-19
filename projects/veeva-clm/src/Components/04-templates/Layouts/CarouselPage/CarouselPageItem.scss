@@ -1,0 +1,19 @@
+@import "@base/variables";
+
+.carousel-page {
+  .slider-items {
+    .slider-item {
+      flex: 1 0 auto;
+    }
+  }
+}
+
+.active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.inactive {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}

@@ -17,17 +17,24 @@ const useSharedModalManager = () => useBetween(useModalManager);
 const classNames = require('classnames');
 
 const LinkDefault = <p>Show Modal</p>;
+const HeaderDefault = <h1>Header content</h1>;
+const FooterDefault = <p className='footnote'>Footer content</p>;
 
 export const Modal = ({
   id = null,
   link = LinkDefault,
   children,
+  openByDefault = false,
   showPlus = false,
   isExpanded = false,
+  withHeader = false,
+  header = HeaderDefault,
   withFooter = false,
+  footer = FooterDefault,
   isSwitchPopup = false,
+  customClass = '',
 }) => {
-  const [shouldShow, setShouldShow] = useState(false);
+  const [shouldShow, setShouldShow] = useState(openByDefault);
   const { modals, setModals } = useSharedModalManager();
   modals.push({ link, setShouldShow });
   setModals(modals);
@@ -43,15 +50,24 @@ export const Modal = ({
   });
 
   const simpleContent = (
-    <div className='modal-body' onClick={(e) => e.stopPropagation()}>
-      {children}
-    </div>
+    <>
+      <div className='modal-header' onClick={(e) => e.stopPropagation()}>
+        {header}
+      </div>
+      <div className='modal-body' onClick={(e) => e.stopPropagation()}>
+        {children}
+      </div>
+      <div className='modal-footer' onClick={(e) => e.stopPropagation()}>
+        {footer}
+      </div>
+    </>
   );
 
-  const modalOuterClass = classNames({
+  const modalOuterClass = classNames(customClass, {
     modal: true,
     'modal-background': !isExpanded || withFooter,
     'modal-expanded': isExpanded,
+    'modal-with-header': withHeader,
     'modal-with-footer': withFooter,
   });
 
