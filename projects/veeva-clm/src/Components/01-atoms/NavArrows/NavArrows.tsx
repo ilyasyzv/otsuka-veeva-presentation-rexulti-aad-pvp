@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
 import './NavArrows.scss';
 import { PageContext } from '@/context/PageContext';
-import { navigateLocal } from '@organisms/Routing/Link/Link';
-import { mainMenu, flatLinksList } from '@/utils/processNavigation';
+import { navigateLocal } from '@/Components/03-organisms/Routing/Link/Link';
+import { flatLinksList, mainMenu } from '@/utils/processNavigation';
 
-export const NavArrows = () => {
+type NavArrowsProps = {};
+
+export const NavArrows = ({}: NavArrowsProps) => {
   const { currentPage, changePage } = useContext(PageContext);
 
   const { currentPosition, paths } = flatLinksList(
@@ -14,7 +16,7 @@ export const NavArrows = () => {
 
   const moveToNext = () => {
     if (process.env.NODE_ENV === 'production') {
-      window.com.veeva.clm.nextSlide();
+      (window as any).com.veeva.clm.nextSlide();
     } else {
       const nextPosition =
         paths.length - 1 === currentPosition ? 0 : currentPosition + 1;
@@ -25,7 +27,7 @@ export const NavArrows = () => {
 
   const moveToPrev = () => {
     if (process.env.NODE_ENV === 'production') {
-      window.com.veeva.clm.prevSlide();
+      (window as any).com.veeva.clm.prevSlide();
     } else {
       const prevPosition =
         currentPosition === 0 ? paths.length - 1 : currentPosition - 1;
