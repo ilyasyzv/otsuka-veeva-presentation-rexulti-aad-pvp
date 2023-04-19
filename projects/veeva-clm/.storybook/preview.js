@@ -1,3 +1,5 @@
+import '../src/Components/00-base/main.scss';
+
 const customViewports = {
   otsuka_mobile: {
     name: 'Otsuka Mobile | 360px',
