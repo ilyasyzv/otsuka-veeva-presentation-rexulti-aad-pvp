@@ -2,24 +2,27 @@
 
 .main-nav {
   font-size: 12px;
-  margin-top: 5px;
+  margin: 5px 0 20px 0;
 
   &__link {
     box-sizing: border-box;
 
-    & > a {
+    & .main-nav__link__wrapper a {
       display: flex;
-      padding: 20px 0 20px 21px;
+      flex-direction: column;
+      padding: 25px 0 25px 5px;
       align-items: center;
       text-decoration: none;
       border-right: 8px solid transparent;
-      color: $base;
+      color: $white;
       font-size: 14px;
       line-height: 14px;
-      font-weight: 600;
+      font-weight: 400;
       font-style: normal;
       letter-spacing: 0;
-      text-align: left;
+      text-align: center;
+      margin: 0 auto;
+      width: fit-content;
     }
 
     ul {
@@ -28,66 +31,74 @@
     }
 
     &.active {
-      & > a {
-        background: $emerald;
-        border-right: 5px solid $yellow;
-        color: $white;
-        font-weight: 900;
+      .main-nav__link__wrapper a {
+        font-weight: bold;
+        padding: 25px 0 0 5px;
+
+        &:after {
+          content: "";
+          width: 90px;
+          height: 20px;
+          margin: 5px 0 0 0;
+          border-radius: 100% 100% 0 0;
+          background: transparent linear-gradient(180deg, $blue-205 0%, $blue-200 40%, $yellow-300 100%) 0% 0% no-repeat padding-box;
+        }
       }
 
       ul {
-        display: block;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        top: 0;
+        right: 112px;
+        padding: 0;
+        border-bottom: 2px solid $blue-300;
+        z-index: 10;
+
+        li.main-nav__sublink {
+          padding: 0 39px;
+          list-style: none;
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: $blue-600;
+            font-weight: 400;
+            width: auto;
+            height: 45px;
+            padding: 7px 0;
+            margin: 0;
+            border: none;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &.current {
+            a {
+              font-weight: 700;
+            }
+          }
+        }
       }
     }
 
     &.schizophrenia {
       &.active a {
-        border-color: $orange;
+        border-color: $yellow;
       }
     }
 
     &.bipolar {
       &.active a {
-        border-color: $blue-navy;
+        border-color: $blue;
       }
-    }
-  }
-
-  &__sublink {
-    display: flex;
-    align-items: center;
-    padding: 13.5px 0;
-    font-size: 14px;
-    line-height: 14px;
-    list-style: none;
-
-    &.current {
-      a {
-        @include triangle;
-
-        color: $emerald;
-        font-weight: 700;
-        text-decoration: underline;
-        padding-left: 28px;
-
-        &::before {
-          border-width: 0.6em 0 0.6em 0.9em;
-          top: 0;
-        }
-      }
-    }
-
-    a {
-      align-items: center;
-      color: $base;
-      display: flex;
-      font-size: 14px;
-      font-weight: 500;
-      font-style: normal;
-      letter-spacing: 0;
-      padding-left: 40px;
-      text-align: left;
-      text-decoration: none;
     }
   }
 }
