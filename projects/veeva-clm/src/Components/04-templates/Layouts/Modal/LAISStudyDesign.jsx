@@ -93,8 +93,9 @@ export const StudyDesignLAIs1Args = {
             {
               text: (
                 <>
-                  Truven Health Analytics MarketScan Multi-State Medicaid and 
-                  Truven MarketScan commercial and Medicaid databases (January 1, 2012, through June 30, 2015)
+                  Truven Health Analytics MarketScan Multi-State Medicaid and
+                  Truven MarketScan commercial and Medicaid databases (January
+                  1, 2012, through June 30, 2015)
                 </>
               ),
             },
@@ -258,8 +259,9 @@ export const StudyDesignLAIs1Args = {
             {
               text: (
                 <>
-                  A diagnosis of bipolar disorder and schizophrenia was identified from health
-                  care claims coded for reimbursement. Coding errors are
+                  A diagnosis of bipolar disorder and schizophrenia was
+                  identified from health care claims coded for reimbursement.
+                  Coding errors are
                   <br />
                   possible and were not accounted for in this study
                 </>
@@ -307,7 +309,11 @@ export const StudyDesignLAIs1Args = {
         custom: 'mt-5',
         data: [
           {
-            text: <span>Greene M,  et al. <em>J Med Econ.</em> 2018;2l(2):127-134.</span>,
+            text: (
+              <span>
+                Greene M, et al. <em>J Med Econ.</em> 2018;2l(2):127-134.
+              </span>
+            ),
           },
         ],
       }}
@@ -492,7 +498,9 @@ export const StudyDesignLAIs2Args = {
         data: [
           {
             text: (
-              <span>Lafeuille M-H, et al. <em>BMC Psychiatry.</em> 2013;13:221.</span>
+              <span>
+                Lafeuille M-H, et al. <em>BMC Psychiatry.</em> 2013;13:221.
+              </span>
             ),
           },
         ],

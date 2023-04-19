@@ -6,7 +6,8 @@ export default {
   title: 'CLM/Templates/Carousel',
   component: Carousel,
   parameters: {
-    // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
+    // More on Story layout:
+    // https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
 };

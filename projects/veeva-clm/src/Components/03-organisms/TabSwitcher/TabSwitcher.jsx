@@ -7,7 +7,7 @@ export default function TabSwitcher({ tabs }) {
   return (
     <div className='tab_switcher'>
       <div className='tab_switcher__header'>
-        {tabs.map(tab => (
+        {tabs.map((tab) => (
           <button
             className={selectedId === tab.id ? 'active' : ''}
             key={tab.id}

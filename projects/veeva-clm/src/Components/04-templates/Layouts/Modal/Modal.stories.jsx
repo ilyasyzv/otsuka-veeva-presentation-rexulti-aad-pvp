@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from '@atoms/Content/Button/Button';
 import { Header } from '@/Components/01-atoms/Content/Header/Header';
-import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
 import { Modal } from '@templates/Layouts/Modal/Modal';
 import { Text } from '@/Components/01-atoms/Content/Text/Text';
-import List from '@/Components/01-atoms/Content/List/List';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import {
   StudyDesignLAIs1Args,
@@ -12,9 +10,9 @@ import {
 } from '@/Components/04-templates/Layouts/Modal/LAISStudyDesign';
 
 import {
-  StudyDesignSupArgs,
   StudyDesign1Args,
   StudyDesign2Args,
+  StudyDesignSupArgs,
 } from '@/Components/04-templates/Layouts/Modal/StudyDesigns';
 import UnderstandingPANSS1 from './images/Understanding-PANSS-1.png?format=webp';
 import UnderstandingPANSS2 from './images/Understanding-PANSS-2.png?format=webp';

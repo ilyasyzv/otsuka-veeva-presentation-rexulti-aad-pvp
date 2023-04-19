@@ -21,8 +21,7 @@ export const navigateVeeva = (preparedPageName: string): void => {
     window.com.veeva.clm.prevSlide();
   } else if (preparedPageName === 'next') {
     window.com.veeva.clm.nextSlide();
-  }
-  else {
+  } else {
     window.com.veeva.clm.gotoSlide(`${preparedPageName}.zip`, '');
   }
 };
@@ -55,8 +54,7 @@ export const Link: React.FC<Props> = ({ custom, to, children }) => {
 
     if (process.env.NODE_ENV === 'production') {
       navigateVeeva(preparedPageName);
-    }
-    else {
+    } else {
       navigateLocal(changePage, preparedPageName);
       // @todo this should be removed in future it redirect to page instead of
       // showing page.
