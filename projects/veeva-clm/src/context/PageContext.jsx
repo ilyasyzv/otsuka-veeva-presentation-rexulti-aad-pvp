@@ -1,10 +1,21 @@
-import React, { createContext } from 'react';
+import React, { createContext, useState } from 'react';
 
-// export const PageContext = createContext();
+const defaultPage = '01_Launch_screen';
 
-export const PageContext = createContext({
-  currentPage: '01_Launch_screen',
-  setCurrentPage: (page) => {},
-});
+const PageContext = createContext(defaultPage);
 
-export default PageContext;
+const PageProvider = ({ children, currPage = defaultPage }) => {
+  const [currentPage, setCurrentPage] = useState(currPage);
+
+  const changePage = (page) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <PageContext.Provider value={{ currentPage, changePage }}>
+      {children}
+    </PageContext.Provider>
+  );
+};
+
+export { PageContext, PageProvider };
