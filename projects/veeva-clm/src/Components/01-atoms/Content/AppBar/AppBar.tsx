@@ -1,11 +1,16 @@
 import React from 'react';
-import './AppBar.scss';
-const classNames = require('classnames');
+import styles from './AppBar.module.scss';
 
-const AppBar = ({ theme = 'light' }) => {
-  const containerClasses = classNames('app-bar-container');
-  const timeClasses = classNames('time', { 'time-dark': theme === 'dark' });
-  const statusBarClasses = classNames('status-container');
+interface Props {
+  theme?: 'light' | 'dark';
+}
+
+const AppBar: React.FC<Props> = ({ theme = 'light' }) => {
+  const containerClasses = styles['app-bar-container'];
+  const timeClasses = `${styles.time} ${
+    theme === 'dark' ? styles['time-dark'] : ''
+  }`;
+  const statusBarClasses = styles['status-container'];
 
   return (
     <div className={containerClasses}>
