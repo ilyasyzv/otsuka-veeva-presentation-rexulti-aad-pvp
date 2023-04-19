@@ -1,0 +1,25 @@
+@import "@base/variables";
+.page--A_3_5_2_Additional {
+  .content-background {
+    padding-top: 50px;
+  }
+
+  .modal-link-wrapper {
+    &:first-of-type {
+      position: absolute;
+      right: 45px;
+      top: 57px;
+    }
+    &:last-of-type {
+      position: absolute;
+      right: 45px;
+      bottom: 99px;
+    }
+  }
+
+  .footnote__list {
+    li:first-child {
+      max-width: 630px;
+    }
+  }
+}

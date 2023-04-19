@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_843" data-name="Group 843" transform="translate(-0.106 -0.233)">
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(0.106 0.233)" fill="#fff" stroke="#005674" stroke-width="4">
+      <circle cx="32" cy="32" r="32" stroke="none"/>
+      <circle cx="32" cy="32" r="30" fill="none"/>
+    </g>
+    <g id="Icon_ionic-md-close" data-name="Icon ionic-md-close" transform="translate(16.013 15.315)">
+      <path id="Icon_ionic-md-close-2" data-name="Icon ionic-md-close" d="M39.746,10.746,36.524,7.523,23.635,20.413,10.746,7.523,7.523,10.746,20.413,23.635,7.523,36.524l3.222,3.222L23.635,26.857,36.524,39.746l3.222-3.222L26.857,23.635Z" transform="translate(-7.523 -7.523)" fill="#005674"/>
+    </g>
+  </g>
+</svg>

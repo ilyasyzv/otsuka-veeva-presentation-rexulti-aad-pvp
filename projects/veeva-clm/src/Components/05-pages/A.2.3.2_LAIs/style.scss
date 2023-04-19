@@ -1,0 +1,12 @@
+@import "@base/variables";
+.page--A_2_3_2_LAIs {
+  &-chart-1 {
+    width: 869px;
+    max-width: none;
+  }
+  &-chart-2 {
+    width: 854px;
+    position: relative;
+    left: -17px;
+  }
+}

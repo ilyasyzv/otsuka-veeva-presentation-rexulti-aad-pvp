@@ -1,0 +1,23 @@
+@import "@base/variables";
+.page--A_2_3_1_LAIs {
+  &-chart-1 {
+    width: 792px;
+    position: relative;
+    left: 17px;
+  }
+
+  &-header-3 {
+    position: relative;
+    left: -20px;
+  }
+
+  &-grid-1 {
+    justify-content: flex-end;
+
+    .two-columns__left-pane,
+    .two-columns__right-pane {
+      max-width: 400px;
+      padding-left: 130px;
+    }
+  }
+}
