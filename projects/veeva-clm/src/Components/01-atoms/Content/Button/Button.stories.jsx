@@ -6,6 +6,33 @@ export default {
   component: Button,
 };
 
-const Template = () => <Button text='Check In Now' />;
+const TemplateDefault = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
+const Template = () => (
+  <>
+    <p>Active State:</p>
+    <Button
+      text='Patient Setting and Severity'
+      custom='button__type-a--active'
+    />
+    <p>Disabled State:</p>
+    <Button
+      text='Patient Setting and Severity'
+      custom='button__type-a--active button__type-a--disabled'
+    />
+  </>
+);
+
+export const TypeA = Template.bind({});
+
+export const Active = TemplateDefault.bind({});
+Active.args = {
+  text: 'Patient Setting and Severity',
+  custom: 'button__type-a--active',
+};
+
+export const Disabled = TemplateDefault.bind({});
+Disabled.args = {
+  text: 'Patient Setting and Severity',
+  custom: 'button__type-a--active button__type-a--disabled',
+};
