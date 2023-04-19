@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
-import { Header } from '@atoms/Content/Header/Header';
+import { Header } from '@/Components/01-atoms/Content/Header/Header';
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 import { List } from '@atoms/Content/List/List';
 import { Footer } from '@organisms/Footer/Footer';

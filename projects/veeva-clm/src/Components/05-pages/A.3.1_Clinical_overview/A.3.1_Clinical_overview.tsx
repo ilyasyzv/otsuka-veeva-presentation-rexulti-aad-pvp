@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '@/Components/01-atoms/Content/Header/Header.jsx';
+import Header from '@/Components/01-atoms/Content/Header/Header';
 import imageTable from './imgs/A.3.1_Clinical_overview.png';
 import style from './A.3.1_Clinical_overview.module.scss';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
@@ -21,10 +21,12 @@ export const PageContent = () => (
         data: [
           {
             supLeft: '*',
-            innerText: (<span>Baseline characteristics: PANSS total score ≥80 and a PANSS score >4 on each of 4 specific psychotic symptoms (conceptual disorganization, hallucinatory behavior, suspiciousness/<br /></span>),
+            innerText: (
+              <span>Baseline characteristics: PANSS total score ≥80 and a PANSS score >4 on each of 4 specific psychotic symptoms (conceptual disorganization, hallucinatory behavior, suspiciousness/<br/></span>),
           },
           {
-            innerText: (<span>persecution, and unusual thought content) at screening and baseline; diagnosis of schizophrenia ≥1 year.</span>),
+            innerText: (
+              <span>persecution, and unusual thought content) at screening and baseline; diagnosis of schizophrenia ≥1 year.</span>),
           }, {
             innerText: (<><br/><span>CGI-S=Clinical Global Impression-Severity of Illness Scale; PANSS=Positive and Negative Syndrome Scale; PK=pharmacokinetic.</span></>),
           },
@@ -69,7 +71,7 @@ export const PageContent = () => (
             text: (
               <span>
                 Please see{' '}
-                <Link to='A.7.0_ISI' custom='blue-500'>
+                <Link to="A.7.0_ISI" custom="blue-500">
                   IMPORTANT SAFETY INFORMATION
                 </Link>
                 {' '}, in this presentation

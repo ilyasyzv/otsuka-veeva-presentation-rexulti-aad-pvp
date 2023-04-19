@@ -1,6 +1,6 @@
 import { AppStorybook } from '@pages/AppStorybook';
 import React from 'react';
-import { Header } from '@atoms/Content/Header/Header';
+import { Header } from '@/Components/01-atoms/Content/Header/Header';
 import {
   StudyDesign1,
   Relapse,
