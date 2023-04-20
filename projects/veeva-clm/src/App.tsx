@@ -6,40 +6,31 @@ import { PageProvider } from '@/context/PageContext';
 import { ISIModalProvider } from '@/context/ISIModalContext';
 import './App.scss';
 
-import A_0_Home from '@/content/pages/A.0.Home/index.mdx';
-import A_1_0_Executive_summary from '@/content/pages/A.1.0_Executive_summary/index.mdx';
-import A_2_1_1_S_Overview from '@/content/pages/A.2.1.1_S_Overview/index.mdx';
-import A_2_1_2_S_Overview from '@/content/pages/A.2.1.2_S_Overview/index.mdx';
-import A_2_1_3_S_Overview from '@/content/pages/A.2.1.3_S_Overview/index.mdx';
-import A_2_2_1_B_Overview from '@/content/pages/A.2.2.1_B_Overview/index.mdx';
-import A_2_2_2_B_Overview from '@/content/pages/A.2.2.2_B_Overview/index.mdx';
-import A_2_2_3_B_Overview from '@/content/pages/A.2.2.3_B_Overview/index.mdx';
-import A_2_3_1_LAIs from '@/content/pages/A.2.3.1_LAIs/index.mdx';
-import A_2_3_2_LAIs from '@/content/pages/A.2.3.2_LAIs/index.mdx';
-import A_2_4_Summary from '@/content/pages/A.2.4_Summary/index.mdx';
-import A_3_0_Clinical_profile from '@/content/pages/A.3.0_Clinical_profile/index.mdx';
-import A_3_1_1_Overview from '@/content/pages/A.3.0_Clinical_profile/index.mdx';
-import A_3_1_Clinical_overview from '@/content/pages/A.3.1_Clinical_overview/index.mdx';
-import A_3_2_1_Efficacy from '@/content/pages/A.3.2.1_Efficacy/index.mdx';
-import A_3_2_2_Efficacy from '@/content/pages/A.3.2.2_Efficacy/index.mdx';
-import A_3_2_3_Efficacy from '@/content/pages/A.3.2.3_Efficacy/index.mdx';
-import A_3_3_1_Safety from '@/content/pages/A.3.3.1_Safety/index.mdx';
-import A_3_3_2_Safety from '@/content/pages/A.3.3.2_Safety/index.mdx';
-import A_3_3_3_Safety from '@/content/pages/A.3.3.3_Safety/index.mdx';
-import A_3_3_4_Safety from '@/content/pages/A.3.3.4_Safety/index.mdx';
-import A_3_4_Dosing from '@/content/pages/A.3.4_Dosing/index.mdx';
-import A_3_5_1_Additional from '@/content/pages/A.3.5.1_Additional/index.mdx';
-import A_3_5_2_Additional from '@/content/pages/A.3.5.2_Additional/index.mdx';
-import A_3_5_3_Additional from '@/content/pages/A.3.5.3_Additional/index.mdx';
-import A_3_5_4_Additional from '@/content/pages/A.3.5.4_Additional/index.mdx';
-import A_3_5_5_Additional from '@/content/pages/A.3.5.5_Additional/index.mdx';
-import A_4_0_Economic_value from '@/content/pages/A.4.0_Economic_value/index.mdx';
-import A_5_1_Patients_support_providers from '@/content/pages/A.5.1_Patients_support_providers/index.mdx';
-import A_5_2_Patients_support_providers from '@/content/pages/A.5.2_Patients_support_providers/index.mdx';
-import A_6_1_1_Appendix_Safety from '@/content/pages/A.6.1.1_Appendix_Safety/index.mdx';
-import A_6_2_Apendix_MOA from '@/content/pages/A.6.2_Apendix_MOA/index.mdx';
-import A_6_3_X_Apendix_Safety from '@/content/pages/A.6.3.X_Apendix_Safety/index.mdx';
-import A_7_0_ISI from '@/content/pages/A.7.0_ISI/index.mdx';
+import R_0_0_Home from '@/content/pages/R.0.0_Home/index.mdx';
+import R_0_1_Popup_isi from '@/content/pages/R.0.1_Popup_isi/index.mdx';
+import R_1_0_Executive_summary from '@/content/pages/R.1.0_Executive_summary/index.mdx';
+import R_2_1_AAD_Overview from '@/content/pages/R.2.1_AAD_Overview/index.mdx';
+import R_3_0_Clinical_profile from '@/content/pages/R.3.0_Clinical_profile/index.mdx';
+import R_3_1_Mechanism_of_action from '@/content/pages/R.3.1_Mechanism_of_action/index.mdx';
+import R_3_2_Clinical_studies_overview from '@/content/pages/R.3.2_Clinical_studies_overview/index.mdx';
+import R_3_3_1_Study_6 from '@/content/pages/R.3.3.1_Study_6/index.mdx';
+import R_3_4_1_Study_7 from '@/content/pages/R.3.4.1_Study_7/index.mdx';
+import R_3_5_Study_6_and_7_safety from '@/content/pages/R.3.5_Study_6&7_safety/index.mdx';
+import R_3_6_Dosing from '@/content/pages/R.3.6_Dosing/index.mdx';
+import R_3_7_Summary from '@/content/pages/R.3.7_Summary/index.mdx';
+import R_4_0_Patient_support from '@/content/pages/R.4.0_Patient_support/index.mdx';
+import R_5_0_Appendix from '@/content/pages/R.5.0_Appendix/index.mdx';
+import R_6_0_ISI from '@/content/pages/R.6.0_ISI/index.mdx';
+import R_2_2_AAD_Overview from '@/content/pages/R.2.2_AAD_Overview/index.mdx';
+import R_2_3_AAD_Overview from '@/content/pages/R.2.3_AAD_Overview/index.mdx';
+import R_2_4_AAD_Overview from '@/content/pages/R.2.4_AAD_Overview/index.mdx';
+import R_2_5_AAD_Overview from '@/content/pages/R.2.5_AAD_Overview/index.mdx';
+import R_2_6_AAD_Overview from '@/content/pages/R.2.6_AAD_Overview/index.mdx';
+import R_2_7_AAD_Overview from '@/content/pages/R.2.7_AAD_Overview/index.mdx';
+import R_3_3_2_Study_6 from '@/content/pages/R.3.3.2_Study_6/index.mdx';
+import R_3_3_3_Study_6 from '@/content/pages/R.3.3.3_Study_6/index.mdx';
+import R_3_4_2_Study_7 from '@/content/pages/R.3.4.2_Study_7/index.mdx';
+import R_3_4_3_Study_7 from '@/content/pages/R.3.4.3_Study_7/index.mdx';
 
 type AppProps = {
   tab: string;
@@ -55,153 +46,111 @@ function App({ tab }: AppProps) {
             <Layout>
               <Route
                 path='/01_Launch_screen'
-                component={() => <Page background='b' component={A_0_Home} />}
+                component={() => <Page background='b' component={R_0_0_Home} />}
               />
               <Route
-                path='/A.0.Home'
-                component={() => <Page background='b' component={A_0_Home} />}
+                path='/R.0.0_Home'
+                component={() => <Page component={R_0_0_Home} />}
               />
               <Route
-                path='/A.1.0_Executive_summary'
-                component={() => <Page component={A_1_0_Executive_summary} />}
+                path='/R.0.1_Popup_isi'
+                component={() => <Page component={R_0_1_Popup_isi} />}
               />
               <Route
-                path='/A.2.1.1_S_Overview'
-                component={() => <Page component={A_2_1_1_S_Overview} />}
+                path='/R.1.0_Executive_summary'
+                component={() => <Page component={R_1_0_Executive_summary} />}
               />
               <Route
-                path='/A.2.1.2_S_Overview'
-                component={() => <Page component={A_2_1_2_S_Overview} />}
+                path='/R.2.1_AAD_Overview'
+                component={() => <Page component={R_2_1_AAD_Overview} />}
               />
               <Route
-                path='/A.2.1.3_S_Overview'
-                component={() => <Page component={A_2_1_3_S_Overview} />}
+                path='/R.3.0_Clinical_profile'
+                component={() => <Page component={R_3_0_Clinical_profile} />}
               />
               <Route
-                path='/A.2.2.1_B_Overview'
-                component={() => <Page component={A_2_2_1_B_Overview} />}
+                path='/R.3.1_Mechanism_of_action'
+                component={() => <Page component={R_3_1_Mechanism_of_action} />}
               />
               <Route
-                path='/A.2.2.2_B_Overview'
-                component={() => <Page component={A_2_2_2_B_Overview} />}
-              />
-              <Route
-                path='/A.2.2.3_B_Overview'
-                component={() => <Page component={A_2_2_3_B_Overview} />}
-              />
-              <Route
-                path='/A.2.3.1_LAIs'
-                component={() => <Page component={A_2_3_1_LAIs} />}
-              />
-              <Route
-                path='/A.2.3.2_LAIs'
-                component={() => <Page component={A_2_3_2_LAIs} />}
-              />
-              <Route
-                path='/A.2.4_Summary'
-                component={() => <Page component={A_2_4_Summary} />}
-              />
-              <Route
-                path='/A.3.0_Clinical_profile'
+                path='/R.3.2_Clinical_studies_overview'
                 component={() => (
-                  <Page background='a' component={A_3_0_Clinical_profile} />
+                  <Page component={R_3_2_Clinical_studies_overview} />
                 )}
               />
               <Route
-                path='/A.3.1.1_Overview'
+                path='/R.3.3.1_Study_6'
+                component={() => <Page component={R_3_3_1_Study_6} />}
+              />
+              <Route
+                path='/R.3.4.1_Study_7'
+                component={() => <Page component={R_3_4_1_Study_7} />}
+              />
+              <Route
+                path='/R.3.5_Study_6&7_safety'
                 component={() => (
-                  <Page background='a' component={A_3_1_1_Overview} />
+                  <Page component={R_3_5_Study_6_and_7_safety} />
                 )}
               />
               <Route
-                path='/A.3.1_Clinical_overview'
-                component={() => <Page component={A_3_1_Clinical_overview} />}
+                path='/R.3.6_Dosing'
+                component={() => <Page component={R_3_6_Dosing} />}
               />
               <Route
-                path='/A.3.2.1_Efficacy'
-                component={() => <Page component={A_3_2_1_Efficacy} />}
+                path='/R.3.7_Summary'
+                component={() => <Page component={R_3_7_Summary} />}
               />
               <Route
-                path='/A.3.2.2_Efficacy'
-                component={() => <Page component={A_3_2_2_Efficacy} />}
+                path='/R.4.0_Patient_support'
+                component={() => <Page component={R_4_0_Patient_support} />}
               />
               <Route
-                path='/A.3.2.3_Efficacy'
-                component={() => <Page component={A_3_2_3_Efficacy} />}
+                path='/R.5.0_Appendix'
+                component={() => <Page component={R_5_0_Appendix} />}
               />
               <Route
-                path='/A.3.3.1_Safety'
-                component={() => <Page component={A_3_3_1_Safety} />}
+                path='/R.6.0_ISI'
+                component={() => <Page component={R_6_0_ISI} />}
               />
               <Route
-                path='/A.3.3.2_Safety'
-                component={() => <Page component={A_3_3_2_Safety} />}
+                path='/R.2.2_AAD_Overview'
+                component={() => <Page component={R_2_2_AAD_Overview} />}
               />
               <Route
-                path='/A.3.3.3_Safety'
-                component={() => <Page component={A_3_3_3_Safety} />}
+                path='/R.2.3_AAD_Overview'
+                component={() => <Page component={R_2_3_AAD_Overview} />}
               />
               <Route
-                path='/A.3.3.4_Safety'
-                component={() => <Page component={A_3_3_4_Safety} />}
+                path='/R.2.4_AAD_Overview'
+                component={() => <Page component={R_2_4_AAD_Overview} />}
               />
               <Route
-                path='/A.3.4_Dosing'
-                component={() => <Page component={A_3_4_Dosing} />}
+                path='/R.2.5_AAD_Overview'
+                component={() => <Page component={R_2_5_AAD_Overview} />}
               />
               <Route
-                path='/A.3.5.1_Additional'
-                component={() => <Page component={A_3_5_1_Additional} />}
+                path='/R.2.6_AAD_Overview'
+                component={() => <Page component={R_2_6_AAD_Overview} />}
               />
               <Route
-                path='/A.3.5.2_Additional'
-                component={() => <Page component={A_3_5_2_Additional} />}
+                path='/R.2.7_AAD_Overview'
+                component={() => <Page component={R_2_7_AAD_Overview} />}
               />
               <Route
-                path='/A.3.5.3_Additional'
-                component={() => <Page component={A_3_5_3_Additional} />}
+                path='/R.3.3.2_Study_6'
+                component={() => <Page component={R_3_3_2_Study_6} />}
               />
               <Route
-                path='/A.3.5.4_Additional'
-                component={() => <Page component={A_3_5_4_Additional} />}
+                path='/R.3.3.3_Study_6'
+                component={() => <Page component={R_3_3_3_Study_6} />}
               />
               <Route
-                path='/A.3.5.5_Additional'
-                component={() => <Page component={A_3_5_5_Additional} />}
+                path='/R.3.4.2_Study_7'
+                component={() => <Page component={R_3_4_2_Study_7} />}
               />
               <Route
-                path='/A.4.0_Economic_value'
-                component={() => <Page component={A_4_0_Economic_value} />}
-              />
-              <Route
-                path='/A.5.1_Patients_support_providers'
-                component={() => (
-                  <Page component={A_5_1_Patients_support_providers} />
-                )}
-              />
-              <Route
-                path='/A.5.2_Patients_support_providers'
-                component={() => (
-                  <Page component={A_5_2_Patients_support_providers} />
-                )}
-              />
-              <Route
-                path='/A.6.1.1_Appendix_Safety'
-                component={() => (
-                  <Page background='a' component={A_6_1_1_Appendix_Safety} />
-                )}
-              />
-              <Route
-                path='/A.6.2_Apendix_MOA'
-                component={() => <Page component={A_6_2_Apendix_MOA} />}
-              />
-              <Route
-                path='/A.6.3.X_Apendix_Safety'
-                component={() => <Page component={A_6_3_X_Apendix_Safety} />}
-              />
-              <Route
-                path='/A.7.0_ISI'
-                component={() => <Page component={A_7_0_ISI} />}
+                path='/R.3.4.3_Study_7'
+                component={() => <Page component={R_3_4_3_Study_7} />}
               />
             </Layout>
           </ISIModalProvider>
