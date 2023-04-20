@@ -18,12 +18,12 @@ export const mainMenu: IMenu = {
       url: '/A.1.0_Executive_summary',
     },
     {
-      name: 'Schizophrenia & Bipolar I Disorder Overview',
+      name: 'AAD Overview',
       url: '/A.2.1.1_S_Overview',
       children: [
         {
-          name: 'Schizophrenia Overview',
-          url: '/A.2.1.1_S_Overview',
+          name: '',
+          url: '',
           children: [
             {
               name: '',
@@ -37,56 +37,40 @@ export const mainMenu: IMenu = {
               name: '',
               url: '/A.2.1.3_S_Overview',
             },
-          ],
-        },
-        {
-          name: 'Bipolar I Overview',
-          url: '/A.2.2.1_B_Overview',
-          children: [
             {
               name: '',
-              url: '/A.2.2.1_B_Overview',
+              url: '/A.2.1.3_S_Overview',
             },
             {
               name: '',
-              url: '/A.2.2.2_B_Overview',
+              url: '/A.2.1.3_S_Overview',
             },
             {
               name: '',
-              url: '/A.2.2.3_B_Overview',
+              url: '/A.2.1.3_S_Overview',
+            },
+            {
+              name: '',
+              url: '/A.2.1.3_S_Overview',
             },
           ],
-        },
-        {
-          name: 'LAIs',
-          url: '/A.2.3.1_LAIs',
-          children: [
-            {
-              name: '',
-              url: '/A.2.3.1_LAIs',
-            },
-            {
-              name: '',
-              url: '/A.2.3.2_LAIs',
-            },
-          ],
-        },
-        {
-          name: 'Summary',
-          url: '/A.2.4_Summary',
         },
       ],
     },
     {
-      name: 'Clinical Profile for ABILIFY ASIMTUFII®',
+      name: 'Clinical Profile',
       url: '/A.3.1.1_Overview',
       children: [
         {
-          name: 'Overview',
+          name: 'Mechanism of Action',
           url: '/A.3.1.1_Overview',
         },
         {
-          name: 'PK Study',
+          name: 'Clinical Studies Overview',
+          url: '/A.3.1.1_Overview',
+        },
+        {
+          name: 'Study 6 Efficacy Data',
           url: '/A.3.2.1_Efficacy',
           children: [
             {
@@ -104,121 +88,54 @@ export const mainMenu: IMenu = {
           ],
         },
         {
-          name: 'Safety Data',
-          url: '/A.3.3.1_Safety',
+          name: 'Study 7 Efficacy Data',
+          url: '/A.3.2.1_Efficacy',
           children: [
             {
               name: '',
-              url: '/A.3.3.1_Safety',
+              url: '/A.3.2.1_Efficacy',
             },
             {
               name: '',
-              url: '/A.3.3.2_Safety',
+              url: '/A.3.2.2_Efficacy',
             },
             {
               name: '',
-              url: '/A.3.3.3_Safety',
-            },
-            {
-              name: '',
-              url: '/A.3.3.4_Safety',
+              url: '/A.3.2.3_Efficacy',
             },
           ],
+        },
+        {
+          name: 'Clinical Safety Profile',
+          url: '/A.3.1.1_Overview',
         },
         {
           name: 'Dosing & Administration',
           url: '/A.3.4_Dosing',
         },
         {
-          name: 'ABILIFY MAINTENA® Pivotal Studies',
+          name: 'Summary',
           url: '/A.3.5.1_Additional',
-          children: [
-            {
-              name: '',
-              url: '/A.3.5.1_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.2_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.3_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.4_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.5_Additional',
-            },
-          ],
         },
       ],
     },
     {
-      name: 'Economic Value of ABILIFY ASIMTUFII®',
+      name: 'Otsuka Patient Support™',
       url: '/A.4.0_Economic_value',
-      children: [],
     },
     {
-      name: 'Otsuka Patient Support™',
-      url: '/A.5.1_Patients_support_providers',
-      //   children: [
-      //     {
-      //       name: '',
-      //       url: '/A.5.1_Patients_support_providers',
-      //       children: [
-      //         {
-      //           name: '',
-      //           url: '/A.5.1_Patients_support_providers',
-      //         },
-      //         {
-      //           name: '',
-      //           url: '/A.5.2_Patients_support_providers',
-      //         },
-      //       ],
-      //     },
-      //   ],
+      name: 'Appendix',
+      url: '/A.6.1.1_Appendix_Safety',
     },
-    // {
-    //   name: 'Appendix',
-    //   url: '/A.6.1.1_Appendix_Safety',
-    //   children: [
-    //     {
-    //       name: 'ABILIFY MAINTENA Real-world Evidence',
-    //       url: '/A.6.1.1_Appendix_Safety',
-    //       children: [
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.1_Appendix_Safety',
-    //         },
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.2_Appendix_Safety',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       name: 'MOA',
-    //       url: '/A.6.2_Apendix_MOA',
-    //     },
-    //     {
-    //       name: 'ABILIFY MAINTENA Safety Profile',
-    //       url: '/A.6.3.X_Appendix_Safety',
-    //     },
-    //   ],
-    // },
+    {
+      name: 'ISI',
+      url: '/A.7.0_ISI',
+    },
   ],
 };
 
 export const bottomMenu: IMenu = {
   data: [
-    {
-      name: 'ISI',
-      url: '/A.7.0_ISI',
-    },
     {
       name: 'PI',
       url: '#',
