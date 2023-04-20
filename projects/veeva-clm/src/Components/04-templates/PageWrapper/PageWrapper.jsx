@@ -34,8 +34,9 @@ export const PageWrapper = ({
           Illustrative data. Not from a real patient.
         </div>
         <div className={'info-text'}>
-          Only functions related to tracking<br/> drug ingestion
-          have been<br/> evaluated or approved by FDA.
+          Only functions related to tracking
+          <br /> drug ingestion have been
+          <br /> evaluated or approved by FDA.
         </div>
       </div>
     </>

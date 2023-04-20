@@ -2,8 +2,15 @@ $fonts-path: "@/assets/fonts";
 
 // prettier-ignore
 @font-face {
+<<<<<<< HEAD
   font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
   font-family: Whitney;
+=======
+  font-family: "Gandhi Sans";
+  src: url("#{$fonts-path}/GandhiSans-Regular.woff2") format("woff2"),
+    url("#{$fonts-path}/GandhiSans-Regular.woff") format("woff");
+  font-weight: normal;
+>>>>>>> 68ebdb19ae3934c92ef1191265eaf781eb26f659
   font-style: normal;
   font-weight: 400;
   src:
@@ -15,9 +22,16 @@ $fonts-path: "@/assets/fonts";
 
 // prettier-ignore
 @font-face {
+<<<<<<< HEAD
   font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
   font-family: Whitney;
   font-weight: 400;
+=======
+  font-family: "Gandhi Sans";
+  src: url("#{$fonts-path}/GandhiSans-BoldItalic.woff2") format("woff2"),
+    url("#{$fonts-path}/GandhiSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+>>>>>>> 68ebdb19ae3934c92ef1191265eaf781eb26f659
   font-style: italic;
   src:
     local(""),
@@ -29,9 +43,16 @@ $fonts-path: "@/assets/fonts";
 
 // prettier-ignore
 @font-face {
+<<<<<<< HEAD
   font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
   font-family: Whitney-Book;
   font-weight: 400;
+=======
+  font-family: "Gandhi Sans";
+  src: url("#{$fonts-path}/GandhiSans-Bold.woff2") format("woff2"),
+    url("#{$fonts-path}/GandhiSans-Bold.woff") format("woff");
+  font-weight: bold;
+>>>>>>> 68ebdb19ae3934c92ef1191265eaf781eb26f659
   font-style: normal;
   src:
     local(""),
@@ -43,6 +64,7 @@ $fonts-path: "@/assets/fonts";
 
 // prettier-ignore
 @font-face {
+<<<<<<< HEAD
   font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
   font-family: Whitney;
   font-style: normal;
@@ -52,6 +74,14 @@ $fonts-path: "@/assets/fonts";
     url("#{$fonts-path}/whitney-medium-webfont.woff2") format("woff2"),
     url("#{$fonts-path}/whitney-medium-webfont.woff") format("woff"),
     url("#{$fonts-path}/whitney-medium.otf") format("opentype");
+=======
+  font-family: "Gandhi Sans";
+  src: url("#{$fonts-path}/GandhiSans-Italic.woff2") format("woff2"),
+    url("#{$fonts-path}/GandhiSans-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+>>>>>>> 68ebdb19ae3934c92ef1191265eaf781eb26f659
 }
 
 // prettier-ignore

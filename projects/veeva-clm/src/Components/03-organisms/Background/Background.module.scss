@@ -1,4 +1,4 @@
-@import '@base/variables';
+@import "@base/variables";
 
 .content-background {
   background-repeat: no-repeat;
@@ -13,19 +13,19 @@
   padding: 72px 10px 0 146px;
 
   &.default {
-    background-image: url('img/back-0.png');
+    background-image: url("img/back-0.png");
   }
 
   &.a {
-    background-image: url('img/back-1.png');
+    background-image: url("img/back-1.png");
   }
 
   &.b {
-    background-image: url('img/back-2.png');
+    background-image: url("img/back-2.png");
   }
 
   &.c {
-    background-image: url('img/back-2a.png');
+    background-image: url("img/back-2a.png");
   }
 
   .content {

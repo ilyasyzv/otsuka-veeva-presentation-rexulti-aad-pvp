@@ -1,6 +1,6 @@
 import React from 'react';
 import ButtonBack from '@atoms/Content/ButtonBack/ButtonBack';
-import Link from '@organisms/Routing/Link/Link';
+import Link from '@/Components/03-organisms/Routing/Link/Link';
 import classNames from 'classnames';
 import './ButtonBackNavigation.scss';
 

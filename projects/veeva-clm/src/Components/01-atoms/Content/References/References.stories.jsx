@@ -6,16 +6,18 @@ export default {
   component: References,
 };
 
-const Template = (args) => (
-  <References { ...args } />
-);
+const Template = (args) => <References {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
   references: [
     {
-      text: <span>Harlin M, et al <em>CNS Drugs.</em> 2023;10.1007/s40263-023-00996-8.</span>,
-    }
-  ]
-}
+      text: (
+        <span>
+          Harlin M, et al <em>CNS Drugs.</em> 2023;10.1007/s40263-023-00996-8.
+        </span>
+      ),
+    },
+  ],
+};

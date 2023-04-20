@@ -18,7 +18,6 @@
   text-align: center;
   position: relative;
 
-
   &__type-a {
     &--active {
       background-color: $blue-400;
@@ -34,7 +33,7 @@
         width: 47px;
         border-radius: 100px;
         background: $white;
-        opacity: .25;
+        opacity: 0.25;
         position: absolute;
         right: 0;
       }
@@ -82,7 +81,7 @@
       width: 47px;
       border-radius: 100px;
       background: $white;
-      opacity: .25;
+      opacity: 0.25;
       position: absolute;
       right: 0;
     }
@@ -115,7 +114,7 @@
       width: 47px;
       border-radius: 100px;
       background: $white;
-      opacity: .4;
+      opacity: 0.4;
       position: absolute;
       right: 0;
     }
@@ -132,7 +131,7 @@
     }
 
     &--disabled {
-      opacity: .55;
+      opacity: 0.55;
     }
 
     &-large {

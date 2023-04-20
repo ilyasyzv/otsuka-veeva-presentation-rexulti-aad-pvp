@@ -1,6 +1,6 @@
-import React from "react";
-import { Text } from "./Text";
-import List from "../List/List";
+import React from 'react';
+import { Text } from './Text';
+import List from '../List/List';
 
 export default {
   title: 'CLM/Atoms/Text',
@@ -12,28 +12,30 @@ export default {
 
 const Template = (args) => (
   <>
-    <Text { ...args.firstText }/>
-    <Text { ...args.secondText }/>
-    <Text { ...args.thirdText }/>
+    <Text {...args.firstText} />
+    <Text {...args.secondText} />
+    <Text {...args.thirdText} />
   </>
-)
+);
 
 export const Default = Template.bind({});
 
 Default.args = {
   firstText: {
-    title: "52-Week, Multiphase Maintenance Study",
-    supText: "1",
-    innerText: "A 52 week, placebo-controlled maintenance study evaluated the time to relapse for adult patients living with schizophrenia"
+    title: '52-Week, Multiphase Maintenance Study',
+    supText: '1',
+    innerText:
+      'A 52 week, placebo-controlled maintenance study evaluated the time to relapse for adult patients living with schizophrenia',
   },
   secondText: {
-    title: "Patient Population",
-    supText: "1",
-    innerText: "Patients living with schizophrenia diagnosed ≥ 3 years with a history of symptom exacerbation or relapse when not receiving antipsychotic treatment.*"
+    title: 'Patient Population',
+    supText: '1',
+    innerText:
+      'Patients living with schizophrenia diagnosed ≥ 3 years with a history of symptom exacerbation or relapse when not receiving antipsychotic treatment.*',
   },
   thirdText: {
-    title: "4 Phases of Study",
-    supText: "1,2",
+    title: '4 Phases of Study',
+    supText: '1,2',
     list: {
       columns: 'columns-1',
       type: 'circle',
@@ -92,6 +94,6 @@ Default.args = {
           ),
         },
       ],
-    }
+    },
   },
-}
+};

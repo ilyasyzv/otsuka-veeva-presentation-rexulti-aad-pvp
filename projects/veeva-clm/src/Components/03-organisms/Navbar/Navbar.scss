@@ -3,7 +3,8 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  background: transparent linear-gradient(180deg, $blue-600 0%, $blue-450 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(180deg, $blue-600 0%, $blue-450 100%)
+    0% 0% no-repeat padding-box;
   border-radius: 0 14px 14px 0;
   height: calc(100% - 41px);
 
@@ -20,7 +21,6 @@
   }
 
   .navigation__head {
-
     .navigation__homepage-link {
       margin: 46px auto 0 auto;
       background-image: url(@assets/icons/homepage.svg);
@@ -29,14 +29,16 @@
       background-size: 36px 36px;
       display: block;
     }
-  
+
     .navigation__homepage--active {
       display: block;
       width: 90px;
       height: 20px;
       margin: 5px auto;
       border-radius: 100% 100% 0 0;
-      background: transparent linear-gradient(180deg, $blue-205 0%, $blue-200 40%, $yellow-300 100%) 0% 0% no-repeat padding-box;
+      background: transparent
+        linear-gradient(180deg, $blue-205 0%, $blue-200 40%, $yellow-300 100%)
+        0% 0% no-repeat padding-box;
     }
   }
 
@@ -46,7 +48,7 @@
     bottom: 32px;
     width: 100%;
 
-    &>:nth-child(2) {
+    & > :nth-child(2) {
       display: block;
       border-bottom: 1px solid #fff;
       width: 48px;
@@ -86,7 +88,7 @@
           }
         }
       }
-    
+
       &.active .main-nav__link__wrapper,
       .main-nav__link__wrapper .button-wrapper.active {
         border-color: $blue-100;
@@ -103,5 +105,5 @@
         }
       }
     }
-  }  
+  }
 }

@@ -1,6 +1,6 @@
 import { AppStorybook } from '@pages/AppStorybook';
 import SupportLogo from '@/Components/05-pages/A.5.1_Patients_support_providers/img/Otsuka Patient Support Logo_RGB.png';
-import { Header } from '@atoms/Content/Header/Header';
+import { Header } from '@/Components/01-atoms/Content/Header/Header';
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 
 import React from 'react';

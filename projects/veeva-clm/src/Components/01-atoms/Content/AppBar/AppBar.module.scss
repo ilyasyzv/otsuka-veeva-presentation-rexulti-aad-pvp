@@ -1,4 +1,4 @@
-@import "@base/variables";
+@use "../../../00-base/variables" as variable;
 
 .app-bar-container {
   display: flex;
@@ -8,12 +8,12 @@
 
   .time {
     font-size: 15px;
-    color: $black;
+    color: variable.$black;
     font-weight: 700;
     letter-spacing: 1.3px;
 
     &-dark {
-      color: $white;
+      color: variable.$white;
     }
   }
 }
