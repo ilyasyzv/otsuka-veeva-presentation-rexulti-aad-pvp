@@ -1,37 +1,94 @@
-$fonts-path: "@assets/fonts/GandhiSans";
+$fonts-path: "@/assets/fonts";
 
+// prettier-ignore
 @font-face {
-  font-family: 'Gandhi Sans';
-  src: url('#{$fonts-path}/GandhiSans-Regular.woff2') format('woff2'),
-  url('#{$fonts-path}/GandhiSans-Regular.woff') format('woff');
-  font-weight: normal;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
+  src:
+    local(""),
+    url("#{$fonts-path}/whitney-book-pro-webfont.woff2") format("woff2"),
+    url("#{$fonts-path}/whitney-book-pro-webfont.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-Book-Pro.ttf") format("truetype"); /* Safari, Android, iOS */
 }
 
+// prettier-ignore
 @font-face {
-  font-family: 'Gandhi Sans';
-  src: url('#{$fonts-path}/GandhiSans-BoldItalic.woff2') format('woff2'),
-  url('#{$fonts-path}/GandhiSans-BoldItalic.woff') format('woff');
-  font-weight: bold;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
+  font-weight: 400;
   font-style: italic;
-  font-display: swap;
+  src:
+    local(""),
+    url("#{$fonts-path}/Whitney-MediumItalic.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-MediumItalic.woff2") format("woff2"),
+    url("#{$fonts-path}/Whitney-MediumItalic.ttf") format("ttf"),
+    url("#{$fonts-path}/whitney-medium.otf") format("opentype");
 }
 
+// prettier-ignore
 @font-face {
-  font-family: 'Gandhi Sans';
-  src: url('#{$fonts-path}/GandhiSans-Bold.woff2') format('woff2'),
-  url('#{$fonts-path}/GandhiSans-Bold.woff') format('woff');
-  font-weight: bold;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney-Book;
+  font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  src:
+    local(""),
+    url("#{$fonts-path}/Whitney-Book.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-Book.woff2") format("woff2"),
+    url("#{$fonts-path}/Whitney-Book.ttf") format("ttf"),
+    url("#{$fonts-path}/Whitney-Book.otf") format("opentype");
 }
 
+// prettier-ignore
 @font-face {
-  font-family: 'Gandhi Sans';
-  src: url('#{$fonts-path}/GandhiSans-Italic.woff2') format('woff2'),
-  url('#{$fonts-path}/GandhiSans-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local(""),
+    url("#{$fonts-path}/whitney-medium-webfont.woff2") format("woff2"),
+    url("#{$fonts-path}/whitney-medium-webfont.woff") format("woff"),
+    url("#{$fonts-path}/whitney-medium.otf") format("opentype");
+}
+
+// prettier-ignore
+@font-face {
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local(""),
+    url("#{$fonts-path}/whitney-semibld-pro-webfont.woff2") format("woff2"),
+    url("#{$fonts-path}/whitney-semibld-pro-webfont.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-Semibld-Pro.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+// prettier-ignore
+@font-face {
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local(""),
+    url("#{$fonts-path}/whitney-bold-pro-webfont.woff2") format("woff2"),
+    url("#{$fonts-path}/whitney-bold-pro-webfont.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-Bold-Pro.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+// prettier-ignore
+@font-face {
+  font-display: block; /* Prevents Chrome Intervention. See https://www.chromestatus.com/feature/5636954674692096 */
+  font-family: Whitney;
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local(""),
+    url("#{$fonts-path}/whitney-black-webfont.woff2") format("woff2"),
+    url("#{$fonts-path}/whitney-black-webfont.woff") format("woff"),
+    url("#{$fonts-path}/Whitney-Black.ttf") format("truetype"), /* Safari, Android, iOS */
 }
