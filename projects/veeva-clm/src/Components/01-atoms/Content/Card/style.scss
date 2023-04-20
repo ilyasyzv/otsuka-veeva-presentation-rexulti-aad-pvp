@@ -1,4 +1,5 @@
 @import "@base/variables";
+
 .cards-font-green {
   color: $green;
   font-weight: 700;
@@ -7,7 +8,7 @@
 }
 
 .card {
-  background: url("./img/card-bg.png");;
+  background: url("./img/card-bg.png");
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +16,6 @@
   width: 270px;
   height: 200px;
   padding: 24px 50px 15px;
-
 
   &__title {
     color: $white;

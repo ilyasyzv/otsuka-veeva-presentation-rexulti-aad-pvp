@@ -14,7 +14,8 @@
     display: block;
     width: 32px;
     height: 32px;
-    background: url('img/circle-blue-arrow.svg') no-repeat center center transparent;
+    background: url("img/circle-blue-arrow.svg") no-repeat center center
+      transparent;
     background-size: contain;
     font-size: 0;
 
@@ -22,7 +23,7 @@
       transform: rotate(180deg);
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         width: 1px;
         height: 30px;

@@ -1,0 +1,52 @@
+@import "@base/variables";
+
+.button {
+  box-sizing: border-box;
+  border-radius: 100px;
+  border-width: 1px;
+  border-style: solid;
+  color: $white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 15px;
+  width: 186px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background-image: url("@assets/misc/button/button-green-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  &__type-a {
+    &--active {
+      color: $white;
+      justify-content: left;
+      padding-left: 20px;
+      padding-right: 54px;
+
+      &:before {
+        content: "";
+        height: 37px;
+        width: 37px;
+        background-color: #FDCF00;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+        border: 3px solid #fff;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position-y: 7px;
+        background-position-x: 5px;
+        background-image: url("@assets/icons/button/icon-arrow-right-green.svg");
+      }
+    }
+
+    &--disabled {
+      opacity: 0.6;
+    }
+  }
+}

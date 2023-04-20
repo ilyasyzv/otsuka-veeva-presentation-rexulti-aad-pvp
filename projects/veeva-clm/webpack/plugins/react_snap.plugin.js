@@ -3,6 +3,9 @@ const validate = require('schema-utils');
 const fse = require('fs-extra');
 const { run } = require('react-snap');
 const replace = require('replace-in-file');
+const puppeteer = require('puppeteer');
+const url = require('url');
+const sharp = require('sharp');
 const optionsSchema = require('./options-schema.js');
 const puppeteer = require('puppeteer');
 const url = require('url');
@@ -21,40 +24,31 @@ const defaultOptions = {
   include: [
     '/',
     '/01_Launch_screen',
-    '/A.0.Home/index.html',
-    '/A.1.0_Executive_summary/index.html',
-    '/A.2.1.1_S_Overview/index.html',
-    '/A.2.1.2_S_Overview/index.html',
-    '/A.2.1.3_S_Overview/index.html',
-    '/A.2.2.1_B_Overview/index.html',
-    '/A.2.2.2_B_Overview/index.html',
-    '/A.2.2.3_B_Overview/index.html',
-    '/A.2.3.1_LAIs/index.html',
-    '/A.2.3.2_LAIs/index.html',
-    '/A.2.4_Summary/index.html',
-    '/A.3.0_Clinical_profile/index.html',
-    '/A.3.1_Clinical_overview/index.html',
-    '/A.3.2.1_Efficacy/index.html',
-    '/A.3.2.2_Efficacy/index.html',
-    '/A.3.2.3_Efficacy/index.html',
-    '/A.3.3.1_Safety/index.html',
-    '/A.3.3.2_Safety/index.html',
-    '/A.3.3.3_Safety/index.html',
-    '/A.3.3.4_Safety/index.html',
-    '/A.3.4_Dosing/index.html',
-    '/A.3.5.1_Additional/index.html',
-    '/A.3.5.2_Additional/index.html',
-    '/A.3.5.3_Additional/index.html',
-    '/A.3.5.4_Additional/index.html',
-    '/A.3.5.5_Additional/index.html',
-    '/A.4.0_Economic_value/index.html',
-    '/A.5.1_Patients_support_providers/index.html',
-    '/A.5.2_Patients_support_providers/index.html',
-    '/A.6.1.1_Appendix_Safety/index.html',
-    '/A.6.1.2_Appendix_Safety/index.html',
-    '/A.6.2_Apendix_MOA/index.html',
-    '/A.6.3.X_Apendix_Safety/index.html',
-    '/A.7.0_ISI/index.html',
+    '/R.0.0_Home/index.html',
+    '/R.0.1_Popup_isi/index.html',
+    '/R.1.0_Executive_summary/index.html',
+    '/R.2.1_AAD_Overview/index.html',
+    '/R.3.0_Clinical_profile/index.html',
+    '/R.3.1_Mechanism_of_action/index.html',
+    '/R.3.2_Clinical_studies_overview/index.html',
+    '/R.3.3.1_Study_6/index.html',
+    '/R.3.4.1_Study_7/index.html',
+    '/R.3.5_Study_6&7_safety/index.html',
+    '/R.3.6_Dosing/index.html',
+    '/R.3.7_Summary/index.html',
+    '/R.4.0_Patient_support/index.html',
+    '/R.5.0_Appendix/index.html',
+    '/R.6.0_ISI/index.html',
+    '/R.2.2_AAD_Overview/index.html',
+    '/R.2.3_AAD_Overview/index.html',
+    '/R.2.4_AAD_Overview/index.html',
+    '/R.2.5_AAD_Overview/index.html',
+    '/R.2.6_AAD_Overview/index.html',
+    '/R.2.7_AAD_Overview/index.html',
+    '/R.3.3.2_Study_6/index.html',
+    '/R.3.3.3_Study_6/index.html',
+    '/R.3.4.2_Study_7/index.html',
+    '/R.3.4.3_Study_7/index.html',
   ],
   viewport: {
     width: 1080,
@@ -229,7 +223,6 @@ class ReactSnapPlugin {
       this.logger.info('Running React Snapshot');
       return Promise.all([this.copyLibsToPages(), this.prerenderPages()]).then(
         () => {
-          this.logger.info('Create screenshot.');
           return this.createScreenShots().then(() => {
             return this.cleanPaths();
           });

@@ -1,17 +1,17 @@
-import React from 'react';
-import './Background.scss';
+import React, { ReactNode } from 'react';
+import styles from './Background.module.scss';
 
-export type TBackgroundType = 'default' | 'a' | 'b' | 'c';
+export type BackgroundType = 'default' | 'a' | 'b' | 'c';
 
-export type TBackground = {
-  children: React.ReactNode;
-  type: TBackgroundType;
+export type BackgroundProps = {
+  children: ReactNode;
+  type: BackgroundType;
 };
 
-const Background = ({ type, children }: TBackground) => {
+const Background = ({ type, children }: BackgroundProps) => {
   return (
-    <div className={`content-background ${type}`}>
-      <div className='content'>{children}</div>
+    <div className={`${styles['content-background']} ${styles[type]}`}>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

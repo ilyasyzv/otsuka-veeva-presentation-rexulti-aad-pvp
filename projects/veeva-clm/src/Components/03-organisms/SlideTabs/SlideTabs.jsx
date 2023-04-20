@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import s from "csd";
+import React from 'react';
+import styled from 'styled-components';
+import s from 'csd';
 import './SlideTabs.scss';
 
 const StyledTabIndicator = styled.div`
@@ -24,7 +24,7 @@ const StyledTab = styled.li`
   button {
     cursor: pointer;
     transition: color 0.3s;
-    color: ${(props) => (props.isFocused ? "#000" : "#777")};
+    color: ${(props) => (props.isFocused ? '#000' : '#777')};
     border: none;
     width: 100%;
     height: 100%;
@@ -34,11 +34,11 @@ const StyledTab = styled.li`
 `;
 
 const Tab = ({ title, onClick, isFocused }) => {
-    return (
-        <StyledTab onClick={onClick} isFocused={isFocused}>
-            <button>{title}</button>
-        </StyledTab>
-    );
+  return (
+    <StyledTab onClick={onClick} isFocused={isFocused}>
+      <button>{title}</button>
+    </StyledTab>
+  );
 };
 
 const StyledTabs = styled.div`
@@ -49,24 +49,24 @@ const StyledTabs = styled.div`
 `;
 
 const Tabs = ({ focusedIdx, children, onChange, duration = 300 }) => {
-    return (
-        <StyledTabs>
-            {React.Children.map(children, (child, i) =>
-                React.cloneElement(child, {
-                    key: i,
-                    isFocused: focusedIdx === i,
-                    onClick: (e) => {
-                        onChange(i);
-                    }
-                })
-            )}
-            <StyledTabIndicator
-                duration={duration}
-                tabCount={children.length}
-                offset={`${100 * focusedIdx}%`}
-            />
-        </StyledTabs>
-    );
+  return (
+    <StyledTabs>
+      {React.Children.map(children, (child, i) =>
+        React.cloneElement(child, {
+          key: i,
+          isFocused: focusedIdx === i,
+          onClick: (e) => {
+            onChange(i);
+          },
+        }),
+      )}
+      <StyledTabIndicator
+        duration={duration}
+        tabCount={children.length}
+        offset={`${100 * focusedIdx}%`}
+      />
+    </StyledTabs>
+  );
 };
 const StyledOuterSliders = styled.div`
   overflow: hidden;
@@ -86,44 +86,44 @@ const StyledSliders = styled.div`
 `;
 
 const Sliders = ({ focusedIdx, children, duration = 300 }) => {
-    const offset = -100 * focusedIdx;
+  const offset = -100 * focusedIdx;
 
-    return (
-        <StyledOuterSliders>
-            <StyledSliders offset={offset} duration={duration}>
-                {children}
-            </StyledSliders>
-        </StyledOuterSliders>
-    );
+  return (
+    <StyledOuterSliders>
+      <StyledSliders offset={offset} duration={duration}>
+        {children}
+      </StyledSliders>
+    </StyledOuterSliders>
+  );
 };
 
 const Pane1 = () => {
-    return <div>1</div>;
+  return <div>1</div>;
 };
 const Pane2 = () => {
-    return <div>2</div>;
+  return <div>2</div>;
 };
 const Pane3 = () => {
-    return <div>3</div>;
+  return <div>3</div>;
 };
 
 function SlideTabs() {
-    const [focusedIdx, setFocusedIdx] = React.useState(0);
+  const [focusedIdx, setFocusedIdx] = React.useState(0);
 
-    return (
-        <div className="slide-tabs">
-            <Tabs focusedIdx={focusedIdx} onChange={setFocusedIdx}>
-                <Tab title="tab1" />
-                <Tab title="tab2" />
-                <Tab title="tab3" />
-            </Tabs>
-            <Sliders focusedIdx={focusedIdx}>
-                <Pane1 />
-                <Pane2 />
-                <Pane3 />
-            </Sliders>
-        </div>
-    );
+  return (
+    <div className='slide-tabs'>
+      <Tabs focusedIdx={focusedIdx} onChange={setFocusedIdx}>
+        <Tab title='tab1' />
+        <Tab title='tab2' />
+        <Tab title='tab3' />
+      </Tabs>
+      <Sliders focusedIdx={focusedIdx}>
+        <Pane1 />
+        <Pane2 />
+        <Pane3 />
+      </Sliders>
+    </div>
+  );
 }
 
 export default SlideTabs;

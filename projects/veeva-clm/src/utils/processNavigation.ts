@@ -15,7 +15,7 @@ export const mainMenu: IMenu = {
   data: [
     {
       name: 'Executive Summary',
-      url: '/A.1.0_Executive_summary',
+      url: '/R.1.0_Executive_summary',
     },
     {
       name: 'AAD Overview',

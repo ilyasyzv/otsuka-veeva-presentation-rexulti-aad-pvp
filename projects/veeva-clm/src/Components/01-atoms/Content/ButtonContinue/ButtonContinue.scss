@@ -1,4 +1,4 @@
-@import '@base/variables';
+@import "@base/variables";
 
 .button-continue {
   position: relative;
@@ -16,13 +16,14 @@
   padding: 7px 60px 6px 20px;
 
   &::after {
-    content: '';
+    content: "";
     width: 46px;
     height: 46px;
     position: absolute;
     top: 0;
     right: 0;
-    background: url('img/icon-arrow-right-blue.svg') no-repeat 13px center transparentize($white, 0.33);
+    background: url("img/icon-arrow-right-blue.svg") no-repeat 13px center
+      transparentize($white, 0.33);
     background-size: 24px 24px;
     border-radius: 22px;
   }
@@ -32,6 +33,6 @@
   }
 
   &[disabled] {
-    opacity: .55;
+    opacity: 0.55;
   }
 }

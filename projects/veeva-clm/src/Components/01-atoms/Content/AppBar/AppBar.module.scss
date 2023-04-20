@@ -1,0 +1,19 @@
+@use "../../../00-base/variables" as variable;
+
+.app-bar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 14px 14px 29px;
+  align-items: center;
+
+  .time {
+    font-size: 15px;
+    color: variable.$black;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+
+    &-dark {
+      color: variable.$white;
+    }
+  }
+}

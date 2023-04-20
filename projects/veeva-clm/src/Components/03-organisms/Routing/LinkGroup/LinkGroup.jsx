@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 
 import { PageContext } from '@/context/PageContext';
 import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
-import { findPathInMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
+import { findPathInMenu, mainMenu } from '@/utils/processNavigation';
 import SlideMenu from '@/Components/03-organisms/SlideMenu/SlideMenu';
 
 import Link from '../Link/Link';

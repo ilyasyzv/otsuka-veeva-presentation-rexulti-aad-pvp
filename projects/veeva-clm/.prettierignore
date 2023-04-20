@@ -6,6 +6,9 @@ dist
 .out
 .coverage
 *.min.js
+variables.scss
+*.svg
+veeva-library.js
 src/console-log-div.js
 src/veeva-library.js
 storybook-static
