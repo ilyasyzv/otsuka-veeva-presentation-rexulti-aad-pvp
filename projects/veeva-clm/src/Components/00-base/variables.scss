@@ -1,68 +1,81 @@
 // Fonts
-$font-open-sans: "Open Sans", sans-serif;
-$font-standard-ct: "Standard CT", sans-serif;
-$font-standard-ct-cond: "Standard CT Cond", sans-serif;
+$font-open-sans: "Gandhi Sans", sans-serif;
+$font-size-base: 16px;
 
 // Colors
-$base: #414042;
-$black: #101010;
-$white: #fff;
-$grey: #f3f3f3;
-$grey-lighter: #D8D8D8;
-$grey-light: #D4D4D4;
-$grey-dark: #979797;
-$emerald: #07412C;
-$charcoal-dark: #2f2f2f;
-$green: #42711e;
-$green-light: #0e7850;
-$green-dark: #142c1d;
-$orange-dark: #E6A600;
-$orange: #FFB718;
-$yellow: #FCCF00;
+$blue-50: #D1F2FC;
+$blue-100: #7DE1DE;
+$blue-200: #7DE1DE3D;
+$blue-205: #7DE1DED8;
+$blue-250: #7FDAF6;
+$blue-300: #00B6ED;
+$blue-350: #41A4BA;
+$blue-400: #39849E;
+$blue-450: #008FBC;
+$blue-500: #0086A1;
+$blue-550: #007CA4;
+$blue-600: #005674;
+$blue-700: #00567473;
 
+$green-500: #42711e;
 
-// Colors prev - to delete
+$grey-10: #FFFFFFD9;
+$gray-100: #BED4DB;
+$gray-200: #F0F0F0;
+$gray-300: #D8D8D8;
+$gray-500: #414042;
+$gray-700: #33333380;
+$gray-800: #333333;
+$gray-900: #00000029;
+
+$red-500: #E83443;
+
+$yellow-200: #FFB200;
+$yellow-300: #FFB81C00;
+
+$pink-100: #FF00C4;
+
+$base: $gray-800;
+$blue: $blue-600;
 $black: #000;
 $white: #fff;
-$white-ghost: #f7f8fb;
-$white-coconut: #e8eef6;
-$blue: #07274e;
-$blue-soft: #55c2f1;
-$blue-jordy: #7097d9;
-$blue-gulf: #2c3a61;
-$blue-light: #1d55a3;
-$blue-structural: #159ed9;
-$blue-maya: #75c6ff;
-$ripe-crimson: #f45270;
-$gray: #f3f3f3;
-$gray-light: #f2f2f2;
-$gray-lighter: #d8d8d8;
-$gray-shingle: #949494;
-$gray-granite: #626262;
-$gray-bright: #58595b;
-$gray-dark: #363636;
-$gray-darker: #3b3b3b;
-$gray-whisper: #ececec;
-$green: #138657;
-$green-light: #89c629;
-$green-lighter: #a0ce58;
-$orange: #f59121;
-$butter-muffin: #f9dfb3;
-$aqua-spray: #a4dfdc;
-$blue-navy: #0077c8;
-
+$gray: $gray-500;
+$green: $green-500;
+$yellow: $yellow-200;
+$red: $red-500;
 
 // Colors array for loops in mixins
 $colors: (
+  "base": $base,
   "black": $black,
   "white": $white,
-  "gray": $gray,
-  "gray-darker": $gray-darker,
-  "gray-whisper": $gray-whisper,
-  "green": $green,
-  "blue": $blue,
-  "blue-light": $blue-light,
-  "orange": $orange,
+  "primary": $blue,
+  "secondary": $gray,
+  "info": $gray-100,
+  "success": $green,
+  "warning": $yellow,
+  "danger": $red,
+  "blue-50": $blue-50,
+  "blue-100": $blue-100,
+  "blue-200": $blue-200,
+  "blue-205": $blue-205,
+  "blue-250": $blue-250,
+  "blue-300": $blue-300,
+  "blue-350": $blue-350,
+  "blue-400": $blue-400,
+  "blue-500": $blue-500,
+  "blue-600": $blue-600,
+  "blue-700": $blue-700,
+  "green-500": $green-500,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-500": $gray-500,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "red-500": $red-500,
+  "yellow-200": $yellow-200,
+  "yellow-300": $yellow-300,
 );
 
 // Shadows
@@ -85,7 +98,7 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
 @mixin triangle {
   &::before {
     content: "";
-    border-color: transparent $orange-dark;
+    border-color: transparent $yellow;
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: block;
@@ -101,13 +114,13 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
   &::before {
     content: "";
     display: block;
-    background-color: $orange;
+    background-color: $blue-300;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 4px;
+    height: 4px;
     position: relative;
     top: 11px;
-    left: -8px;
+    left: -12px;
   }
 }
 
@@ -115,7 +128,7 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
   &::before {
     content: "";
     display: block;
-    background-color: $orange;
+    background-color: $yellow;
     width: 5px;
     height: 5px;
     position: relative;
@@ -128,12 +141,25 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
   &::before {
     content: "";
     display: block;
-    background-color: $orange;
+    background-color: $yellow;
     width: 3px;
     height: 3px;
     position: relative;
     top: 11px;
     left: -8px;
+  }
+}
+@mixin rectangle {
+  &::before {
+    content: "";
+    display: block;
+    background-color: $blue-300;
+    width: 6px;
+    height: 2px;
+    position: relative;
+    top: 11px;
+    left: -9px;
+    border-radius: 0;
   }
 }
 
@@ -166,30 +192,36 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
 // Spacings like in Bootstrap
 @mixin spacing($short_var, $css_var) {
   @for $i from 0 through 100 {
-    @if $i % 5 == 0 or $i < 15 {
-      .#{$short_var}-#{$i} {
-        #{$css_var}: #{$i}px !important;
-      }
-      .#{$short_var}y-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}x-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-        #{$css_var}-right: #{$i}px !important;
-      }
-      .#{$short_var}t-#{$i} {
-        #{$css_var}-top: #{$i}px !important;
-      }
-      .#{$short_var}b-#{$i} {
-        #{$css_var}-bottom: #{$i}px !important;
-      }
-      .#{$short_var}l-#{$i} {
-        #{$css_var}-left: #{$i}px !important;
-      }
-      .#{$short_var}r-#{$i} {
-        #{$css_var}-right: #{$i}px !important;
-      }
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
+    }
+    .#{$short_var}y-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}x-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+      #{$css_var}-right: #{$i}px !important;
+    }
+    .#{$short_var}t-#{$i} {
+      #{$css_var}-top: #{$i}px !important;
+    }
+    .#{$short_var}b-#{$i} {
+      #{$css_var}-bottom: #{$i}px !important;
+    }
+    .#{$short_var}l-#{$i} {
+      #{$css_var}-left: #{$i}px !important;
+    }
+    .#{$short_var}r-#{$i} {
+      #{$css_var}-right: #{$i}px !important;
+    }
+  }
+}
+
+@mixin position($short_var, $css_var) {
+  @for $i from 0 through 100 {
+    .#{$short_var}-#{$i} {
+      #{$css_var}: #{$i}px !important;
     }
   }
 }

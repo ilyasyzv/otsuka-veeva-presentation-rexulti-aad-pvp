@@ -10,18 +10,26 @@
   box-sizing: border-box;
 }
 
+#app {
+  width: 1080px;
+  height: 810px;
+  transform-origin: top left;
+}
+
 // General styles
 body {
-  font-family: $font-standard-ct;
-  font-size: 16px;
+  width: 1024px;
+  height: 768px;
+  font-family: $font-open-sans;
+  font-size: $font-size-base;
   line-height: 1.2;
+  color: $base;
 
-  ::-webkit-scrollbar {
-    width: 3px;
-  }
+  // ::-webkit-scrollbar {
+  //   width: 3px;
+  // }
 
   ::-webkit-scrollbar-thumb {
-    background: $grey-light;
     border-radius: 5px;
   }
 }
@@ -32,6 +40,10 @@ a {
 
 .text-uppercase {
   text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
 }
 
 // Font color. Globally accessed
@@ -53,54 +65,5 @@ a {
 // example: p-0 p-10 px-10 py-10 pt-10 pb-10 pl-10 pr-10
 @include spacing("p", "padding");
 
-//Move to tech branch!!!
-
-////Makes design adaptive for different iPads
-//@media screen and (min-width: 1023px) {
-//  #app {
-//    transform: scale(0.7496);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 1112px) {
-//  #app {
-//    transform: scale(0.814056);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 1366px) {
-//  #app {
-//    transform: scale(1);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 2048px) {
-//  #app {
-//    transform: scale(1.4993);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 2160px) {
-//  #app {
-//    transform: scale(1.58126);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 2224px) {
-//  #app {
-//    transform: scale(1.6281);
-//    transform-origin: top left;
-//  }
-//}
-//
-//@media screen and (min-width: 2732px) {
-//  #app {
-//    transform: scale(2);
-//    transform-origin: top left;
-//  }
-//}
+// example: bottom-10
+@include position("bottom", "bottom");

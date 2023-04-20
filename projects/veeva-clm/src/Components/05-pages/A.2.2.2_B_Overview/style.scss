@@ -1,0 +1,10 @@
+@import "@base/variables";
+.page--A_2_2_2_B_Overview {
+  &-paragraph-1.paragraph {
+    padding: 18px 22px 13px 38px;
+    background: rgba($blue-600, .15);
+    line-height: 18px;
+    letter-spacing: normal;
+    border-radius: 8px;
+  }
+}

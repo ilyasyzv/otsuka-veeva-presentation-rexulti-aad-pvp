@@ -12,7 +12,7 @@ export const Route = ({ path, exact = false, component, ...props }) => {
   /**
    * Get Page context.
    */
-  const [currentPageContext, setContext] = useContext(PageContext);
+  const { currentPage, changePage } = useContext(PageContext);
 
   useEffect(() => {
     const onLocationChange = () => {
@@ -32,8 +32,8 @@ export const Route = ({ path, exact = false, component, ...props }) => {
 
   // console.log('***', { preparedPath, currentPath, currentPageContext });
 
-  if (preparedPath === '' && currentPageContext === '01_Launch_screen') {
-    setContext('01_Launch_screen');
+  if (preparedPath === '' && currentPage === '01_Launch_screen') {
+    changePage('01_Launch_screen');
     // Display Dynamic content.
     return <PageLoader name='01_Launch_screen' />;
   }
@@ -51,7 +51,7 @@ export const Route = ({ path, exact = false, component, ...props }) => {
   // }
 
   return currentPath === preparedPath ||
-    currentPageContext === preparedPath ||
+    currentPage === preparedPath ||
     `${currentPath}/index.html` === preparedPath
     ? component()
     : null;

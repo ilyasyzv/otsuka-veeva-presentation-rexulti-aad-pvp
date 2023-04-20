@@ -1,0 +1,77 @@
+@import "@base/variables";
+
+.CollapsibleElement {
+  margin-bottom: 7px;
+
+  .title {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    width: 832px;
+    height: 45px;
+    padding: 15px 15px 13px 66px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+    color: $gray-800;
+    background-color: $white;
+    border: 1px solid $gray-700;
+    border-radius: 29px;
+    box-shadow: 0 3px 6px $gray-900;
+    cursor: pointer;
+    z-index: 1;
+    animation: appear 0.5s ease-in;
+
+    &::before {
+      content: "";
+      height: 44.5px;
+      width: 44.5px;
+      border-radius: 100px;
+      background: $blue-500 padding-box;
+      opacity: 0.2;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      content: "";
+      height: 20px;
+      width: 15px;
+      background: url("@assets/icons/button/icon-arrow-right-basic-blue.svg") no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 14px;
+      top: 13px;
+      transition: rotate 0.3s ease-in-out;
+    }
+
+    &.active {
+
+      &::after {
+        rotate: 90deg;
+      }
+    }
+
+    .primary {
+      color: $blue-500;
+    }
+  }
+
+  .element-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    width: 832px;
+    height: 378px;
+    border-radius: 4px ;
+    padding-bottom: 5px;
+    margin-top: -24px;
+    background: rgba(51, 51, 51, 10%);
+  }
+}

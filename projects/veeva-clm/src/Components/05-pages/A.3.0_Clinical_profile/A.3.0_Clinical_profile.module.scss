@@ -1,0 +1,55 @@
+.page {
+  height: 625px;
+  position: relative;
+  :global {
+    .page-logo {
+      position: absolute;
+      bottom: 100px;
+      right: 31px;
+      width: 250px;
+      height: auto;
+    }
+    .button {
+      justify-content: center;
+      text-decoration: none;
+
+      .button__text {
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+
+        sup {
+          font-size: 10px;
+        }
+      }
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 71px 10px 10px;
+      margin-left: 49px;
+      line-height: 41px;
+      letter-spacing: -0.5px;
+
+      sup {
+        font-size: 21px;
+        line-height: normal;
+      }
+    }
+
+    .buttons-group {
+      display: flex;
+      flex-direction: column;
+      margin: 23px 0 0 49px;
+      width: 644px;
+
+      &-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 20px;
+        gap: 20px;
+      }
+    }
+  }
+}

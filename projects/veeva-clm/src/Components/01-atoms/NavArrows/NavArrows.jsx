@@ -1,25 +1,49 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './NavArrows.scss';
-import ArrowPrev from './img/arrow_prev.png?format=webp';
-import ArrowNext from './img/arrow_next.png?format=webp';
+import { PageContext } from '@/context/PageContext';
+import { navigateLocal } from '@organisms/Routing/Link/Link';
+import { mainMenu, flatLinksList } from '@/utils/processNavigation';
 
 export const NavArrows = () => {
+  const { currentPage, changePage } = useContext(PageContext);
+
+  const { currentPosition, paths } = flatLinksList(
+    { ...mainMenu },
+    currentPage,
+  );
+
   const moveToNext = () => {
-    console.log('move to next');
-    window.com.veeva.clm.nextSlide();
+    if (process.env.NODE_ENV === 'production') {
+      window.com.veeva.clm.nextSlide();
+    } else {
+      const nextPosition =
+        paths.length - 1 === currentPosition ? 0 : currentPosition + 1;
+      const preparedPageName = paths[nextPosition].url.replace('/', '');
+      navigateLocal(changePage, preparedPageName);
+    }
   };
 
   const moveToPrev = () => {
-    console.log('move to prev');
-    window.com.veeva.clm.prevSlide();
+    if (process.env.NODE_ENV === 'production') {
+      window.com.veeva.clm.prevSlide();
+    } else {
+      const prevPosition =
+        currentPosition === 0 ? paths.length - 1 : currentPosition - 1;
+      const preparedPageName = paths[prevPosition].url.replace('/', '');
+      navigateLocal(changePage, preparedPageName);
+    }
   };
 
   return (
-  <div className='arrows-nav'>
-    <img src={ArrowPrev} onClick={moveToPrev} className='arrows-nav__prev'/> |
-    <img src={ArrowNext} onClick={moveToNext} className='arrows-nav__next'/>
-  </div>
-  )
+    <div className='arrows-nav'>
+      <button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
+        Prev
+      </button>
+      <button type='button' onClick={moveToNext} className='arrows-nav__next'>
+        Next
+      </button>
+    </div>
+  );
 };
 
 export default NavArrows;

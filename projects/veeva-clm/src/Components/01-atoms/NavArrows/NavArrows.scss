@@ -3,8 +3,34 @@
 .arrows-nav {
   position: absolute;
   display: flex;
-  right: 0;
-  top: 25px;
-  width: 100px;
-  height: 50px;
+  justify-content: space-between;
+  right: 16px;
+  top: 29px;
+  width: 84px;
+  height: 32px;
+
+  button {
+    border: none;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url('img/circle-blue-arrow.svg') no-repeat center center transparent;
+    background-size: contain;
+    font-size: 0;
+
+    &.arrows-nav__next {
+      transform: rotate(180deg);
+
+      &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 30px;
+        position: absolute;
+        left: 41px;
+        top: 0;
+        background: $blue-300;
+      }
+    }
+  }
 }
