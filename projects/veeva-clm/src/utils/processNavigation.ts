@@ -15,71 +15,15 @@ export const mainMenu: IMenu = {
   data: [
     {
       name: 'Executive Summary',
-      url: '/A.1.0_Executive_summary',
+      url: '/R.1.0_Executive_summary',
     },
     {
-      name: 'Schizophrenia & Bipolar I Disorder Overview',
-      url: '/A.2.1.1_S_Overview',
-      children: [
-        {
-          name: 'Schizophrenia Overview',
-          url: '/A.2.1.1_S_Overview',
-          children: [
-            {
-              name: '',
-              url: '/A.2.1.1_S_Overview',
-            },
-            {
-              name: '',
-              url: '/A.2.1.2_S_Overview',
-            },
-            {
-              name: '',
-              url: '/A.2.1.3_S_Overview',
-            },
-          ],
-        },
-        {
-          name: 'Bipolar I Overview',
-          url: '/A.2.2.1_B_Overview',
-          children: [
-            {
-              name: '',
-              url: '/A.2.2.1_B_Overview',
-            },
-            {
-              name: '',
-              url: '/A.2.2.2_B_Overview',
-            },
-            {
-              name: '',
-              url: '/A.2.2.3_B_Overview',
-            },
-          ],
-        },
-        {
-          name: 'LAIs',
-          url: '/A.2.3.1_LAIs',
-          children: [
-            {
-              name: '',
-              url: '/A.2.3.1_LAIs',
-            },
-            {
-              name: '',
-              url: '/A.2.3.2_LAIs',
-            },
-          ],
-        },
-        {
-          name: 'Summary',
-          url: '/A.2.4_Summary',
-        },
-      ],
+      name: 'AAD Overview',
+      url: '/R.2.1_AAD_Overview',
     },
     {
-      name: 'Clinical Profile for ABILIFY ASIMTUFII®',
-      url: '/A.3.1.1_Overview',
+      name: 'Clinical Profile',
+      url: '/R.3.0_Clinical_profile',
       children: [
         {
           name: 'Overview',
@@ -158,13 +102,13 @@ export const mainMenu: IMenu = {
       ],
     },
     {
-      name: 'Economic Value of ABILIFY ASIMTUFII®',
-      url: '/A.4.0_Economic_value',
+      name: 'Otsuka Patient Support™',
+      url: '/R.4.0_Patient_support',
       children: [],
     },
     {
-      name: 'Otsuka Patient Support™',
-      url: '/A.5.1_Patients_support_providers',
+      name: 'Appendix',
+      url: '/R.5.0_Appendix',
       //   children: [
       //     {
       //       name: '',
@@ -182,6 +126,27 @@ export const mainMenu: IMenu = {
       //     },
       //   ],
     },
+    {
+      name: 'ISI',
+      url: '/R.6.0_ISI',
+      //   children: [
+      //     {
+      //       name: '',
+      //       url: '/A.5.1_Patients_support_providers',
+      //       children: [
+      //         {
+      //           name: '',
+      //           url: '/A.5.1_Patients_support_providers',
+      //         },
+      //         {
+      //           name: '',
+      //           url: '/A.5.2_Patients_support_providers',
+      //         },
+      //       ],
+      //     },
+      //   ],
+    },
+
     // {
     //   name: 'Appendix',
     //   url: '/A.6.1.1_Appendix_Safety',
@@ -215,10 +180,6 @@ export const mainMenu: IMenu = {
 
 export const bottomMenu: IMenu = {
   data: [
-    {
-      name: 'ISI',
-      url: '/A.7.0_ISI',
-    },
     {
       name: 'PI',
       url: '#',
