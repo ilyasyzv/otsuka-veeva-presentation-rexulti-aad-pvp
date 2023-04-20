@@ -1,6 +1,7 @@
 .page {
   height: 625px;
   position: relative;
+
   :global {
     .page-logo {
       position: absolute;
@@ -9,6 +10,7 @@
       width: 250px;
       height: auto;
     }
+
     .button {
       justify-content: center;
       text-decoration: none;

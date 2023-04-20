@@ -5,23 +5,24 @@
   border-radius: 100px;
   border-width: 1px;
   border-style: solid;
-  background-color: yellowgreen;
   color: $white;
   font-size: 14px;
   font-weight: bold;
   line-height: 15px;
   width: 186px;
-  height: 49px;
+  height: 52px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
+  background-image: url("@assets/misc/button/button-green-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
   &__type-a {
     &--active {
-      background-color: yellowgreen;
       color: $white;
       justify-content: left;
       padding-left: 20px;
@@ -34,20 +35,13 @@
         background-color: #FDCF00;
         border-radius: 50%;
         position: absolute;
-        right: 3px;
+        right: 5px;
         border: 3px solid #fff;
-      }
-
-      &:after {
-        content: "";
-        height: 12px;
-        width: 18px;
-        //background-image: url("@assets/icons/button/icon-arrow-down-white.svg");
+        background-size: 70%;
         background-repeat: no-repeat;
-        background-size: 18px;
-        position: absolute;
-        right: 14px;
-        top: 18px;
+        background-position-y: 7px;
+        background-position-x: 5px;
+        background-image: url("@assets/icons/button/icon-arrow-right-green.svg");
       }
     }
 

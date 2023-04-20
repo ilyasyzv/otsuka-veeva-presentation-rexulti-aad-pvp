@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import { useLongPress } from 'use-long-press';
 import './Modal.scss';
 import { SwitchContent } from '@molecules/SwitchContent/SwitchContent';

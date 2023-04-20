@@ -12,7 +12,7 @@ export default {
 };
 
 const Template = () => {
-  return <AppStorybook path="A.2.4_Summary" components={PageContent}/>;
+  return <AppStorybook path='A.2.4_Summary' components={PageContent} />;
 };
 
 export const A_2_4_Summary = Template.bind({});

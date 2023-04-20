@@ -1,12 +1,13 @@
-.page{
-  :global{
+.page {
+  :global {
     img.pageImg {
       width: 846px;
       margin-top: 51px;
       max-width: inherit;
       max-height: inherit;
     }
-    .footnote{
+
+    .footnote {
       max-width: 850px;
     }
   }

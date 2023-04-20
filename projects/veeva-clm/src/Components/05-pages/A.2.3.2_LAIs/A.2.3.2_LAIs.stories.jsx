@@ -1,7 +1,7 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
 
-import { Header } from '@atoms/Content/Header/Header';
+import { Header } from '@/Components/01-atoms/Content/Header/Header';
 import Chart1 from './img/LAIs1.png';
 import Chart2 from './img/LAIs2.png';
 import './style.scss';
@@ -48,8 +48,7 @@ const content = () => (
           {
             text: (
               <span>
-                Lafeuille M-H, et al. <em>BMC Psychiatry.</em>{' '}
-                2013;13:221.
+                Lafeuille M-H, et al. <em>BMC Psychiatry.</em> 2013;13:221.
               </span>
             ),
           },

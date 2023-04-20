@@ -15,6 +15,7 @@
 .modal {
   width: 1024px;
   height: 768px;
+
   sub {
     line-height: normal;
     font-size: 18px;
@@ -172,32 +173,32 @@
     &-image-1 {
       width: 625px;
     }
+
     &-image-2 {
       position: absolute;
       right: 0;
       top: 230px;
       width: 268px;
     }
+
     &-image-3 {
       width: 625px;
     }
   }
+
   &_understanding-panss + {
     ul {
       margin-bottom: 15px;
     }
   }
 
-
   &_understanding-cgis {
     &-image-1 {
       width: 865px;
     }
-
   }
 
   &_baseline-characteristics {
-
     &-header {
       line-height: 32px;
     }
@@ -219,22 +220,20 @@
     &-img {
       width: 950px;
       position: absolute;
-      left:24px;
+      left: 24px;
       bottom: 28px;
     }
-
   }
 
   &_study-design {
     &__strong {
       color: $blue-600;
-      }
     }
   }
+}
 
 .isi-modal-wrapper {
   .modal-wrapper {
     padding-top: 70px;
   }
-
 }

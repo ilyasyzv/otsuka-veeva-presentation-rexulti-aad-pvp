@@ -2,9 +2,9 @@ import React, { Fragment, useContext } from 'react';
 
 import { LinkGroup } from '@organisms/Routing/LinkGroup/LinkGroup';
 import './Navbar.scss';
-import Link from '@organisms/Routing/Link/Link';
+import Link from '@/Components/03-organisms/Routing/Link/Link';
 import { PageContext } from '@/context/PageContext';
-import { mainMenu, bottomMenu, flapMenu } from '@/utils/processNavigation';
+import { bottomMenu, flapMenu, mainMenu } from '@/utils/processNavigation';
 
 export const Navbar = () => {
   const { currentPage } = useContext(PageContext);

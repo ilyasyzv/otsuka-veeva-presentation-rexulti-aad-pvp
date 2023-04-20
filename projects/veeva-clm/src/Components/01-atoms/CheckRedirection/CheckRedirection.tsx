@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const SetHomeState = ({ state }) => {
+const SetHomeState = ({ state }: { state: string }): void => {
   sessionStorage.setItem('home-state', state);
 };
 
-export const CheckRedirection = () => {
+const CheckRedirection = (): string | null => {
   return sessionStorage.getItem('home-state');
 };
 

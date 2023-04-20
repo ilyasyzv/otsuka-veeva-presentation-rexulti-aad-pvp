@@ -3,7 +3,7 @@ import { AppStorybook } from '@pages/AppStorybook';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 
 import ProlactinTableImg from '@/Components/05-pages/A.3.3.2_Safety/img/ProlactinTable.png?format=webp';
-import { Button } from '@/Components/01-atoms/Content/Button/button';
+import { Button } from '@/Components/01-atoms/Content/Button/Button';
 
 import './A.3.3.2_Safety.scss';
 import List from '@/Components/01-atoms/Content/List/List';
