@@ -3,14 +3,25 @@ import './Button.scss';
 
 interface ButtonProps {
   text: string;
-  callback: () => void;
+  callback?: () => void;
   custom?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({ text, callback, custom }) => {
+export const Button: React.FC<ButtonProps> = ({
+  text,
+  callback,
+  custom = '',
+}) => {
   const buttonClass = `button ${custom}`;
+
+  const handleClick = () => {
+    if (callback) {
+      callback();
+    }
+  };
+
   return (
-    <div className={buttonClass} onClick={callback}>
+    <div className={buttonClass} onClick={handleClick}>
       <div className='button__text'>{text}</div>
     </div>
   );
