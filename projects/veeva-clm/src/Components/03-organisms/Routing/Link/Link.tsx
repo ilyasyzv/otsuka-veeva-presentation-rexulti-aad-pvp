@@ -4,7 +4,10 @@ import { ISIModalContext } from '@/context/ISIModalContext';
 
 const lsISIModalKey = 'isi_modal';
 
-export const navigateLocal = (changePage, preparedPageName) => {
+export const navigateLocal = (
+  changePage: (page: string) => void,
+  preparedPageName: string,
+): void => {
   window.history.pushState({}, '', preparedPageName);
 
   const navigationEvent = new PopStateEvent('navigate');
@@ -13,7 +16,7 @@ export const navigateLocal = (changePage, preparedPageName) => {
   changePage(preparedPageName);
 };
 
-export const navigateVeeva = (preparedPageName) => {
+export const navigateVeeva = (preparedPageName: string): void => {
   if (preparedPageName === 'previous') {
     window.com.veeva.clm.prevSlide();
   } else if (preparedPageName === 'next') {
@@ -23,11 +26,17 @@ export const navigateVeeva = (preparedPageName) => {
   }
 };
 
-export const Link = ({ custom, to, children }) => {
+interface Props {
+  custom?: string;
+  to: string;
+  children: React.ReactNode;
+}
+
+export const Link: React.FC<Props> = ({ custom, to, children }) => {
   const { changePage } = useContext(PageContext);
   const { showModalHandler } = useContext(ISIModalContext);
 
-  const showISIModal = () => {
+  const showISIModal = (): void => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
     console.log(!lsISIModal);
     if (!lsISIModal) {
@@ -35,7 +44,7 @@ export const Link = ({ custom, to, children }) => {
     }
   };
 
-  const preventReload = (event) => {
+  const preventReload = (event: React.MouseEvent<HTMLAnchorElement>): void => {
     event.preventDefault();
 
     showISIModal();

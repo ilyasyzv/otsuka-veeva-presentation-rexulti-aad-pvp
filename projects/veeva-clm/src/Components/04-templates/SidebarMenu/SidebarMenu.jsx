@@ -1,6 +1,6 @@
 import React from 'react';
 import './SidebarMenu.scss';
-import Link from '@organisms/Routing/Link/Link';
+import Link from '@/Components/03-organisms/Routing/Link/Link';
 
 const classNames = require('classnames');
 

@@ -12,7 +12,12 @@ export default {
 const content = () => <div>Place components here</div>;
 
 const Template = () => {
-  return <AppStorybook path='A.5.2_Patients_support_providers' components={content} />;
+  return (
+    <AppStorybook
+      path='A.5.2_Patients_support_providers'
+      components={content}
+    />
+  );
 };
 
 export const A_5_2_Patients_support_providers = Template.bind({});

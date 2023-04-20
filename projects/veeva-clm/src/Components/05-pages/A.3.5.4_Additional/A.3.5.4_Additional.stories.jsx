@@ -1,7 +1,7 @@
 import { AppStorybook } from '@pages/AppStorybook';
 import React from 'react';
-import { Header } from '@atoms/Content/Header/Header';
-import { StudyDesign1, Relapse } from '@templates/Layouts/Modal/Modal.stories';
+import { Header } from '@/Components/01-atoms/Content/Header/Header';
+import { Relapse, StudyDesign1 } from '@templates/Layouts/Modal/Modal.stories';
 
 import { Paragraph } from '@atoms/Content/Paragraph/Paragraph';
 import Placebo_image from '@/Components/05-pages/A.3.5.4_Additional/img/Placebo_image.png';

@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { PageContext } from '@/context/PageContext';
 import { PageLoader } from '@pages/PageLoader';
 

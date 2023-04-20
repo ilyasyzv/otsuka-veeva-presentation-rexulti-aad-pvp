@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timeline, Controls, PlayState, Tween } from 'react-gsap';
+import { Timeline, Tween } from 'react-gsap';
 import './AnimationExample.scss';
 
 const AnimationExample = () => {

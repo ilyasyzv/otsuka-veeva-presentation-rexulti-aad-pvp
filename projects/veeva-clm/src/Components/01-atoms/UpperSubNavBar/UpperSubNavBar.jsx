@@ -1,12 +1,14 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import './UpperSubNavBar.scss';
 import { PageContext } from '@/context/PageContext';
-import { mainMenu, findSubMenu } from '@/utils/processNavigation';
+import { findSubMenu, mainMenu } from '@/utils/processNavigation';
 
 export const UpperSubNavBar = ({ link }) => {
   const { currentPage } = useContext(PageContext);
   const subMenu = findSubMenu(link, mainMenu.data, 1);
-  if (!subMenu) return <ul />;
+  if (!subMenu) {
+    return <ul />;
+  }
   const isActive = (url) => (url.includes(currentPage) ? 'active' : '');
 
   return (

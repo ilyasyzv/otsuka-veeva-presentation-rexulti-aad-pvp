@@ -1,9 +1,10 @@
-import React, { useEffect, useState, useContext, Children } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { PageContext } from '@/context/PageContext';
 import matchPath from '@organisms/Routing/matchPath/matchPath';
 
-// inspired by https://github.com/remix-run/react-router/blob/v5/packages/react-router/modules/Switch.js
+// inspired by
+// https://github.com/remix-run/react-router/blob/v5/packages/react-router/modules/Switch.js
 
 export const Switch = (props) => {
   const [location] = useState(window.location.pathname.replace('/', ''));
@@ -39,8 +40,10 @@ export const Switch = (props) => {
   return <>{element}</>;
   // return match ? <>element:{element}</> : 'no element'
   // return match ? React.cloneElement(element) : null;
-  // return match ? React.cloneElement(element, { location, computedMatch: match }) : null;
+  // return match ? React.cloneElement(element, { location, computedMatch:
+  // match }) : null;
 };
+
 export class Switch0 extends React.Component {
   render() {}
 }

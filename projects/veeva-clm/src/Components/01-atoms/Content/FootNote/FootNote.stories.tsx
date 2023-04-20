@@ -6,16 +6,18 @@ export default {
   component: FootNote,
 };
 
-const Template = (args) => (
-  <FootNote { ...args } />
-);
+const Template = (args) => <FootNote {...args} />;
 
 export const Default = Template.bind({});
 
 Default.args = {
   footnotes: [
     {
-      innerText: <span>C<sub>min</sub>=minimum aripiprazole plasma concentration.</span>,
+      innerText: (
+        <span>
+          C<sub>min</sub>=minimum aripiprazole plasma concentration.
+        </span>
+      ),
     },
-  ]
-}
+  ],
+};

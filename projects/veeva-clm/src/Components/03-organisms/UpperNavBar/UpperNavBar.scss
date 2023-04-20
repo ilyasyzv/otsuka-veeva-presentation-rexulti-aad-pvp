@@ -12,13 +12,12 @@
   border-bottom: 1px solid $blue-300;
 
   .main-nav {
-  
     &__link {
       display: flex;
       align-items: flex-end;
       position: relative;
       height: 42px;
-  
+
       & .main-nav__link__wrapper a {
         width: 144px;
         margin: 8px auto;
@@ -27,7 +26,6 @@
       }
 
       &.active {
-
         ul {
           position: absolute;
           display: flex;
@@ -60,7 +58,7 @@
         .main-nav__link__wrapper a {
           color: $blue-600;
           padding: 0 0 0 5px;
-  
+
           &:after {
             display: none;
           }
