@@ -4,6 +4,9 @@ const fse = require('fs-extra');
 const { run } = require('react-snap');
 const replace = require('replace-in-file');
 const optionsSchema = require('./options-schema.js');
+const puppeteer = require('puppeteer');
+const url = require('url');
+const sharp = require('sharp');
 
 const getDirectories = require('../scripts');
 
@@ -86,6 +89,65 @@ class ReactSnapPlugin {
     this.options = { ...defaultOptions, ...options };
   }
 
+  async createScreenShots() {
+    try {
+      let pagesList = getDirectories('./src/content/pages');
+      pagesList = pagesList
+        .filter((page) => page !== 'shared')
+        .map((page) => this.takeScreenshotWithResize(page));
+      return Promise.all(pagesList);
+    } catch (error) {
+      this.logger.error('Error occurred: ', error);
+    }
+    return new Promise();
+  }
+
+  async takeScreenshotWithResize(dirName) {
+    const pagePath = `./dist/${dirName}`;
+    return this.takeScreenshot(pagePath, 'index.html', 'thumb_big.png').then(
+      () => {
+        this.logger.info(`Create screenshot for page: ${pagePath}`);
+        if (fse.existsSync(path.join(pagePath, 'thumb_big.png'))) {
+          sharp(path.join(pagePath, 'thumb_big.png'))
+            .resize(200, 150, {
+              kernel: sharp.kernel.nearest,
+              fit: 'contain',
+              position: 'left top',
+              background: { r: 255, g: 255, b: 255, alpha: 0.5 },
+            })
+            .toFile(path.join(pagePath, 'thumb.png'), (err) => {
+              if (err) {
+                this.logger.error(`Image resize ${err}`);
+              } else {
+                this.logger.info(`Resize screenshot for page: ${pagePath}`);
+                fse.unlinkSync(path.join(pagePath, 'thumb_big.png'));
+              }
+            });
+        }
+      },
+    );
+  }
+
+  async takeScreenshot(
+    dirName,
+    file = 'index.html',
+    screenshotName = 'thumb.png',
+  ) {
+    if (fse.existsSync(path.join(dirName, file))) {
+      const browser = await puppeteer.launch();
+
+      const page = await browser.newPage();
+      await page.setViewport({ width: 1024, height: 768 });
+      await page.goto(url.pathToFileURL(path.join(dirName, file)));
+
+      await page.screenshot({
+        path: path.join(dirName, screenshotName),
+      });
+
+      await browser.close();
+    }
+  }
+
   async copyLibsToPages() {
     this.logger.info(
       `Copy shared libraries to pages folders ${this.options.source}`,
@@ -165,9 +227,13 @@ class ReactSnapPlugin {
 
     const runSnapshot = async () => {
       this.logger.info('Running React Snapshot');
-      await this.copyLibsToPages();
-      await this.prerenderPages();
-      await this.cleanPaths();
+      return Promise.all([this.copyLibsToPages(), this.prerenderPages()]).then(
+        () => {
+          return this.createScreenShots().then(() => {
+            return this.cleanPaths();
+          });
+        },
+      );
     };
 
     compiler.hooks.afterEmit.tapPromise(PLUGIN_NAME, runSnapshot);
