@@ -11,12 +11,12 @@ import styles from './R.1.0_Executive_summary.module.scss';
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Header custom='mb-12'>
+      <Header custom={`${styles.h1} mb-12`}>
         REXULTI<sup>®</sup> (brexpiprazole) Offers a Treatment Option
         <br /> With Proven Efficacy and Demonstrated Safety for
         <br /> Patients With AAD
       </Header>
-      <img className='image-1' src={PageImage} alt='' width='852' />
+      <img className={styles.image_1} src={PageImage} alt='' width='852' />
       <Footer
         footnotes={{
           data: [
