@@ -41,6 +41,12 @@ h1 {
   font-size: 30px;
   line-height: 34px;
   color: $green-600;
+
+  sup {
+    font-size: inherit;
+    position: relative;
+    top: 10px;
+  }
 }
 
 h2 {
