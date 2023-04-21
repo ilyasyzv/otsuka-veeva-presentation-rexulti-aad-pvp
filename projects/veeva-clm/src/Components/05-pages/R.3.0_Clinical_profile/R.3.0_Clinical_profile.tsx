@@ -8,7 +8,7 @@ import PageImage from './img/Image1.png';
 
 import styles from './R.3.0_Clinical_profile.module.scss';
 
-const PageContent = () => {
+const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
       <Header custom={`${styles.h1} mb-36 text-center`}>
