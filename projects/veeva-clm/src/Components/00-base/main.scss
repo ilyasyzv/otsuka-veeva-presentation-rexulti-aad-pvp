@@ -34,6 +34,37 @@ body {
   }
 }
 
+//Typography
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 34px;
+  color: $green-600;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: $green-300;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: $green-300;
+}
+
+sup {
+  line-height: normal;
+}
+
+sub {
+  line-height: normal;
+}
+
 a {
   color: $green;
 }
@@ -67,3 +98,4 @@ a {
 
 // example: bottom-10
 @include position("bottom", "bottom");
+

@@ -1,27 +1,29 @@
-import React from 'react';
-import './Header.scss';
+import React, { HTMLAttributes, FC } from 'react';
 import classNames from 'classnames';
+import styles from './Header.module.scss';
 
-interface HeaderProps {
-  color?: string;
-  type?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
-  bgcolor?: string;
+type TagType = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+
+type HeadingType = HTMLAttributes<HTMLHeadingElement>;
+
+export type HeaderProps = HeadingType & {
+  type?: TagType;
   custom?: string;
-  children?: React.ReactNode;
-}
+};
 
-export const Header: React.FC<HeaderProps> = ({
-  color,
+const Header: FC<HeaderProps> = ({
+  children,
   type = 'h1',
-  bgcolor,
-  custom = '',
-  children = <>Loading</>,
+  custom,
+  ...props
 }) => {
-  const colorClass = color ? `font-${color}` : '';
-  const bgColorClass = bgcolor ? `font-bg-color-${bgcolor}` : '';
-  const headerClass = classNames('heading', colorClass, bgColorClass, custom);
+  const Tag = type;
 
-  return <type className={headerClass}>{children}</type>;
+  return (
+    <Tag {...props} className={classNames(styles.heading, custom)}>
+      {children}
+    </Tag>
+  );
 };
 
 export default Header;
