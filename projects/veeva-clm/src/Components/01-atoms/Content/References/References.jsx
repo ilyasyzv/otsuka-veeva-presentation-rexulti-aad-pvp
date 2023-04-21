@@ -8,7 +8,7 @@ export const References = ({ custom, references }) => {
 
   return (
     <div className={classNames('references', customClass)}>
-      <strong>{references.length > 1 ? 'References: ' : 'Reference: '}</strong>
+      <strong>{references.length > 1 ? 'REFERENCES: ' : 'REFERENCE: '}</strong>
       {references.map((ref, index) => {
         const fileClass = (ref.url && 'file') || '';
 
