@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import './Paragraph.scss';
+import classNames from 'classnames';
 
-const classNames = require('classnames');
+interface Props {
+  color?: string;
+  size?: string;
+  weight?: string;
+  position?: string;
+  custom?: string;
+  children?: ReactNode;
+}
 
-export const Paragraph = ({
+export const Paragraph: React.FC<Props> = ({
   color,
   size,
   weight,

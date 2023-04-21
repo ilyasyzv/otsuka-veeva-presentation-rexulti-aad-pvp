@@ -8,14 +8,10 @@ export default {
 
 const Template01 = () => (
   <>
-    <Paragraph color='green' size='small' weight='bold'>
-      This is green, small and bold paragraph.
+    <Paragraph color='green-300' size='x-small' weight='bold'>
+      This is green, x-small and bold paragraph.
     </Paragraph>
-    <Paragraph color='orange' size='small' weight='bold'>
-      This is blue-navy, small and bold paragraph.
-    </Paragraph>
-    <Paragraph color='orange'>This is regular blue-navy paragraph.</Paragraph>
-    <Paragraph color='green' weight='bold'>
+    <Paragraph color='green-300' weight='bold'>
       This is bold green paragraph.
     </Paragraph>
     <Paragraph color='black' weight='bold'>
@@ -56,4 +52,5 @@ const Template03 = () => (
     <Paragraph position='center'>This is centered paragraph.</Paragraph>
   </>
 );
+
 export const SeveralParagraphs = Template03.bind({});

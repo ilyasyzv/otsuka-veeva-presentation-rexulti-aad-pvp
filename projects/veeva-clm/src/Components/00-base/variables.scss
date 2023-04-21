@@ -1,5 +1,8 @@
 $font-size-base: 16px;
-// Colors
+$font-whitney: "Whitney", sans-serif;
+$font-arial: "Arial";
+
+// Blue
 $blue-50: #D1F2FC;
 $blue-100: #7DE1DE;
 $blue-200: #7DE1DE3D;
@@ -13,104 +16,29 @@ $blue-500: #0086A1;
 $blue-550: #007CA4;
 $blue-600: #005674;
 $blue-700: #00567473;
-
-$green-500: #42711e;
-
-$grey-10: #FFFFFFD9;
-$gray-100: #BED4DB;
-$gray-200: #F0F0F0;
-$gray-300: #D8D8D8;
-$gray-500: #414042;
-$gray-700: #33333380;
-$gray-800: #333333;
-$gray-900: #00000029;
-
-$red-500: #E83443;
-
-$yellow-200: #FFB200;
-$yellow-300: #FFB81C00;
-
-$pink-100: #FF00C4;
-
-$base: $gray-800;
 $blue: $blue-600;
-// Don't use these fonts, will be removed soon.
-$font-open-sans: "Open Sans", sans-serif;
-$font-standard-ct: "Standard CT", sans-serif;
-$font-standard-ct-cond: "Standard CT Cond", sans-serif;
-
-// Don't use these color, will be removed soon.
-$black: #000;
-$white: #fff;
-$gray: $gray-500;
-$green: $green-500;
-$yellow: $yellow-200;
-$red: $red-500;
-$white-ghost: #f7f8fb;
-$white-coconut: #e8eef6;
-$blue: #07274e;
-$blue-soft: #55c2f1;
-$blue-jordy: #7097d9;
-$blue-gulf: #2c3a61;
-$blue-light: #1d55a3;
-$blue-structural: #159ed9;
-$blue-maya: #75c6ff;
-$ripe-crimson: #f45270;
-$gray: #f3f3f3;
-$gray-light: #f2f2f2;
-$gray-lighter: #d8d8d8;
-$gray-shingle: #949494;
-$gray-granite: #626262;
-$gray-bright: #58595b;
-$gray-dark: #363636;
-$gray-darker: #3b3b3b;
-$gray-whisper: #ececec;
-$green: #138657;
-$green-light: #89c629;
-$green-lighter: #a0ce58;
-$orange: #f59121;
-$butter-muffin: #f9dfb3;
-$aqua-spray: #a4dfdc;
-$blue-navy: #0077c8;
-$base: #414042;
-$black: #101010;
-$white: #fff;
-$grey: #f3f3f3;
-$grey-lighter: #D8D8D8;
-$grey-light: #D4D4D4;
-$grey-dark: #979797;
-$emerald: #07412C;
-$charcoal-dark: #2f2f2f;
-$green: #42711e;
-$green-light: #0e7850;
-$green-dark: #142c1d;
-$orange-dark: #E6A600;
-$orange: #FFB718;
-$yellow: #FCCF00;
-
-// Use these fonts.
-$font-whitney: "Whitney", sans-serif;
-$font-arial: "Arial";
-
-// Use these color.
 
 // White
 $white: #fff;
 
 // Black
-$black: #000;
 $black-100: #414042;
 $black-300: #101010;
+$black: #000;
 
-// Grey
-$grey-10: #F3F3F3;
+// Gray
+$grey-10: #FFFFFFD9;
+$gray-10: #F3F3F3;
 $gray-100: #F4F4F4;
 $gray-200: #EFEFEF;
 $gray-300: #E2E2E2;
 $gray-500: #D8D8D8;
 $gray-600: #D4D4D4;
+$grey-650: #C7D5BC;
 $gray-700: #979797;
+$gray-800: #333333;
 $gray-900: #2F2F2F;
+$gray: $gray-800;
 
 // Green
 $green-100: #0E7850;
@@ -120,6 +48,7 @@ $green-400: #3B6E17;
 $green-500: #294339;
 $green-600: #07412C;
 $green-700: #142C1D;
+$green: $green-300;
 
 // Yellow
 $yellow-100: #FADA40;
@@ -127,9 +56,21 @@ $yellow-200: #FDCF00;
 $yellow-300: #FCCF00;
 $yellow-400: #FFB718;
 $yellow-500: #E6A600;
+$yellow: $yellow-300;
 
 // Orange
 $orange-300: #FFA05E;
+$orange: $orange-300;
+
+// Red
+$red-500: #E83443;
+$red: $red-500;
+
+// Pink
+$pink-100: #FF00C4;
+$pink: $pink-100;
+
+$base: $gray-800;
 
 // Colors array for loops in mixins
 $colors: (
@@ -140,7 +81,6 @@ $colors: (
   "info": $gray-100,
   "success": $green,
   "warning": $yellow,
-  "danger": $red,
   "blue-50": $blue-50,
   "blue-100": $blue-100,
   "blue-200": $blue-200,
@@ -200,7 +140,7 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
 @mixin triangle {
   &::before {
     content: "";
-    border-color: transparent $orange-dark;
+    border-color: transparent $orange;
     border-style: solid;
     border-width: 0.35em 0 0.35em 0.45em;
     display: block;

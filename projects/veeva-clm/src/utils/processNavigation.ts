@@ -20,161 +20,117 @@ export const mainMenu: IMenu = {
     {
       name: 'AAD Overview',
       url: '/R.2.1_AAD_Overview',
-    },
-    {
-      name: 'Clinical Profile',
-      url: '/R.3.0_Clinical_profile',
       children: [
         {
-          name: 'Overview',
-          url: '/A.3.1.1_Overview',
-        },
-        {
-          name: 'PK Study',
-          url: '/A.3.2.1_Efficacy',
+          name: '',
+          url: '/R.2.1_AAD_Overview',
           children: [
             {
               name: '',
-              url: '/A.3.2.1_Efficacy',
+              url: '/R.2.1_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.2.2_Efficacy',
+              url: '/R.2.2_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.2.3_Efficacy',
-            },
-          ],
-        },
-        {
-          name: 'Safety Data',
-          url: '/A.3.3.1_Safety',
-          children: [
-            {
-              name: '',
-              url: '/A.3.3.1_Safety',
+              url: '/R.2.3_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.3.2_Safety',
+              url: '/R.2.4_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.3.3_Safety',
+              url: '/R.2.5_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.3.4_Safety',
-            },
-          ],
-        },
-        {
-          name: 'Dosing & Administration',
-          url: '/A.3.4_Dosing',
-        },
-        {
-          name: 'ABILIFY MAINTENA® Pivotal Studies',
-          url: '/A.3.5.1_Additional',
-          children: [
-            {
-              name: '',
-              url: '/A.3.5.1_Additional',
+              url: '/R.2.6_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.3.5.2_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.3_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.4_Additional',
-            },
-            {
-              name: '',
-              url: '/A.3.5.5_Additional',
+              url: '/R.2.7_AAD_Overview',
             },
           ],
         },
       ],
     },
     {
+      name: 'Clinical Profile',
+      url: '/R.3.0_Clinical_Profile',
+      children: [
+        {
+          name: 'Mechanism of Action',
+          url: '/R.3.1_Mechanism_of_action',
+        },
+        {
+          name: 'Clinical Studies Overview',
+          url: '/R.3.2_Clinical_studies_overview',
+        },
+        {
+          name: 'Study 6 Efficacy Data',
+          url: '/R.3.3.1_Study_6',
+          children: [
+            {
+              name: '',
+              url: '/R.3.3.1_Study_6',
+            },
+            {
+              name: '',
+              url: '/R.3.3.2_Study_6',
+            },
+            {
+              name: '',
+              url: '/R.3.3.3_Study_6',
+            },
+          ],
+        },
+        {
+          name: 'Study 7 Efficacy Data',
+          url: '/R.3.4.1_Study_7',
+          children: [
+            {
+              name: '',
+              url: '/R.3.4.1_Study_7',
+            },
+            {
+              name: '',
+              url: '/R.3.4.2_Study_7',
+            },
+            {
+              name: '',
+              url: '/R.3.4.3_Study_7',
+            },
+          ],
+        },
+        {
+          name: 'Clinical Safety Profile',
+          url: '/R.3.5_Study_6&7_safety',
+        },
+        {
+          name: 'Dosing & Administration',
+          url: '/R.3.6_Dosing',
+        },
+        {
+          name: 'Summary',
+          url: '/R.3.7_Summary',
+        },
+      ],
+    },
+    {
       name: 'Otsuka Patient Support™',
       url: '/R.4.0_Patient_support',
-      children: [],
     },
     {
       name: 'Appendix',
       url: '/R.5.0_Appendix',
-      //   children: [
-      //     {
-      //       name: '',
-      //       url: '/A.5.1_Patients_support_providers',
-      //       children: [
-      //         {
-      //           name: '',
-      //           url: '/A.5.1_Patients_support_providers',
-      //         },
-      //         {
-      //           name: '',
-      //           url: '/A.5.2_Patients_support_providers',
-      //         },
-      //       ],
-      //     },
-      //   ],
     },
     {
       name: 'ISI',
       url: '/R.6.0_ISI',
-      //   children: [
-      //     {
-      //       name: '',
-      //       url: '/A.5.1_Patients_support_providers',
-      //       children: [
-      //         {
-      //           name: '',
-      //           url: '/A.5.1_Patients_support_providers',
-      //         },
-      //         {
-      //           name: '',
-      //           url: '/A.5.2_Patients_support_providers',
-      //         },
-      //       ],
-      //     },
-      //   ],
     },
-
-    // {
-    //   name: 'Appendix',
-    //   url: '/A.6.1.1_Appendix_Safety',
-    //   children: [
-    //     {
-    //       name: 'ABILIFY MAINTENA Real-world Evidence',
-    //       url: '/A.6.1.1_Appendix_Safety',
-    //       children: [
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.1_Appendix_Safety',
-    //         },
-    //         {
-    //           name: '',
-    //           url: '/A.6.1.2_Appendix_Safety',
-    //         },
-    //       ],
-    //     },
-    //     {
-    //       name: 'MOA',
-    //       url: '/A.6.2_Apendix_MOA',
-    //     },
-    //     {
-    //       name: 'ABILIFY MAINTENA Safety Profile',
-    //       url: '/A.6.3.X_Appendix_Safety',
-    //     },
-    //   ],
-    // },
   ],
 };
 
