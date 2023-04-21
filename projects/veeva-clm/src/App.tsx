@@ -46,7 +46,7 @@ function App({ tab }: AppProps) {
             <Layout>
               <Route
                 path='/01_Launch_screen'
-                component={() => <Page background='b' component={R_0_0_Home} />}
+                component={() => <Page background='a' component={R_0_0_Home} />}
               />
               <Route
                 path='/R.0.0_Home'
