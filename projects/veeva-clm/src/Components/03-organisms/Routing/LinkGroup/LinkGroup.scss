@@ -6,23 +6,27 @@
 
   &__link {
     box-sizing: border-box;
+    height: 85px;
+    display: flex;
 
-    & .main-nav__link__wrapper a {
-      display: flex;
-      flex-direction: column;
-      padding: 25px 0 25px 5px;
-      align-items: center;
-      text-decoration: none;
-      border-right: 8px solid transparent;
-      color: $white;
-      font-size: 14px;
-      line-height: 14px;
-      font-weight: 400;
-      font-style: normal;
-      letter-spacing: 0;
-      text-align: center;
-      margin: 0 auto;
-      width: fit-content;
+    .main-nav__link__wrapper {
+      display: contents;
+
+      a {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: $white;
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: 0;
+        text-align: center;
+        margin: auto;
+      }
     }
 
     ul {
@@ -31,25 +35,19 @@
     }
 
     &.active {
+      border-right: 2px solid $yellow-200;
+
+      &:before {
+        content: "";
+        position:absolute;
+        width: 100px;
+        height: 89px;
+        background-color: $black;
+        opacity: 0.5; 
+      }
+
       .main-nav__link__wrapper a {
         font-weight: bold;
-        padding: 25px 0 0 5px;
-
-        &:after {
-          content: "";
-          width: 90px;
-          height: 20px;
-          margin: 5px 0 0 0;
-          border-radius: 100% 100% 0 0;
-          background: transparent
-            linear-gradient(
-              180deg,
-              $blue-205 0%,
-              $blue-200 40%,
-              $yellow-300 100%
-            )
-            0% 0% no-repeat padding-box;
-        }
       }
 
       ul {

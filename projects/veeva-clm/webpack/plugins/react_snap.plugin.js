@@ -7,9 +7,6 @@ const puppeteer = require('puppeteer');
 const url = require('url');
 const sharp = require('sharp');
 const optionsSchema = require('./options-schema.js');
-const puppeteer = require('puppeteer');
-const url = require('url');
-const sharp = require('sharp');
 
 const getDirectories = require('../scripts');
 

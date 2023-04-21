@@ -19,39 +19,39 @@ export const mainMenu: IMenu = {
     },
     {
       name: 'AAD Overview',
-      url: '/A.2.1.1_S_Overview',
+      url: '/R.2.1_AAD_Overview',
       children: [
         {
           name: '',
-          url: '',
+          url: '/R.2.1_AAD_Overview',
           children: [
             {
               name: '',
-              url: '/A.2.1.1_S_Overview',
+              url: '/R.2.1_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.2_S_Overview',
+              url: '/R.2.2_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.3_S_Overview',
+              url: '/R.2.3_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.3_S_Overview',
+              url: '/R.2.4_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.3_S_Overview',
+              url: '/R.2.5_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.3_S_Overview',
+              url: '/R.2.6_AAD_Overview',
             },
             {
               name: '',
-              url: '/A.2.1.3_S_Overview',
+              url: '/R.2.7_AAD_Overview',
             },
           ],
         },
@@ -59,77 +59,77 @@ export const mainMenu: IMenu = {
     },
     {
       name: 'Clinical Profile',
-      url: '/A.3.1.1_Overview',
+      url: '/R.3.0_Clinical_Profile',
       children: [
         {
           name: 'Mechanism of Action',
-          url: '/A.3.1.1_Overview',
+          url: '/R.3.1_Mechanism_of_action',
         },
         {
           name: 'Clinical Studies Overview',
-          url: '/A.3.1.1_Overview',
+          url: '/R.3.2_Clinical_studies_overview',
         },
         {
           name: 'Study 6 Efficacy Data',
-          url: '/A.3.2.1_Efficacy',
+          url: '/R.3.3.1_Study_6',
           children: [
             {
               name: '',
-              url: '/A.3.2.1_Efficacy',
+              url: '/R.3.3.1_Study_6',
             },
             {
               name: '',
-              url: '/A.3.2.2_Efficacy',
+              url: '/R.3.3.2_Study_6',
             },
             {
               name: '',
-              url: '/A.3.2.3_Efficacy',
+              url: '/R.3.3.3_Study_6',
             },
           ],
         },
         {
           name: 'Study 7 Efficacy Data',
-          url: '/A.3.2.1_Efficacy',
+          url: '/R.3.4.1_Study_7',
           children: [
             {
               name: '',
-              url: '/A.3.2.1_Efficacy',
+              url: '/R.3.4.1_Study_7',
             },
             {
               name: '',
-              url: '/A.3.2.2_Efficacy',
+              url: '/R.3.4.2_Study_7',
             },
             {
               name: '',
-              url: '/A.3.2.3_Efficacy',
+              url: '/R.3.4.3_Study_7',
             },
           ],
         },
         {
           name: 'Clinical Safety Profile',
-          url: '/A.3.1.1_Overview',
+          url: '/R.3.5_Study_6&7_safety',
         },
         {
           name: 'Dosing & Administration',
-          url: '/A.3.4_Dosing',
+          url: '/R.3.6_Dosing',
         },
         {
           name: 'Summary',
-          url: '/A.3.5.1_Additional',
+          url: '/R.3.7_Summary',
         },
       ],
     },
     {
       name: 'Otsuka Patient Support™',
-      url: '/A.4.0_Economic_value',
+      url: '/R.4.0_Patient_support',
     },
     {
       name: 'Appendix',
-      url: '/A.6.1.1_Appendix_Safety',
+      url: '/R.5.0_Appendix',
     },
     {
       name: 'ISI',
-      url: '/A.7.0_ISI',
+      url: '/R.6.0_ISI',
     },
   ],
 };
