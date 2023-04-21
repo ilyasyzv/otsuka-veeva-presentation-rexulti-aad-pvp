@@ -25,34 +25,8 @@
     .left-pane__pager {
       display: block;
       position: relative;
-      width: 5px;
-      height: 5px;
-      margin: 18px 0 18px 18px;
-      background-color: $base;
-      border-radius: 5px;
-      transition: 0.3s;
-
-      &:before {
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        background-color: $base;
-        border-radius: 5px;
-        left: 9px;
-        transition: 0.5s;
-      }
-
-      &:after {
-        content: "";
-        position: absolute;
-        width: 5px;
-        height: 5px;
-        background-color: $base;
-        border-radius: 5px;
-        right: 9px;
-        transition: 0.5s;
-      }
+      width: 0;
+      height: 41px;
     }
 
     .right-pane {
