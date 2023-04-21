@@ -1,14 +1,12 @@
 .page {
-  :global {
-    h1 {
-      letter-spacing: -.25px;
-    }
+  .h1 {
+    letter-spacing: -.25px;
+  }
 
-    img.image-1 {
-      position: relative;
-      left: -5px;
-      width: 830px;
-      max-width: none;
-    }
+  img.image_1 {
+    position: relative;
+    left: -5px;
+    width: 830px;
+    max-width: none;
   }
 }
