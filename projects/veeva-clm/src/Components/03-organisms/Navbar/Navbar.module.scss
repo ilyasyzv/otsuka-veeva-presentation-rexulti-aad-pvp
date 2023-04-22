@@ -3,7 +3,7 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  background-image: url("@assets/misc/nav/left-nav.png");
+  background: url("@assets/misc/nav/left-nav.png") -10px 0/112px 727px;
   border-radius: 0 14px 14px 0;
   height: calc(100% - 41px);
 
@@ -31,20 +31,34 @@
       background-image: url(@assets/icons/homepage.svg);
       background-size: 36px 36px;
       margin: 29px;
+
+      &--active {
+        &:before {
+          content: "";
+          position:absolute;
+          top: 41px;
+          left: 0;
+          width: 102px;
+          height: 89px;
+          background: url("@assets/misc/nav/main-nav-active-link.svg")  92.1px 0/12px 89px no-repeat;
+        }
+      }
     }
 
-    .navigation__homepage--active {
-      position:absolute;
-      width: 100px;
-      height: 89px;
-      background-color: $black;
-      opacity: 0.5;
-
+    .navigation__homepage {
+      &--active {
+        position: absolute;
+        width: 100px;
+        height: 89px;
+        background-color: $black;
+        opacity: 0.5;
+      }
     }
   }
+}
 
-  .main-bottom-nav {
-
+.main-bottom-nav {
+  :global {
     .main-nav__link {
       list-style: none;
       margin: 8px auto;

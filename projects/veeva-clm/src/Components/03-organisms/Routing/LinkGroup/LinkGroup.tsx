@@ -2,15 +2,27 @@ import React, { useContext } from 'react';
 
 import { PageContext } from '@/context/PageContext';
 import UpperSubNavBar from '@atoms/UpperSubNavBar/UpperSubNavBar';
-import { findPathInMenu, mainMenu } from '@/utils/processNavigation';
+import { ILink, findPathInMenu, mainMenu } from '@/utils/processNavigation';
 import SlideMenu from '@/Components/03-organisms/SlideMenu/SlideMenu';
+import classNames from 'classnames';
 
 import Link from '../Link/Link';
 import './LinkGroup.scss';
 
-const classNames = require('classnames');
+interface LGLink extends ILink {
+  addClass?: string;
+  slide?: any;
+}
 
-export const LinkGroup = ({ linkGroup, parentNav = false }) => {
+type LinkGroupProps = {
+  linkGroup: LGLink;
+  parentNav: ILink | boolean;
+};
+
+export const LinkGroup: React.FC<LinkGroupProps> = ({
+  linkGroup,
+  parentNav = false,
+}) => {
   const { currentPage } = useContext(PageContext);
 
   const linksGroup = () => {

@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { PageContext } from '@/context/PageContext';
 import { navigateLocal } from '@/Components/03-organisms/Routing/Link/Link';
 import { flatLinksList, mainMenu } from '@/utils/processNavigation';
-import './NavArrows.scss';
+import styles from './NavArrows.module.scss';
 
-export const NavArrows = () => {
+export const NavArrows: React.FC = () => {
   const { currentPage, changePage } = useContext(PageContext);
 
   const { currentPosition, paths } = flatLinksList(
@@ -35,11 +35,15 @@ export const NavArrows = () => {
   };
 
   return (
-    <div className='arrows-nav'>
+    <div className={styles['arrows-nav']}>
       <button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
         Prev
       </button>
-      <button type='button' onClick={moveToNext} className='arrows-nav__next'>
+      <button
+        type='button'
+        onClick={moveToNext}
+        className={styles['arrows-nav__next']}
+      >
         Next
       </button>
     </div>
