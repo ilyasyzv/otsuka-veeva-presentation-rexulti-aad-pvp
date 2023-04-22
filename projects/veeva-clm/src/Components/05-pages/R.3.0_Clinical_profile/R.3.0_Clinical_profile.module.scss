@@ -1,1 +1,29 @@
-.page {}
+.page {
+  h1 {
+    font-size: 44px;
+
+    sup {
+      font-size: 25px;
+      top: 0;
+    }
+
+    span {
+      display: block;
+      padding-top: 15px;
+      font-family: 'Whitney-Book', sans-serif;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  img.image_1 {
+    position: relative;
+    left: -15px;
+    width: 870px;
+    max-width: none;
+  }
+}
