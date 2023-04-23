@@ -8,7 +8,7 @@ import {
   StudyDesignLAIs1Args,
   StudyDesignLAIs2Args,
 } from '@/Components/04-templates/Layouts/Modal/LAISStudyDesign';
-
+import { ModalAddReported } from '@/Components/04-templates/Layouts/Modal/ModalAddReported/ModalAddReported';
 import {
   StudyDesign1Args,
   StudyDesign2Args,
@@ -67,6 +67,12 @@ StudyDesign2.args = {
 };
 
 export const UnderstandPANSS = Template.bind({});
+export const AddReportedStory = Template.bind({});
+
+AddReportedStory.args = {
+  ...Default.args,
+  ...ModalAddReported,
+};
 
 const blockName = 'modal';
 
