@@ -1,13 +1,8 @@
 import React from 'react';
 import './FootNote.scss';
-import { FootNote as FootNoteType } from '@/types';
 import SupLeft from '../SupLeft/SupLeft';
 import classNames from 'classnames';
-
-interface FootNoteProps {
-  custom?: string;
-  footnotes?: FootNoteType[];
-}
+import { FootNoteProps, FootNoteType } from '@/types';
 
 export const FootNote: React.FC<FootNoteProps> = ({
   custom = '',
@@ -17,7 +12,7 @@ export const FootNote: React.FC<FootNoteProps> = ({
     <div className={classNames('footnote', custom)}>
       {footnotes && (
         <ul className='footnote__list'>
-          {footnotes.map((footnote, index) => {
+          {footnotes.map((footnote: FootNoteType, index: number) => {
             return (
               <li key={index}>
                 {footnote.supLeftBig && (
