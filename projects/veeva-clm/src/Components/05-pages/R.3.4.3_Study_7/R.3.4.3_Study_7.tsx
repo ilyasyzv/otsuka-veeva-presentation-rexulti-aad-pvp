@@ -15,9 +15,12 @@ const PageContent = () => {
         Subscales of Agitation Symptoms
       </Header>
       <Paragraph
-        custom={`mb-20 ${styles.pivotal_trials}`}
+        custom={`mb-24 ${styles.pivotal_trials}`}
         children='In the pivotal trials, the change in frequency across CMAI subscales was measured as a secondary endpoint'
       />
+      <Header type='h3' custom={`${styles.h3} mb-14`}>
+        Mean change in CMAI subscales<sup>1</sup>
+      </Header>
       <img className={styles.image_1} src={PageImage} alt='' width='852' />
       <Footer
         custom={styles.footer}
