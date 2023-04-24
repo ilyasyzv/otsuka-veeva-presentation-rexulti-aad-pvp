@@ -5,6 +5,7 @@ import Header from '@/Components/01-atoms/Content/Header/Header';
 import tableImg from './images/AddReportedTable.png';
 import style from './ModalAddReported.module.scss';
 import { Modal } from '@templates';
+
 const blockName = 'modal';
 
 export const ModalAddReportedConfigs = {
@@ -22,11 +23,7 @@ export const ModalAddReportedConfigs = {
       <br /> Settings and Dementia Severity
     </Header>
   ),
-  children: (
-    <>
-      <img src={tableImg} className={style.imgBody} />
-    </>
-  ),
+  children: <img src={tableImg} className={style.imgBody} />,
   withFooter: true,
   footer: (
     <Footer
