@@ -4,9 +4,10 @@ import Button from '@/Components/01-atoms/Content/Button/Button';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import tableImg from './images/AddReportedTable.png';
 import style from './ModalAddReported.module.scss';
+import { Modal } from '@templates';
 const blockName = 'modal';
 
-export const ModalAddReported = {
+export const ModalAddReportedConfigs = {
   customClass: `${blockName}_study-design ${style.modalRoot}`,
   withHeader: true,
   link: (
@@ -16,34 +17,43 @@ export const ModalAddReported = {
     />
   ),
   header: (
-    <Header custom='mb-18'>
+    <Header custom='mb-0'>
       Agitation in Alzheimer’s Dementia Across Care
       <br /> Settings and Dementia Severity
     </Header>
   ),
   children: (
     <>
-      <img src={tableImg} />
+      <img src={tableImg} className={style.imgBody} />
     </>
   ),
   withFooter: true,
   footer: (
     <Footer
-      custom='mb-15'
+      custom={style.footer}
       footnotes={{
         data: [
           {
+            supLeft: '*',
             innerText: (
               <span>
-                *Nursing home percentage reported includes those with
-                Alzheimer’s dementia and other types of dementia.2 †In a 2-year
-                observation period, of the 320,886 eligible patients, 78,827
-                (24.6%) could be assigned to explicit AD/dementia severity
-                categories.
+                Nursing home percentage reported includes those with Alzheimer’s
+                dementia and other types of dementia.<sup>2</sup>
               </span>
             ),
           },
           {
+            supLeft: '†',
+            innerText: (
+              <span>
+                In a 2-year observation period, of the 320,886 eligible
+                patients, 78,827 (24.6%) could be assigned to explicit
+                AD/dementia severity categories.
+              </span>
+            ),
+          },
+          {
+            supLeft: '‡',
             innerText: (
               <span>
                 Adapted from a retrospective database study of 320,886
@@ -56,7 +66,7 @@ export const ModalAddReported = {
                 Patients who had records containing valid quantitative MMSE
                 scores or explicit terms for only one level of AD/dementia
                 severity were categorized accordingly as “mild,” “moderate,” or
-                “severe.”1
+                “severe.”<sup>1</sup>
               </span>
             ),
           },
@@ -68,14 +78,15 @@ export const ModalAddReported = {
           {
             text: (
               <span>
-                Halpern R, et al. Int J Geriatr Psychiatry. 2018;34(3):420-431.
+                Halpern R, et al. <strong>Int J Geriatr Psychiatry</strong>.
+                2018;34(3):420-431.
               </span>
             ),
           },
           {
             text: (
               <span>
-                Fillit H, et al. Int J Geriatr Psychiatry.
+                Fillit H, et al. <strong>Int J Geriatr Psychiatry</strong>.
                 2021;36(12):1959-1969.
               </span>
             ),
@@ -86,4 +97,5 @@ export const ModalAddReported = {
   ),
 };
 
+export const ModalAddReported = () => <Modal {...ModalAddReportedConfigs} />;
 export default ModalAddReported;

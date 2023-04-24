@@ -5,26 +5,25 @@ import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import cart from './imgs/card.png';
 import white_card from './imgs/white_card.png';
 import people from './imgs/people.png';
-import Button from '@/Components/01-atoms/Content/Button/Button';
+import ModalAddReported from '@/Components/04-templates/Layouts/Modal/ModalAddReported/ModalAddReported';
 
 const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
-      <Header type={'h1'}>
+      <Header type={'h1'} custom={styles.h1}>
         AAD Is Reported in 45% of Community-Living Patients
         <br /> With Alzheimer’s Dementia<sup>1</sup>
       </Header>
-      <Header type={'h2'}>
+      <Header type={'h2'} custom={styles.h2}>
         Number of Americans aged ≥65 years with dementia being treated for
         agitation<sup>*</sup>
       </Header>
+
       <img src={white_card} alt='cart' className={styles.whiteCard} />
       <div className={styles.buttonContainer}>
-        <Button
-          text='Patient Setting and Severity'
-          custom='button__type-a--active'
-        />
+        <ModalAddReported />
       </div>
+
       <img src={cart} className={styles.card} alt='cart' />
       <img src={people} className={styles.people} alt='cart' />
       <Footer
