@@ -8,7 +8,6 @@ import {
   StudyDesignLAIs1Args,
   StudyDesignLAIs2Args,
 } from '@/Components/04-templates/Layouts/Modal/LAISStudyDesign';
-
 import {
   StudyDesign1Args,
   StudyDesign2Args,

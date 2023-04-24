@@ -21,6 +21,7 @@ import R_3_7_Summary from '@/content/pages/R.3.7_Summary/index.mdx';
 import R_4_0_Patient_support from '@/content/pages/R.4.0_Patient_support/index.mdx';
 import R_5_0_Appendix from '@/content/pages/R.5.0_Appendix/index.mdx';
 import R_6_0_ISI from '@/content/pages/R.6.0_ISI/index.mdx';
+import R_2_2_AAD_reported from '@/content/pages/R.2.2_AAD_Reported/index.mdx';
 import R_2_2_AAD_Overview from '@/content/pages/R.2.2_AAD_Overview/index.mdx';
 import R_2_3_AAD_Overview from '@/content/pages/R.2.3_AAD_Overview/index.mdx';
 import R_2_4_AAD_Overview from '@/content/pages/R.2.4_AAD_Overview/index.mdx';
@@ -63,6 +64,10 @@ function App({ tab }: AppProps) {
               <Route
                 path='/R.2.1_AAD_Overview'
                 component={() => <Page component={R_2_1_AAD_Overview} />}
+              />
+              <Route
+                path='/R.2.2_AAD_reported'
+                component={() => <Page component={R_2_2_AAD_reported} />}
               />
               <Route
                 path='/R.3.0_Clinical_profile'
