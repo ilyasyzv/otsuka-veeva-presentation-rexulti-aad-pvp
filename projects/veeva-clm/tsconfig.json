@@ -23,12 +23,12 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "@base": ["./src/Components/00-base"],
-      "@atoms": ["./src/Components/01-atoms"],
-      "@molecules": ["./src/Components/02-molecules"],
-      "@organisms": ["./src/Components/03-organisms"],
-      "@templates": ["./src/Components/04-templates"],
-      "@pages": ["./src/Components/05-pages"]
+      "@base/*": ["./src/Components/00-base/*"],
+      "@atoms/*": ["./src/Components/01-atoms/*"],
+      "@molecules/*": ["./src/Components/02-molecules/*"],
+      "@organisms/*": ["./src/Components/03-organisms/*"],
+      "@templates/*": ["./src/Components/04-templates/*"],
+      "@pages/*": ["./src/Components/05-pages/*"]
     }
   },
   "include": ["src"],

@@ -1,0 +1,61 @@
+@import "@base/variables";
+
+.page {
+  .h1 {
+    letter-spacing: -0.25px;
+  }
+
+  img.image_1 {
+    position: relative;
+    left: -5px;
+    width: 800px;
+    max-width: none;
+  }
+
+  ul.rexulti_list {
+    list-style: none;
+    position: relative;
+
+    li {
+      font-size: 15px;
+      line-height: 19px;
+      color: $black-100;
+      margin-left: 6px;
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 4px;
+        border-radius: 50%;
+        background-color: $green-300;
+        left: -6px;
+        top: 7px;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 28px;
+  }
+
+  .footnotes {
+    width: 700px;
+  }
+
+  .safety_info {
+    p:first-child {
+      font-size: 14px;
+
+      a {
+        color: $green-200;
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "@base/variables";
+
+.page {
+  .h1 {
+    letter-spacing: -0.25px;
+  }
+
+  .h3 {
+    margin-left: 248px;
+
+    sup {
+      font-size: 0.7em;
+    }
+  }
+
+  .pivotal_trials {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  img.image_1 {
+    position: relative;
+    left: 0;
+    width: 690px;
+    max-width: none;
+  }
+
+  .footer {
+    bottom: 28px;
+  }
+
+  .footnotes {
+    width: 700px;
+  }
+
+  .safety_info {
+    p:first-child {
+      font-size: 14px;
+
+      a {
+        color: $green-200;
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+}

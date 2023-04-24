@@ -2,11 +2,21 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  max-width: 859px;
+  max-width: 878px;
 
   & .logo {
     position: absolute;
-    right: 0;
+    right: 65px;
     bottom: 0;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: -2px;
+    bottom: -5px;
+    width: 59.5px;
+    height: 101px;
+    background: url("@assets/icons/footer-arrow.svg") 0 0 no-repeat;
+    background-size: cover;
   }
 }

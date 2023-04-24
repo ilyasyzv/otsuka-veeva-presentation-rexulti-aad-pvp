@@ -11,11 +11,12 @@ const Template = (args) => <References {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
+  custom: 'mw-563',
   references: [
     {
       text: (
         <span>
-          Harlin M, et al <em>CNS Drugs.</em> 2023;10.1007/s40263-023-00996-8.
+          Jones E, et al. <strong>J Alzheimers Dis.</strong> 2021;83(1):89-101.
         </span>
       ),
     },

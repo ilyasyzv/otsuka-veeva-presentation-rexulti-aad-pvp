@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
+import PageContent from './R.6.0_ISI';
 
 export default {
   title: 'CLM/Pages',
@@ -7,14 +8,10 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-  excludeStories: ['R_6_0_ISI_content'],
 };
 
-const content = (): JSX.Element => <div>R.6.0_ISI page</div>;
-
 const Template: React.FC = () => {
-  return <AppStorybook path='R.6.0_ISI' components={content} />;
+  return <AppStorybook path='R.6.0_ISI' components={PageContent} />;
 };
 
 export const R_6_0_ISI: React.FC = Template.bind({});
-export const R_6_0_ISI_content: () => JSX.Element = content.bind({});

@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
+import PageContent from './R.3.7_Summary';
 
 export default {
   title: 'CLM/Pages',
@@ -7,14 +8,10 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-  excludeStories: ['R_3_7_Summary_content'],
 };
 
-const content = (): JSX.Element => <div>R.3.7_Summary page</div>;
-
 const Template: React.FC = () => {
-  return <AppStorybook path='R.3.7_Summary' components={content} />;
+  return <AppStorybook path='R.3.7_Summary' components={PageContent} />;
 };
 
 export const R_3_7_Summary: React.FC = Template.bind({});
-export const R_3_7_Summary_content: () => JSX.Element = content.bind({});

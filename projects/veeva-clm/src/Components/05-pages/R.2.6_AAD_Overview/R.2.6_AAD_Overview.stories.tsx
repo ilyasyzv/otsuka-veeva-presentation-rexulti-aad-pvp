@@ -1,5 +1,6 @@
 import React from 'react';
 import { AppStorybook } from '@pages/AppStorybook';
+import PageContent from './R.2.6_AAD_Overview';
 
 export default {
   title: 'CLM/Pages',
@@ -7,14 +8,10 @@ export default {
   parameters: {
     layout: 'fullscreen',
   },
-  excludeStories: ['R_2_6_AAD_Overview_content'],
 };
-
-const content = (): JSX.Element => <div>R.2.6_AAD_Overview page</div>;
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.2.6_AAD_Overview' components={content} />;
+  return <AppStorybook path='R.2.6_AAD_Overview' components={PageContent} />;
 };
 
-export const R_2_6_AAD_Overview: React.FC = Template.bind({});
-export const R_2_6_AAD_Overview_content: () => JSX.Element = content.bind({});
+export const R_2_6_AAD_Overview_content: React.FC = Template.bind({});
