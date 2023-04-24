@@ -9,9 +9,13 @@
   height: 100%;
   padding: 49px 53px 0 148px;
 
+  @at-root :global(.page--R_4_0_Patient_support) & {
+    padding-top: 28px;
+  }
+
   &::before,
   &::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     background-repeat: no-repeat;
@@ -24,7 +28,7 @@
     height: 81px;
     left: 102px;
     top: 57px;
-    background-image: url('img/arrow-yellow.png');
+    background-image: url("img/arrow-yellow.png");
     background-position: left top;
   }
 
@@ -33,7 +37,7 @@
     height: 101px;
     right: 0;
     bottom: 0;
-    background-image: url('img/arrow-green.png');
+    background-image: url("img/arrow-green.png");
     background-position: right top;
   }
 
