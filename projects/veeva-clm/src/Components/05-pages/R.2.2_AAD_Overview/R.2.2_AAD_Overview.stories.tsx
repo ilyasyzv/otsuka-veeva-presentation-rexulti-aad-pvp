@@ -12,7 +12,7 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.2.6_AAD_Overview' components={PageContent} />;
+  return <AppStorybook path='R.2.2_AAD_Overview' components={PageContent} />;
 };
 /**
  * Default usage.
