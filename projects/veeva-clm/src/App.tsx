@@ -83,10 +83,6 @@ function App({ tab }: AppProps) {
                 )}
               />
               <Route
-                path='/R_2_6_AAD_reported'
-                component={() => <Page component={R_2_6_AAD_Reported} />}
-              />
-              <Route
                 path='/R.3.0_Clinical_profile'
                 component={() => (
                   <Page background='b' component={R_3_0_Clinical_profile} />

@@ -3,8 +3,6 @@ import styles from './R.2.5_AAD_agitation_in_dementia.module.scss';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import imgBg from './imgs/4blocks.png';
-//import ModalAddReported from
-// '@templates/Layouts/Modal/ModalAddReported/ModalAddReported';
 import Button from '@/Components/01-atoms/Content/Button/Button';
 
 const PageContent: React.FC = () => {
