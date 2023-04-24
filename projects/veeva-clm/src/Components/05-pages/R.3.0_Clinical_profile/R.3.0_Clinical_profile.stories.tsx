@@ -11,7 +11,9 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.3.0_Clinical_profile' components={PageContent} />;
+  return (
+    <AppStorybook path='R.3.0_Clinical_profile' components={PageContent} />
+  );
 };
 
 export const R_3_0_Clinical_profile: React.FC = Template.bind({});

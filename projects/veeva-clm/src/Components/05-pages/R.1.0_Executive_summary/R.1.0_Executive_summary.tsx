@@ -27,7 +27,7 @@ const PageContent = () => {
           ],
         }}
         references={{
-          custom: 'mb-8 mt-8',
+          custom: 'mb-4 mt-8',
           data: [
             {
               text: (
@@ -40,25 +40,29 @@ const PageContent = () => {
           ],
         }}
         safetyInfo={{
-          custom: 'mt-6',
           data: [
             {
               text: (
-                <span>
+                <strong>
                   Please see{' '}
                   <Link to='R.6.0_ISI' custom='blue-500'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.
-                </span>
+                </strong>
               ),
             },
             {
-              text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+              text: (
+                <span className='footerWarning'>
+                  FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
+                  OR DISTRIBUTE. 
+                </span>
+              ),
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='140.2' />}
+        image={<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />}
       />
     </div>
   );
