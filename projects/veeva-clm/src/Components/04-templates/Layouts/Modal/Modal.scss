@@ -89,12 +89,12 @@
       background: $green-300;
     }
 
-    &:before{
-       rotate:45deg;
+    &:before {
+      rotate: 45deg;
     }
 
     &:after {
-      rotate:(-45deg);
+      rotate: (-45deg);
     }
   }
 
@@ -138,7 +138,7 @@
       }
 
       &::-webkit-scrollbar-thumb {
-        background-color:$green-300;
+        background-color: $green-300;
         border-radius: 4px;
       }
     }
@@ -159,7 +159,6 @@
 
   &-with-footer {
     .modal-wrapper {
-
       .modal-footer {
         display: block;
         padding-top: 50px;
@@ -237,7 +236,6 @@
       bottom: 28px;
     }
   }
-
 }
 
 .isi-modal-wrapper {

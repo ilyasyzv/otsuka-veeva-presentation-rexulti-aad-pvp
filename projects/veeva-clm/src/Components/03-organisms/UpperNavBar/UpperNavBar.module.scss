@@ -1,6 +1,5 @@
 @import "@base/variables";
 
-
 .upper_nav_bar {
   :global {
     position: absolute;
@@ -29,17 +28,19 @@
         }
 
         &.active {
-          background: url("@assets/misc/button/tab-background.png") 0 0/126px 42px;
+          background: url("@assets/misc/button/tab-background.png") 0 0/126px
+            42px;
           border: none;
           width: 126px;
 
           &::before {
             background: none;
           }
+
           &::after {
             background: none;
           }
-  
+
           ul {
             display: flex;
             position: absolute;
@@ -66,7 +67,6 @@
           }
 
           .main-nav__link__wrapper a {
-
             &:after {
               display: none;
             }
@@ -149,6 +149,7 @@
         &::before {
           background: none;
         }
+
         &::after {
           background: none;
         }
@@ -156,7 +157,6 @@
     }
   }
 }
-
 
 .upper_nav_bar__submenu {
   display: flex;

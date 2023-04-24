@@ -10,6 +10,7 @@
   .footer {
     margin: 0 0 5px 0;
     max-width: 890px;
+
     :global {
       /*
        * Fix for footnote.
@@ -17,6 +18,7 @@
       .footnote {
         margin-bottom: 10px;
         max-width: 100%;
+
         ul li {
           line-height: 13px;
         }

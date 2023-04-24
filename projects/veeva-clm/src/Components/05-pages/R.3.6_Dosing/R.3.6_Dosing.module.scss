@@ -2,7 +2,7 @@
 
 .page {
   .h1 {
-    letter-spacing: -.25px;
+    letter-spacing: -0.25px;
   }
 
   img.image_1 {
@@ -24,20 +24,20 @@
       position: relative;
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         height: 4px;
         width: 4px;
         border-radius: 50%;
         background-color: $green-300;
         left: -6px;
-        top: 7px
+        top: 7px;
       }
     }
   }
 
   .footer {
-    bottom: 28px
+    bottom: 28px;
   }
 
   .footnotes {

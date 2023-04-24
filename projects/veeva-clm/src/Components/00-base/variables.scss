@@ -95,7 +95,7 @@ $colors: (
   "black": $black,
   "black-100": $black-100,
   "black-300": $black-300,
-  "grey-10": $grey-10 ,
+  "grey-10": $grey-10,
   "gray-100": $gray-100,
   "gray-200": $gray-200,
   "gray-300": $gray-300,
@@ -191,6 +191,7 @@ $card-shadow: 0 2px 18px rgba($black, 0.08);
     left: -8px;
   }
 }
+
 @mixin rectangle {
   &::before {
     content: "";
