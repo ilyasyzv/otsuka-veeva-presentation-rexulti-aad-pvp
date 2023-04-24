@@ -22,18 +22,22 @@ const PageContent: React.FC = () => {
         <div className={styles.support_text}>
           <Paragraph position='center'>
             <strong>
-              Otsuka Patient Support is committed to providing personalized
-              support for patients and their partners.
+              <em>
+                Otsuka Patient Support is committed to providing personalized
+                support for patients and their partners.
+              </em>
             </strong>
           </Paragraph>
           <Paragraph position='center'>
             <strong>
-              Visit{' '}
-              <a href='https://www.otsukapatientsupport.com/'>
-                OtsukaPatientSupport.com
-              </a>{' '}
-              to learn more about tools, resources and dedicated support team
-              that are available.
+              <em>
+                Visit{' '}
+                <a href='https://www.otsukapatientsupport.com/'>
+                  OtsukaPatientSupport.com
+                </a>{' '}
+                to learn more about tools, resources and dedicated support team
+                that are available.
+              </em>
             </strong>
           </Paragraph>
         </div>

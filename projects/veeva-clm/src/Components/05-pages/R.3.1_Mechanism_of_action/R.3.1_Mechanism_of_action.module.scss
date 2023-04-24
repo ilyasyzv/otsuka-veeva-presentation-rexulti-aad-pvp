@@ -1,2 +1,104 @@
+@import "@base/variables";
 .page {
+  .h1 {
+    line-height: 31px;
+
+    sup {
+      top: 4px;
+      font-size: 0.6em;
+    }
+  }
+
+  .chart_head {
+    font-size: 23px;
+    line-height: 24px;
+
+    span {
+      font-size: 26px;
+      color: $green-200;
+      font-weight: bold;
+    }
+  }
+
+  .image_1 {
+    width: 806px;
+  }
+
+  .chart_bottom {
+    font-size: 15px;
+    line-height: 18px;
+
+    sub {
+      font-size: 0.6em;
+    }
+  }
+
+  .list_container {
+    display: flex;
+
+    & > div {
+      padding-left: 0;
+      padding-top: 4px;
+
+      &:first-child {
+        width: 390px;
+      }
+    }
+
+    h3 {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 6px;
+
+        &:before {
+          background-color: $green-200;
+          top: 8px;
+          left: -11px;
+          border-radius: 40%;
+        }
+
+        sub {
+          font-size: 0.7em;
+        }
+      }
+    }
+  }
+
+  .footnote {
+    max-width: 560px;
+
+    ul li {
+      line-height: 12px;
+
+      sup {
+        font-size: 6px;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 26px;
+  }
+
+  .safety_info {
+    p:first-child {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+
+      a {
+        color: $green-200;
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
 }
