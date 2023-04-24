@@ -23,11 +23,13 @@ import R_5_0_Appendix from '@/content/pages/R.5.0_Appendix/index.mdx';
 import R_6_0_ISI from '@/content/pages/R.6.0_ISI/index.mdx';
 import R_2_2_AAD_Reported from '@/content/pages/R.2.2_AAD_Reported/index.mdx';
 import R_2_3_AAD_Underlying from '@/content/pages/R.2.3_AAD_Underlying/index.mdx';
+import R_2_4_AAD_agitation_in_dementia from '@/content/pages/R.2.4_AAD_agitation_in_dementia/index.mdx';
 import R_2_2_AAD_Overview from '@/content/pages/R.2.2_AAD_Overview/index.mdx';
 import R_2_3_AAD_Overview from '@/content/pages/R.2.3_AAD_Overview/index.mdx';
 import R_2_4_AAD_Overview from '@/content/pages/R.2.4_AAD_Overview/index.mdx';
 import R_2_5_AAD_Overview from '@/content/pages/R.2.5_AAD_Overview/index.mdx';
 import R_2_6_AAD_Overview from '@/content/pages/R.2.6_AAD_Overview/index.mdx';
+import R_2_6_AAD_Reported from '@/content/pages/R.2.6_AAD_Reported/index.mdx';
 import R_2_7_AAD_Overview from '@/content/pages/R.2.7_AAD_Overview/index.mdx';
 import R_3_3_2_Study_6 from '@/content/pages/R.3.3.2_Study_6/index.mdx';
 import R_3_3_3_Study_6 from '@/content/pages/R.3.3.3_Study_6/index.mdx';
@@ -73,6 +75,12 @@ function App({ tab }: AppProps) {
               <Route
                 path='/R.2.3_AAD_Underlying'
                 component={() => <Page component={R_2_3_AAD_Underlying} />}
+              />
+              <Route
+                path='/R.2.4_AAD_agitation_in_dementia'
+                component={() => (
+                  <Page component={R_2_4_AAD_agitation_in_dementia} />
+                )}
               />
               <Route
                 path='/R.3.0_Clinical_profile'
