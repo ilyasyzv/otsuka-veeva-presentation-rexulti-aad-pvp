@@ -11,7 +11,12 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.3.2_Clinical_studies_overview' components={PageContent} />;
+  return (
+    <AppStorybook
+      path='R.3.2_Clinical_studies_overview'
+      components={PageContent}
+    />
+  );
 };
 
 export const R_3_2_Clinical_studies_overview: React.FC = Template.bind({});

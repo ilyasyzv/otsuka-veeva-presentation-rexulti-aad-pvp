@@ -9,6 +9,10 @@
   height: 100%;
   padding: 49px 53px 0 148px;
 
+  @at-root :global(.page--R_4_0_Patient_support) & {
+    padding-top: 28px;
+  }
+
   &.a {
     background: url("img/back-0.jpg") no-repeat left top $white;
     background-size: cover;
@@ -16,7 +20,7 @@
 
   &.b {
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 100%;
       height: 357px;

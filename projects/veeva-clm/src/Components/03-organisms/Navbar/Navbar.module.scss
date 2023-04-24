@@ -22,7 +22,7 @@
   .navigation__head {
     display: flex;
     height: 94px;
-    
+
     .navigation__homepage-link {
       display: block;
       z-index: 1;
@@ -35,12 +35,13 @@
       &--active {
         &:before {
           content: "";
-          position:absolute;
+          position: absolute;
           top: 41px;
           left: 0;
           width: 102px;
           height: 89px;
-          background: url("@assets/misc/nav/main-nav-active-link.svg")  92.1px 0/12px 89px no-repeat;
+          background: url("@assets/misc/nav/main-nav-active-link.svg") 92.1px 0/12px
+            89px no-repeat;
         }
       }
     }
