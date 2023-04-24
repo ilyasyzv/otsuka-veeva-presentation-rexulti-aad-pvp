@@ -71,7 +71,9 @@ function App({ tab }: AppProps) {
               />
               <Route
                 path='/R.3.0_Clinical_profile'
-                component={() => <Page component={R_3_0_Clinical_profile} />}
+                component={() => (
+                  <Page background='b' component={R_3_0_Clinical_profile} />
+                )}
               />
               <Route
                 path='/R.3.1_Mechanism_of_action'
