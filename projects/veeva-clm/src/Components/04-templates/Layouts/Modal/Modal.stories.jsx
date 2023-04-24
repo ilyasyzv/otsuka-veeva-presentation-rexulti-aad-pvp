@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@atoms/Content/Button/Button';
-import { Header } from '@/Components/01-atoms/Content/Header/Header';
-import { Modal } from '@templates/Layouts/Modal/Modal';
+import Header from '@/Components/01-atoms/Content/Header/Header';
+import Modal from '@templates/Layouts/Modal/Modal';
 import { Text } from '@/Components/01-atoms/Content/Text/Text';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import {

@@ -4,20 +4,19 @@ import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
 import { References } from '@/Components/01-atoms/Content/References/References';
 import { SafetyInfo } from '@/Components/01-atoms/Content/SafetyInfo/SafetyInfo';
 import { Logo } from '@/Components/01-atoms/Content/Logo/Logo';
+import { FooterProps } from '@/types';
+import classNames from 'classnames';
 
-const classNames = require('classnames');
-
-export const Footer = ({
-  custom,
+export const Footer: React.FC<FooterProps> = ({
+  custom = '',
   footnotes,
   references,
   safetyInfo,
   image,
+  footerArrow,
 }) => {
-  const customClass = custom || '';
-
   return (
-    <footer className={classNames('footer', customClass)}>
+    <footer className={classNames('footer', custom)}>
       {footnotes && (
         <FootNote custom={footnotes.custom} footnotes={footnotes.data} />
       )}
@@ -28,6 +27,9 @@ export const Footer = ({
         <SafetyInfo custom={safetyInfo.custom} safetyInfo={safetyInfo.data} />
       )}
       {image && <Logo image={image} />}
+      {footerArrow && <div className='footer__arrow' />}
     </footer>
   );
 };
+
+export default Footer;

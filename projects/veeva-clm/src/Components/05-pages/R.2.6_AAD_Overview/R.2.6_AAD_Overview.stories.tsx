@@ -14,4 +14,5 @@ const Template: React.FC = () => {
   return <AppStorybook path='R.2.6_AAD_Overview' components={PageContent} />;
 };
 
-export const R_2_6_AAD_Overview: React.FC = Template.bind({});
+export const R_2_6_AAD_Overview_content: React.FC = Template.bind({});
+

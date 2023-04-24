@@ -1,11 +1,34 @@
-import React, { useState } from 'react';
-import { useLongPress } from 'use-long-press';
-import './Modal.scss';
-import { SwitchContent } from '@molecules/SwitchContent/SwitchContent';
+import React, { ReactNode, useState } from 'react';
 import { useBetween } from 'use-between';
+import classNames from 'classnames';
+import { useLongPress } from 'use-long-press';
+
+import { SwitchContent } from '@/Components/02-molecules/SwitchContent';
+
+import './Modal.scss';
+
+interface ModalProps {
+  id?: string;
+  link?: JSX.Element;
+  openByDefault?: boolean;
+  showPlus?: boolean;
+  isExpanded?: boolean;
+  withHeader?: boolean;
+  header?: JSX.Element;
+  withFooter?: boolean;
+  footer?: JSX.Element;
+  isSwitchPopup?: boolean;
+  customClass?: string;
+  children: ReactNode;
+}
+
+interface ModalContent {
+  link?: JSX.Element;
+  setShouldShow: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 const useModalManager = () => {
-  const [modals, setModals] = useState([]);
+  const [modals, setModals] = useState<ModalContent[]>([]);
   return {
     modals,
     setModals,
@@ -14,16 +37,13 @@ const useModalManager = () => {
 
 const useSharedModalManager = () => useBetween(useModalManager);
 
-const classNames = require('classnames');
-
 const LinkDefault = <p>Show Modal</p>;
 const HeaderDefault = <h1>Header content</h1>;
 const FooterDefault = <p className='footnote'>Footer content</p>;
 
 export const Modal = ({
-  id = null,
+  id,
   link = LinkDefault,
-  children,
   openByDefault = false,
   showPlus = false,
   isExpanded = false,
@@ -33,9 +53,12 @@ export const Modal = ({
   footer = FooterDefault,
   isSwitchPopup = false,
   customClass = '',
-}) => {
+  children,
+}: ModalProps) => {
   const [shouldShow, setShouldShow] = useState(openByDefault);
+
   const { modals, setModals } = useSharedModalManager();
+
   modals.push({ link, setShouldShow });
   setModals(modals);
 
@@ -81,13 +104,13 @@ export const Modal = ({
     'modal-wrapper__small': isSwitchPopup,
   });
 
+  const modalHandler = shouldShow ? closeHandler : openHandler;
+
   return (
     <>
       <div
         className={modalLinkWrapperClass}
-        onClick={
-          !isSwitchPopup ? (shouldShow ? closeHandler : openHandler) : null
-        }
+        onClick={modalHandler}
         {...(isSwitchPopup ? { ...openSwitchPopup() } : '')}
       >
         {link}
@@ -96,7 +119,7 @@ export const Modal = ({
       {shouldShow && (
         <div
           className={modalOuterClass}
-          id={id ? `modal-${id}` : null}
+          id={id ? `modal-${id}` : ''}
           onClick={closeHandler}
         >
           <div className={modalClass}>

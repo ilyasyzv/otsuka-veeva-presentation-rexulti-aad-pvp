@@ -1,1 +1,32 @@
-.page {}
+.page {
+  :global {
+    h1 {
+      letter-spacing: -.25px;
+    }
+
+    h2 {
+      text-align: center;
+
+      sup {
+        font-size: 0.6em;
+      }
+    }
+
+    img.image-1 {
+      position: absolute;
+      width: 940px;
+      max-width: none;
+      right: -54px;
+    }
+
+    .footer {
+      bottom: 14px;
+    }
+
+    .safetyInfo p {
+      font-weight: normal;
+      font-size: 14px;
+    }
+  }
+}
+

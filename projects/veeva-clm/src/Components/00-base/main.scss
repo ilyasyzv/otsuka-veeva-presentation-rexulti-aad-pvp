@@ -104,3 +104,7 @@ a {
 
 // example: bottom-10
 @include position("bottom", "bottom");
+
+// example: mw-837
+@include maxWidth("mw", "max-width");
+

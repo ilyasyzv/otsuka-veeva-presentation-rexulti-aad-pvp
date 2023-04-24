@@ -11,13 +11,16 @@ const Template = (args) => <SafetyInfo {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  distance: '0px',
+  custom: 'mw-636',
   safetyInfo: [
     {
       text: (
-        <span>
+        <span
+          style={{ display: 'inline-block', marginBottom: '5px' }}
+          className='highlighted'
+        >
           Please see{' '}
-          <a href='/' className='blue-500'>
+          <a href='/' className='green-200'>
             IMPORTANT SAFETY INFORMATION
           </a>{' '}
           in this presentation.

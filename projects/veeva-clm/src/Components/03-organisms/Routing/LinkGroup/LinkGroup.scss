@@ -26,6 +26,7 @@
         letter-spacing: 0;
         text-align: center;
         margin: auto;
+        padding: 0 10px;
       }
     }
 
@@ -35,7 +36,6 @@
     }
 
     &.active {
-      border-right: 2px solid $yellow-200;
 
       &:before {
         content: "";
@@ -44,6 +44,14 @@
         height: 89px;
         background-color: $black;
         opacity: 0.5; 
+      }
+
+      &:after {
+        content: "";
+        position:absolute;
+        width: 102px;
+        height: 89px;
+        background: url("@assets/misc/nav/main-nav-active-link.svg")  92.1px 0/12px 89px no-repeat;
       }
 
       .main-nav__link__wrapper a {

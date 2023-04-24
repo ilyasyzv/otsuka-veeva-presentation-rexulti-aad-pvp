@@ -59,7 +59,7 @@ export const mainMenu: IMenu = {
     },
     {
       name: 'Clinical Profile',
-      url: '/R.3.0_Clinical_Profile',
+      url: '/R.3.0_Clinical_profile',
       children: [
         {
           name: 'Mechanism of Action',

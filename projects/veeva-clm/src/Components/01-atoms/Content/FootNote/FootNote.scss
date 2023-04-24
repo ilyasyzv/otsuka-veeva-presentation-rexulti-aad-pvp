@@ -1,7 +1,6 @@
 .footnote {
-  max-width: 822px;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: 10px;
+  line-height: 12px;
 
   ul,
   ol {
@@ -33,6 +32,10 @@
 
   sup:not(.sup-left) {
     top: -0.4em;
+  }
+
+  .sup-left {
+    top: 2px;
   }
 
   sub {

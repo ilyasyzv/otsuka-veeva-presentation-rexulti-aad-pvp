@@ -8,7 +8,10 @@ import { Modal } from '@templates';
 
 const blockName = 'modal';
 
-export const ModalAddReportedConfigs = {
+/**
+ * Component for modals page https://owp.atlassian.net/browse/DF-33593.
+ */
+const ModalAddReportedConfigs = {
   customClass: `${blockName}_study-design ${style.modalRoot}`,
   withHeader: true,
   link: (

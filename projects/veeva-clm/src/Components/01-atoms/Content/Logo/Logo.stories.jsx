@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import AsimtufiiLogo from '@/assets/asimtufii-logo.png';
+import RexultiLogo from '@/assets/rexulti-logo.png';
 
 export default {
   title: 'CLM/Atoms/Logo',
@@ -12,5 +12,5 @@ const Template = (args) => <Logo {...args} />;
 export const Default = Template.bind({});
 
 Default.args = {
-  image: <img src={AsimtufiiLogo} alt='asimtufii-logo' width='142.5' />,
+  image: <img src={RexultiLogo} alt='rexulti-logo' width='142.5' />,
 };
