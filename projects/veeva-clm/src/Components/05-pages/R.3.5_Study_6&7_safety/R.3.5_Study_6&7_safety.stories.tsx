@@ -11,7 +11,9 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.3.5_Study_6&7_safety' components={PageContent} />;
+  return (
+    <AppStorybook path='R.3.5_Study_6&7_safety' components={PageContent} />
+  );
 };
 
 export const R_3_5_Study_6_and_7_safety: React.FC = Template.bind({});

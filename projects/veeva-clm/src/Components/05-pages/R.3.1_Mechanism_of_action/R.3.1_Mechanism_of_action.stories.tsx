@@ -11,7 +11,9 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.3.1_Mechanism_of_action' components={PageContent} />;
+  return (
+    <AppStorybook path='R.3.1_Mechanism_of_action' components={PageContent} />
+  );
 };
 
 export const R_3_1_Mechanism_of_action: React.FC = Template.bind({});

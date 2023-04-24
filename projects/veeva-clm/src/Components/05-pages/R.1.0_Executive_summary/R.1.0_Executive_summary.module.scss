@@ -2,7 +2,7 @@
 
 .page {
   .h1 {
-    letter-spacing: -.25px;
+    letter-spacing: -0.25px;
   }
 
   img.image_1 {
@@ -23,8 +23,9 @@
             color: $green-200;
           }
         }
+
         .footerWarning {
-          font-family: 'Whitney-Book', sans-serif;
+          font-family: "Whitney-Book", sans-serif;
           font-size: 13.5px;
         }
       }
