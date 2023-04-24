@@ -1,8 +1,8 @@
 export type FootNoteType = {
-  supLeftBig: string;
-  supLeft: string;
+  supLeftBig?: string;
+  supLeft?: string;
   innerText: string | React.ReactNode;
-  supRight: string;
+  supRight?: string;
 };
 
 export interface FootNoteProps {

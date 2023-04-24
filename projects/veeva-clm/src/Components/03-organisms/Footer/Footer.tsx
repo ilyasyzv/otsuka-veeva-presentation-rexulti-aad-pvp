@@ -1,12 +1,11 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import './Footer.scss';
 import { FootNote } from '@/Components/01-atoms/Content/FootNote/FootNote';
 import { References } from '@/Components/01-atoms/Content/References/References';
 import { SafetyInfo } from '@/Components/01-atoms/Content/SafetyInfo/SafetyInfo';
 import { Logo } from '@/Components/01-atoms/Content/Logo/Logo';
 import { FooterProps } from '@/types';
-
-const classNames = require('classnames');
+import classNames from 'classnames';
 
 export const Footer: React.FC<FooterProps> = ({
   custom = '',
@@ -28,7 +27,9 @@ export const Footer: React.FC<FooterProps> = ({
         <SafetyInfo custom={safetyInfo.custom} safetyInfo={safetyInfo.data} />
       )}
       {image && <Logo image={image} />}
-      {footerArrow && <div className='footer__arrow'></div>}
+      {footerArrow && <div className='footer__arrow' />}
     </footer>
   );
 };
+
+export default Footer;
