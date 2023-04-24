@@ -16,7 +16,7 @@ interface LGLink extends ILink {
 
 type LinkGroupProps = {
   linkGroup: LGLink;
-  parentNav: ILink | boolean;
+  parentNav?: ILink | boolean;
 };
 
 export const LinkGroup: React.FC<LinkGroupProps> = ({
@@ -45,6 +45,7 @@ export const LinkGroup: React.FC<LinkGroupProps> = ({
   };
 
   const { addClass } = linkGroup;
+  console.log(linkGroup);
 
   const mainLinkClass = classNames({
     'main-nav__link': true,
@@ -58,7 +59,9 @@ export const LinkGroup: React.FC<LinkGroupProps> = ({
           <SlideMenu data={linkGroup} />
         ) : (
           <>
-            <Link to={linkGroup.url}>{linkGroup.name}</Link>
+            <Link to={linkGroup.url}>
+              <span dangerouslySetInnerHTML={{ __html: linkGroup.name }} />
+            </Link>
             <UpperSubNavBar link={linkGroup.url} />
           </>
         )}
