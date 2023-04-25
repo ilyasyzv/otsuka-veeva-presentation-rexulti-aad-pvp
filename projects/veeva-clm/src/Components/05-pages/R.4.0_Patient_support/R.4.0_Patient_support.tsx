@@ -18,29 +18,27 @@ const PageContent: React.FC = () => {
         Personalized Support for Patients and Their Care Partners
       </Header>
       <img className={styles.image_1} src={PageImage} alt='' width='545' />
-      <div className='mt-27'>
-        <div className={styles.support_text}>
-          <Paragraph position='center'>
-            <strong>
-              <em>
-                Otsuka Patient Support is committed to providing personalized
-                support for patients and their partners.
-              </em>
-            </strong>
-          </Paragraph>
-          <Paragraph position='center'>
-            <strong>
-              <em>
-                Visit{' '}
-                <a href='https://www.otsukapatientsupport.com/'>
-                  OtsukaPatientSupport.com
-                </a>{' '}
-                to learn more about tools, resources and dedicated support team
-                that are available.
-              </em>
-            </strong>
-          </Paragraph>
-        </div>
+      <div className={`${styles.support_text} bg-gray-200 mt-27`}>
+        <Paragraph position='center'>
+          <strong>
+            <em>
+              Otsuka Patient Support is committed to providing personalized
+              support for patients and their partners.
+            </em>
+          </strong>
+        </Paragraph>
+        <Paragraph position='center'>
+          <strong>
+            <em>
+              Visit{' '}
+              <a href='https://www.otsukapatientsupport.com/'>
+                OtsukaPatientSupport.com
+              </a>{' '}
+              to learn more about tools, resources and dedicated support team
+              that are available.
+            </em>
+          </strong>
+        </Paragraph>
       </div>
 
       <Footer
@@ -69,7 +67,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='140.2' />}
+        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
       />
     </div>
   );
