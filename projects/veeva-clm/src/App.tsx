@@ -54,7 +54,7 @@ function App({ tab }: AppProps) {
               />
               <Route
                 path='/R.0.0_Home'
-                component={() => <Page component={R_0_0_Home} />}
+                component={() => <Page background='a' component={R_0_0_Home} />}
               />
               <Route
                 path='/R.0.1_Popup_isi'

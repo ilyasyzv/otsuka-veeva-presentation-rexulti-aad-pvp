@@ -2,7 +2,7 @@ import React from 'react';
 import { ParagraphWrapper } from '@atoms/Content/ParagraphWrapper';
 import Background, {
   TBackgroundType,
-} from '@/Components/03-organisms/Background/Background';
+} from '@organisms/Background/Background';
 
 type TPage = {
   component: React.ReactNode;
