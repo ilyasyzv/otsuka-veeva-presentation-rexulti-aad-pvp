@@ -1,2 +1,43 @@
 .page {
+  position: relative;
+  margin-top: 5px;
+  height: 100%;
+
+  .h1 {
+    font-size: 30px;
+    line-height: 29px;
+    margin-bottom: 11px;
+  }
+
+  .text {
+    margin-bottom: -32px;
+    line-height: 18px;
+  }
+
+  :global {
+    .button.button__type-a--active {
+      outline: none;
+      border-color: #fdcf00;
+      box-shadow: 0 0 20px #fdcf00;
+      z-index: 1;
+    }
+  }
+
+  .imgBg {
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 436px;
+    width: 100%;
+  }
+
+  .footer {
+    bottom: 16px;
+    ul li {
+      line-height: 12px;
+    }
+  }
 }
