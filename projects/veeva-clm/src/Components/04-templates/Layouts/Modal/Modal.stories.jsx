@@ -13,6 +13,7 @@ import {
   StudyDesign2Args,
   StudyDesignSupArgs,
 } from '@/Components/04-templates/Layouts/Modal/StudyDesigns';
+
 import UnderstandingPANSS1 from './images/Understanding-PANSS-1.png?format=webp';
 import UnderstandingPANSS2 from './images/Understanding-PANSS-2.png?format=webp';
 import UnderstandingPANSS3 from './images/Understanding-PANSS-3.png?format=webp';

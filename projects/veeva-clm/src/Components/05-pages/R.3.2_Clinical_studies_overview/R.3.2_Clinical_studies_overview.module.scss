@@ -1,2 +1,32 @@
+@import "@base/variables";
+
 .page {
+  :global {
+    .footer {
+      .safetyInfo {
+        p {
+          font-size: 14.5px;
+          line-height: normal;
+
+          &:first-child {
+            line-height: 15px;
+          }
+
+          a {
+            color: $green-200;
+          }
+        }
+
+        .footerWarning {
+          font-family: "Whitney-Book", sans-serif;
+          font-size: 13.5px;
+        }
+      }
+
+      .logo {
+        right: 10px;
+        bottom: 5px;
+      }
+    }
+  }
 }

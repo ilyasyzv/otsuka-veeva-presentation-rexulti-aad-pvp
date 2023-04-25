@@ -43,9 +43,7 @@ h1 {
   color: $green-600;
 
   sup {
-    font-size: inherit;
-    position: relative;
-    top: 10px;
+    font-size: 16px;
   }
 }
 
@@ -61,6 +59,10 @@ h3 {
   font-size: 16px;
   line-height: 18px;
   color: $green-300;
+
+  sup {
+    font-size: 11px;
+  }
 }
 
 sup {
