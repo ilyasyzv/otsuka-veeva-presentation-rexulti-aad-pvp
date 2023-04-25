@@ -1,2 +1,26 @@
 .page {
+  padding-top: 32px;
+}
+
+.title {
+  position: absolute;
+  top: 32px;
+  left: 0;
+}
+
+.footer {
+  bottom: 5px;
+  padding-right: 190px;
+}
+
+.footerLogo {
+  position: absolute;
+  right: -55px;
+  bottom: 10px;
+  width: 155px;
+}
+
+.footerLogoImg {
+  width: 100%;
+  height: auto;
 }
