@@ -1,0 +1,22 @@
+.modalRoot {
+  /*
+    * add custom padding.
+  */
+  :global {
+    .modal-wrapper {
+      padding: 33px 25px 18px 51px;
+    }
+  }
+  .imgBody {
+    width: 823px;
+  }
+
+  .footer {
+    li {
+      line-height: 13px;
+    }
+    sub {
+      font-size: 10px;
+    }
+  }
+}
