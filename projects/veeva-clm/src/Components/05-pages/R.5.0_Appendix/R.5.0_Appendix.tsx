@@ -40,7 +40,7 @@ const PageContent: React.FC = () => {
           ],
         }}
         references={{
-          custom: 'mt-6',
+          custom: 'mt-8',
           data: [
             {
               text: (
@@ -64,7 +64,7 @@ const PageContent: React.FC = () => {
           ],
         }}
         safetyInfo={{
-          custom: `mt-6 ${styles.safety_info}`,
+          custom: `mt-3 ${styles.safety_info}`,
           data: [
             {
               text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE.',
