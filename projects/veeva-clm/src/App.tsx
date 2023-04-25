@@ -24,6 +24,7 @@ import R_6_0_ISI from '@/content/pages/R.6.0_ISI/index.mdx';
 import R_2_2_AAD_Reported from '@/content/pages/R.2.2_AAD_Reported/index.mdx';
 import R_2_3_AAD_Underlying from '@/content/pages/R.2.3_AAD_Underlying/index.mdx';
 import R_2_4_AAD_agitation_in_dementia from '@/content/pages/R.2.4_AAD_agitation_in_dementia/index.mdx';
+import R_2_5_AAD_agitation_in_dementia_2 from '@/content/pages/R.2.5_AAD_agitation_in_dementia_2/index.mdx';
 import R_2_2_AAD_Overview from '@/content/pages/R.2.2_AAD_Overview/index.mdx';
 import R_2_3_AAD_Overview from '@/content/pages/R.2.3_AAD_Overview/index.mdx';
 import R_2_4_AAD_Overview from '@/content/pages/R.2.4_AAD_Overview/index.mdx';
@@ -80,6 +81,12 @@ function App({ tab }: AppProps) {
                 path='/R.2.4_AAD_agitation_in_dementia'
                 component={() => (
                   <Page component={R_2_4_AAD_agitation_in_dementia} />
+                )}
+              />
+              <Route
+                path='/R.2.5_AAD_agitation_in_dementia_2'
+                component={() => (
+                  <Page component={R_2_5_AAD_agitation_in_dementia_2} />
                 )}
               />
               <Route
