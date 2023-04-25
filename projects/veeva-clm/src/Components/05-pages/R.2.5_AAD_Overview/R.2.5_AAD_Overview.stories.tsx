@@ -11,7 +11,12 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.2.5_AAD_Overview' components={PageContent} />;
+  return (
+    <AppStorybook
+      path='R.2.5_AAD_Overview'
+      components={PageContent}
+    />
+  );
 };
 
 export const R_2_5_AAD_Overview: React.FC = Template.bind({});
