@@ -1,0 +1,17 @@
+@import "@base/variables";
+
+.modal_cmai-additional-info {
+  .modal-wrapper {
+    display: block;
+  }
+
+  .modal-body {
+    p {
+      font-size: 21px;
+
+      span {
+        color: $green-200;
+      }
+    }
+  }
+}

@@ -11,8 +11,16 @@ export const UpperNavBar: React.FC<{ tabs: ILink[] }> = ({ tabs }) => {
   return (
     <div className={upperNavClass}>
       <ul className={styled.upper_nav_bar__submenu}>
-        {tabs.map((link) => (
-          <LinkGroup linkGroup={link} key={link.url} />
+        {tabs.map((link, index) => (
+          <LinkGroup
+            linkGroup={{
+              addClass:
+                // eslint-disable-next-line no-nested-ternary
+                index === 0 ? 'first' : index === tabs.length - 1 ? 'last' : '',
+              ...link,
+            }}
+            key={link.url}
+          />
         ))}
       </ul>
     </div>

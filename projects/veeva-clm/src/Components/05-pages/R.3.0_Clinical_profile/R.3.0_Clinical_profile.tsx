@@ -37,21 +37,26 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span>
+                <strong>
                   Please see{' '}
                   <Link to='R.6.0_ISI' custom='blue-500'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.
-                </span>
+                </strong>
               ),
             },
             {
-              text: 'FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE OR DISTRIBUTE. ',
+              text: (
+                <span className='footerWarning'>
+                  FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
+                  OR DISTRIBUTE. 
+                </span>
+              ),
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='154' />}
+        image={<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />}
       />
     </div>
   );

@@ -1,2 +1,52 @@
+@import "@base/variables";
+
 .page {
+  .h1 {
+    line-height: 31px;
+
+    sup {
+      top: 4px;
+      font-size: 0.6em;
+      line-height: 20px;
+    }
+  }
+
+  .modal_button {
+    position: absolute;
+    bottom: 118px;
+    right: 82px;
+  }
+
+  .footnote {
+    max-width: 560px;
+
+    ul li {
+      line-height: 12px;
+
+      sup {
+        font-size: 6px;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 26px;
+  }
+
+  .safety_info {
+    p:first-child {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+
+      a {
+        color: $green-200;
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
 }

@@ -62,7 +62,7 @@ export const mainMenu: IMenu = {
       url: '/R.3.0_Clinical_profile',
       children: [
         {
-          name: 'Mechanism of Action',
+          name: 'Mechanism </br> of Action',
           url: '/R.3.1_Mechanism_of_action',
         },
         {
@@ -70,7 +70,7 @@ export const mainMenu: IMenu = {
           url: '/R.3.2_Clinical_studies_overview',
         },
         {
-          name: 'Study 6 Efficacy Data',
+          name: 'Study 6 </br> Efficacy Data',
           url: '/R.3.3.1_Study_6',
           children: [
             {
@@ -88,7 +88,7 @@ export const mainMenu: IMenu = {
           ],
         },
         {
-          name: 'Study 7 Efficacy Data',
+          name: 'Study 7 </br> Efficacy Data',
           url: '/R.3.4.1_Study_7',
           children: [
             {
@@ -106,7 +106,7 @@ export const mainMenu: IMenu = {
           ],
         },
         {
-          name: 'Clinical Safety Profile',
+          name: 'Clinical </br> Safety Profile',
           url: '/R.3.5_Study_6&7_safety',
         },
         {

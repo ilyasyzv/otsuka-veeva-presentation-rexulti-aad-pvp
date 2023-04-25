@@ -1,2 +1,22 @@
 .page {
+  position: relative;
+  margin-top: 12px;
+  height: 100%;
+
+  .h1 {
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 16px;
+    margin-top: -14px;
+
+    sup {
+      font-size: 16px;
+      position: relative;
+      top: -1px;
+    }
+  }
+
+  .imgBg {
+    margin-bottom: 20px;
+  }
 }
