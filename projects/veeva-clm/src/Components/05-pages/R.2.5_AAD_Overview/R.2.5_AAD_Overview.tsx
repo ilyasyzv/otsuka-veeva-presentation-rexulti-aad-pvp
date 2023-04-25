@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@atoms/Content/Header/Header';
 import { Footer } from '@organisms/Footer/Footer';
 
-import ModalAddReported from '@templates/Layouts/Modal/ModalAddReported/ModalAddReported';
+import ModalCosts from '@templates/Layouts/Modal/ModalCosts'
 import table1 from './imgs/table1.png';
 import styles from './R.2.5_AAD_Overview.module.scss';
 
@@ -26,7 +26,7 @@ const PageContent: React.FC = () => {
       </div>
       <img src={table1} className={styles.imgBg} />
       <div className={styles.buttonContainer}>
-        <ModalAddReported />
+        <ModalCosts />
       </div>
       <Footer
         custom={styles.footer}
