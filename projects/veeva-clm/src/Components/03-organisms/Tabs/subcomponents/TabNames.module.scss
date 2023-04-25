@@ -1,11 +1,11 @@
-@import '@base/variables';
+@import "@base/variables";
 
-.tabGroup{
+.tabGroup {
   position: relative;
   height: 44px;
 
   &::before {
-    content: '';
+    content: "";
     width: 100%;
     display: block;
     position: absolute;

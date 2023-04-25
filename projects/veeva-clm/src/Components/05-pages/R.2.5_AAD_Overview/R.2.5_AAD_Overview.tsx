@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '@atoms/Content/Header/Header';
 import { Footer } from '@organisms/Footer/Footer';
 
-import ModalCosts from '@templates/Layouts/Modal/ModalCosts'
+import ModalCosts from '@templates/Layouts/Modal/ModalCosts';
 import table1 from './imgs/table1.png';
 import styles from './R.2.5_AAD_Overview.module.scss';
 
