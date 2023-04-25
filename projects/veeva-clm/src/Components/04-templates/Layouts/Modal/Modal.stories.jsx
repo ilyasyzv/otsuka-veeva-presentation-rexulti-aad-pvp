@@ -13,7 +13,6 @@ import {
   StudyDesign2Args,
   StudyDesignSupArgs,
 } from '@/Components/04-templates/Layouts/Modal/StudyDesigns';
-import CMAIAdditionalInfoArgs from '@/Components/04-templates/Layouts/Modal/CMAI_Additional_info';
 
 import UnderstandingPANSS1 from './images/Understanding-PANSS-1.png?format=webp';
 import UnderstandingPANSS2 from './images/Understanding-PANSS-2.png?format=webp';
@@ -65,13 +64,6 @@ export const StudyDesign2 = Template.bind({});
 StudyDesign2.args = {
   ...Default.args,
   ...StudyDesign2Args,
-};
-
-export const CMAIAdditionalInfo = Template.bind({});
-
-CMAIAdditionalInfo.args = {
-  ...Default.args,
-  ...CMAIAdditionalInfoArgs,
 };
 
 export const UnderstandPANSS = Template.bind({});

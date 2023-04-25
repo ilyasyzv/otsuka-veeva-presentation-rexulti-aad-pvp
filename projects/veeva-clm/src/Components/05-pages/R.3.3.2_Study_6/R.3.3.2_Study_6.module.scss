@@ -1,6 +1,14 @@
 @import "@base/variables";
 
 .page {
+  :global {
+    .button-cmai-additional-info {
+      position: absolute;
+      bottom: 118px;
+      right: 82px;
+    }
+  }
+
   .h1 {
     line-height: 31px;
 

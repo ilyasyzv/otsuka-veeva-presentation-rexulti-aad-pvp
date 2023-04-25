@@ -1,12 +1,12 @@
 .modalRoot {
-/*
+  /*
   * add custom padding.
 */
-:global {
-  .modal-wrapper {
-    padding: 39px 25px 18px 51px;
+  :global {
+    .modal-wrapper {
+      padding: 39px 25px 18px 51px;
+    }
   }
-}
   .imgBody {
     width: 823px;
   }
@@ -20,4 +20,3 @@
     }
   }
 }
-

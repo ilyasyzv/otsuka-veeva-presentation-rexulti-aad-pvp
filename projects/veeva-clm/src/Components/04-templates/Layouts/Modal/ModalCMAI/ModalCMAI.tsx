@@ -23,7 +23,7 @@ export const ModalCMAI = () => (
     link={
       <Button
         text='CMAI Additional Information'
-        custom='button__type-a--active'
+        custom='button__type-a--active button-cmai-additional-info'
       />
     }
     footer={
