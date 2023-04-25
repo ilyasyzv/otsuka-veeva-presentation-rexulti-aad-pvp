@@ -1,0 +1,71 @@
+@import '@base/variables';
+
+.activeTabCarret {
+  position: absolute;
+  width: 0;
+  height: 46px;
+  top: -1px;
+  background: url('../img/tab_full.svg') no-repeat bottom center transparent;
+  background-size: contain;
+
+  //&::after {
+  //  content: '';
+  //  display: block;
+  //  height: 2px;
+  //  position: absolute;
+  //  bottom: -1px;
+  //  left: 8px;
+  //  right: 7px;
+  //  background: red;
+  //  border-radius: 2px;
+  //  //z-index: 3;
+  //}
+
+  //.left,
+  //.right {
+  //  display: block;
+  //  width: 48px;
+  //  height: 100%;
+  //  position: absolute;
+  //  bottom: 1px;
+  //  background-repeat: no-repeat;
+  //  background-color: transparent;
+  //  background-size: 48px 45px;
+  //  z-index: 1;
+  //}
+  //
+  //.left {
+  //  left: 0;
+  //  background-image: url('../img/tab_left.svg');
+  //  background-position: bottom right;
+  //}
+  //
+  //.right {
+  //  right: 0;
+  //  background-image: url('../img/tab_right.svg');
+  //  background-position: bottom left;
+  //}
+  //
+  //.center {
+  //  display: block;
+  //  width: calc(100% - 90px);
+  //  height: 100%;
+  //  position: absolute;
+  //  left: 45px;
+  //  top: -1px;
+  //  //border-top: 1px solid $green-300;
+  //  background: $white;
+  //  z-index: 2;
+  //
+  //  &::before {
+  //    content: '';
+  //    display: block;
+  //    width: 100%;
+  //    height: 1px;
+  //    position: absolute;
+  //    top: 0;
+  //    left: 0;
+  //    background: $green-300;
+  //  }
+  //}
+}
