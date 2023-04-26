@@ -71,10 +71,12 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span>
+                <span className={'highlighted'}>
                   Please see{' '}
-                  <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
-                  this presentation.
+                  <Link to='R.6.0_ISI' custom={'green-200'}>
+                    IMPORTANT SAFETY INFORMATION
+                  </Link>{' '}
+                  in this presentation.
                 </span>
               ),
             },
@@ -83,7 +85,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='140.2' />}
+        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
       />
     </div>
   );

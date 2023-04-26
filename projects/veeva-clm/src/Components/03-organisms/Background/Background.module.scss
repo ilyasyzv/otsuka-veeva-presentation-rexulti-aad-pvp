@@ -25,6 +25,11 @@
     padding-right: 45px;
   }
 
+  @at-root :global(.page--R_3_4_2_Study_7) & {
+    padding-right: 16px;
+    padding-left: 151px;
+  }
+
   &::before,
   &::after {
     content: "";
