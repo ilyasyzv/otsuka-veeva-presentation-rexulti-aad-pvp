@@ -7,7 +7,9 @@ export type CarretGroupProps = {
   activeIndex: number;
   animationSpeed?: number;
   children: React.ReactNode;
+  childrenCount: number;
   translateTabsX?: number;
+  tabWidth?: number;
 };
 
 export const CarretGroup: React.FC<CarretGroupProps> = ({
@@ -15,19 +17,23 @@ export const CarretGroup: React.FC<CarretGroupProps> = ({
   activeIndex,
   animationSpeed = 0.5,
   children,
+  childrenCount,
   translateTabsX,
+  tabWidth,
 }) => {
-  const leftIndent = carretSize * activeIndex;
+  const carretWidth = tabWidth || carretSize;
+  const leftIndent = carretWidth * activeIndex;
 
   return (
     <div
       className={style.tabCarretWrapper}
       style={{
+        width: tabWidth && `${tabWidth * childrenCount}px`,
         transform: translateTabsX ? `translateX(${translateTabsX}px)` : 'none',
       }}
     >
       <Carret
-        carretSize={carretSize}
+        carretSize={carretWidth}
         leftIndent={leftIndent}
         animationSpeed={animationSpeed}
         children={children}
