@@ -119,4 +119,13 @@ a {
 @include position("bottom", "bottom");
 
 // example: mw-837
-@include maxWidth("mw", "max-width");
+@include size("mw", "max-width");
+
+// example: m-837
+@include size("w", "width");
+
+// example: h-37
+@include size("h", "height");
+
+// example: mh-137
+@include size("mh", "max-height");

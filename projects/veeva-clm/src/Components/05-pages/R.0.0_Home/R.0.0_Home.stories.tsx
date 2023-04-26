@@ -11,7 +11,9 @@ export default {
 };
 
 const Template: React.FC = () => {
-  return <AppStorybook path='R.0.0_Home' components={PageContent} />;
+  return (
+    <AppStorybook background='a' path='R.0.0_Home' components={PageContent} />
+  );
 };
 
 export const R_0_0_Home: React.FC = Template.bind({});

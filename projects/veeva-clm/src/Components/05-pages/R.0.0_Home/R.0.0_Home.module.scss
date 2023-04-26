@@ -1,2 +1,58 @@
+@import "@base/variables";
+
 .page {
+    .header-homepage {
+        position: absolute;
+        top: 180px;
+        right: 70px;
+
+        h1 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 44px;
+        }
+
+        h2 {
+            font-weight: 300;
+  		    font-size: 29px;
+  		    line-height: 38px;
+        }
+    }
+    :global {
+        .footer {
+            max-width: 100%;
+            .logo {
+                position: absolute;
+                right: 30px;
+                bottom: 170px;
+                display: flex;
+                flex-flow: column;
+                gap: 15px;
+                align-items: flex-end;
+            }
+
+            .footnote {
+                margin: 0 0 8px 18px;
+            }
+
+            .safetyInfo {
+                position: relative;
+                width: 934px;
+                left: -18px;
+                bottom: -5px;
+                padding: 10px 10px 10px 35px;
+                color: $white;
+                background-color: $green-600;
+
+                p {
+                    font-size: 14px;
+                    line-height: 19px;
+
+                    strong {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
 }

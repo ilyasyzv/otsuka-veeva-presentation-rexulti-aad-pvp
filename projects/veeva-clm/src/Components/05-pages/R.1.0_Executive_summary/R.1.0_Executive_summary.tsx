@@ -62,7 +62,7 @@ const PageContent = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />}
+        images={[<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />]}
       />
     </div>
   );
