@@ -71,7 +71,7 @@ export const ModalCMAI = () => (
       questionnaire that measures the frequency of manifestations
       <br /> of 29 agitated behaviors in elderly persons on a 7-point scale over
       the last 2 weeks with 1 <br />
-      being never to 7 being several times an hour.<sup>1</sup>
+      being never and 7 being several times an hour.<sup>1</sup>
     </span>
     <img src={ModalImg} alt='reported table' className={style.imgBody} />
   </Modal>
