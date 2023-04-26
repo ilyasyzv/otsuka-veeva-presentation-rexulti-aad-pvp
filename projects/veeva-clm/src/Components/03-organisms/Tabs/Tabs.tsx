@@ -50,6 +50,7 @@ type TabsProps = {
   disableAnimation?: boolean;
   vertical?: boolean;
   translateTabsX?: number;
+  tabWidth?: number;
 };
 
 export const Tabs = ({
@@ -58,6 +59,7 @@ export const Tabs = ({
   disableAnimation = false,
   vertical = false,
   translateTabsX,
+  tabWidth,
 }: TabsProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -77,6 +79,7 @@ export const Tabs = ({
         handleTabClick={handleTabClick}
         children={children}
         translateTabsX={translateTabsX}
+        tabWidth={tabWidth}
       />
       <Sliders
         disableAnimation={disableAnimation}

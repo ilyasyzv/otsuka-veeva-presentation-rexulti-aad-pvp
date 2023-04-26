@@ -8,6 +8,7 @@ interface Props {
   children: ReactNode;
   containerWidth?: number;
   translateTabsX?: number;
+  tabWidth?: number;
 }
 
 const TabNames: React.FC<Props> = ({
@@ -16,6 +17,7 @@ const TabNames: React.FC<Props> = ({
   containerWidth = 408,
   children,
   translateTabsX,
+  tabWidth,
 }) => {
   const childrenCount = React.Children.count(children);
   const carretSize = containerWidth / childrenCount;
@@ -27,11 +29,13 @@ const TabNames: React.FC<Props> = ({
         carretSize={carretSize}
         activeIndex={activeIndex}
         translateTabsX={translateTabsX}
+        tabWidth={tabWidth}
+        childrenCount={childrenCount}
       />
       <ul
         className={style.tabs}
         style={{
-          width: `${containerWidth}px`,
+          width: `${tabWidth ? tabWidth * childrenCount : containerWidth}px`,
           transform: translateTabsX
             ? `translateX(${translateTabsX}px)`
             : 'none',
@@ -42,7 +46,7 @@ const TabNames: React.FC<Props> = ({
             <li
               key={index}
               className={activeIndex === index ? style.activeTab : undefined}
-              style={{ width: tabWidthPersent }}
+              style={{ width: tabWidth || tabWidthPersent }}
               onClick={() => handleTabClick(index)}
             >
               {child.props.title}
