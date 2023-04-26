@@ -2,10 +2,12 @@ import React from 'react';
 import Header from '@atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
+import ModalCMAI from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
+
 import RexultiLogo from '@/assets/rexulti-logo.png';
-import { ModalCMAI } from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
-import styles from './R.3.3.2_Study_6.module.scss';
 import PageImage from './img/Image1.png';
+
+import styles from './R.3.3.2_Study_6.module.scss';
 
 const PageContent = () => {
   return (
