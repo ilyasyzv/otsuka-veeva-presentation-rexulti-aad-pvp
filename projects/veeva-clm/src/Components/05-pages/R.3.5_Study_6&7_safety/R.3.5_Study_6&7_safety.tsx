@@ -43,7 +43,7 @@ const PageContent: React.FC = () => {
                     patients treated with placebo
                   </p>
                   <p className={styles.list_subtext}>
-                    <span> - </span>{' '}
+                    <span> – </span>{' '}
                     <span>
                       Incidence of falls pooled from trials of REXULTI (0.5
                       mg/day or 1 mg/day fixed, 2 mg/day or 3 mg/day fixed, or
@@ -74,7 +74,7 @@ const PageContent: React.FC = () => {
                     dose (MRHD)
                   </p>
                   <p className={`${styles.list_subtext} mt-0`}>
-                    <span> - </span>{' '}
+                    <span> – </span>{' '}
                     <span>
                       At a dose 4 times the MRHD, REXULTI does not prolong QTc
                       interval to any clinically relevant extent
@@ -93,7 +93,7 @@ const PageContent: React.FC = () => {
                     discontinued due&nbsp;to&nbsp;ARs
                   </p>
                   <p className={styles.list_subtext}>
-                    <span> - </span>{' '}
+                    <span> – </span>{' '}
                     <span>
                       Approximately <strong>95%</strong> of patients{' '}
                       <strong>

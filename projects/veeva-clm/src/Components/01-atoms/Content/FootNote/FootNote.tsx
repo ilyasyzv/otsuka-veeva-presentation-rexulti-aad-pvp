@@ -3,6 +3,7 @@ import './FootNote.scss';
 import SupLeft from '../SupLeft/SupLeft';
 import classNames from 'classnames';
 import { FootNoteProps, FootNoteType } from '@/types';
+import Link from "@organisms/Routing";
 
 export const FootNote: React.FC<FootNoteProps> = ({
   custom = '',
