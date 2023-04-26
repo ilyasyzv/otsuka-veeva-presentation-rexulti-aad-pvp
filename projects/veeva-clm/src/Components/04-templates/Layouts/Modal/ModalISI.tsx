@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ButtonContinue from '@/Components/01-atoms/Content/ButtonContinue/ButtonContinue';
 import Header from '@/Components/01-atoms/Content/Header/Header';
-import { Scrollbars } from 'react-custom-scrollbars-2';
+import { Scrollbar } from 'react-scrollbars-custom';
 
 import './Modal.scss';
 import './ModalISI.scss';
@@ -21,10 +21,11 @@ type TUpdateEvent = {
 
 const lsISIModalKey = 'isi_modal';
 
-const ModalISI = ({ openByDefault }: TModalISI) => {
-  const [isModalOpen, setIsModalOpen] = useState(openByDefault);
-  const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
-  const [activePage, setActivePage] = useState(0);
+const ModalISI = ({ openByDefault }: TModalISI): JSX.Element => {
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(openByDefault);
+  const [isButtonCloseDisabled, setIsButtonCloseDisabled] =
+    useState<boolean>(true);
+  const [activePage, setActivePage] = useState<number>(0);
 
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
@@ -81,22 +82,20 @@ const ModalISI = ({ openByDefault }: TModalISI) => {
                     <span>
                       INDICATIONS and IMPORTANT SAFETY INFORMATION
                       <br />
-                      for ABILIFY ASIMTUFII<sup>®</sup> (aripiprazole) and
-                      <br />
-                      ABILIFY MAINTENA<sup>®</sup> (aripiprazole)
+                      for REXULTI<sup>®</sup> (brexpiprazole)
                     </span>
                   </Header>
-                  <Scrollbars
-                    className='custom-scrollbar'
-                    thumbMinSize={30}
-                    onUpdate={updateHandler}
-                    thumbSize={43}
+                  <Scrollbar
+                    minimalThumbSize={43}
+                    maximalThumbSize={43}
+                    noScrollX
+                    onScroll={updateHandler}
                     style={{ height: '510px' }}
                   >
                     <div className='modal-isi'>
                       <ISIContent />
                     </div>
-                  </Scrollbars>
+                  </Scrollbar>
                 </div>
                 <div className='modal-actions'>
                   <p>
