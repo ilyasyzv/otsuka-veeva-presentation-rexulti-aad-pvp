@@ -1,2 +1,14 @@
 .page {
+
+  .image_1 {
+    margin-left: -24px;
+  }
+
+  :global {
+    .modal-link-wrapper {
+      position: absolute;
+      bottom: 238px;
+      right: 170px;
+    }
+  }
 }
