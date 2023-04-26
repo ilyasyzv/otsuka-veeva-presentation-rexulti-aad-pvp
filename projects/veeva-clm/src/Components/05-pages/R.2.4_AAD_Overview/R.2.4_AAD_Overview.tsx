@@ -2,6 +2,11 @@ import React from 'react';
 import Header from '@atoms/Content/Header/Header';
 import ModalAgitation from '@templates/Layouts/Modal/ModalAgitation';
 import { Footer } from '@organisms/Footer/Footer';
+import FadingBlocks from '@organisms/FadingBlocks/FadingBlocks';
+import item1 from './imgs/1.svg';
+import item2 from './imgs/2.svg';
+import item3 from './imgs/3.svg';
+import item4 from './imgs/4.svg';
 import imgBg from './imgs/4blocks.png';
 import styles from './R.2.4_AAD_Overview.module.scss';
 
@@ -15,7 +20,12 @@ const PageContent: React.FC = () => {
       <Header type={'h2'} custom={styles.h2}>
         Agitation in Alzheimer’s dementia is associated with:
       </Header>
-      <img className={styles.imgBg} src={imgBg} />
+      <FadingBlocks>
+        <img src={item1} alt='cart' className={styles.image_block} />
+        <img src={item2} alt='cart' className={styles.image_block} />
+        <img src={item3} alt='cart' className={styles.image_block} />
+        <img src={item4} alt='cart' className={styles.image_block} />
+      </FadingBlocks>
       <div className={styles.buttonContainer}>
         <ModalAgitation />
       </div>
