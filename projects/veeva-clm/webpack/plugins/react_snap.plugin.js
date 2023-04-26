@@ -48,8 +48,8 @@ const defaultOptions = {
     '/R.3.4.3_Study_7/index.html',
   ],
   viewport: {
-    width: 1080,
-    height: 810,
+    width: 1024,
+    height: 768,
   },
   minifyHtml: {
     collapseWhitespace: true,
@@ -81,12 +81,16 @@ class ReactSnapPlugin {
   }
 
   async createScreenShots() {
+    const executeSequentially = (pagesList) => {
+      return this.takeScreenshotWithResize(pagesList.shift()).then((result) =>
+        pagesList.length == 0 ? result : executeSequentially(pagesList),
+      );
+    };
+
     try {
       let pagesList = getDirectories('./src/content/pages');
-      pagesList = pagesList
-        .filter((page) => page !== 'shared')
-        .map((page) => this.takeScreenshotWithResize(page));
-      return Promise.all(pagesList);
+      pagesList = pagesList.filter((page) => page !== 'shared');
+      return executeSequentially(pagesList);
     } catch (error) {
       this.logger.error('Error occurred: ', error);
     }
