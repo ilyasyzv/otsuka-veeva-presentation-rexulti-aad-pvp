@@ -45,7 +45,6 @@ export const LinkGroup: React.FC<LinkGroupProps> = ({
   };
 
   const { addClass } = linkGroup;
-  console.log(linkGroup);
 
   const mainLinkClass = classNames({
     'main-nav__link': true,
