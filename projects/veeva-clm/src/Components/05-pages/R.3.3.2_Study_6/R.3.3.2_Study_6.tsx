@@ -2,11 +2,12 @@ import React from 'react';
 import Header from '@atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
-import { Button } from '@atoms/Content/Button/Button';
+import ModalCMAI from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
+
 import RexultiLogo from '@/assets/rexulti-logo.png';
-import { CMAIAdditionalInfo } from '@templates/Layouts/Modal/Modal.stories';
-import styles from './R.3.3.2_Study_6.module.scss';
 import PageImage from './img/Image1.png';
+
+import styles from './R.3.3.2_Study_6.module.scss';
 
 const PageContent = () => {
   return (
@@ -17,15 +18,7 @@ const PageContent = () => {
         <br /> in Agitation Symptom Frequency vs Placebo<sup>1</sup>
       </Header>
       <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
-      <CMAIAdditionalInfo
-        {...CMAIAdditionalInfo.args}
-        link={
-          <Button
-            text='CMAI Additional Information'
-            custom={`button__type-a--active ${styles.modal_button}`}
-          />
-        }
-      />
+      <ModalCMAI />
       <Footer
         custom={styles.footer}
         footnotes={{

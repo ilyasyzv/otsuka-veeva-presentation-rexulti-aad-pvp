@@ -1,2 +1,11 @@
 .page {
+  .button_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+    position: absolute;
+    left: 224px;
+    bottom: 158px;
+  }
 }

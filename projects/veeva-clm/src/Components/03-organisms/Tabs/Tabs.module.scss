@@ -1,0 +1,49 @@
+.tabs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs li {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs li:hover {
+  background-color: #f0f0f0;
+}
+
+.tabs .activeTab {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  position: relative;
+  bottom: -1px;
+  padding: 3px 10px;
+  z-index: 1;
+}
+
+.tabsContainer {
+  display: block;
+}
+
+.tabContent {
+}
+
+.outerSliders {
+  overflow: hidden;
+}
+
+.sliders {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.sliders > div {
+  flex-shrink: 0;
+  width: 100%;
+}

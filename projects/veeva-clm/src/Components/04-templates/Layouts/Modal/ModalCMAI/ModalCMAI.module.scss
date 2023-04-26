@@ -1,0 +1,40 @@
+@import "@base/variables";
+
+.modalRoot {
+  /*
+    * add custom padding.
+  */
+  :global {
+    .modal-wrapper {
+      padding: 41px 25px 18px 41px;
+    }
+  }
+
+  .text {
+    display: block;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: -0.2px;
+
+    sup {
+      font-size: 10px;
+    }
+  }
+
+  .boldText {
+    color: $green-300;
+  }
+
+  .imgBody {
+    width: 806px;
+  }
+
+  .footer {
+    li {
+      line-height: 13px;
+    }
+    sub {
+      font-size: 10px;
+    }
+  }
+}

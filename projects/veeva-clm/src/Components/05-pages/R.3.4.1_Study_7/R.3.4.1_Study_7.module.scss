@@ -1,2 +1,65 @@
+@import "@base/variables";
+
 .page {
+  .h1 {
+    line-height: 31px;
+
+    sup {
+      top: 4px;
+      font-size: 0.6em;
+      line-height: 20px;
+    }
+  }
+
+  .study_design_points {
+    p {
+      font-size: 15px;
+      line-height: 19px;
+      padding: 0;
+    }
+  }
+
+  .footnote {
+    max-width: 560px;
+
+    ul li {
+      line-height: 12px;
+
+      sup {
+        font-size: 6px;
+      }
+    }
+  }
+
+  .footer {
+    bottom: 35px;
+  }
+
+  .safety_info {
+    p:first-child {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 4px;
+
+      a {
+        color: $green-200;
+      }
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+
+  .button_container {
+    display: flex;
+    justify-content: center;
+
+    div {
+      &:first-child {
+        padding-right: 20px;
+      }
+    }
+  }
 }

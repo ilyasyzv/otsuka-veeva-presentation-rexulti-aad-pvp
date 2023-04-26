@@ -13,6 +13,18 @@
     padding-top: 28px;
   }
 
+  @at-root :global(.page--R_1_0_Executive_summary) & {
+    padding-top: 48px;
+  }
+
+  @at-root :global(.page--R_3_2_Clinical_studies_overview) & {
+    padding-top: 80px;
+  }
+
+  @at-root :global(.page--R_3_3_1_Study_6) & {
+    padding-right: 45px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -59,5 +71,6 @@
     position: relative;
     width: 100%;
     height: 100%;
+    display: inline-block;
   }
 }
