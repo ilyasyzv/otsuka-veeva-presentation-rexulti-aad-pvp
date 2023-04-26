@@ -8,6 +8,10 @@
     font-size: 30px;
     line-height: 7px;
     margin-bottom: 32px;
+
+    &.custom {
+      line-height: 27px;
+    }
   }
 
   .h2 {
@@ -28,16 +32,54 @@
 
   .people {
     position: absolute;
-    top: 52px;
+    top: 62px;
     right: 30px;
     width: 79px;
+  }
+
+  .fading {
+    background: $gray-200;
+    border-radius: 26px;
+    width: 823px;
+    height: 344px;
+    padding-top: 18px;
+    padding-left: 19px;
+  }
+
+  .item1 {
+    width: 175px;
+    height: 253px;
+  }
+
+  .item2 {
+    width: 187px;
+    height: 288px;
+    position: relative;
+    left: 12px;
+    top: 27px;
+  }
+
+  .item3 {
+    width: 206px;
+    height: 270px;
+    position: relative;
+    left: 30px;
+    top: 27px;
+  }
+
+  .item4 {
+    width: 194px;
+    height: 288px;
+    position: relative;
+    left: 30px;
+    top: 28px;
   }
 
   .buttonContainer {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 439px;
+    top: 447px;
     width: 100%;
   }
 
