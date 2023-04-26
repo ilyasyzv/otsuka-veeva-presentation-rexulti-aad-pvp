@@ -71,7 +71,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={
+        images={[
           <div className={styles.footerLogo}>
             <img
               className={styles.footerLogoImg}
@@ -79,8 +79,8 @@ const PageContent: React.FC = () => {
               alt='maintena-logo'
               width='140.2'
             />
-          </div>
-        }
+          </div>,
+        ]}
       />
     </>
   );

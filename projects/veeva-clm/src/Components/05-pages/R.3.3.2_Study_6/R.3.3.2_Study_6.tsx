@@ -65,7 +65,7 @@ const PageContent = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='140.2' />}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='140.2' />]}
       />
     </div>
   );

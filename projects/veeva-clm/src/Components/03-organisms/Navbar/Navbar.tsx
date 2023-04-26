@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
     <div className={styles.navigation}>
       <div className={styles.navigation__head}>
         <Link
-          to='A.0.Home'
+          to='R.0.0_Home'
           custom={bem('navigation__homepage-link', isHomepage)}
         />
         <span className={bem('navigation__homepage', isHomepage)} />
