@@ -7,7 +7,7 @@ import { SwitchContent } from '@/Components/02-molecules/SwitchContent';
 
 import './Modal.scss';
 
-interface ModalProps {
+export interface ModalProps {
   id?: string;
   link?: JSX.Element;
   openByDefault?: boolean;

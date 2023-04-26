@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '@atoms/Content/Header/Header';
+import ModalAgitation from '@templates/Layouts/Modal/ModalAgitation';
 import { Footer } from '@organisms/Footer/Footer';
-import Button from '@atoms/Content/Button/Button';
 import imgBg from './imgs/4blocks.png';
 import styles from './R.2.4_AAD_Overview.module.scss';
 
@@ -17,7 +17,7 @@ const PageContent: React.FC = () => {
       </Header>
       <img className={styles.imgBg} src={imgBg} />
       <div className={styles.buttonContainer}>
-        <Button text='Caregiven Burden' custom='button__type-a--active' />
+        <ModalAgitation />
       </div>
       <Footer
         custom={styles.footer}

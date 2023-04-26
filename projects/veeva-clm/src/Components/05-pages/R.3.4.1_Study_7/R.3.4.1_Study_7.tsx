@@ -1,13 +1,17 @@
 import React from 'react';
 import Header from '@atoms/Content/Header/Header';
-import { ModalDemographics2 } from '@templates/Layouts/Modal/ModalDemographic2/ModalDemographic2';
+import {
+  ModalSelectionCriteria2,
+  ModalDemographics2,
+} from '@templates/Layouts';
 import { Link } from '@organisms/Routing';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import { Button } from '@atoms/Content/Button/Button';
-import RexultiLogo from '@/assets/rexulti-logo.png';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
-import styles from './R.3.4.1_Study_7.module.scss';
+
+import RexultiLogo from '@/assets/rexulti-logo.png';
 import PageImage from './img/Image1.png';
+
+import styles from './R.3.4.1_Study_7.module.scss';
 
 const PageContent = () => {
   return (
@@ -32,7 +36,7 @@ const PageContent = () => {
       </div>
       <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
       <div className={styles.button_container}>
-        <ModalDemographics2 />
+        <ModalSelectionCriteria2 />
         <ModalDemographics2 />
       </div>
       <Footer
@@ -71,7 +75,7 @@ const PageContent = () => {
             },
           ],
         }}
-        images={[<img src={RexultiLogo} alt='maintena-logo' width='140.2' />]}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
       />
     </div>
   );
