@@ -1,7 +1,9 @@
 import React from 'react';
 import Header from '@atoms/Content/Header/Header';
-import ModalDemographics2 from '@templates/Layouts/Modal/ModalDemographic2/ModalDemographic2';
-import ModalSelectionCriteria2 from '@templates/Layouts/Modal/ModalSelectionCriteria2/ModalSelectionCriteria2';
+import {
+  ModalSelectionCriteria2,
+  ModalDemographics2,
+} from '@templates/Layouts';
 import { Link } from '@organisms/Routing';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
