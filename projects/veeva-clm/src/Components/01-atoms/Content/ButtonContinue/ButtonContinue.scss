@@ -5,26 +5,26 @@
   display: block;
   min-width: 161px;
   height: 48px;
-  background: $blue-100;
   border-radius: 24px;
-  border: 1px solid $blue-500;
   font-family: $font-whitney;
   font-size: 16px;
   line-height: 17px;
   font-weight: bold;
-  color: $gray-800;
+  color: $white;
   padding: 7px 60px 6px 20px;
+  background: url("./img/button-bg.png") left top / cover no-repeat $green-400;
 
   &::after {
     content: "";
-    width: 46px;
-    height: 46px;
+    width: 34px;
+    height: 34px;
+    border: 2px solid $white;
     position: absolute;
-    top: 0;
-    right: 0;
-    background: url("img/icon-arrow-right-blue.svg") no-repeat 13px center
-      transparentize($white, 0.33);
-    background-size: 24px 24px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("img/icon-arrow-right.svg") no-repeat center $yellow-200;
+    background-size: 22px 22px;
     border-radius: 22px;
   }
 
