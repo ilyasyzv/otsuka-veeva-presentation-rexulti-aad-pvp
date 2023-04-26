@@ -26,7 +26,7 @@ export const ModalDemographics1 = () => (
     link={<Button text='Demographics' custom='button__type-a--active' />}
     footer={
       <Footer
-        custom={classNames(style.footer, 'mb-23', 'mw-839')}
+        custom={`${style.footer} mb-23 mw-839`}
         footnotes={{
           data: [
             {
@@ -61,14 +61,6 @@ export const ModalDemographics1 = () => (
                 <span>
                   Grossberg GT, et al. <b>Am J Geriatr Psychiatry. </b>
                   2020;28(4):383-400.
-                </span>
-              ),
-            },
-            {
-              text: (
-                <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>
-                  2021;36(12):1959-1969.
                 </span>
               ),
             },
