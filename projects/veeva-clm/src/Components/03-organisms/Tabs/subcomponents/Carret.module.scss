@@ -1,4 +1,4 @@
-@import '@base/variables';
+@import "@base/variables";
 
 .activeTabCarret {
   position: absolute;
@@ -21,13 +21,13 @@
 
 .left {
   left: 0;
-  background-image: url('../img/tab_left.svg');
+  background-image: url("../img/tab_left.svg");
   background-position: bottom right;
 }
 
 .right {
   right: 0;
-  background-image: url('../img/tab_right.svg');
+  background-image: url("../img/tab_right.svg");
   background-position: bottom left;
 }
 
@@ -37,6 +37,6 @@
   right: 55px;
   top: 0;
   height: 100%;
-  background: url('../img/tab_center.svg') no-repeat center center transparent;
+  background: url("../img/tab_center.svg") no-repeat center center transparent;
   background-size: cover;
 }

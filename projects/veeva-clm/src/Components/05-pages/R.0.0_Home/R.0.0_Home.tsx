@@ -12,14 +12,17 @@ const PageContent = () => {
     <div className={styles.page}>
       <Paragraph custom={styles['header-homepage']}>
         <Header type='h1' custom={`${styles.h1} mb-12`}>
-          REXULTI<sup>®</sup> (brexpiprazole) for the 
-          <br />Treatment of Agitation Associated 
-          <br />With Alzheimer's Dementia (AAD)
+          REXULTI<sup>®</sup> (brexpiprazole) for the
+          <br />
+          Treatment of Agitation Associated
+          <br />
+          With Alzheimer's Dementia (AAD)
         </Header>
         <HorizontalLine color='yellow-200' custom='w-135 h-3 mb-10' />
         <Header type='h2' custom={`${styles.h1} mb-12 font-green-600`}>
           The First and Only FDA-Approved
-          <br />Pharmacologic Treatment for AAD
+          <br />
+          Pharmacologic Treatment for AAD
         </Header>
       </Paragraph>
 
@@ -54,9 +57,20 @@ const PageContent = () => {
             {
               text: (
                 <strong className='footerWarning'>
-                  WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH DEMENTIA-RELATED PSYCHOSIS and SUICIDAL THOUGHTS AND BEHAVIORS
-                  See full prescribing information for complete boxed warning. <br />
-                  Elderly patients with dementia-related psychosis treated with antipsychotic drugs are at increased risk of death. REXULTI is not approved for the treatment of patientswith dementia-related psychosis without symptoms of agitation associated with Alzheimer's dementia. Antidepressants increased the risk of suicidal thoughts and behaviors in patients aged 24 years and younger. Monitor for clinical worsening and emergence of suicidal thoughts and behaviors. Safety and effectiveness of REXULTI have not been established in pediatric patientswith MDD.
+                  WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH
+                  DEMENTIA-RELATED PSYCHOSIS and SUICIDAL THOUGHTS AND BEHAVIORS
+                  See full prescribing information for complete boxed warning.{' '}
+                  <br />
+                  Elderly patients with dementia-related psychosis treated with
+                  antipsychotic drugs are at increased risk of death. REXULTI is
+                  not approved for the treatment of patientswith
+                  dementia-related psychosis without symptoms of agitation
+                  associated with Alzheimer's dementia. Antidepressants
+                  increased the risk of suicidal thoughts and behaviors in
+                  patients aged 24 years and younger. Monitor for clinical
+                  worsening and emergence of suicidal thoughts and behaviors.
+                  Safety and effectiveness of REXULTI have not been established
+                  in pediatric patientswith MDD.
                 </strong>
               ),
             },
