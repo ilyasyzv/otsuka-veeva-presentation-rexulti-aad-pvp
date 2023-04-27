@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './R.6.0_ISI.module.scss';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import Paragraph from '@/Components/01-atoms/Content/Paragraph/Paragraph';
 import List from '@/Components/01-atoms/Content/List/List';
 import Footer from '@/Components/03-organisms/Footer/Footer';
+import styles from './R.6.0_ISI.module.scss';
 
 const PageContent: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const PageContent: React.FC = () => {
           content={{
             columns: 'columns-1',
             type: 'circle',
-            marker_color: 'black-100',
+            markerColor: 'black-100',
             data: [
               {
                 text: 'Use as an adjunctive therapy to antidepressants for the treatment of major depressive disorder (MDD) in adults',
@@ -101,7 +101,7 @@ const PageContent: React.FC = () => {
           content={{
             columns: 'columns-1',
             type: 'circle',
-            marker_color: 'green-300',
+            markerColor: 'green-300',
             data: [
               {
                 text: (
@@ -209,7 +209,7 @@ const PageContent: React.FC = () => {
           content={{
             columns: 'columns-1',
             type: 'circle',
-            marker_color: 'green-300',
+            markerColor: 'green-300',
             data: [
               {
                 text: (
