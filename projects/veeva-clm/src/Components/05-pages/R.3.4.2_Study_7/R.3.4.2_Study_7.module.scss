@@ -1,7 +1,15 @@
 .page {
 
   .image_1 {
-    margin-left: -24px;
+    position: absolute;
+    top: 137px;
+    left: 1px;
+  }
+
+  .image_2 {
+    position: absolute;
+    bottom: 130px;
+    left: 1px;
   }
 
   :global {

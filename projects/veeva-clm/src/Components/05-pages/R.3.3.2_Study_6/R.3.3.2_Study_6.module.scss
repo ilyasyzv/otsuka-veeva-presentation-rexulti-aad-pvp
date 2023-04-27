@@ -4,9 +4,21 @@
   :global {
     .button-cmai-additional-info {
       position: absolute;
-      bottom: 118px;
-      right: 82px;
+      bottom: -50px;
+      right: 61px;
     }
+  }
+
+  .image_1 {
+    position: absolute;
+    top: 132px;
+    left: 5px;
+  }
+
+  .image_2 {
+    position: absolute;
+    bottom: 128px;
+    left: 1px;
   }
 
   .h1 {
