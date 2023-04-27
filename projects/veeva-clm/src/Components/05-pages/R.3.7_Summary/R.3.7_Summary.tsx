@@ -5,16 +5,16 @@ import Footer from '@organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
 import List from '@atoms/Content/List/List';
 
+import RexultiLogo from '@/assets/rexulti-logo.png';
 import styles from './R.3.7_Summary.module.scss';
 import RexultiBanner from './img/Rexulti_banner.png';
-import RexultiLogo from '@/assets/rexulti-logo.png';
-import Icon_1 from './img/icon_1.png';
+import Icon1 from './img/icon_1.png';
 
 const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
       <Header custom={`${styles.h1} mt-22 mb-13`}>
-        REXULTI<sup className={'big'}>®</sup> (brexpiprazole) Was Studied in Two
+        REXULTI<sup className='big'>®</sup> (brexpiprazole) Was Studied in Two
         Phase 3,
         <br />
         Randomized, Double-blind, Placebo-Controlled,
@@ -26,17 +26,17 @@ const PageContent: React.FC = () => {
         <Header type='h3' custom={`${styles.h3} mb-0`}>
           REXULTI demonstrated<sup>1,2</sup>:
         </Header>
-        <Paragraph custom={'mb-17'}>
+        <Paragraph custom='mb-17'>
           Statistically significant reductions in agitation symptom frequency vs
           placebo at Week 12
         </Paragraph>
         <List
           content={{
             type: 'circle',
-            marker_color: 'green-300' /*optional*/,
+            markerColor: 'green-300' /* optional */,
             data: [
               {
-                custom_style: 'mb-5',
+                customStyle: 'mb-5',
                 text: (
                   <>
                     <strong>Study 6:</strong> REXULTI 2 mg/day demonstrated a
@@ -46,7 +46,7 @@ const PageContent: React.FC = () => {
                 ),
               },
               {
-                custom_style: 'mb-5',
+                customStyle: 'mb-5',
                 text: (
                   <>
                     <strong>Study 7:</strong> REXULTI 2 mg or 3 mg/day
@@ -59,7 +59,7 @@ const PageContent: React.FC = () => {
           }}
         />
 
-        <img className={styles.icon_1} src={Icon_1} alt='' width='168' />
+        <img className={styles.icon_1} src={Icon1} alt='' width='168' />
       </div>
       <div className={`${styles.heading} bg-gray-200 mt-12`}>
         <Header type='h3' custom={styles.h3}>
@@ -113,9 +113,9 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span className={'highlighted'}>
+                <span className='highlighted'>
                   Please see{' '}
-                  <Link to='R.6.0_ISI' custom={'green-200'}>
+                  <Link to='R.6.0_ISI' custom='green-200'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.
@@ -127,7 +127,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
       />
     </div>
   );

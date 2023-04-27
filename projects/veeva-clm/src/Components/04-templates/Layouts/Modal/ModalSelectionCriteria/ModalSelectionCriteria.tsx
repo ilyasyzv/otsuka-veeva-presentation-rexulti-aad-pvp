@@ -113,6 +113,7 @@ export const ModalSelectionCriteria = () => (
             custom: style.list,
             columns: 'columns-1',
             type: 'circle',
+            markerColor: 'green-300',
             data: [
               {
                 text: <>Adults, aged 55-90 years</>,
@@ -196,6 +197,7 @@ export const ModalSelectionCriteria = () => (
             custom: style.list,
             columns: 'columns-1',
             type: 'circle',
+            markerColor: 'green-300',
             data: [
               {
                 text: (
@@ -214,6 +216,7 @@ export const ModalSelectionCriteria = () => (
                       content={{
                         columns: 'columns-1',
                         type: 'rectangle',
+                        markerColor: 'green-300',
                         data: [
                           {
                             text: (
@@ -261,6 +264,7 @@ export const ModalSelectionCriteria = () => (
                       content={{
                         columns: 'columns-1',
                         type: 'rectangle',
+                        markerColor: 'green-300',
                         data: [
                           {
                             text: <>Antipsychotics</>,

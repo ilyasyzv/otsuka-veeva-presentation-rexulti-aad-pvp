@@ -21,16 +21,19 @@ const PageContent: React.FC = () => {
       <Paragraph custom={'mb-54'} size='small'>
         <strong>Study objective:</strong> To assess the efficacy, safety, and
         tolerability of REXULTI<sup>®</sup> (brexpiprazole) in patients with AAD
-        <br/><strong>Study design:</strong> hase 3, randomized, double-blind,
+        <br />
+        <strong>Study design:</strong> hase 3, randomized, double-blind,
         placebo-controlled, parallel-arm, fixed-dose trial
-        <br/><strong>Primary endpoint:</strong> Change from baseline in <strong>CMAI score</strong> at week 12
+        <br />
+        <strong>Primary endpoint:</strong> Change from baseline in{' '}
+        <strong>CMAI score</strong> at week 12
       </Paragraph>
 
       <img src={RexultiImage} alt='' width='831' />
 
       <div className={styles.button_container}>
-        <ModalSelectionCriteria/>
-        <ModalDemographics1/>
+        <ModalSelectionCriteria />
+        <ModalDemographics1 />
       </div>
 
       <Footer
@@ -42,15 +45,18 @@ const PageContent: React.FC = () => {
               supLeft: '*',
               innerText: (
                 <span>
-                The study initially included a REXULTI 0.5 mg/day treatment arm; this was removed
-                under a protocol amendment in response to new information from <br/>completed studies that
-                indicated this dose was nonefficacious.<sup>1</sup>
+                  The study initially included a REXULTI 0.5 mg/day treatment
+                  arm; this was removed under a protocol amendment in response
+                  to new information from <br />
+                  completed studies that indicated this dose was nonefficacious.
+                  <sup>1</sup>
                 </span>
               ),
             },
             {
-              innerText: 'AAD, agitation associated with Alzheimer’s dementia; CMAI, Cohen-Mansfield Agitation Inventory.',
-            }
+              innerText:
+                'AAD, agitation associated with Alzheimer’s dementia; CMAI, Cohen-Mansfield Agitation Inventory.',
+            },
           ],
         }}
         references={{

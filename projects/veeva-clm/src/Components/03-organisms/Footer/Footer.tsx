@@ -12,7 +12,7 @@ export const Footer: React.FC<FooterProps> = ({
   footnotes,
   references,
   safetyInfo,
-  image,
+  images,
   footerArrow,
 }) => {
   return (
@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({
       {safetyInfo && (
         <SafetyInfo custom={safetyInfo.custom} safetyInfo={safetyInfo.data} />
       )}
-      {image && <Logo image={image} />}
+      {images && <Logo images={images} />}
       {footerArrow && <div className='footer__arrow' />}
     </footer>
   );

@@ -34,7 +34,7 @@ export interface SafetyInfoProps {
 }
 
 export interface LogoProps {
-  image: React.ReactNode;
+  images?: React.ReactNode[];
 }
 
 export interface FooterProps {
@@ -51,6 +51,6 @@ export interface FooterProps {
     custom?: string;
     data: SafetyInfoType[];
   };
-  image?: React.ReactNode;
+  images?: React.ReactNode[];
   footerArrow?: boolean;
 }

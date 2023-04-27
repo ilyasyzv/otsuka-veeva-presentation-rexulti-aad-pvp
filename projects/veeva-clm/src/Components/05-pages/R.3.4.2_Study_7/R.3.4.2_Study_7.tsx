@@ -17,8 +17,8 @@ const PageContent: React.FC = () => {
     <div className={styles.page}>
       <Header custom={`${styles.h1} mt-31 mb-5`}>
         REXULTI® (brexpiprazole) 2 mg or 3 mg Daily Demonstrated
-        a&nbsp;Statistically Significant Reduction in Agitation
-        Symptom Frequency vs Placebo<sup>1</sup>
+        a&nbsp;Statistically Significant Reduction in Agitation Symptom
+        Frequency vs Placebo<sup>1</sup>
       </Header>
       <AnimationStudyGraphic2/>
       <img className={styles.image_1} src={PageImage} alt='' width={'833'} />
@@ -45,16 +45,16 @@ const PageContent: React.FC = () => {
           custom: 'mb-10 mw-600',
           data: [
             {
-              text: (
-                <span>Data on file. Otsuka.</span>
-              ),
+              text: <span>Data on file. Otsuka.</span>,
             },
             {
               text: (
                 <span>
-                  Cohen-Mansfield, J. (1991). Instruction Manual for the Cohen-Mansfield Agitation
-                  Inventory (CMAI). Rockville, MD: Research Institute of the Hebrew Home of Greater Washington.
-                  Available at: https://uiowa2.instructure.com › files › download. Accessed March 17, 2023.
+                  Cohen-Mansfield, J. (1991). Instruction Manual for the
+                  Cohen-Mansfield Agitation Inventory (CMAI). Rockville, MD:
+                  Research Institute of the Hebrew Home of Greater Washington.
+                  Available at: https://uiowa2.instructure.com › files ›
+                  download. Accessed March 17, 2023.
                 </span>
               ),
             },

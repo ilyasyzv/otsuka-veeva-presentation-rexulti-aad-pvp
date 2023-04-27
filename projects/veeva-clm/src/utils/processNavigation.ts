@@ -222,7 +222,7 @@ export const flatLinksList = (links: IMenu, currentPage: string) => {
     return accumulator;
   }, []);
   // Push Homepage link.
-  paths.unshift({ name: 'Homepage', url: '/A.0.Home' });
+  paths.unshift({ name: 'Homepage', url: '/R.0.0_Home' });
   let currentPosition = paths.findIndex(
     (elem) => elem?.url?.includes(currentPage) || false,
   );
