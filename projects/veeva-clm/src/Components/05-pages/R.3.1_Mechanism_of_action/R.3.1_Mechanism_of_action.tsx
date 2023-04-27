@@ -6,7 +6,12 @@ import Header from '@atoms/Content/Header/Header';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
 import { Text } from '@atoms/Content/Text/Text';
 import styles from './R.3.1_Mechanism_of_action.module.scss';
-import PageImage from './img/Image1.png';
+import PageImage from './imgs/img1.png';
+import FadingBlocks from '@organisms/FadingBlocks/FadingBlocks';
+import item2 from './imgs/img2.png';
+import item3 from './imgs/img3.png';
+import item4 from './imgs/img4.png';
+import { Reveal, Tween } from 'react-gsap';
 
 const PageContent = () => {
   return (
@@ -24,7 +29,53 @@ const PageContent = () => {
         systems associated
         <br /> with AAD: norepinephrine, serotonin, and dopamine
       </Paragraph>
-      <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
+      <div className={`mb-10 ${styles.animated}`}>
+        <img className={styles.image_1} src={PageImage} alt='' />
+        <div className={styles.animated_block}>
+          <FadingBlocks>
+            <div
+              style={{ width: '207px', textAlign: 'right' }}
+              className={styles.animated_item1}
+            >
+              <img style={{ width: '88px' }} src={item2} alt='Norepinephrine' />
+            </div>
+            <div
+              style={{ width: '254px', textAlign: 'right' }}
+              className={styles.animated_item2}
+            >
+              <img style={{ width: '101.5px' }} src={item3} alt='Serotonin' />
+            </div>
+            <div
+              style={{ width: '226px', textAlign: 'right' }}
+              className={styles.animated_item3}
+            >
+              <img style={{ width: '88px' }} src={item4} alt='Dopamine' />
+            </div>
+          </FadingBlocks>
+        </div>
+        <div className={styles.animated_block2}>
+          <div
+            style={{ width: '266.5px', textAlign: 'right' }}
+            className={styles.animated_item1}
+          >
+            <Paragraph custom={`${styles.animated_text}`}>
+              Norepinephrine
+            </Paragraph>
+          </div>
+          <div
+            style={{ width: '205px', textAlign: 'right' }}
+            className={styles.animated_item2}
+          >
+            <Paragraph custom={`${styles.animated_text}`}>Serotonin</Paragraph>
+          </div>
+          <div
+            style={{ width: '243px', textAlign: 'right' }}
+            className={styles.animated_item3}
+          >
+            <Paragraph custom={`${styles.animated_text}`}>Dopamine</Paragraph>
+          </div>
+        </div>
+      </div>
       <Paragraph custom={`${styles.chart_bottom}`}>
         <strong>
           The mechanism of action of brexpiprazole in the treatment of AAD is
