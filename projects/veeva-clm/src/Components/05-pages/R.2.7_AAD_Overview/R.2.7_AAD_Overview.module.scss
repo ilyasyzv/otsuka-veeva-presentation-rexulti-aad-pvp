@@ -1,2 +1,12 @@
 .page {
+  overflow: hidden;
+  height: 100%;
+  padding-left: 4px;
+
+  :global {
+    img.page-image {
+      margin-left: -51px;
+      max-width: none;
+    }
+  }
 }
