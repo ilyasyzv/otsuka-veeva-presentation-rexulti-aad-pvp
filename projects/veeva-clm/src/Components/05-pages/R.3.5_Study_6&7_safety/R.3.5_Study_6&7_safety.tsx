@@ -4,8 +4,8 @@ import List from '@atoms/Content/List/List';
 import Footer from '@organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
 
-import RexultiTable from './img/rexulti_table.png';
 import RexultiLogo from '@/assets/rexulti-logo.png';
+import RexultiTable from './img/rexulti_table.png';
 
 import styles from './R.3.5_Study_6&7_safety.module.scss';
 
@@ -13,10 +13,10 @@ const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
       <Header custom={`${styles.h1} mt-29 mb-13`}>
-        REXULTI<sup className={'big'}>®</sup> (brexpiprazole) Safety Profile vs
+        REXULTI<sup className='big'>®</sup> (brexpiprazole) Safety Profile vs
         Placebo in AAD
       </Header>
-      <Header type={'h3'} custom={`mt-10 mb-13 pr-40`}>
+      <Header type='h3' custom='mt-10 mb-13 pr-40'>
         Adverse reactions (ARs) in ≥2% of patients treated with REXULTI and
         greater than placebo from two 12-week pivotal trials across all doses
       </Header>
@@ -26,14 +26,14 @@ const PageContent: React.FC = () => {
         content={{
           custom: `${styles.list} mt-2`,
           type: 'circle',
-          marker_color: 'green-300' /*optional*/,
+          markerColor: 'green-300' /* optional */,
           data: [
             {
-              custom_style: 'mb-1',
+              customStyle: 'mb-1',
               text: 'In clinical studies of 641 geriatric patients aged ≥65 years who received REXULTI for the treatment of AAD: ',
             },
             {
-              custom_style: 'mb-1',
+              customStyle: 'mb-1',
               text: (
                 <>
                   <p>
@@ -55,7 +55,7 @@ const PageContent: React.FC = () => {
               ),
             },
             {
-              custom_style: 'mb-1',
+              customStyle: 'mb-1',
               text: (
                 <>
                   <strong>Cognitive Decline:</strong> No evidence of worsening
@@ -66,7 +66,7 @@ const PageContent: React.FC = () => {
               ),
             },
             {
-              custom_style: 'mb-1',
+              customStyle: 'mb-1',
               text: (
                 <>
                   <p>
@@ -84,7 +84,7 @@ const PageContent: React.FC = () => {
               ),
             },
             {
-              custom_style: 'mb-1',
+              customStyle: 'mb-1',
               text: (
                 <>
                   <p>
@@ -132,9 +132,9 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span className={'highlighted'}>
+                <span className='highlighted'>
                   Please see{' '}
-                  <Link to='R.6.0_ISI' custom={'green-200'}>
+                  <Link to='R.6.0_ISI' custom='green-200'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.

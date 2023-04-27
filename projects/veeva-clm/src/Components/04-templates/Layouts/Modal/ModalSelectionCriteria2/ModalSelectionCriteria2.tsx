@@ -70,6 +70,7 @@ export const ModalSelectionCriteria2 = () => (
             custom: style.list,
             columns: 'columns-1',
             type: 'circle',
+            markerColor: 'green-300',
             data: [
               {
                 text: <>With a diagnosis of probable Alzheimer’s disease</>,
@@ -152,6 +153,7 @@ export const ModalSelectionCriteria2 = () => (
             custom: style.list,
             columns: 'columns-1',
             type: 'circle',
+            markerColor: 'green-300',
             data: [
               {
                 text: (

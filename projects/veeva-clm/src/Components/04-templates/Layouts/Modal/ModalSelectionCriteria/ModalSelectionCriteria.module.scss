@@ -2,7 +2,7 @@
 
 .modalRoot {
   /*
-    * add custom padding and list font-size.
+    * add custom padding and list params.
   */
   :global {
     .modal-wrapper {
@@ -12,10 +12,6 @@
     ul.list li {
       font-size: 15px;
       line-height: 1.1;
-    }
-
-    ul.list li::before {
-      background: $green-400;
     }
 
     ul.list.circle li::before {

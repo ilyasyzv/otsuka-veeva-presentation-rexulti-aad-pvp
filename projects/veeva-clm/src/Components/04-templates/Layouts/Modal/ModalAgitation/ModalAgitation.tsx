@@ -88,7 +88,7 @@ export const ModalAgitation = () => (
       />
     }
   >
-    <Tabs translateTabsX={37} className={style.tabs}>
+    <Tabs translateTabsX={37} className={style.tabs} tabWidth={266}>
       <Tab title='Caregiver Burden'>
         <Header type='h2' custom={style.tabHeader}>
           A retrospective analysis of physician and non-professional
