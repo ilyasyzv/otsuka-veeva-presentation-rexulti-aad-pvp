@@ -47,7 +47,8 @@ const PageContent: React.FC = () => {
                     <span>
                       Incidence of falls pooled from trials of REXULTI (0.5
                       mg/day or 1 mg/day fixed, 2 mg/day or 3 mg/day fixed, or
-                      0.5-2 mg/ day&nbsp;flexible) vs placebo: 1.7% vs 2.6%
+                      0.5-2 mg/ day&nbsp;flexible) vs placebo:{' '}
+                      <strong>1.7%</strong> vs <strong>2.6%</strong>
                       <sup>1</sup>
                     </span>
                   </p>
@@ -146,7 +147,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
       />
     </div>
   );
