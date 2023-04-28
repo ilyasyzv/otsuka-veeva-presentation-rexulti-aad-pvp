@@ -13,13 +13,40 @@
       display: block;
       padding-top: 15px;
       font-family: "Whitney-Book", sans-serif;
+      font-weight: 100;
+      letter-spacing: .2px;
       font-size: 28px;
+      color: $black-100;
       text-transform: uppercase;
     }
   }
 
   h3 {
     font-size: 20px;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 860px;
+
+    .item_link {
+      display: block;
+      width: 191px;
+      height: 151.5px;
+      margin-right: 20px;
+      margin-bottom: 30px;
+    }
+    .item {
+      width: 245px;
+      max-width: none;
+      height: 205px;
+      max-height: none;
+      position: relative;
+      top: -25px;
+      left: -25px;
+    }
   }
 
   img.image_1 {

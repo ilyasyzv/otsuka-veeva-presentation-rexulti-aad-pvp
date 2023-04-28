@@ -8,12 +8,12 @@ interface ListTypeProps {
   children: ReactNode;
 }
 
-interface DataListProps {
+export interface DataListProps {
   customStyle?: string;
   text: string | ReactNode;
 }
 
-interface ListProps {
+export interface ListProps {
   content: {
     type?: string;
     columns?: string;

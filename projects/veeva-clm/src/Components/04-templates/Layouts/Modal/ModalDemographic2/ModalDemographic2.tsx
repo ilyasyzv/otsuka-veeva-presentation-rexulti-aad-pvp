@@ -46,14 +46,6 @@ export const ModalDemographics2 = () => (
             {
               text: <span>Data on file. Otsuka.</span>,
             },
-            {
-              text: (
-                <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>
-                  2021;36(12):1959-1969.
-                </span>
-              ),
-            },
           ],
         }}
       />
