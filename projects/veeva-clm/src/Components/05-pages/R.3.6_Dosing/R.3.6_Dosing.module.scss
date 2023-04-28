@@ -36,17 +36,18 @@
     }
   }
 
-  .footer {
-    bottom: 28px;
-  }
-
   .footnotes {
     width: 700px;
+
+    li {
+      line-height: 11px;
+    }
   }
 
   .safety_info {
     p:first-child {
       font-size: 14px;
+      margin-bottom: 3px;
 
       a {
         color: $green-200;

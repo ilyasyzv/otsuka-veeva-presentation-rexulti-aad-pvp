@@ -25,13 +25,18 @@ const PageContent = () => {
       <Footer
         custom={styles.footer}
         footnotes={{
-          custom: styles.footnotes,
+          custom: `${styles.footnotes}`,
           data: [
             {
-              innerText:
-                'AAD, agitation associated with Alzheimer’s dementia; AchEI, acetyl-cholinesterase-inhibitor; NMDA, N-methyl-D-aspartate; SNRI, serotonin and' +
-                '\n' +
-                'norepinephrine reuptake inhibitors; SSRI, selective serotonin reuptake inhibitor.',
+              innerText: (
+                <>
+                  AAD, agitation associated with Alzheimer’s dementia; AchEI,
+                  acetyl-cholinesterase-inhibitor; NMDA, N-methyl-D-aspartate;
+                  SNRI, serotonin and <br />
+                  norepinephrine reuptake inhibitors; SSRI, selective serotonin
+                  reuptake inhibitor.
+                </>
+              ),
             },
           ],
         }}
@@ -40,11 +45,11 @@ const PageContent = () => {
           data: [
             {
               text: (
-                <span>
+                <strong>
                   Please see{' '}
                   <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
                   this presentation.
-                </span>
+                </strong>
               ),
             },
             {
