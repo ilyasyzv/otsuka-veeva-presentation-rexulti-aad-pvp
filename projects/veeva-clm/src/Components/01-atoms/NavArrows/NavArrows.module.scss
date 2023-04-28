@@ -20,6 +20,7 @@
     background-size: contain;
     font-size: 0;
     margin: 11px;
+    filter: drop-shadow(0px 2px 2px rgba($black, .4));
 
     &.arrows-nav__next {
       transform: rotate(180deg);
