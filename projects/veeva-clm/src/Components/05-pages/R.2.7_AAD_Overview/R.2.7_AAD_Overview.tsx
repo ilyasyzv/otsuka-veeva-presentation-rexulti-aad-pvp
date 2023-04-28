@@ -1,14 +1,21 @@
 import React from 'react';
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import PageImage from './img/page-image.png';
 import styles from './R.2.7_AAD_Overview.module.scss';
+import FadingBlocks from '@organisms/FadingBlocks/FadingBlocks';
+import item1 from './imgs/summary_1.svg';
+import item2 from './imgs/summary_2.svg';
+import item3 from './imgs/summary_3.svg';
 
 const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
       <Header custom='mt-32 mb-35'>Summary</Header>
-      <img src={PageImage} alt='' width='927' className='page-image' />
+      <FadingBlocks direction='column'>
+        <img src={item1} alt='cart' className={styles.image_block} />
+        <img src={item2} alt='cart' className={styles.image_block} />
+        <img src={item3} alt='cart' className={styles.image_block} />
+      </FadingBlocks>
       <Footer
         footnotes={{
           custom: 'mb-4',

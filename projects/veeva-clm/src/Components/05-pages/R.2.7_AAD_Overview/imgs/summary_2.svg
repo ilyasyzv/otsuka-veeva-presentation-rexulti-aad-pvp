@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1855" height="346.5" viewBox="0 0 1855 346.5">
+  <g id="Component_52_12" data-name="Component 52 – 12" transform="translate(0 1)">
+    <rect id="Rectangle_671" data-name="Rectangle 671" width="1855" height="343" transform="translate(0 2.5)" fill="#f4f4f4"/>
+    <g id="Group_300" data-name="Group 300" transform="translate(1667) rotate(90)">
+      <path id="Path_557" data-name="Path 557" d="M2.2-75.078,0,731.536a10.916,10.916,0,0,0,1.546,5.71l13.268,21.391a6.368,6.368,0,0,1-.068,6.542L2.2,784.323a11.042,11.042,0,0,0-1.7,6l1.7,765.455" fill="#fff" stroke="#9d9d9d" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"/>
+    </g>
+    <g id="Group_10738" data-name="Group 10738" transform="translate(-193 -543.5)">
+      <g id="Group_10357" data-name="Group 10357" transform="translate(135.595 102.566)">
+        <g id="Group_292" data-name="Group 292" transform="translate(181.168 517.434)">
+          <path id="Path_1857" data-name="Path 1857" d="M161.4,88.655,32.892,3.558A21.192,21.192,0,0,0,0,21.228V191.421a21.192,21.192,0,0,0,32.892,17.669l128.511-85.1A21.192,21.192,0,0,0,161.4,88.655Z" transform="translate(0 8.944) rotate(-3)" fill="#fdcf00" stroke="#fdcf00" stroke-width="20" opacity="0.349"/>
+        </g>
+      </g>
+      <g id="Group_10375" data-name="Group 10375" transform="translate(130.01 437.358)">
+        <path id="Path_2244" data-name="Path 2244" d="M345.724,308.687c-1.88-2.9-14.358-19.136-14.688-24.08-.214-3.2,3.63-11.272.937-23.952s-16.789-53.791-71.225-52.64S184,245.716,184,271.973s11.592,40.018,15.922,52.767c5.721,16.83,7.534,37.012-3.131,59.157,0,0,22.385,6.4,41.572,6.4s44.77-6.4,44.77-6.4c2.45-10.169,7.16-18.678,11.371-20.421l.016-.016c8.247,2.011,19.19,3.975,24.39,2,7.777-2.955,6.249-10.044,6.36-12.155.281-5.229,6.623-3.972,5.83-10.975v-8.65l5.356-.943a2.946,2.946,0,0,0,2.587-4.343c-1.445-2.705-2.677-5.27-2.459-6.041.342-1.2,2.306-1.535,6.917-4.269S347.6,311.591,345.724,308.687Z" transform="translate(0 0)" fill="#fff"/>
+        <path id="Path_2245" data-name="Path 2245" d="M318.309,335.93l18.148-3.2a2.946,2.946,0,0,0,2.587-4.343c-1.445-2.705-2.677-5.273-2.459-6.041.342-1.193,2.306-1.535,6.917-4.269s4.1-6.488,2.223-9.392-14.358-19.136-14.688-24.08c-.214-3.2,3.63-11.272.937-23.952s-16.789-53.791-71.225-52.64S184,245.716,184,271.973s11.592,40.018,15.922,52.767c5.721,16.83,7.534,37.012-3.131,59.157" transform="translate(0 0)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2246" data-name="Path 2246" d="M215,277.035c2.45-10.169,7.16-18.679,11.371-20.421" transform="translate(68.133 106.862)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2247" data-name="Path 2247" d="M213,253.2c0,9.594,5.069,14.278,8.538,15.382,5.2,1.653,25.854,7.508,33.635,4.554s6.249-10.048,6.36-12.158c.281-5.229,6.619-3.972,5.83-10.975" transform="translate(63.737 92.325)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <ellipse id="Ellipse_18" data-name="Ellipse 18" cx="12.5" cy="13" rx="12.5" ry="13" transform="translate(248.089 223.993)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <line id="Line_327" data-name="Line 327" y2="115" transform="translate(261.089 249.993)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <circle id="Ellipse_19" data-name="Ellipse 19" cx="13" cy="13" r="13" transform="translate(283.089 242.993)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <ellipse id="Ellipse_20" data-name="Ellipse 20" cx="12.5" cy="13" rx="12.5" ry="13" transform="translate(213.089 242.993)" fill="#fdcf00" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <circle id="Ellipse_21" data-name="Ellipse 21" cx="12.5" cy="12.5" r="12.5" transform="translate(293.089 281.993)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <ellipse id="Ellipse_22" data-name="Ellipse 22" cx="13" cy="12.5" rx="13" ry="12.5" transform="translate(203.089 281.993)" fill="rgba(66,113,30,0.5)" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2248" data-name="Path 2248" d="M232.424,237.721,213,255.783v11.611" transform="translate(63.737 65.338)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2249" data-name="Path 2249" d="M223.167,225.835,213,236v28.733" transform="translate(63.737 39.216)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2250" data-name="Path 2250" d="M199.837,225.838l10.113,10.113v31.978" transform="translate(34.808 39.22)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2251" data-name="Path 2251" d="M196.8,237.853l19.812,20.154v60.263" transform="translate(28.142 65.628)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+    </g>
+    <g id="Group_10739" data-name="Group 10739" transform="translate(-193 -543.5)">
+      <g id="Group_10356" data-name="Group 10356" transform="translate(915.595 102.566)">
+        <g id="Group_292-2" data-name="Group 292" transform="translate(181.168 517.434)">
+          <path id="Path_1857-2" data-name="Path 1857" d="M161.4,88.655,32.892,3.558A21.192,21.192,0,0,0,0,21.228V191.421a21.192,21.192,0,0,0,32.892,17.669l128.511-85.1A21.192,21.192,0,0,0,161.4,88.655Z" transform="translate(0 8.944) rotate(-3)" fill="#42711e" stroke="#42711e" stroke-width="20" opacity="0.229"/>
+        </g>
+      </g>
+      <g id="Group_10376" data-name="Group 10376" transform="translate(907.01 437.358)">
+        <path id="Path_2244-2" data-name="Path 2244" d="M345.724,308.687c-1.88-2.9-14.358-19.136-14.688-24.08-.214-3.2,3.63-11.272.937-23.952s-16.789-53.791-71.225-52.64S184,245.716,184,271.973s11.592,40.018,15.922,52.767c5.721,16.83,7.534,37.012-3.131,59.157,0,0,22.385,6.4,41.572,6.4s44.77-6.4,44.77-6.4c2.45-10.169,7.16-18.678,11.371-20.421l.016-.016c8.247,2.011,19.19,3.975,24.39,2,7.777-2.955,6.249-10.044,6.36-12.155.281-5.229,6.623-3.972,5.83-10.975v-8.65l5.356-.943a2.946,2.946,0,0,0,2.587-4.343c-1.445-2.705-2.677-5.27-2.459-6.041.342-1.2,2.306-1.535,6.917-4.269S347.6,311.591,345.724,308.687Z" transform="translate(0 0)" fill="#fff"/>
+        <path id="Path_2245-2" data-name="Path 2245" d="M318.309,335.93l18.148-3.2a2.946,2.946,0,0,0,2.587-4.343c-1.445-2.705-2.677-5.273-2.459-6.041.342-1.193,2.306-1.535,6.917-4.269s4.1-6.488,2.223-9.392-14.358-19.136-14.688-24.08c-.214-3.2,3.63-11.272.937-23.952s-16.789-53.791-71.225-52.64S184,245.716,184,271.973s11.592,40.018,15.922,52.767c5.721,16.83,7.534,37.012-3.131,59.157" transform="translate(0 0)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2246-2" data-name="Path 2246" d="M215,277.035c2.45-10.169,7.16-18.679,11.371-20.421" transform="translate(68.133 106.862)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2247-2" data-name="Path 2247" d="M213,253.2c0,9.594,5.069,14.278,8.538,15.382,5.2,1.653,25.854,7.508,33.635,4.554s6.249-10.048,6.36-12.158c.281-5.229,6.619-3.972,5.83-10.975" transform="translate(63.737 92.325)" fill="none" stroke="#07412c" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+        <path id="Path_2252" data-name="Path 2252" d="M332.444,251.143l7.607-44.091L303,262.921h14.722l-5.7,43.041,38.091-54.818Z" transform="translate(-73.373 19.78)" fill="#fdcf00" stroke="#07412c" stroke-linejoin="round" stroke-width="6"/>
+      </g>
+    </g>
+    <g id="Group_10755" data-name="Group 10755" transform="translate(-193 -568.5)">
+      <text id="The_underlying_pathophysiology_of_AAD_may_involve_dysfunctions_within_the_noradrenergic_serotonergic_and_dopaminergic_systems.4-7" data-name="The underlying pathophysiology of AAD may involve dysfunctions within the noradrenergic, serotonergic, and dopaminergic systems.4-7" transform="translate(530 694)" fill="#414042" font-size="34" font-family="Whitney-Book, Whitney"><tspan x="0" y="27">The underlying pathophysiology of </tspan><tspan x="0" y="65">AAD may involve dysfunctions </tspan><tspan x="0" y="103">within the noradrenergic, </tspan><tspan x="0" y="141">serotonergic, and dopaminergic </tspan><tspan x="0" y="179">systems.</tspan><tspan y="179" font-size="19.832" baseline-shift="11.332199483839085">4-7</tspan></text>
+      <text id="Pathophysiology" transform="translate(530 649)" fill="#42711e" font-size="32" font-family="Whitney-Bold, Whitney" font-weight="700"><tspan x="0" y="31">Pathophysiology</tspan></text>
+    </g>
+    <g id="Group_10752" data-name="Group 10752" transform="translate(-193 -549.5)">
+      <text id="Agitation_in_Alzheimer_s_dementia_can_adversely_affect_patient_outcomes_and_disease_progression.8-10" data-name="Agitation in Alzheimer’s dementia can 
+adversely affect patient outcomes 
+and disease progression.8-10" transform="translate(1319 694)" fill="#414042" font-size="34" font-family="Whitney-Book, Whitney"><tspan x="0" y="27">Agitation in Alzheimer’s dementia can </tspan><tspan x="0" y="65">adversely affect patient outcomes </tspan><tspan x="0" y="103">and disease progression.</tspan><tspan y="103" font-size="19.832" baseline-shift="11.332199483839085">8-10</tspan></text>
+      <text id="Clinical_burden" data-name="Clinical burden" transform="translate(1319 646)" fill="#42711e" font-size="32" font-family="Whitney-Bold, Whitney" font-weight="700"><tspan x="0" y="31">Clinical burden</tspan></text>
+    </g>
+  </g>
+</svg>
