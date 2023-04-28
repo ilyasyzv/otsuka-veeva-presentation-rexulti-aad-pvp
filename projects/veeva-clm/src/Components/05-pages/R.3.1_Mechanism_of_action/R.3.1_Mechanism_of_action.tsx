@@ -1,22 +1,24 @@
 import React from 'react';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import RexultiLogo from '@/assets/rexulti-logo.png';
 import Header from '@atoms/Content/Header/Header';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
 import { Text } from '@atoms/Content/Text/Text';
-import styles from './R.3.1_Mechanism_of_action.module.scss';
-import PageImage from './imgs/img1.png';
 import FadingBlocks from '@organisms/FadingBlocks/FadingBlocks';
+
+import RexultiLogo from '@/assets/rexulti-logo.png';
+import classNames from 'classnames';
+import PageImage from './imgs/img1.png';
 import item2 from './imgs/img2.png';
 import item3 from './imgs/img3.png';
 import item4 from './imgs/img4.png';
-import { Reveal, Tween } from 'react-gsap';
+
+import styles from './R.3.1_Mechanism_of_action.module.scss';
 
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Header custom={`${styles.h1} mb-10 mt-24`}>
+      <Header custom={`${styles.h1} mb-6 mt-30`}>
         REXULTI® (brexpiprazole) May Interact With 3 Key Neurotransmitter
         Systems Implicated in AAD<sup>1,2</sup>
       </Header>
@@ -82,7 +84,7 @@ const PageContent = () => {
           unknown. However, the efficacy of brexpiprazole may be mediated
           through a combination of partial agonist activity at serotonin 5-HT
           <sub>1A </sub>
-          and dopamine D<sub>2</sub>, receptor, and antagonist activity at
+          and dopamine D<sub>2</sub> receptor, and antagonist activity at
           serotonin 5-HT<sub>2A </sub>
           receptors.
         </strong>
@@ -96,59 +98,63 @@ const PageContent = () => {
         <Text
           title='Antagonist:'
           list={{
-            columns: 'columns-1',
-            type: 'circle',
-            data: [
-              {
-                text: (
-                  <>
-                    Norepinephrine α<sub>1A</sub>, α<sub>1B</sub>, α
-                    <sub>1D</sub>, and α<sub>2C</sub>
-                    <br />
-                  </>
-                ),
-              },
-              {
-                text: (
-                  <>
-                    Serotonin: 5-HT<sub>2A</sub>, 5-HT<sub>2B</sub>, 5-H
-                    <sub>T7</sub>
-                  </>
-                ),
-              },
-            ],
+            content: {
+              columns: 'columns-1',
+              type: 'circle',
+              data: [
+                {
+                  text: (
+                    <>
+                      Norepinephrine α<sub>1A</sub>, α<sub>1B</sub>, α
+                      <sub>1D</sub>, and α<sub>2C</sub>
+                      <br />
+                    </>
+                  ),
+                },
+                {
+                  text: (
+                    <>
+                      Serotonin: 5-HT<sub>2A</sub>, 5-HT<sub>2B</sub>, 5-H
+                      <sub>T7</sub>
+                    </>
+                  ),
+                },
+              ],
+            },
           }}
         />
         <Text
           title='Partial Agonist:'
           list={{
-            columns: 'columns-1',
-            type: 'circle',
-            data: [
-              {
-                text: (
-                  <>
-                    Serotonin 5-HT<sub>1A</sub>
-                    <br />
-                  </>
-                ),
-              },
-              {
-                text: (
-                  <>
-                    Dopamine D<sub>2</sub> and D<sub>3</sub>
-                  </>
-                ),
-              },
-            ],
+            content: {
+              columns: 'columns-1',
+              type: 'circle',
+              data: [
+                {
+                  text: (
+                    <>
+                      Serotonin 5-HT<sub>1A</sub>
+                      <br />
+                    </>
+                  ),
+                },
+                {
+                  text: (
+                    <>
+                      Dopamine D<sub>2</sub> and D<sub>3</sub>
+                    </>
+                  ),
+                },
+              ],
+            },
           }}
         />
       </div>
 
       <Footer
-        custom={styles.footer}
+        custom={classNames(styles.footer, 'mn-6')}
         footnotes={{
-          custom: `mb-6 ${styles.footnote}`,
+          custom: `mb-2 ${styles.footnote}`,
           data: [
             {
               supLeft: '*',

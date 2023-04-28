@@ -27,6 +27,7 @@
   .chart_bottom {
     font-size: 15px;
     line-height: 18px;
+    padding: 3px 0;
 
     sub {
       font-size: 0.6em;
@@ -79,10 +80,6 @@
         font-size: 6px;
       }
     }
-  }
-
-  .footer {
-    bottom: 26px;
   }
 
   .safety_info {
