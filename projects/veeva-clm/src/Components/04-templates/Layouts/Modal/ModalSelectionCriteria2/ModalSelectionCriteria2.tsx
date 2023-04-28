@@ -129,15 +129,6 @@ export const ModalSelectionCriteria2 = () => (
                   </>
                 ),
               },
-              {
-                text: (
-                  <>
-                    Patients were required to be exhibiting sufficient agitation
-                    behaviors at time of entry to warrant use of
-                    pharmacotherapy, after excluding other factors
-                  </>
-                ),
-              },
             ],
           }}
         />

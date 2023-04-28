@@ -30,8 +30,8 @@ const PageContent = () => {
           multicenter, placebo-controlled, parallel-arm, fixed-dose trial
         </Paragraph>
         <Paragraph>
-          <strong>Primary endpoint:</strong> Change from baseline in CMAI score
-          at week 12
+          <strong>Primary endpoint:</strong> Change from baseline in{' '}
+          <strong>CMAI score</strong> at week 12
         </Paragraph>
       </div>
       <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
