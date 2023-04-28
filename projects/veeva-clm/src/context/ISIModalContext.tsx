@@ -14,7 +14,12 @@ export type TISIModalValue = {
   setIsiModalParams: ({ show, pageName }: TParams) => void;
 };
 
-const ISIModalContext = createContext(false);
+const defaultValue: TISIModalValue = {
+  isiModalParams: { show: false, pageName: '' },
+  setIsiModalParams: () => undefined,
+};
+
+const ISIModalContext = createContext(defaultValue);
 
 const ISIModalProvider = ({ children }: TISIModalContext) => {
   const [isShowISIModal, setIsShowISIModal] = useState(false);

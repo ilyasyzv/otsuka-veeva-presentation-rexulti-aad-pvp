@@ -9,7 +9,7 @@ const lsISIModalKey = 'isi_modal';
 
 export const NavArrows: React.FC = () => {
   const { currentPage, changePage } = useContext(PageContext);
-  const { setIsiModalParams } = useContext<TISIModalValue>(ISIModalContext);
+  const { setIsiModalParams }: TISIModalValue = useContext(ISIModalContext);
 
   const { currentPosition, paths } = flatLinksList(
     { ...mainMenu },

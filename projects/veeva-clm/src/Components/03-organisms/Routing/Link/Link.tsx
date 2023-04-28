@@ -34,7 +34,7 @@ interface Props {
 
 export const Link: React.FC<Props> = ({ custom, to, children }) => {
   const { changePage } = useContext(PageContext);
-  const { setIsiModalParams } = useContext<TISIModalValue>(ISIModalContext);
+  const { setIsiModalParams }: TISIModalValue = useContext(ISIModalContext);
 
   const showISIModalOrNavigate = (): void => {
     const lsISIModal = sessionStorage.getItem(lsISIModalKey);
