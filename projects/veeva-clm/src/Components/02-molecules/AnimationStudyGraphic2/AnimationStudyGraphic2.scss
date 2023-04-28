@@ -2,25 +2,6 @@
   position: relative;
 }
 
-.click-area {
-  position: absolute;
-  left: -25px;
-  top: 188px;
-  right: 0;
-  z-index: 3;
-  width: 513px;
-  height: 287px;
-}
-
-.chart-wrapper {
-  position: relative;
-  left: -25px;
-  width: 513px;
-  height: 287px;
-  padding-top: 62px;
-  box-sizing: border-box;
-}
-
 .study-graphic2 {
   [id*='line-'] {
     stroke-dasharray: 975;
