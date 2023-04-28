@@ -23,6 +23,12 @@
       width: 6px;
       height: 1px;
     }
+
+    .footnote__list li:nth-child(2) {
+      .sup-left {
+        font-size: 5px;
+      }
+    }
   }
   .content {
     display: flex;
@@ -91,5 +97,9 @@
     sub {
       font-size: 10px;
     }
+  }
+
+  .dagger {
+    font-size: 7px;
   }
 }
