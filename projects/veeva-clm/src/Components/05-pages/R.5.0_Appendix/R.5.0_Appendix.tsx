@@ -19,7 +19,7 @@ const PageContent: React.FC = () => {
         <Header type='h1' custom={styles.title}>
           CMAI Details
         </Header>
-        <Tabs translateTabsX={37}>
+        <Tabs translateTabsX={37} tabWidth={266}>
           <Tab title='CMAI Overview'>
             <img src={imgCMAIOverview} alt='CMAI Overview' />
           </Tab>
