@@ -23,7 +23,12 @@ const PageContent: React.FC = () => {
         references={{
           data: [
             {
-              text: 'Grossberg GT, et al. Am <strong>J Geriatr Psychiatry</strong>. 2020;28(4):383-400.',
+              text: (
+                <>
+                  Grossberg GT, et al. Am <strong>J Geriatr Psychiatry</strong>.
+                  2020;28(4):383-400.
+                </>
+              ),
             },
             {
               text: 'Data on file. Otsuka.',
