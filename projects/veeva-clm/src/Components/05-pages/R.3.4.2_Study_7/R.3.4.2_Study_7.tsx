@@ -3,11 +3,14 @@ import Header from '@atoms/Content/Header/Header';
 import Footer from '@organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
 import ModalCMAI from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
+import AnimationStudyGraphic2 from '@molecules/AnimationStudyGraphic2/AnimationStudyGraphic2';
 
-import PageImage from './img/rexulti_image.png';
+import PageImage from './img/Image_1.png';
 import RexultiLogo from '@/assets/rexulti-logo.png';
+import RexultiBanner from './img/Rexulti_banner.png';
 
 import styles from './R.3.4.2_Study_7.module.scss';
+
 
 const PageContent: React.FC = () => {
   return (
@@ -17,12 +20,14 @@ const PageContent: React.FC = () => {
         a&nbsp;Statistically Significant Reduction in Agitation Symptom
         Frequency vs Placebo<sup>1</sup>
       </Header>
-      <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
-      <ModalCMAI />
+      <AnimationStudyGraphic2/>
+      <img className={styles.image_1} src={PageImage} alt='' width={'833'} />
+      <img className={styles.image_2} src={RexultiBanner} alt='' width={'823'} />
+      <ModalCMAI/>
       <Footer
         custom={styles.footer}
         footnotes={{
-          custom: `mb-8 ${styles.footnote}`,
+          custom: `mb-3 ${styles.footnote}`,
           data: [
             {
               supLeft: '*',

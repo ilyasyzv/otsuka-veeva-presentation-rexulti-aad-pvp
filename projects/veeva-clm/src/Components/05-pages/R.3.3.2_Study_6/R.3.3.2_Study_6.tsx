@@ -3,9 +3,11 @@ import Header from '@atoms/Content/Header/Header';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import { Link } from '@organisms/Routing';
 import ModalCMAI from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
+import AnimationStudyGraphic from '@molecules/AnimationStudyGraphic/AnimationStudyGraphic';
 
 import RexultiLogo from '@/assets/rexulti-logo.png';
 import PageImage from './img/Image1.png';
+import RexultiBanner from './img/Rexulti_banner.png';
 
 import styles from './R.3.3.2_Study_6.module.scss';
 
@@ -17,7 +19,10 @@ const PageContent = () => {
         Significant and Clinically Meaningful Reductions
         <br /> in Agitation Symptom Frequency vs Placebo<sup>1</sup>
       </Header>
-      <img className={`mb-10 ${styles.image_1}`} src={PageImage} alt='' />
+      <AnimationStudyGraphic/>
+      <img className={styles.image_1} src={PageImage} alt='' width={'820'} />
+      <img className={styles.image_2} src={RexultiBanner} alt='' width={'824'} />
+
       <ModalCMAI />
       <Footer
         custom={styles.footer}
