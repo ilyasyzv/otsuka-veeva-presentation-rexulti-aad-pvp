@@ -10,7 +10,7 @@ import styles from './Navbar.module.scss';
 export const Navbar: React.FC = () => {
   const { currentPage } = useContext(PageContext);
   const isHomepage = !!(
-    currentPage === '01_Launch_screen' || currentPage === 'A.0.Home'
+    currentPage === '01_Launch_screen' || currentPage === 'R.0.0_Home'
   );
   const links = flapMenu(mainMenu.data, 0);
   const bem = (mainClass: string, isActive: boolean): string => {

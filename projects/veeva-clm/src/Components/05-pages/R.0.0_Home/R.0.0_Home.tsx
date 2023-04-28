@@ -10,9 +10,9 @@ import styles from './R.0.0_Home.module.scss';
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Paragraph custom={styles['header-homepage']}>
+      <div className={styles['header-homepage']}>
         <Header type='h1' custom={`${styles.h1} mb-12`}>
-          REXULTI<sup>®</sup> (brexpiprazole) for the
+          REXULTI® (brexpiprazole) for the
           <br />
           Treatment of Agitation Associated
           <br />
@@ -24,7 +24,7 @@ const PageContent = () => {
           <br />
           Pharmacologic Treatment for AAD
         </Header>
-      </Paragraph>
+      </div>
 
       <Footer
         footnotes={{
@@ -85,8 +85,8 @@ const PageContent = () => {
           ],
         }}
         images={[
-          <img src={RexultiLogo} alt='rexulti-logo' width='154.2' />,
-          <img src={RexultiLogo2} alt='rexulti-logo' width='200' />,
+          <img src={RexultiLogo} alt='rexulti-logo' width='190' />,
+          <img src={RexultiLogo2} alt='rexulti-logo' width='218' />,
         ]}
       />
     </div>

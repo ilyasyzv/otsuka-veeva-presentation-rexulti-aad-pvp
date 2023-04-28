@@ -7,7 +7,6 @@ import item1 from './imgs/1.svg';
 import item2 from './imgs/2.svg';
 import item3 from './imgs/3.svg';
 import item4 from './imgs/4.svg';
-import imgBg from './imgs/4blocks.png';
 import styles from './R.2.4_AAD_Overview.module.scss';
 
 const PageContent: React.FC = () => {

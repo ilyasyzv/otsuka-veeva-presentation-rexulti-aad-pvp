@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import classNames from 'classnames';
 import { PageContext } from '@/context/PageContext';
 import { ISIModalContext, TISIModalValue } from '@/context/ISIModalContext';
 import { navigateLocal } from '@/Components/03-organisms/Routing/Link/Link';
@@ -53,19 +54,26 @@ export const NavArrows: React.FC = () => {
       navigateLocal(changePage, preparedPageName);
     }
   };
+  const position = (paths[0].url.includes(currentPage) || currentPage.includes('01_Launch_screen')) 
+    ? 'first' 
+    : paths[paths.length - 1].url.includes(currentPage) 
+      ? 'last' 
+      : 'middle';
 
   return (
-    <div className={styles['arrows-nav']}>
-      <button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
+    <div className={classNames(styles['arrows-nav'], styles[position])}>
+      {position !== 'first' && 
+      (<button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
         Prev
-      </button>
-      <button
+      </button>)}
+      {position !== 'last' && 
+      (<button
         type='button'
         onClick={moveToNext}
         className={styles['arrows-nav__next']}
       >
         Next
-      </button>
+      </button>)}
     </div>
   );
 };
