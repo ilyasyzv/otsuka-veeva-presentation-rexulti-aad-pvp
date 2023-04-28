@@ -17,7 +17,7 @@ export const Carret: React.FC<CarretProps> = ({
   const carretStyle = {
     width: `${carretSize}px`,
     transform: `translateX(${leftIndent}px)`,
-    transition: `transform ${animationSpeed}s ease-out`,
+    transition: `${animationSpeed}s`,
   };
   return (
     <div className={style.activeTabCarret} style={carretStyle}>
