@@ -147,7 +147,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='154' />]}
       />
     </div>
   );
