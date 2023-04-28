@@ -40,53 +40,23 @@ const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
         <div className='modal modal-background modal-isi'>
           <div className='modal-wrapper'>
             {activePage === 0 && (
-              <div className='modal-page page-0'>
-                <div className='modal-content'>
-                  <Header
-                    type='h2'
-                    color='blue-600'
-                    custom='mb-20'
-                    bgcolor='transparent'
-                  >
-                    <span>Health Care Economic Information</span>
-                  </Header>
-                  <HCEIContent />
-                </div>
-                <div className='modal-actions'>
-                  <p>Please accept and review the HCEI information above.</p>
-                  <ButtonContinue
-                    onClick={() => setActivePage((prev) => prev + 1)}
-                  >
-                    Accept and
-                    <br />
-                    Continue
-                  </ButtonContinue>
-                </div>
-              </div>
-            )}
-            {activePage === 1 && (
               <div className='modal-page page-1'>
                 <div className='modal-content'>
-                  <Header
-                    type='h2'
-                    color='blue-600'
-                    custom='mb-2'
-                    bgcolor='transparent'
-                  >
-                    <span>
-                      INDICATIONS and IMPORTANT SAFETY INFORMATION
-                      <br />
-                      for REXULTI<sup>®</sup> (brexpiprazole)
-                    </span>
-                  </Header>
                   <Scrollbar
-                    minimalThumbSize={43}
-                    maximalThumbSize={43}
+                    minimalThumbSize={156}
+                    maximalThumbSize={156}
                     noScrollX
                     onScroll={updateHandler}
-                    style={{ height: '510px' }}
+                    style={{ height: '523px' }}
                   >
                     <div className='modal-isi'>
+                      <Header type='h2' custom='mb-10'>
+                        <span>
+                          INDICATIONS and IMPORTANT SAFETY INFORMATION
+                          <br />
+                          for REXULTI® (brexpiprazole)
+                        </span>
+                      </Header>
                       <ISIContent />
                     </div>
                   </Scrollbar>

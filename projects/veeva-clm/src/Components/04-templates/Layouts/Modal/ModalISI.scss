@@ -4,11 +4,13 @@
   .modal-wrapper {
     position: relative;
     overflow: hidden;
+    padding: 50px 39px 18px 77px;
 
     .modal-content {
-      .heading {
-        font-size: 32px;
-        line-height: 35px;
+      h2 {
+        font-size: 30px;
+        line-height: 32px;
+        color: $green-600;
 
         sup {
           font-size: 18px;
@@ -17,7 +19,7 @@
       }
 
       p {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 18px;
       }
 
@@ -33,12 +35,12 @@
           &::before {
             content: "";
             display: block;
-            width: 5px;
-            height: 5px;
-            border-radius: 3px;
-            background: $green-300;
+            width: 4px;
+            height: 4px;
+            border-radius: 2px;
+            background: $gray-800;
             position: absolute;
-            top: 5px;
+            top: 7px;
             left: 0;
           }
         }
@@ -47,15 +49,17 @@
       .ScrollbarsCustom {
         .ScrollbarsCustom-Scroller {
           .ScrollbarsCustom-Content {
-            padding-right: 42px !important;
+            padding-right: 37px !important;
           }
         }
 
         .ScrollbarsCustom-TrackY {
-          width: 8px !important;
-          background: $gray-300 !important;
+          width: 10px !important;
+          border-radius: 5px !important;
+          background: $gray-350 !important;
 
           .ScrollbarsCustom-Thumb {
+            border-radius: 5px !important;
             background: $green-300 !important;
           }
         }
@@ -108,7 +112,7 @@
 
     .modal-actions {
       background: $green-50;
-      padding: 18px 15px 13px;
+      padding: 17px 15px;
       position: absolute;
       left: 0;
       right: 0;
@@ -142,7 +146,7 @@
 
       .modal-actions {
         .button-continue {
-          margin: 0 0 0 35px;
+          margin: 0 0 0 45px;
         }
       }
     }
