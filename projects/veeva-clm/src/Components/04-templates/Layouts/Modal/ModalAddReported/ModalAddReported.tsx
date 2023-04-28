@@ -2,9 +2,11 @@ import React from 'react';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 import Button from '@/Components/01-atoms/Content/Button/Button';
 import Header from '@/Components/01-atoms/Content/Header/Header';
+import { Modal } from '@templates/Layouts';
+
 import tableImg from './images/AddReportedTable.png';
+
 import style from './ModalAddReported.module.scss';
-import { Modal } from '@templates';
 
 const blockName = 'modal';
 
@@ -26,7 +28,9 @@ const ModalAddReportedConfigs = {
       <br /> Settings and Dementia Severity
     </Header>
   ),
-  children: <img src={tableImg} className={style.imgBody} />,
+  children: (
+    <img src={tableImg} alt='reported table' className={style.imgBody} />
+  ),
   withFooter: true,
   footer: (
     <Footer
