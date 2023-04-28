@@ -49,7 +49,7 @@ const PageContent = () => {
                 <span>
                   Grossberg GT, et al.{' '}
                   <strong>Am J Geriatr Psychiatry. </strong>
-                  2020;28(4):383-400. 2014;350(3):589-604.
+                  2020;28(4):383-400.
                 </span>
               ),
             },
@@ -60,7 +60,7 @@ const PageContent = () => {
           data: [
             {
               text: (
-                <span>
+                <span className='highlighted'>
                   Please see{' '}
                   <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
                   this presentation.

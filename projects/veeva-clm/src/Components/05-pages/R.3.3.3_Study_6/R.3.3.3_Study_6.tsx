@@ -36,7 +36,7 @@ const PageContent = () => {
           data: [
             {
               text: (
-                <span>
+                <span className='highlighted'>
                   Please see{' '}
                   <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
                   this presentation.
