@@ -5,12 +5,11 @@ import { Link } from '@organisms/Routing';
 import ModalCMAI from '@templates/Layouts/Modal/ModalCMAI/ModalCMAI';
 import AnimationStudyGraphic2 from '@molecules/AnimationStudyGraphic2/AnimationStudyGraphic2';
 
-import PageImage from './img/Image_1.png';
 import RexultiLogo from '@/assets/rexulti-logo.png';
+import PageImage from './img/Image_1.png';
 import RexultiBanner from './img/Rexulti_banner.png';
 
 import styles from './R.3.4.2_Study_7.module.scss';
-
 
 const PageContent: React.FC = () => {
   return (
@@ -20,10 +19,10 @@ const PageContent: React.FC = () => {
         a&nbsp;Statistically Significant Reduction in Agitation Symptom
         Frequency vs Placebo<sup>1</sup>
       </Header>
-      <AnimationStudyGraphic2/>
-      <img className={styles.image_1} src={PageImage} alt='' width={'833'} />
-      <img className={styles.image_2} src={RexultiBanner} alt='' width={'823'} />
-      <ModalCMAI/>
+      <AnimationStudyGraphic2 />
+      <img className={styles.image_1} src={PageImage} alt='' width='833' />
+      <img className={styles.image_2} src={RexultiBanner} alt='' width='823' />
+      <ModalCMAI />
       <Footer
         custom={styles.footer}
         footnotes={{
@@ -65,9 +64,9 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span className={'highlighted'}>
+                <span className='highlighted'>
                   Please see{' '}
-                  <Link to='R.6.0_ISI' custom={'green-200'}>
+                  <Link to='R.6.0_ISI' custom='green-200'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.
@@ -79,7 +78,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
+        images={[<img src={RexultiLogo} alt='maintena-logo' width='154' />]}
       />
     </div>
   );

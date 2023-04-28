@@ -1,28 +1,30 @@
 @import "@base/variables";
 
 .page {
+
+  :global {
+
+      .ScrollbarsCustom-Content {
+        padding-right: 42px !important;
+      }
+
+    .ScrollbarsCustom-TrackY {
+      width: 8px !important;
+      background: $gray-300 !important;
+      top: 0 !important;
+      right: -39px !important;
+    }
+
+      .ScrollbarsCustom-Thumb {
+        background: $green-300 !important;
+      }
+    }
+
   max-width: 829px;
   height: calc(100% - 188px);
-  overflow-y: scroll;
   padding-right: 50px;
   margin-right: 0;
   padding-left: 2px;
-
-  &::-webkit-scrollbar {
-    height: calc(100% - 80px);
-    width: 10px;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: $gray-350;
-    box-shadow: none;
-    border-radius: 4px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $green-300;
-    border-radius: 4px;
-  }
 
   h3,
   p,
