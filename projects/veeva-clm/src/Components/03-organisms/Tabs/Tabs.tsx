@@ -26,7 +26,7 @@ const Sliders = ({
   disableAnimation = false,
 }: SlidersProps) => {
   const offset = -100 * focusedIdx;
-  const transition = disableAnimation ? '' : `transform ${duration}ms`;
+  const transition = disableAnimation ? '' : `${duration}ms`;
 
   return (
     <div className={`${style.outerSliders} ${className}`}>
