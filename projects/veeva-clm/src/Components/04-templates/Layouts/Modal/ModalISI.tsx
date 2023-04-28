@@ -10,7 +10,8 @@ import HCEIContent from '@/content/hcei/hcei.mdx';
 import ISIContent from '@/content/isi/index.mdx';
 
 type TModalISI = {
-  openByDefault: boolean;
+  isOpen: boolean;
+  onClose: () => void;
 };
 
 type TUpdateEvent = {
@@ -19,30 +20,23 @@ type TUpdateEvent = {
   scrollTop: number;
 };
 
-const lsISIModalKey = 'isi_modal';
+const activateContinueOffset = 15;
 
-const ModalISI = ({ openByDefault }: TModalISI): JSX.Element => {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(openByDefault);
-  const [isButtonCloseDisabled, setIsButtonCloseDisabled] =
-    useState<boolean>(true);
-  const [activePage, setActivePage] = useState<number>(0);
+const ModalISI = ({ isOpen = false, onClose }: TModalISI) => {
+  const [isButtonCloseDisabled, setIsButtonCloseDisabled] = useState(true);
+  const [activePage, setActivePage] = useState(0);
 
   const updateHandler = (event: TUpdateEvent) => {
     const { clientHeight, scrollHeight, scrollTop } = event;
 
-    if (clientHeight + scrollTop > scrollHeight - 350) {
+    if (clientHeight + scrollTop > scrollHeight - activateContinueOffset) {
       setIsButtonCloseDisabled(false);
     }
   };
 
-  const closePopUpHandler = () => {
-    setIsModalOpen(false);
-    sessionStorage.setItem(lsISIModalKey, '1');
-  };
-
   return (
     <div>
-      {isModalOpen && (
+      {isOpen && (
         <div className='modal modal-background modal-isi'>
           <div className='modal-wrapper'>
             {activePage === 0 && (
@@ -106,7 +100,7 @@ const ModalISI = ({ openByDefault }: TModalISI): JSX.Element => {
                     .
                   </p>
                   <ButtonContinue
-                    onClick={closePopUpHandler}
+                    onClick={() => onClose()}
                     disabled={isButtonCloseDisabled}
                   >
                     Continue
