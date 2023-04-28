@@ -146,7 +146,7 @@ const AnimationStudyGraphic = () => {
   return (
     <div className={animationPlay ? '' : 'disable-animation'}>
       <div className='click-area' onClick={startAnimate} />
-      <div className='chart-wrapper'>
+      <div className='chart-wrapper study-graphic'>
         <svg width="500" height="304.4" viewBox="0 0 1000 608.834">
           <defs>
             <linearGradient id="linear-gradient" x1="1" y1="1" x2="0.29" y2="0.5" gradientUnits="objectBoundingBox">

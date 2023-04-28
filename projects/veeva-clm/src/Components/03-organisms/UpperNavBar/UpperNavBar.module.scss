@@ -25,11 +25,11 @@
 
         & .main-nav__link__wrapper a {
           display: flex;
-          justify-content: end;
+          justify-content: center;
           height: 25px;
           width: 106px;
           margin: 12px auto;
-          color: $green-300;
+          color: $black-100;
           font-size: 13px;
           padding: 0 0 0 5px;
         }
@@ -56,8 +56,8 @@
             height: 45px;
             left: -7px;
             opacity: 1;
-            background: url("@assets/misc/nav/top-nav-active-left.png") 0 0 /
-              40px 45px;
+            background: url("@assets/misc/nav/top-nav-active-left.png") 0 -0.5px /
+              41px 46px;
           }
 
           &::after {
@@ -67,10 +67,12 @@
             height: 45px;
             opacity: 1;
             background: url("@assets/misc/nav/top-nav-active-right.png") 0 0 /
-              40px 45px;
+              41px 46px;
           }
 
           .main-nav__link__wrapper a {
+            color: $green-300;
+
             &::before {
               content: "";
               position: absolute;
@@ -134,8 +136,8 @@
         height: 27px;
         top: 0;
         left: 0;
-        gap: 4px;
-        width: 126px;
+        gap: 7px;
+        width: 130px;
         z-index: 100;
         list-style: none;
         border-radius: 0 0 15px 15px;
@@ -146,12 +148,12 @@
           z-index: -1;
           content: "";
           position: absolute;
-          left: -10px;
+          left: -12px;
           top: 0;
           height: 100%;
           width: 40px;
           background-color: inherit;
-          transform: skewX(40deg);
+          transform: skewX(44deg);
           border-radius: 0 0 0 10px;
         }
 
@@ -159,13 +161,13 @@
           z-index: -1;
           content: "";
           position: absolute;
-          right: -17%;
-          top: -15px;
+          right: -12px;
+          top: 0;
           height: 100%;
-          width: 35px;
+          width: 40px;
           background-color: inherit;
-          transform: skewY(-48deg);
-          border-radius: 0 0 0 10px;
+          transform: skewX(-44deg);
+          border-radius: 0 0 10px 0;
         }
 
         li {
