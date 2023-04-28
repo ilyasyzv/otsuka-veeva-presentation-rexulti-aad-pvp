@@ -21,6 +21,24 @@
   box-sizing: border-box;
 }
 
+.study-graphic2 {
+  [id*='line-'] {
+    stroke-dasharray: 975;
+    stroke-dashoffset: 975;
+  }
+
+  [id*='line-green'] {
+    stroke-dashoffset: 981;
+    stroke-dasharray: 981;
+  }
+
+  [id*='triangle-'],
+  [id*='circle-'],
+  #yellow-banner {
+    opacity: 0;
+  }
+}
+
 .disable-animation {
   [id*='triangle-'],
   [id*='circle-'] {
@@ -31,19 +49,4 @@
     stroke-dasharray: 0;
     stroke-dashoffset: 0;
   }
-}
-
-[id*='line-'] {
-  stroke-dasharray: 975;
-  stroke-dashoffset: 975;
-}
-
-[id*='line-green'] {
-  stroke-dashoffset: 981;
-  stroke-dasharray: 981;
-}
-
-[id*='triangle-'],
-[id*='circle-'] {
-  opacity: 0 ;
 }

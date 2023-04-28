@@ -24,6 +24,7 @@ const AnimationStudyGraphic2 = () => {
       .addLabel('startLine1', 0)
       .addLabel('startLine2', 1)
       .addLabel('startLine3', 2)
+      .addLabel('startYellowBanner', 4.8)
 
       // Line 1
       .to(lineGray.current, { strokeDashoffset: '0', duration: 1.9 }, 'startLine1')
@@ -101,13 +102,15 @@ const AnimationStudyGraphic2 = () => {
         'startLine3+=2.27',
       )
 
+      .to('#yellow-banner', { opacity: 1, duration: 1.5 }, 'startYellowBanner');
+
     sessionStorage.setItem(STORAGE_KEYS.animationR342, '1');
   };
 
   return (
     <div className={animationPlay ? '' : 'disable-animation'}>
       <div className='click-area' onClick={startAnimate} />
-      <div className='chart-wrapper'>
+      <div className={'chart-wrapper study-graphic2'}>
         <svg width="513" height="287" viewBox="0 0 1026.141 574.273">
           <defs>
             <radialGradient id="radial-gradient" cx="0.176" cy="0.5" r="0.878" gradientTransform="matrix(0.608, 0.794, -0.749, 0.573, 0.444, 0.073)" gradientUnits="objectBoundingBox">
@@ -179,7 +182,7 @@ const AnimationStudyGraphic2 = () => {
             </g>
             <text id="Mean_change_in_CMAI_total_score1_2" data-name="Mean change in CMAI total score1,2" transform="translate(0 479.773) rotate(-90)" fill="#07412c" font-size="26" font-family="Whitney-Bold, Whitney" font-weight="700"><tspan x="36.957" y="25">Mean change in CMAI total score</tspan><tspan y="25" font-size="15.166" baseline-shift="8.665800054057392">1,2</tspan></text>
             <text id="Weeks" transform="translate(494.137 567.273)" fill="#07412c" font-size="25" font-family="Whitney-Bold, Whitney" font-weight="700"><tspan x="0" y="0" letter-spacing="-0.056em">W</tspan><tspan y="0">ee</tspan><tspan y="0" letter-spacing="-0.008em">k</tspan><tspan y="0">s</tspan></text>
-            <g id="Group_11023" data-name="Group 11023" transform="translate(794 94.273)">
+            <g id="yellow-banner" data-name="Group 11023" transform="translate(794 94.273)">
               <g transform="matrix(1, 0, 0, 1, -794, -95.27)" filter="url(#Ellipse_14)">
                 <g id="Ellipse_14-2" data-name="Ellipse 14" transform="translate(794 95.27)" fill="#fdcf00" stroke="#fff" stroke-width="4">
                   <circle cx="103" cy="103" r="103" stroke="none"/>
