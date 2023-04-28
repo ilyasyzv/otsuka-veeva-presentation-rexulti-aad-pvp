@@ -1,9 +1,19 @@
 .page {
-  overflow: hidden;
   height: 100%;
   padding-left: 4px;
 
-  .image_block {
+  .image_block_1 {
+    position: relative;
+  }
+
+  .image_block_2 {
+    max-width: none !important;
+    position: relative;
+    left: -49px;
+    width: 920px;
+  }
+
+  .image_block_3 {
     position: relative;
   }
 }

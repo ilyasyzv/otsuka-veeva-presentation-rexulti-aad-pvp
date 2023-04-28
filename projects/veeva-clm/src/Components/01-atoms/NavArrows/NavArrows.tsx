@@ -34,7 +34,11 @@ export const NavArrows: React.FC = () => {
       navigateLocal(changePage, preparedPageName);
     }
   };
-  const position = paths[0].url.includes(currentPage) ? 'first' : paths[paths.length - 1].url.includes(currentPage) ? 'last' : 'middle';
+  const position = (paths[0].url.includes(currentPage) || currentPage.includes('01_Launch_screen')) 
+    ? 'first' 
+    : paths[paths.length - 1].url.includes(currentPage) 
+      ? 'last' 
+      : 'middle';
 
   return (
     <div className={classNames(styles['arrows-nav'], styles[position])}>
