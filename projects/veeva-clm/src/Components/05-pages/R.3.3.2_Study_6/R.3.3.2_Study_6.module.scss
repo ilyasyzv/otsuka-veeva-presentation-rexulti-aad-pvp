@@ -7,17 +7,35 @@
       bottom: -50px;
       right: 61px;
     }
+
+    .click-area {
+      position: absolute;
+      left: 0;
+      top: 188px;
+      right: 0;
+      z-index: 3;
+      width: 500px;
+      height: 304px;
+    }
+
+    .chart-wrapper {
+      position: relative;
+      width: 500px;
+      height: 304px;
+      padding-top: 57px;
+      box-sizing: border-box;
+    }
   }
 
   .image_1 {
     position: absolute;
-    top: 132px;
-    left: 5px;
+    top: 138px;
+    left: 1px;
   }
 
   .image_2 {
     position: absolute;
-    bottom: 128px;
+    bottom: 122px;
     left: 1px;
   }
 

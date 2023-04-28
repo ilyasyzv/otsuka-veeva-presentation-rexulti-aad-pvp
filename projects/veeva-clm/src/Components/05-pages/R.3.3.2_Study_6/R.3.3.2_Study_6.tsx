@@ -14,7 +14,7 @@ import styles from './R.3.3.2_Study_6.module.scss';
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Header custom={`${styles.h1} mb-12 mt-24`}>
+      <Header custom={`${styles.h1} mb-12 mt-28`}>
         REXULTI® (brexpiprazole) 2 mg Daily Demonstrated Statistically
         Significant and Clinically Meaningful Reductions
         <br /> in Agitation Symptom Frequency vs Placebo<sup>1</sup>
