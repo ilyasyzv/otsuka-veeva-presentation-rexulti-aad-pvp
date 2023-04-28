@@ -11,7 +11,7 @@ const PageContent = () => {
   return (
     <div className={styles.page}>
       <Header custom={`${styles.h1} mb-10 mt-24`}>
-        REXULTI<sup>®</sup> (brexpiprazole): Change in Frequency
+        REXULTI® (brexpiprazole): Change in Frequency
         <br /> Across Subscales of Agitation Symptoms
       </Header>
       <Paragraph
@@ -48,7 +48,7 @@ const PageContent = () => {
             },
           ],
         }}
-        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
+        images={[<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />]}
       />
     </div>
   );

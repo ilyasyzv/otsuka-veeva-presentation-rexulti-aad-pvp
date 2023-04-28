@@ -6,8 +6,8 @@ import { Link } from '@organisms/Routing';
 import { ModalSelectionCriteria } from '@templates/Layouts/Modal/ModalSelectionCriteria/ModalSelectionCriteria';
 import { ModalDemographics1 } from '@templates/Layouts/Modal/ModalDemographics1/ModalDemographics1';
 
-import RexultiImage from './img/rexulti_image.png';
 import RexultiLogo from '@/assets/rexulti-logo.png';
+import RexultiImage from './img/rexulti_image.png';
 
 import styles from './R.3.3.1_Study_6.module.scss';
 
@@ -18,9 +18,9 @@ const PageContent: React.FC = () => {
         Study Design<sup>1</sup>
       </Header>
 
-      <Paragraph custom={'mb-54'} size='small'>
+      <Paragraph custom='mb-54' size='small'>
         <strong>Study objective:</strong> To assess the efficacy, safety, and
-        tolerability of REXULTI<sup>®</sup> (brexpiprazole) in patients with AAD
+        tolerability of REXULTI® (brexpiprazole) in patients with AAD
         <br />
         <strong>Study design:</strong> hase 3, randomized, double-blind,
         placebo-controlled, parallel-arm, fixed-dose trial
@@ -77,9 +77,9 @@ const PageContent: React.FC = () => {
           data: [
             {
               text: (
-                <span className={'highlighted'}>
+                <span className='highlighted'>
                   Please see{' '}
-                  <Link to='R.6.0_ISI' custom={'green-200'}>
+                  <Link to='R.6.0_ISI' custom='green-200'>
                     IMPORTANT SAFETY INFORMATION
                   </Link>{' '}
                   in this presentation.
@@ -91,7 +91,7 @@ const PageContent: React.FC = () => {
             },
           ],
         }}
-        image={<img src={RexultiLogo} alt='maintena-logo' width='154.2' />}
+        images={[<img src={RexultiLogo} alt='rexulti-logo' width='154.2' />]}
       />
     </div>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './R.2.1_AAD_Overview.module.scss';
 
 import Header from '@/Components/01-atoms/Content/Header/Header';
 import Paragraph from '@atoms/Content/Paragraph/Paragraph';
-import PageImage from './img/Image1.png';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import PageImage from './img/Image1.png';
+import styles from './R.2.1_AAD_Overview.module.scss';
 
 const PageContent = () => {
   return (
@@ -17,8 +17,7 @@ const PageContent = () => {
         Manifestations of Alzheimer’s dementia include a range of
         neuropsychiatric symptoms, such as agitation,
         <br /> alongside the hallmark disease characteristics of memory loss and
-        cognitive decline
-        <sup>1</sup>.
+        cognitive decline.<sup>1</sup>
       </Paragraph>
       <Paragraph color='green-300' weight='bold'>
         The IPA defines agitation in patients with cognitive impairment or

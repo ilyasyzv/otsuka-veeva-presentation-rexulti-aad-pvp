@@ -83,16 +83,8 @@ export const ModalSelectionCriteria = () => (
             {
               text: (
                 <span>
-                  Grossberg GT, et al. <b>Am J Geriatr Psychiatry.</b>
+                  Grossberg GT, et al. <b>Am J Geriatr Psychiatry</b>.
                   2020;28(4):383-400.
-                </span>
-              ),
-            },
-            {
-              text: (
-                <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>
-                  2021;36(12):1959-1969.
                 </span>
               ),
             },
@@ -259,7 +251,8 @@ export const ModalSelectionCriteria = () => (
                 text: (
                   <>
                     Likely to require prohibited concomitant therapy
-                    <br /> during the trial, including<sup>†</sup>:
+                    <br /> during the trial, including
+                    <sup className={style.dagger}>†</sup>:
                     <List
                       content={{
                         columns: 'columns-1',

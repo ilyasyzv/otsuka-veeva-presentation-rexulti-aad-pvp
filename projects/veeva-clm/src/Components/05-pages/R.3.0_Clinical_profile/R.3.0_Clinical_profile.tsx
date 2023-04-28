@@ -3,6 +3,13 @@ import Header from '@/Components/01-atoms/Content/Header/Header';
 import RexultiLogo from '@/assets/rexulti-logo.png';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import Item1 from './img/Item1.png';
+import Item2 from './img/Item2.png';
+import Item3 from './img/Item3.png';
+import Item4 from './img/Item4.png';
+import Item5 from './img/Item5.png';
+import Item6 from './img/Item6.png';
+import Item7 from './img/Item7.png';
 
 import PageImage from './img/Image1.png';
 
@@ -19,10 +26,32 @@ const PageContent: React.FC = () => {
           <br /> Pharmacologic Treatment for AAD
         </span>
       </Header>
-      <Header type='h3' custom={`${styles.h3} mb-20 text-center`}>
+      <Header type='h3' custom={`${styles.h3} mb-50 text-center`}>
         Tap below to view a specific topic
       </Header>
-      <img className={styles.image_1} src={PageImage} alt='' width='852' />
+      <div className={styles.wrapper}>
+        <Link custom={styles.item_link} to='R.3.1_Mechanism_of_action'>
+          <img className={styles.item} src={Item1} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.2_Clinical_studies_overview'>
+          <img className={styles.item} src={Item2} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.3.1_Study_6'>
+          <img className={styles.item} src={Item3} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.4.1_Study_7'>
+          <img className={styles.item} src={Item4} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.5_Study_6&7_safety'>
+          <img className={styles.item} src={Item5} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.6_Dosing'>
+          <img className={styles.item} src={Item6} alt='' />
+        </Link>
+        <Link custom={styles.item_link} to='R.3.7_Summary'>
+          <img className={styles.item} src={Item7} alt='' />
+        </Link>
+      </div>
       <Footer
         footnotes={{
           data: [

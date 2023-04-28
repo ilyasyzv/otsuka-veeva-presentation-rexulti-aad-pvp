@@ -9,3 +9,13 @@
     bottom: 158px;
   }
 }
+
+:global {
+  .page--R_3_3_1_Study_6 {
+    .footnote {
+      ul li:first-child {
+        line-height: 12px;
+      }
+    }
+  }
+}
