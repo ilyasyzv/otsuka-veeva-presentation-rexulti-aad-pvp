@@ -12,11 +12,11 @@ import styles from './R.2.4_AAD_Overview.module.scss';
 const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
-      <Header type={'h1'} custom={styles.h1}>
+      <Header type='h1' custom={styles.h1}>
         Agitation in Alzheimer’s Dementia May Adversely
         <br /> Affect Patient Outcomes and Disease Progression
       </Header>
-      <Header type={'h2'} custom={styles.h2}>
+      <Header type='h2' custom={styles.h2}>
         Agitation in Alzheimer’s dementia is associated with:
       </Header>
       <FadingBlocks>
@@ -52,6 +52,7 @@ const PageContent: React.FC = () => {
                   institutionalization or death) in 2 groups (eg,
                   <br />
                   dementia patients with and without agitation) at a given time.
+                  <sup>4</sup>
                 </span>
               ),
             },
@@ -83,8 +84,8 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  REFERENCES: 1. Scarmeas N, et al. <strong>Arch Neurol</strong>
-                  . 2007;64(12):1755-1761.
+                  Scarmeas N, et al. <strong>Arch Neurol</strong>.
+                  2007;64(12):1755-1761.
                 </span>
               ),
             },
@@ -99,7 +100,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Jones E, et al. <strong>J Alzheimers Dis</strong>.
+                  Jones E, et al. <strong>J Alzheimers Dis</strong>.<br />
                   2021;83(1):89-101.
                 </span>
               ),
