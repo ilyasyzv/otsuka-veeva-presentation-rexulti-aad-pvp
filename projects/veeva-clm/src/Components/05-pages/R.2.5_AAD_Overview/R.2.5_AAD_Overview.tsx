@@ -39,9 +39,9 @@ const PageContent: React.FC = () => {
                   Direct healthcare costs related to professional caregiving,
                   nursing home costs, HCP consultations, hospitalizations,
                   treatment, and scans in the previous 12 months were calculated
-                  as USD/year, based on reported healthcare resource utilization
-                  (HCRU) multiplied by unit costs. HCP, healthcare provider;
-                  USD, United States dollar.
+                  as USD/year, <br /> based on reported healthcare resource
+                  utilization (HCRU) multiplied by unit costs. <br />
+                  HCP, healthcare provider; USD, United States dollar.
                 </span>
               ),
             },
