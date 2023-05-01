@@ -122,7 +122,7 @@ export const ModalCosts = () => (
             {
               text: (
                 <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>{' '}
+                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>&nbsp;
                   2021;36(12):1959-1969.
                 </span>
               ),
