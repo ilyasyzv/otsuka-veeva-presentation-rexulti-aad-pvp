@@ -117,7 +117,7 @@ const PageContent: React.FC = () => {
                 {
                   text: (
                     <span>
-                      <strong>Hyperglycemia/Diabetes Mellitus:</strong>
+                      <strong>Hyperglycemia/Diabetes Mellitus:</strong>&nbsp;
                       Hyperglycemia, in some cases extreme and associated with
                       ketoacidosis or hyperosmolar coma or death, has been
                       reported in patients treated with atypical antipsychotics.
