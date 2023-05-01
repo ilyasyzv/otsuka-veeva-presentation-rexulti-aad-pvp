@@ -39,7 +39,7 @@ export const PageContent = () => (
           {
             text: (
               <span>
-                Phan SV, et al. <strong>Drugs R D</strong>. <br />{' '}
+                Phan SV, et al. <strong>Drugs R D</strong>. <br />
                 2019;19(2):93-115.
               </span>
             ),
