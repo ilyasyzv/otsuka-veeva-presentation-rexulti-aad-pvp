@@ -23,7 +23,7 @@ const ModalAddReportedConfigs = {
     />
   ),
   header: (
-    <Header custom='mb-0'>
+    <Header>
       Agitation in Alzheimer’s Dementia Across Care
       <br /> Settings and Dementia Severity
     </Header>

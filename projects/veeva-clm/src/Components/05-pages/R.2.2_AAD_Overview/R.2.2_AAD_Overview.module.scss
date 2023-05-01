@@ -19,6 +19,14 @@
     letter-spacing: -0.2px;
     margin-left: 30px;
     margin-bottom: 11px;
+
+    sup {
+      position: relative;
+      top: 0;
+      font-size: 0.9em;
+      line-height: 0;
+      vertical-align: baseline;
+    }
   }
 
   :global {
@@ -27,6 +35,7 @@
       border-color: $yellow-200;
       box-shadow: 0 0 20px $yellow-200;
       z-index: 1;
+      cursor: pointer;
     }
   }
 
@@ -79,7 +88,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 447px;
+    top: 452px;
     width: 100%;
   }
 
@@ -88,6 +97,6 @@
   }
 
   .card {
-    margin-bottom: 85px;
+    margin-bottom: 98px;
   }
 }

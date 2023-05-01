@@ -74,14 +74,27 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Alzheimer’s Association. 2023{' '}
-                  <strong>Alzheimer’s Disease</strong> Facts and Figures.
-                  Alzheimers Dement. 2023;19(4).
+                  Alzheimer’s Association. 2023 Alzheimer’s Disease Facts and
+                  Figures.
+                  <strong>Alzheimers Dement</strong>. <br /> 2023;19(4).
                 </span>
               ),
             },
             {
               text: <span>Data on file. Otsuka.</span>,
+            },
+          ],
+        }}
+        safetyInfo={{
+          custom: 'mt-5',
+          data: [
+            {
+              text: (
+                <span className='footerWarning'>
+                  FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
+                  OR DISTRIBUTE. 
+                </span>
+              ),
             },
           ],
         }}
