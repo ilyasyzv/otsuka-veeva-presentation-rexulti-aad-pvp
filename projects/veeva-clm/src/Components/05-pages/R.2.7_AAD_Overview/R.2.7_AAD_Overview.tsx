@@ -27,55 +27,55 @@ const PageContent: React.FC = () => {
           ],
         }}
         references={{
-          custom: 'pr-50 mb-7',
+          custom: 'pr-39 mb-7',
           data: [
             {
               text: (
                 <>
-                  Sano M, et al. <i>Int Psychogeriatr</i>. 2023;1-13.
+                  Sano M, et al. <b>Int Psychogeriatr</b>. 2023;1-13.
                 </>
               ),
             },
             {
-              text: <>Kales HC, et al. BMJ. 2015;350:h369.</>,
+              text: <>Kales HC, et al. <b>BMJ</b>. 2015;350:h369.</>,
             },
             {
               text: (
                 <>
-                  Halpern R, et al. Int J Geriatr Psychiatry.
+                  Halpern R, et al. <b>Int J Geriatr Psychiatry</b>.
                   2019;34(3):420-431.
                 </>
               ),
             },
             {
               text: (
-                <>Rosenberg PB, et al. Mol Aspects Med. 2015;43-44:25-37.</>
+                <>Rosenberg PB, et al. <b>Mol Aspects Med</b>. 2015;43-44:25-37.</>
               ),
             },
             {
-              text: <>Carrarini C, et al. Front Neurol. 2021;12:644317.</>,
+              text: <>Carrarini C, et al. <b>Front Neurol</b>. 2021;12:644317.</>,
             },
             {
-              text: <>Arnsten AF, et al. Neurobiol Stress. 2015;1:89-99.</>,
+              text: <>Arnsten AF, et al. <b>Neurobiol Stress</b>. 2015;1:89-99.</>,
             },
             {
               text: (
                 <>
-                  Lanctôt KL, et al. J Neuropsychiatry Clin Neurosci.
+                  Lanctôt KL, et al. <b>J Neuropsychiatry Clin Neurosci</b>.
                   2001;13(1):5-21;11.
                 </>
               ),
             },
             {
               text: (
-                <>Peters ME, et al. Am J Psychiatry. 2015;172(5):460-465.</>
+                <>Peters ME, et al. <b>Am J Psychiatry</b>. 2015;172(5):460-465.</>
               ),
             },
             {
-              text: <>Scarmeas N, et al. Arch Neurol. 2007;64(12):1755-1761.</>,
+              text: <>Scarmeas N, et al. <b>Arch Neurol</b>. 2007;64(12):1755-1761.</>,
             },
             {
-              text: <>Jones E, et al. J Alzheimers Dis. 2021;83(1):89-101.</>,
+              text: <>Jones E, et al. <b>J Alzheimers Dis</b>. 2021;83(1):89-101.</>,
             },
             {
               text: (
@@ -86,10 +86,10 @@ const PageContent: React.FC = () => {
               ),
             },
             {
-              text: <>McDermott CL, et al. Curr Geriatr Rep. 2019;8(1):1-11.</>,
+              text: <>McDermott CL, et al. <b>Curr Geriatr Rep</b>. 2019;8(1):1-11.</>,
             },
             {
-              text: <>Phan SV, et al. Drugs R D. 2019;19(2):93-115.</>,
+              text: <>Phan SV, et al. <b>Drugs R D</b>. 2019;19(2):93-115.</>,
             },
           ],
         }}
