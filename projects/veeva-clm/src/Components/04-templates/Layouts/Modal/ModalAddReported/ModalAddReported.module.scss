@@ -1,6 +1,6 @@
 .modalRoot {
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .imgBody {
@@ -9,7 +9,7 @@
 
   .footer {
     margin: 0 0 5px 0;
-    max-width: 890px;
+    max-width: 835px;
 
     :global {
       /*
@@ -29,6 +29,10 @@
   :global {
     .references-label {
       text-transform: uppercase;
+    }
+
+    .modal-wrapper {
+      padding: 39px 50px 18px 43px;
     }
   }
 }
