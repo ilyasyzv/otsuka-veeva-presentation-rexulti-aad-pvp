@@ -36,11 +36,11 @@ const PageContent = () => {
           data: [
             {
               text: (
-                <span>
+                <strong className={styles.important_info}>
                   Please see{' '}
                   <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
                   this presentation.
-                </span>
+                </strong>
               ),
             },
             {
@@ -48,7 +48,14 @@ const PageContent = () => {
             },
           ],
         }}
-        images={[<img src={RexultiLogo} alt='maintena-logo' width='154.2' />]}
+        images={[
+          <img
+            src={RexultiLogo}
+            alt='maintena-logo'
+            width='154.2'
+            className={styles.logo}
+          />,
+        ]}
       />
     </div>
   );
