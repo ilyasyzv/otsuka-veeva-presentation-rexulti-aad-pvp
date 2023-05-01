@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Footer } from '@/Components/03-organisms/Footer/Footer';
-import Button from '@/Components/01-atoms/Content/Button/Button';
-import Header from '@/Components/01-atoms/Content/Header/Header';
 import { Modal } from '@templates/Layouts';
 import Tabs from '@organisms/Tabs/Tabs';
 import Tab from '@organisms/Tabs/Tab';
+import { Footer } from '@/Components/03-organisms/Footer/Footer';
+import Button from '@/Components/01-atoms/Content/Button/Button';
+import Header from '@/Components/01-atoms/Content/Header/Header';
 
 import CaregiverBurdenImg from './img/CaregiverBurden.png';
 import AdditionalInfoImg from './img/AdditionalInfo.png';
@@ -41,8 +41,9 @@ export const ModalAgitation = () => (
                   Derived a means to calculate an agitation score that reflected
                   elements of the IPA consensus on the definition of agitation.
                   Physicians rated each symptom as not present (0), mild (1),
-                  moderate (2), or severe (3), and scores were summed to provide
-                  a score between 0 (no symptoms) and 21 (all severe symptoms).
+                  moderate (2),
+                  <br /> or severe (3), and scores were summed to provide a
+                  score between 0 (no symptoms) and 21 (all severe symptoms).
                 </span>
               ),
               supRight: '1',
@@ -65,7 +66,6 @@ export const ModalAgitation = () => (
                   International Psychogeriatric Association.
                 </span>
               ),
-              supRight: '1',
             },
           ],
         }}
@@ -76,7 +76,6 @@ export const ModalAgitation = () => (
               text: (
                 <span>
                   Schein J, et al.<b> J Alzheimers Dis. </b>2022;88(2):663-677.
-                  2019;5:851-861.
                 </span>
               ),
             },
