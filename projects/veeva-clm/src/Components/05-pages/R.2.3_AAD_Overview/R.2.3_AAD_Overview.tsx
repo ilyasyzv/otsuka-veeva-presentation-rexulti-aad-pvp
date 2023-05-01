@@ -56,8 +56,8 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Lanctôt KL, et al.{' '}
-                  <strong>J Neuropsychiatry Clin Neurosci</strong>.
+                  Lanctôt <br />
+                  KL, et al. <strong>J Neuropsychiatry Clin Neurosci</strong>.
                   2001;13(1):5-21;11.
                 </span>
               ),
