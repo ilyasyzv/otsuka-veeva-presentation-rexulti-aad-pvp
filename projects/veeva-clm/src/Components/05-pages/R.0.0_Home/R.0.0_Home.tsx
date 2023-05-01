@@ -48,10 +48,23 @@ const PageContent = () => {
         safetyInfo={{
           data: [
             {
+              text: <strong>INDICATIONS</strong>,
+            },
+            {
               text: (
-                <strong>
-                  Please see IMPORTANT SAFETY INFORMATION in this presentation.
-                </strong>
+                <>
+                  REXULTI is indicated for:
+                  <ul>
+                    <li>
+                      Use as an adjunctive therapy to antidepressants for the
+                      treatment of major depressive disorder (MDD) in adults
+                    </li>
+                    <li>
+                      Treatment of schizophrenia in adults and pediatric
+                      patients ages 13 years and older
+                    </li>
+                  </ul>
+                </>
               ),
             },
             {
@@ -60,17 +73,13 @@ const PageContent = () => {
                   WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH
                   DEMENTIA-RELATED PSYCHOSIS and SUICIDAL THOUGHTS AND BEHAVIORS
                   See full prescribing information for complete boxed warning.{' '}
-                  <br />
-                  Elderly patients with dementia-related psychosis treated with
-                  antipsychotic drugs are at increased risk of death. REXULTI is
-                  not approved for the treatment of patientswith
-                  dementia-related psychosis without symptoms of agitation
-                  associated with Alzheimer's dementia. Antidepressants
-                  increased the risk of suicidal thoughts and behaviors in
-                  patients aged 24 years and younger. Monitor for clinical
-                  worsening and emergence of suicidal thoughts and behaviors.
-                  Safety and effectiveness of REXULTI have not been established
-                  in pediatric patientswith MDD.
+                </strong>
+              ),
+            },
+            {
+              text: (
+                <strong>
+                  Please see IMPORTANT SAFETY INFORMATION in this presentation.
                 </strong>
               ),
             },
