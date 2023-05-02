@@ -36,11 +36,13 @@ const PageContent = () => {
           data: [
             {
               text: (
-                <strong className={styles.important_info}>
+                <span className='highlighted'>
                   Please see{' '}
-                  <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
-                  this presentation.
-                </strong>
+                  <Link to='R.6.0_ISI' custom='green-200'>
+                    IMPORTANT SAFETY INFORMATION
+                  </Link>{' '}
+                  in this presentation.
+                </span>
               ),
             },
             {
