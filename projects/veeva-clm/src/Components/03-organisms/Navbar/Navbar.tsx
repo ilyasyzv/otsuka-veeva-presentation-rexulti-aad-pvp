@@ -9,9 +9,7 @@ import styles from './Navbar.module.scss';
 
 export const Navbar: React.FC = () => {
   const { currentPage } = useContext(PageContext);
-  const isHomepage = !!(
-    currentPage === '01_Launch_screen' || currentPage === 'R.0.0_Home'
-  );
+  const isHomepage = !!(currentPage === 'R.0.0_Home');
   const links = flapMenu(mainMenu.data, 0);
   const bem = (mainClass: string, isActive: boolean): string => {
     return isActive
@@ -30,7 +28,7 @@ export const Navbar: React.FC = () => {
       </div>
       <ul className={styles['main-nav']}>
         {links.map((link, i) => (
-          <LinkGroup linkGroup={link} key={link.url} parentNav={true} />
+          <LinkGroup linkGroup={link} key={link.url} parentNav />
         ))}
       </ul>
       <ul className={styles['main-bottom-nav']}>

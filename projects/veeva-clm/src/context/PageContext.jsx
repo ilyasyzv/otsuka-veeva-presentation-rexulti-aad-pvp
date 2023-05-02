@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-const defaultPage = '01_Launch_screen';
+const defaultPage = 'R.0.0_Home';
 
 const PageContext = createContext(defaultPage);
 
