@@ -15,8 +15,9 @@
     .left-pane {
       position: relative;
       width: 100%;
-      min-width: 102px;
-      max-width: 102px;
+      min-width: 104px;
+      max-width: 104px;
+      padding-right: 2px;
       height: 100%;
       overflow: hidden;
       z-index: 10;
