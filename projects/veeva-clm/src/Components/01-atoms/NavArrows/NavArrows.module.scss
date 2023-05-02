@@ -29,15 +29,13 @@
     display: block;
     width: 32px;
     height: 32px;
-    background: url("img/nav-arrow.svg") no-repeat center center transparent;
+    background: url("img/nav-arrow-left.png") no-repeat center center transparent;
     background-size: contain;
     font-size: 0;
-    margin: 11px;
-    filter: drop-shadow(0px 2px 2px rgba($black, .4));
+    margin: 10px 11px 11px;
 
     &.arrows-nav__next {
-      transform: rotate(180deg);
-      margin: 9px 11px 11px 11px;
+      background-image: url("img/nav-arrow-right.png");
 
       &::before {
         content: "";
@@ -45,8 +43,8 @@
         width: 1px;
         height: 30px;
         position: absolute;
-        left: 41px;
-        top: 0;
+        left: 54px;
+        top: 10px;
         background: $green-600;
       }
     }

@@ -39,18 +39,18 @@
       &:before {
         content: "";
         position: absolute;
-        width: 100px;
+        width: 102px;
         height: 89px;
-        background-color: $black;
-        opacity: 0.5;
+        background-color: $green-600;
+        opacity: 0.4;
       }
 
       &:after {
         content: "";
         position: absolute;
-        width: 102px;
+        width: 104px;
         height: 89px;
-        background: url("@assets/misc/nav/main-nav-active-link.svg") 92.1px 0/12px
+        background: url("@assets/misc/nav/main-nav-active-link.svg") 93.1px 0/12px
           89px no-repeat;
       }
 
