@@ -11,7 +11,7 @@ import './LinkGroup.scss';
 
 interface LGLink extends ILink {
   addClass?: string;
-  slide?: any;
+  isPdf?: boolean;
 }
 
 type LinkGroupProps = {
@@ -54,8 +54,14 @@ export const LinkGroup: React.FC<LinkGroupProps> = ({
   return (
     <li className={`${mainLinkClass} ${addClass || ''}`}>
       <div className='main-nav__link__wrapper'>
-        {linkGroup.slide ? (
-          <SlideMenu data={linkGroup} />
+        {linkGroup.isPdf ? (
+          <a
+            href='https://www.otsuka-us.com/media/static/Rexulti-PI.pdf'
+            target='_blank'
+            rel='noreferrer'
+          >
+            {linkGroup.name}
+          </a>
         ) : (
           <>
             <Link to={linkGroup.url}>
