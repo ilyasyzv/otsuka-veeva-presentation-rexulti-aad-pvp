@@ -1,7 +1,7 @@
 export interface ILink {
   name: string;
   url: string;
-  slide?: boolean;
+  isPdf?: boolean;
   children?: ILink[];
 }
 
@@ -138,18 +138,8 @@ export const bottomMenu: IMenu = {
   data: [
     {
       name: 'PI',
-      url: '#',
-      slide: true,
-      children: [
-        {
-          name: 'ABILIFY ASIMTUFII® (aripiprazole) Prescribing Information',
-          url: '#',
-        },
-        {
-          name: 'ABILIFY MAINTENA® (aripiprazole) Prescribing Information',
-          url: '#',
-        },
-      ],
+      url: 'https://www.otsuka-us.com/media/static/Rexulti-PI.pdf',
+      isPdf: true,
     },
   ],
 };
