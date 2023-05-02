@@ -72,14 +72,12 @@ const PageContent: React.FC = () => {
           ],
         }}
         images={[
-          <div className={styles.footerLogo}>
-            <img
-              className={styles.footerLogoImg}
-              src={RexultiLogo}
-              alt='maintena-logo'
-              width='140.2'
-            />
-          </div>,
+          <img
+            src={RexultiLogo}
+            alt='maintena-logo'
+            width='154.2'
+            className={styles.logo}
+          />,
         ]}
       />
     </>

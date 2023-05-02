@@ -23,7 +23,7 @@ const PageContent: React.FC = () => {
         Number of Americans aged ≥65 years with dementia being treated for
         agitation<sup>*</sup>
       </Header>
-      <div className={`${styles.fading} mb-55`}>
+      <div className={`${styles.fading} mb-50`}>
         <FadingBlocks>
           <img src={item1} alt='cart' className={styles.item1} />
           <img src={item2} alt='cart' className={styles.item2} />
@@ -38,7 +38,6 @@ const PageContent: React.FC = () => {
       <img src={cart} className={styles.card} alt='cart' />
       <img src={people} className={styles.people} alt='cart' />
       <Footer
-        custom='mb-15'
         footnotes={{
           data: [
             {

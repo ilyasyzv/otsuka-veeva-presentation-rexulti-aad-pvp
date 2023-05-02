@@ -7,14 +7,13 @@ import imgBg from './imgs/imgBg.png';
 const PageContent: React.FC = () => {
   return (
     <div className={styles.page}>
-      <Header type={'h1'} custom={styles.h1}>
+      <Header type='h1' custom={styles.h1}>
         The Underlying Pathophysiology of AAD May Involve Dysfunctions Within
         the Noradrenergic, Serotonergic,
         <br /> and Dopaminergic Systems<sup>1-4</sup>
       </Header>
       <img className={styles.imgBg} src={imgBg} />
       <Footer
-        custom={'mb-5'}
         footnotes={{
           data: [
             {

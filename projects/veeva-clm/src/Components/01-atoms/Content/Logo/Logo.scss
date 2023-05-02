@@ -1,3 +1,7 @@
 .logo {
-  padding-bottom: 12px;
+  padding-bottom: 0;
+
+  .page--R_0_0_Home & {
+    padding-bottom: 12px;
+  }
 }
