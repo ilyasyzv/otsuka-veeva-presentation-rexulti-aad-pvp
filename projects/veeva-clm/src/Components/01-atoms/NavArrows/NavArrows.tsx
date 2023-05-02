@@ -54,26 +54,29 @@ export const NavArrows: React.FC = () => {
       navigateLocal(changePage, preparedPageName);
     }
   };
-  const position = (paths[0].url.includes(currentPage) || currentPage.includes('01_Launch_screen')) 
-    ? 'first' 
-    : paths[paths.length - 1].url.includes(currentPage) 
-      ? 'last' 
+  const position =
+    paths[0].url.includes(currentPage) || currentPage.includes('R.0.0_Home')
+      ? 'first'
+      : paths[paths.length - 1].url.includes(currentPage)
+      ? 'last'
       : 'middle';
 
   return (
     <div className={classNames(styles['arrows-nav'], styles[position])}>
-      {position !== 'first' && 
-      (<button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
-        Prev
-      </button>)}
-      {position !== 'last' && 
-      (<button
-        type='button'
-        onClick={moveToNext}
-        className={styles['arrows-nav__next']}
-      >
-        Next
-      </button>)}
+      {position !== 'first' && (
+        <button type='button' onClick={moveToPrev} className='arrows-nav__prev'>
+          Prev
+        </button>
+      )}
+      {position !== 'last' && (
+        <button
+          type='button'
+          onClick={moveToNext}
+          className={styles['arrows-nav__next']}
+        >
+          Next
+        </button>
+      )}
     </div>
   );
 };

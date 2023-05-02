@@ -46,7 +46,7 @@ const preparePlugins = (pagesList, rootFolder, pagesFolder, isProduction) => {
   pluginsList.indexPage = new HtmlWebpackPlugin({
     template: 'src/index.html',
     inject: true,
-    current_page: '01_Launch_screen',
+    current_page: 'R.0.0_Home',
     chunks: ['index'],
   });
 

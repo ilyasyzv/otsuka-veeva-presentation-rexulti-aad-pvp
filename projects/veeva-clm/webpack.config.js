@@ -81,7 +81,6 @@ module.exports = (_env, argv) => {
         new ReactSnapPlugin({
           include: [
             '/',
-            '/01_Launch_screen',
             '/R.0.0_Home/index.html',
             '/R.0.1_Popup_isi/index.html',
             '/R.1.0_Executive_summary/index.html',
