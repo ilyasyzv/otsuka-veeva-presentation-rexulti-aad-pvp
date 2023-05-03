@@ -105,8 +105,9 @@ const PageContent = () => {
                 {
                   text: (
                     <>
-                      Norepinephrine α<sub>1A</sub>, α<sub>1B</sub>, α
-                      <sub>1D</sub>, and α<sub>2C</sub>
+                      Norepinephrine &#945;<sub>1A</sub>, &#945;<sub>1B</sub>,
+                      &#945;
+                      <sub>1D</sub>, and &#945;<sub>2C</sub>
                       <br />
                     </>
                   ),
@@ -170,9 +171,11 @@ const PageContent = () => {
                   <strong> in vitro </strong>
                   in cells over-expressing human receptors and is expressed as
                   an nM concentration with lower values representing higher
-                  affinity. High binding affinities included norepinephrine (α
-                  <sub>1B</sub>-adrenergic=0.17 nM, α<sub>2C</sub>
-                  -adrenergic=0.59 nM, α<sub>1D</sub>-adrenergic=2.60 nM, α
+                  affinity. High binding affinities included norepinephrine
+                  (&#945;
+                  <sub>1B</sub>-adrenergic=0.17 nM, &#945;<sub>2C</sub>
+                  -adrenergic=0.59 nM, &#945;<sub>1D</sub>-adrenergic=2.60 nM,
+                  &#945;
                   <sub>1A</sub>-adrenergic=3.80 nM), serotonin (5-HT
                   <sub>1A</sub>=0.12 nM, 5-HT<sub>2A</sub>=0.47 nM, 5-HT
                   <sub>2B</sub>=1.9 nM, 5-HT<sub>7</sub>=3.7 nM), and dopamine
@@ -183,8 +186,9 @@ const PageContent = () => {
             {
               innerText: (
                 <>
-                  α, alpha; 5-HT, 5-hydroxytryptamine; AAD, agitation associated
-                  with Alzheimer’s dementia; D, dopamine; Ki, affinity constant.
+                  &#945;, alpha; 5-HT, 5-hydroxytryptamine; AAD, agitation
+                  associated with Alzheimer’s dementia; D, dopamine; Ki,
+                  affinity constant.
                 </>
               ),
             },
