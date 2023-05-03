@@ -114,16 +114,16 @@ export const ModalCosts = () => (
             {
               text: (
                 <span>
-                  Cloutier M, et al. <b>Alzheimers Dement (N Y).</b>
-                  2019;5:851-861.
+                  Cloutier M, et al. <b>Alzheimers Dement (N Y)</b>
+                  .&nbsp;2019;5:851-861.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry.</b>&nbsp;
-                  2021;36(12):1959-1969.
+                  Fillit H, et al. <b>Int J Geriatr Psychiatry</b>
+                  .&nbsp;2021;36(12):1959-1969.
                 </span>
               ),
             },
