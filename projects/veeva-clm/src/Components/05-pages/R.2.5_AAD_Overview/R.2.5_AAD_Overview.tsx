@@ -53,8 +53,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Jones E, et al. <strong>J Alzheimers Dis</strong>.
-                  2021;83(1):89-101.
+                  Jones E, et al. <em>J Alzheimers Dis</em>. 2021;83(1):89-101.
                 </span>
               ),
             },
