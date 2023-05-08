@@ -90,10 +90,10 @@ export const ModalAgitation = () => (
     <Tabs translateTabsX={37} className={style.tabs} tabWidth={266}>
       <Tab title='Caregiver Burden'>
         <Header type='h2' custom={style.tabHeader}>
-          A retrospective analysis of physician and non-professional
+          A retrospective analysis of physician and nonprofessional
           caregiver-reported data was
-          <br /> conducted to assess the association of agitation severity
-          <sup>⋆</sup> to caregiver burden, health
+          <br /> conducted to assess the association of agitation severity⋆
+          to caregiver burden, health
           <br /> status, and productivity.<sup>1</sup>
         </Header>
         <img

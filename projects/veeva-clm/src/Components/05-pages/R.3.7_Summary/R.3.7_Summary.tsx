@@ -63,9 +63,9 @@ const PageContent: React.FC = () => {
       </div>
       <div className={`${styles.heading} bg-gray-200 mt-12`}>
         <Header type='h3' custom={styles.h3}>
-          Most common adverse reactions with REXULTI vs placebo were
-          nasopharyngitis (3% vs 2%), urinary tract infection (3% vs 1%),
-          dizziness (3% vs 2%), somnolence (3% vs 1%), and insomnia (4% vs 3%).
+          Most common adverse reactions ≥2% and greater than placebo: dizziness, insomnia, somnolence, 
+          <br/>
+          urinary tract infection, and nasopharyngitis.
         </Header>
       </div>
       <div className={`${styles.heading} bg-gray-200 mt-12 mb-16`}>
