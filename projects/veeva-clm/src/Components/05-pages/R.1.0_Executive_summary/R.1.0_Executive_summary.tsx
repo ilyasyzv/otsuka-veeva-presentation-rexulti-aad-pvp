@@ -4,14 +4,14 @@ import RexultiLogo from '@/assets/rexulti-logo.png';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
-import PageImage from './img/Image1.png';
+import PageImage from './img/Image2.png';
 
 import styles from './R.1.0_Executive_summary.module.scss';
 
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Header custom={`${styles.h1} mb-12`}>
+      <Header custom={`${styles.h1} mb-22`}>
         REXULTI<sup>®</sup> (brexpiprazole) Offers a Treatment Option
         <br /> With Proven Efficacy and Demonstrated Safety for
         <br /> Patients With AAD
