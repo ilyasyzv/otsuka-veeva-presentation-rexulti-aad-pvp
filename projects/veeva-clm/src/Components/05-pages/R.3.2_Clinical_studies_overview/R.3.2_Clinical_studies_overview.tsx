@@ -25,13 +25,19 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <>
-                  Grossberg GT, et al. Am <strong>J Geriatr Psychiatry</strong>.
+                  Grossberg GT, et al. Am <em>J Geriatr Psychiatry</em>.
                   2020;28(4):383-400.
                 </>
               ),
             },
             {
-              text: 'Data on file. Otsuka.',
+              text: (
+                <>
+                  Grossberg GT, et al. Poster presented at: Psych Congress;{' '}
+                  <br />
+                  September 17-20, 2022; New Orleans, LA
+                </>
+              ),
             },
           ],
         }}
