@@ -114,7 +114,7 @@ export const ModalCosts = () => (
             {
               text: (
                 <span>
-                  Cloutier M, et al. <b>Alzheimers Dement (N Y)</b>
+                  Cloutier M, et al. <em>Alzheimers Dement (N Y)</em>
                   .&nbsp;2019;5:851-861.
                 </span>
               ),
@@ -122,7 +122,7 @@ export const ModalCosts = () => (
             {
               text: (
                 <span>
-                  Fillit H, et al. <b>Int J Geriatr Psychiatry</b>
+                  Fillit H, et al. <em>Int J Geriatr Psychiatry</em>
                   .&nbsp;2021;36(12):1959-1969.
                 </span>
               ),
@@ -137,7 +137,7 @@ export const ModalCosts = () => (
       Uniform Data Set (June 2005 to February
       <br /> 2018) was conducted to assess the incremental costs associated with
       LTC in 11,348 patients with Alzheimer’s dementia
-      <br /> with and without agitation.<sup>*1</sup>
+      <br /> with and without agitation.<span className='asterisk'>*</span>
     </Header>
     <img src={tableImg} alt='reported table' className={style.imgBody} />
   </Modal>
