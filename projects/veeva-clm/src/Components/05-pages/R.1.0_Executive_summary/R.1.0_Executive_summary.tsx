@@ -4,7 +4,7 @@ import RexultiLogo from '@/assets/rexulti-logo.png';
 import { Link } from '@/Components/03-organisms/Routing/Link/Link';
 import { Footer } from '@/Components/03-organisms/Footer/Footer';
 
-import PageImage from './img/Image2.png';
+import PageImage from './img/Image1.png';
 
 import styles from './R.1.0_Executive_summary.module.scss';
 
