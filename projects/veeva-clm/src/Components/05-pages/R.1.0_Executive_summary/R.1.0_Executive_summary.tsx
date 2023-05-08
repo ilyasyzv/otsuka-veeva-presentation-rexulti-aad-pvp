@@ -11,7 +11,7 @@ import styles from './R.1.0_Executive_summary.module.scss';
 const PageContent = () => {
   return (
     <div className={styles.page}>
-      <Header custom={`${styles.h1} mb-12`}>
+      <Header custom={`${styles.h1} mb-22`}>
         REXULTI<sup>®</sup> (brexpiprazole) Offers a Treatment Option
         <br /> With Proven Efficacy and Demonstrated Safety for
         <br /> Patients With AAD
