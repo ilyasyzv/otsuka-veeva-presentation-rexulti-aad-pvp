@@ -3,16 +3,16 @@ import Header from '@atoms/Content/Header/Header';
 import RexultiLogo from '@/assets/rexulti-logo.png';
 import { Footer } from '@organisms/Footer/Footer';
 import HorizontalLine from '@atoms/Content/HorizontalLine/HorizontalLine';
+import Paragraph from '@atoms/Content/Paragraph/Paragraph';
 import RexultiLogo2 from '@/assets/rexulti-logo2.png';
-import { Link } from '@organisms/Routing';
-import styles from './R.0.0_Home.module.scss';
+import styles from './R.0.0_Home_old.module.scss';
 
 const PageContent = () => {
   return (
     <div className={styles.page}>
       <div className={styles['header-homepage']}>
         <Header type='h1' custom={`${styles.h1} mb-12`}>
-          REXULTI<sup>®</sup> (brexpiprazole) for the
+          REXULTI® (brexpiprazole) for the
           <br />
           Treatment of Agitation Associated
           <br />
@@ -41,15 +41,7 @@ const PageContent = () => {
             },
             {
               innerText:
-                'Trademarks used are property of their respective owners. ',
-            },
-            {
-              innerText: (
-                <span className='regular'>
-                  FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
-                  OR DISTRIBUTE.
-                </span>
-              ),
+                'Trademarks used are property of their respective owners.',
             },
           ],
         }}
@@ -80,29 +72,29 @@ const PageContent = () => {
                 <strong className='footerWarning'>
                   WARNING: INCREASED MORTALITY IN ELDERLY PATIENTS WITH
                   DEMENTIA-RELATED PSYCHOSIS and SUICIDAL THOUGHTS AND BEHAVIORS
+                  See full prescribing information for complete boxed warning.{' '}
                 </strong>
               ),
             },
             {
               text: (
                 <strong>
-                  See full prescribing information for complete boxed warning.
+                  Please see IMPORTANT SAFETY INFORMATION in this presentation.
                 </strong>
               ),
             },
             {
               text: (
-                <strong>
-                  Please see{' '}
-                  <Link to='R.6.0_ISI'>IMPORTANT SAFETY INFORMATION</Link> in
-                  this presentation.
-                </strong>
+                <span className='footerWarning'>
+                  FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
+                  OR DISTRIBUTE.
+                </span>
               ),
             },
           ],
         }}
         images={[
-          <img src={RexultiLogo} alt='rexulti-logo' width='192' />,
+          <img src={RexultiLogo} alt='rexulti-logo' width='195' />,
           <img src={RexultiLogo2} alt='rexulti-logo' width='216' />,
         ]}
       />

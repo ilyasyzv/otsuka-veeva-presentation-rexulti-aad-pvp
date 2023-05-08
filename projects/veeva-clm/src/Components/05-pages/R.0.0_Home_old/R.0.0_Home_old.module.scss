@@ -1,0 +1,73 @@
+@import "@base/variables";
+
+.page {
+  .header-homepage {
+    position: absolute;
+    top: 183px;
+    right: 59px;
+
+    h1 {
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 42px;
+      letter-spacing: 0.2px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 28px;
+      line-height: 38px;
+      color: $gray-800;
+      letter-spacing: 0.35px;
+    }
+  }
+  :global {
+    .footer {
+      max-width: 100%;
+
+      .logo {
+        position: absolute;
+        right: 30px;
+        bottom: 170px;
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        align-items: flex-end;
+
+        img {
+          &:last-child {
+            margin-right: 6px;
+            margin-top: 3px;
+          }
+        }
+      }
+
+      .footnote {
+        margin: 0 0 2px 18px;
+      }
+
+      .safetyInfo {
+        position: relative;
+        width: 939px;
+        left: -23px;
+        bottom: -5px;
+        padding: 10px 10px 10px 40px;
+        color: $white;
+        background-color: rgba(7, 65, 44, 0.95);
+
+        p {
+          font-size: 14px;
+          line-height: 19px;
+
+          strong {
+            font-weight: 600;
+          }
+        }
+
+        ul {
+          padding-left: 15px;
+        }
+      }
+    }
+  }
+}
