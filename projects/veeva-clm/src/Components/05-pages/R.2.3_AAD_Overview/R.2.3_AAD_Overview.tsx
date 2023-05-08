@@ -31,7 +31,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Rosenberg PB, et al. <strong>Mol Aspects Med</strong>.
+                  Rosenberg PB, et al. <em>Mol Aspects Med</em>.
                   2015;43-44:25-37.
                 </span>
               ),
@@ -39,24 +39,22 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Carrarini C, et al. <strong>Front Neurol</strong>.
-                  2021;12:644317.
+                  Carrarini C, et al. <em>Front Neurol</em>. 2021;12:644317.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Arnsten AF, et al. <strong>Neurobiol Stress</strong>.
-                  2015;1:89-99.
+                  Arnsten AF, et al. <em>Neurobiol Stress</em>. 2015;1:89-99.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Lanctôt <br />
-                  KL, et al. <strong>J Neuropsychiatry Clin Neurosci</strong>.
+                  Lanctôt KL, <br />
+                  et al. <em>J Neuropsychiatry Clin Neurosci</em>.
                   2001;13(1):5-21;11.
                 </span>
               ),
@@ -64,15 +62,14 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Hirono N, et al. <strong>Arch Neurol</strong>.
-                  2000;57(6):861-866.
+                  Hirono N, et al. <em>Arch Neurol</em>. 2000;57(6):861-866.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Wright CI, et al. <strong>Biol Psychiatry</strong>.
+                  Wright CI, et al. <em>Biol Psychiatry</em>.
                   2007;62(12):1388-1395.
                 </span>
               ),
