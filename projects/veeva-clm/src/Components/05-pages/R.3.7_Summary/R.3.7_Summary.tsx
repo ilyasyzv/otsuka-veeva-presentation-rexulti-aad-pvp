@@ -104,7 +104,13 @@ const PageContent: React.FC = () => {
               ),
             },
             {
-              text: 'Data on file. Otsuka.',
+              text: (
+                <>
+                  Grossberg GT, et al. Poster presented at: Psych 
+                  <br/> 
+                  Congress; September 17-20, 2022; New Orleans, LA.
+                </>
+              ),
             },
           ],
         }}
