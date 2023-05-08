@@ -1,12 +1,14 @@
 @import "@base/variables";
 
+$menu-item-height: 90px;
+
 .main-nav {
   font-size: 12px;
   margin: 5px 0 20px 0;
 
   &__link {
     box-sizing: border-box;
-    height: 85px;
+    height: $menu-item-height;
     display: flex;
 
     .main-nav__link__wrapper {
@@ -17,6 +19,7 @@
         position: relative;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-decoration: none;
         color: $white;
         font-size: 14px;
@@ -25,7 +28,8 @@
         font-style: normal;
         letter-spacing: 0;
         text-align: center;
-        margin: auto;
+        height: 100%;
+        width: 100%;
         padding: 0 10px;
       }
     }
@@ -36,16 +40,9 @@
     }
 
     &.active {
-      &:before {
-        content: "";
-        position: absolute;
-        width: 102px;
-        height: 89px;
-        background-color: $green-600;
-        opacity: 0.4;
-      }
+      background-color: transparentize($green-600, 0.6);
 
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         width: 104px;

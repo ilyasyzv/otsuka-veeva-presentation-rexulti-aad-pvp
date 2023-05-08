@@ -1,5 +1,7 @@
 @import "@base/variables";
 
+$menu-item-height: 90px;
+
 .navigation {
   display: flex;
   flex-direction: column;
@@ -26,33 +28,25 @@
     .navigation__homepage-link {
       display: block;
       z-index: 1;
-      width: 36px;
-      height: 36px;
-      background-image: url(@assets/icons/homepage.svg);
+      width: 100%;
+      height: $menu-item-height;
+      background: url(@assets/icons/homepage.svg) no-repeat center center transparent;
       background-size: 36px 36px;
-      margin: 29px;
+      border-radius: 0 13px 0 0;
 
       &--active {
-        &::before {
+        background-color: transparentize($green-600, 0.6);
+
+        &::after {
           content: "";
           position: absolute;
           top: 41px;
           left: 0;
           width: 104px;
-          height: 89px;
+          height: $menu-item-height;
           background: url("@assets/misc/nav/main-nav-active-link.svg") 93.1px 0/12px
-            89px no-repeat;
+          $menu-item-height no-repeat;
         }
-      }
-    }
-
-    .navigation__homepage {
-      &--active {
-        position: absolute;
-        width: 102px;
-        height: 89px;
-        background-color: $green-600;
-        opacity: 0.4;
       }
     }
   }
@@ -75,21 +69,21 @@
         & > a,
         & > button {
           display: block;
-          width: 33px;
-          height: 33px;
+          width: 37px;
+          height: 37px;
           border: 1px solid $white;
           border-radius: 50%;
           background: transparent;
           font-size: 16px;
           text-align: center;
-          line-height: 34px;
+          line-height: 37px;
           font-weight: 700;
           padding: 0;
           color: $white;
 
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             border-width: 1.5px;
-            line-height: 33px;
+            line-height: 34px;
           }
         }
       }

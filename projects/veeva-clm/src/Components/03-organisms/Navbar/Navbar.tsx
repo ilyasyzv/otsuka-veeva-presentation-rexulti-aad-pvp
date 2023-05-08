@@ -24,7 +24,6 @@ export const Navbar: React.FC = () => {
           to='R.0.0_Home'
           custom={bem('navigation__homepage-link', isHomepage)}
         />
-        <span className={bem('navigation__homepage', isHomepage)} />
       </div>
       <ul className={styles['main-nav']}>
         {links.map((link, i) => (
