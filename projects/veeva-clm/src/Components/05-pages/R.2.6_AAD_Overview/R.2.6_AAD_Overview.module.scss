@@ -6,6 +6,8 @@
 
     h2 {
       text-align: center;
+      font-size: 22px;
+      line-height: 1;
 
       sup {
         font-size: 0.6em;
@@ -17,15 +19,6 @@
       width: 940px;
       max-width: none;
       right: -54px;
-    }
-
-    .footer {
-      bottom: 14px;
-    }
-
-    .safetyInfo p {
-      font-weight: normal;
-      font-size: 14px;
     }
   }
 }

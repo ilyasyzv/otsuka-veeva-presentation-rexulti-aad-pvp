@@ -9,7 +9,7 @@ export const PageContent = () => (
     <Header type='h1' custom='mb-12 mt-30'>
       Current Treatment Options for AAD
     </Header>
-    <Header type='h2' custom='mb-30 mt-50'>
+    <Header type='h2' custom='mb-40 mt-50'>
       Medications prescribed in patients with AAD after failure
       <br /> of nonpharmacologic interventions include<sup>1-3</sup>:
     </Header>
@@ -47,8 +47,8 @@ export const PageContent = () => (
           {
             text: (
               <span>
-                McDermott CL, et al. <strong>Curr Geriatr Rep</strong>.&nbsp;
-                2019;8(1):1-11.
+                McDermott CL, et al. <strong>Curr Geriatr Rep</strong>
+                .&nbsp;2019;8(1):1-11.
               </span>
             ),
           },
