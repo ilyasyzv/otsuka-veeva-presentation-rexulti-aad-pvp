@@ -80,17 +80,6 @@ const PageContent = () => {
       </div>
       <Paragraph custom={`${styles.chart_bottom}`}>
         <strong>
-          The mechanism of action of brexpiprazole in the treatment of AAD is
-          unknown. However, the efficacy of brexpiprazole may be mediated
-          through a combination of partial agonist activity at serotonin 5-HT
-          <sub>1A </sub>
-          and dopamine D<sub>2</sub> receptor, and antagonist activity at
-          serotonin 5-HT<sub>2A </sub>
-          receptors.
-        </strong>
-      </Paragraph>
-      <Paragraph custom={`${styles.chart_bottom}`}>
-        <strong>
           REXULTI acts as both a partial agonist and antagonist<sup>†1</sup>
         </strong>
       </Paragraph>
@@ -151,6 +140,16 @@ const PageContent = () => {
           }}
         />
       </div>
+      <Paragraph custom={`${styles.chart_bottom}`}>
+        <strong>
+          The mechanism of action of REXULTI is unknown. However, the efficacy of REXULTI may be mediated
+          through a combination of partial agonist activity at serotonin 5-HT
+          <sub>1A </sub>
+          and dopamine D<sub>2</sub> receptors and antagonist activity at
+          serotonin 5-HT<sub>2A </sub>
+          receptors.
+        </strong>
+      </Paragraph>
 
       <Footer
         custom={classNames(styles.footer, 'mn-6')}
