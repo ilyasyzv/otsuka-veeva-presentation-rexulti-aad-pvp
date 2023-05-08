@@ -44,9 +44,11 @@ const PageContent: React.FC = () => {
               supLeft: '*',
               innerText: (
                 <span>
-                  Percentage of patients who received treatment with an
-                  antipsychotic was estimated from a model rather than measured
-                  data.
+                  <strong>
+                    Percentage of patients who received treatment with an
+                    antipsychotic was estimated from a model rather than
+                    measured data.
+                  </strong>
                 </span>
               ),
             },
@@ -65,7 +67,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Halpern R, et al. <strong>Int J Geriatr Psychiatry</strong>.
+                  Halpern R, et al. <em>Int J Geriatr Psychiatry</em>.
                   2019;34(3):420-431.
                 </span>
               ),
@@ -73,9 +75,8 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Alzheimer’s Association. 2023 Alzheimer’s Disease Facts and
-                  Figures.
-                  <strong>Alzheimers Dement</strong>. <br /> 2023;19(4).
+                  Alzheimer’s Association. <em>Alzheimers Demet</em>.
+                  2023;19(4).
                 </span>
               ),
             },
