@@ -32,8 +32,7 @@ const PageContent = () => {
             {
               text: (
                 <>
-                  Jones E, et al. <strong>J Alzheimers Dis.</strong>{' '}
-                  2021;83(1):89-101.
+                  Jones E, et al. <em>J Alzheimers Dis.</em> 2021;83(1):89-101.
                 </>
               ),
             },
@@ -56,7 +55,7 @@ const PageContent = () => {
               text: (
                 <span className='footerWarning'>
                   FOR USE WITH FORMULARY DECISION-MAKERS ONLY. DO NOT DUPLICATE
-                  OR DISTRIBUTE. 
+                  OR DISTRIBUTE.
                 </span>
               ),
             },
