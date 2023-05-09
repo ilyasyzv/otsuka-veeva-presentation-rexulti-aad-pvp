@@ -72,8 +72,9 @@ const PageContent: React.FC = () => {
                 <>
                   No evidence of worsening or rapid{' '}
                   <strong>cognitive decline</strong> based on a Mini-Mental
-                  State Examination (MMSE) score in comparison to placebo was
-                  observed
+                  State Examination (MMSE) score in comparison
+                  <br />
+                  to placebo was observed
                 </>
               ),
             },
