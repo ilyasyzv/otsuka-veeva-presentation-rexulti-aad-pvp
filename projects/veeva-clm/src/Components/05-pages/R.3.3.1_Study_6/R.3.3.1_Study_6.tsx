@@ -42,9 +42,9 @@ const PageContent: React.FC = () => {
           custom: `mb-8 ${styles.footnote}`,
           data: [
             {
-              supLeft: '*',
               innerText: (
                 <span>
+                  <sup className='sup-left sup-left-asterisk'>*</sup>
                   The study initially included a REXULTI 0.5 mg/day treatment
                   arm; this was removed under a protocol amendment in response
                   to new information from <br />
@@ -65,7 +65,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Grossberg GT, et al. <b>Am J Geriatr Psychiatry. </b>
+                  Grossberg GT, et al. <em>Am J Geriatr Psychiatry. </em>
                   2020;28(4):383-400.
                 </span>
               ),

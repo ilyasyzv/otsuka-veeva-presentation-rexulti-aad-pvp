@@ -26,13 +26,13 @@ export const ModalSelectionCriteria = () => (
     link={<Button text='Patient Selection' custom='button__type-a--active' />}
     footer={
       <Footer
-        custom={classNames(style.footer, 'mb-10', 'mw-880')}
+        custom={classNames(style.footer, 'mw-880')}
         footnotes={{
           data: [
             {
-              supLeft: '*',
               innerText: (
                 <span>
+                  <sup className='sup-left sup-left-asterisk'>*</sup>
                   The NPI-NH was completed by a clinician based on an interview
                   with the patient’s caregiver; Agitation/Aggression domain
                   score was obtained by multiplying the frequency rating (from 1
@@ -56,10 +56,10 @@ export const ModalSelectionCriteria = () => (
               innerText: (
                 <span>
                   CT, computed tomography; DSM-IV-TR,
-                  <b>
+                  <em>
                     The Diagnostic and Statistical Manual of Mental Disorders,
                     fourth edition, text revision;
-                  </b>{' '}
+                  </em>{' '}
                   MMSE, Mini-Mental State Examination; MRI, magnetic resonance
                   imaging;
                 </span>
@@ -70,8 +70,9 @@ export const ModalSelectionCriteria = () => (
                 <span>
                   NINCDS-ADRDA, National Institute of Neurological and
                   Communicative Diseases and Stroke/Alzheimer’s Disease and
-                  Related Disorders Association; NPI-NH, Neuropsychiatric
-                  Inventory − Nursing Home version.
+                  Related Disorders Association; NPI, Neuropsychiatric
+                  Inventory; NPI-NH, Neuropsychiatric Inventory - Nursing Home
+                  version.
                 </span>
               ),
             },
@@ -83,7 +84,7 @@ export const ModalSelectionCriteria = () => (
             {
               text: (
                 <span>
-                  Grossberg GT, et al. <b>Am J Geriatr Psychiatry</b>.
+                  Grossberg GT, et al. <em>Am J Geriatr Psychiatry</em>.
                   2020;28(4):383-400.
                 </span>
               ),
@@ -235,9 +236,6 @@ export const ModalSelectionCriteria = () => (
                     />
                   </>
                 ),
-              },
-              {
-                text: <>MMSE score of 5-22 at screening and baseline</>,
               },
               {
                 text: (

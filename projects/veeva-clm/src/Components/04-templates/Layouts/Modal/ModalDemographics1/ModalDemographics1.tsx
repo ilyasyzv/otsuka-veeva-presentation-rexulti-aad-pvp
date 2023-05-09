@@ -32,22 +32,10 @@ export const ModalDemographics1 = () => (
             {
               innerText: (
                 <span>
-                  Data are the means (SD) unless otherwise stated. Statistical
-                  analysis revealed no significant between-group differences (
-                  <b>P</b>&lt;0.05) for any baseline clinical <br />
-                  characteristic (F test for continuous variables and χ
-                  <sup>2</sup> test for categorical variables), except for
-                  NPI-NH Agitation/Aggression score, F<sub>(2410)</sub>=3.42,
-                  <b>P</b>=0.034; patients <br /> in the REXULTI 0.5 mg arm were
-                  excluded from statistical comparisons.
-                </span>
-              ),
-            },
-            {
-              innerText: (
-                <span>
-                  BMI, body mass index; CMAI, Cohen-Mansfield Agitation
-                  Inventory; MMSE, Mini-Mental State Examination.
+                  CMAI, Cohen-Mansfield Agitation Inventory; MMSE, Mini-Mental
+                  State Examination; NPI, Neuropsychiatric Inventory; NPI-NH,
+                  Neuropsychiatric Inventory −<br /> Nursing Home version; SD,
+                  standard deviation.
                 </span>
               ),
             },
@@ -59,7 +47,7 @@ export const ModalDemographics1 = () => (
             {
               text: (
                 <span>
-                  Grossberg GT, et al. <b>Am J Geriatr Psychiatry. </b>
+                  Grossberg GT, et al. <em>Am J Geriatr Psychiatry. </em>
                   2020;28(4):383-400.
                 </span>
               ),
