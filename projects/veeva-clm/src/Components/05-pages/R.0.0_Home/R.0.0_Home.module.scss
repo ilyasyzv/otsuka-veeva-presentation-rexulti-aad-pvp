@@ -67,6 +67,11 @@
         p {
           font-size: 14px;
           line-height: 18px;
+          color: $black;
+
+          strong {
+            color: $green-600;
+          }
 
           a {
             color: $green-600;
@@ -74,8 +79,25 @@
         }
 
         ul {
-          padding-left: 12px;
+          padding-left: 10px;
           margin-bottom: 2px;
+
+          li {
+            position: relative;
+            list-style: none;
+
+            &::before {
+              content: '';
+              display: block;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background: $black;
+              position: absolute;
+              top: 7px;
+              left: -8px;
+            }
+          }
         }
       }
     }
