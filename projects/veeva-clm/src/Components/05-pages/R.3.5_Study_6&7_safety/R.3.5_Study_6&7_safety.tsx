@@ -18,67 +18,49 @@ const PageContent: React.FC = () => {
       </Header>
       <Header type='h3' custom='mt-10 mb-13 pr-40'>
         Adverse reactions (ARs) in ≥2% of patients treated with REXULTI and
-        greater than placebo from two 12-week pivotal trials across all doses
+        greater than placebo from two 12-week pivotal trials across all doses.
       </Header>
 
       <img src={RexultiTable} alt='' width='815' />
       <List
         content={{
-          custom: `${styles.list} mt-2`,
+          custom: `${styles.list}`,
           type: 'circle',
           markerColor: 'green-300' /* optional */,
           data: [
             {
               customStyle: 'mb-1',
-              text: 'In clinical studies of 641 geriatric patients aged ≥65 years who received REXULTI for the treatment of AAD: ',
+              text: 'The total number of patients 65 years of age and older in the clinical studies for AAD was 641 (85%)',
             },
             {
               customStyle: 'mb-1',
               text: (
                 <>
+                  <p className='mb-10'>
+                    <strong>
+                      In clinical studies of geriatric patients (65 years of age
+                      and older) for the treatment of AAD, incidence of falls
+                      and
+                      <br />
+                      dizziness in patients treated with REXULTI was similar
+                      compared to patients treated with placebo:
+                    </strong>
+                  </p>
                   <p>
-                    <strong>Falls:</strong> Incidence of{' '}
-                    <strong>falls and dizziness</strong> in patients treated
-                    with REXULTI was <strong>similar</strong> compared to
-                    patients treated with placebo
+                    <strong>Falls</strong>
                   </p>
                   <p className={styles.list_subtext}>
                     <span> – </span>{' '}
                     <span>
-                      Incidence of falls pooled from trials of REXULTI (0.5
-                      mg/day or 1 mg/day fixed, 2 mg/day or 3 mg/day fixed, or
-                      0.5-2 mg/ day&nbsp;flexible) vs placebo:{' '}
-                      <strong>1.7%</strong> vs <strong>2.6%</strong>
+                      Study 6: REXULTI=1.7% vs placebo=1.5%
                       <sup>1</sup>
                     </span>
                   </p>
-                </>
-              ),
-            },
-            {
-              customStyle: 'mb-1',
-              text: (
-                <>
-                  <strong>Cognitive Decline:</strong> No evidence of worsening
-                  or rapid cognitive decline based on a Mini-Mental State
-                  Examination (MMSE) score&nbsp;in comparison to placebo was
-                  observed
-                </>
-              ),
-            },
-            {
-              customStyle: 'mb-1',
-              text: (
-                <>
-                  <p>
-                    No QTc interval prolongation at 4x maximum recommended human
-                    dose (MRHD)
-                  </p>
-                  <p className={`${styles.list_subtext} mt-0`}>
+                  <p className={styles.list_subtext}>
                     <span> – </span>{' '}
                     <span>
-                      At a dose 4 times the MRHD, REXULTI does not prolong QTc
-                      interval to any clinically relevant extent
+                      Study 7: REXULTI=1.8% vs placebo=1.7%
+                      <sup>2</sup>
                     </span>
                   </p>
                 </>
@@ -88,10 +70,31 @@ const PageContent: React.FC = () => {
               customStyle: 'mb-1',
               text: (
                 <>
+                  No evidence of worsening or rapid{' '}
+                  <strong>cognitive decline</strong> based on a Mini-Mental
+                  State Examination (MMSE) score in comparison
+                  <br />
+                  to placebo was observed
+                </>
+              ),
+            },
+            {
+              customStyle: 'mb-1',
+              text: (
+                <>
+                  At a dose 4 times the MRHD, REXULTI does not prolong{' '}
+                  <strong>QTc interval</strong> to any clinically relevant
+                  extent
+                </>
+              ),
+            },
+            {
+              customStyle: 'mb-1',
+              text: (
+                <>
                   <p>
-                    A total of 5.6% (28/503) of patients treated with REXULTI
-                    and 4.8% (12/251) of patients treated with placebo
-                    discontinued due&nbsp;to&nbsp;ARs
+                    Similar discontinuation rates due to adverse reactions from
+                    two 12-week pivotal trials across all doses
                   </p>
                   <p className={styles.list_subtext}>
                     <span> – </span>{' '}
@@ -100,8 +103,8 @@ const PageContent: React.FC = () => {
                       <strong>
                         remained on treatment without discontinuation
                       </strong>{' '}
-                      due to adverse reactions, whether
-                      treated&nbsp;with&nbsp;REXULTI or placebo
+                      due to ARs, whether treated with
+                      <br /> REXULTI or placebo
                     </span>
                   </p>
                 </>
@@ -113,23 +116,25 @@ const PageContent: React.FC = () => {
       <Footer
         custom={styles.footer}
         footnotes={{
-          custom: 'mb-2',
           data: [
             {
               innerText:
-                'AAD, agitation associated with Alzheimer’s dementia; QTc, corrected QT interval.',
+                'AAD, agitation associated with Alzheimer’s dementia; MRHD, maximum recommended human dose; QTc, corrected QT interval.',
             },
           ],
         }}
         references={{
           data: [
             {
-              text: 'Data on file. Otsuka.',
+              text: 'Data on file. Rex-502.',
+            },
+            {
+              text: 'Grossberg GT, et al. Poster presented at: Psych Congress; September 17-20, 2022; New Orleans, LA.',
             },
           ],
         }}
         safetyInfo={{
-          custom: `mt-8 ${styles.safety_info}`,
+          custom: `mt-5 ${styles.safety_info}`,
           data: [
             {
               text: (
