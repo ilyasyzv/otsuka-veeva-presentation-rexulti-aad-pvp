@@ -18,10 +18,9 @@ const PageContent: React.FC = () => {
       <div className={styles.page}>
         <Scrollbar
           className={styles.ScrollbarsCustom}
-          minimalThumbSize={43}
-          maximalThumbSize={43}
+          maximalThumbSize={156}
           noScrollX
-          style={{ height: '570px' }}
+          style={{ height: '532px' }}
         >
           <Header custom='font-green-600' type='h3'>
             INDICATIONS
