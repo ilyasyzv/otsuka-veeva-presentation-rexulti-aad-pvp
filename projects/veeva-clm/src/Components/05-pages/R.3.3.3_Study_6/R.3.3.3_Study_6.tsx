@@ -16,14 +16,25 @@ const PageContent = () => {
       </Header>
       <Paragraph
         custom={`mb-24 ${styles.pivotal_trials}`}
-        children='In the pivotal trials, the change in frequency across CMAI subscales was measured as a secondary endpoint'
+        children={
+          <>
+            <strong>Secondary endpoint:</strong> Change from baseline at Week 12
+            in CMAI subscale scores.
+          </>
+        }
       />
-      <Header type='h3' custom={`${styles.h3} mb-14`}>
-        Mean change in CMAI subscales<sup>1</sup>
-      </Header>
       <img className={styles.image_1} src={PageImage} alt='' width='852' />
       <Footer
         custom={styles.footer}
+        footnotes={{
+          data: [
+            {
+              innerText: (
+                <span>CMAI, Cohen-Mansfield Agitation Inventory.</span>
+              ),
+            },
+          ],
+        }}
         references={{
           data: [
             {
