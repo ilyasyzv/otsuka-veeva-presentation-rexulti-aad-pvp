@@ -12,16 +12,45 @@ const PageContent = () => {
       <Header custom={`${styles.h1} mb-24 mt-24`}>
         Dosing and Administration
       </Header>
-      <ul className={`mb-37 ${styles.rexulti_list}`}>
-        <li className='mb-10'>
-          REXULTI® (brexpiprazole) is a once-daily therapy for patients with AAD
-        </li>
+      <ul className={`mb-27 ${styles.rexulti_list}`}>
         <li>
-          REXULTI has a target dose of 2 mg, with the following titration
-          schedule:
+          REXULTI® (brexpiprazole) is a once-daily therapy for patients with AAD
         </li>
       </ul>
       <img className={styles.image_1} src={PageImage} alt='' width='852' />
+      <ul className={`mb-15 ${styles.rexulti_list}`}>
+        <li>
+          Dose can be increased to the maximum recommended daily dose of 3
+          mg/day after at least 14 days, <br />
+          based on clinical response and tolerability
+        </li>
+        <li>With or without food</li>
+      </ul>
+      <p className={styles.paragraph}>
+        <strong>Dose adjustments for REXULTI</strong>
+      </p>
+      <ul className={`mb-1 ${styles.rexulti_list}`}>
+        <li>
+          Dose adjustments may be needed in patients with hepatic or renal
+          impairment
+        </li>
+        <li>
+          Administer half the dose of REXULTI when taken with strong CYP3A4
+          inhibitors or in patients who are known <br />
+          CYP2D6 poor metabolizers
+        </li>
+        <li>
+          Administer a quarter of the dose with the concurrent use of both
+          strong/moderate CYP2D6 inhibitors and <br />
+          strong/moderate CYP3A4 inhibitors. Likewise, administer a quarter of
+          the dose in patients who are known <br />
+          CYP2D6 poor metabolizers taking strong/moderate CYP3A4 inhibitors
+        </li>
+        <li>
+          Double the dose over 1 to 2 weeks when administering with strong
+          CYP3A4 inducers
+        </li>
+      </ul>
       <Footer
         custom={styles.footer}
         footnotes={{
@@ -29,13 +58,7 @@ const PageContent = () => {
           data: [
             {
               innerText: (
-                <>
-                  AAD, agitation associated with Alzheimer’s dementia; AchEI,
-                  acetyl-cholinesterase-inhibitor; NMDA, N-methyl-D-aspartate;
-                  SNRI, serotonin and <br />
-                  norepinephrine reuptake inhibitors; SSRI, selective serotonin
-                  reuptake inhibitor.
-                </>
+                <>AAD, agitation associated with Alzheimer’s dementia.</>
               ),
             },
           ],
