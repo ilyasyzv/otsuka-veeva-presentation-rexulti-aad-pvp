@@ -47,10 +47,14 @@ $menu-item-height: 90px;
       &::after {
         content: "";
         position: absolute;
-        width: 104px;
+        right: -1px;
+        width: 12px;
         height: 89px;
-        background: url("@assets/misc/nav/main-nav-active-link.svg") 93.1px 0/12px
-          89px no-repeat;
+        background-image: url('@assets/misc/nav/main-nav-active-link.svg');
+        background-repeat: no-repeat;
+        background-size: 12px 89px;
+        background-position-x: 0;
+        background-position-y: 0;
       }
 
       .main-nav__link__wrapper a {
