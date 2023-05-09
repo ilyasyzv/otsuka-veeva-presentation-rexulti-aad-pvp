@@ -23,8 +23,8 @@ const PageContent = () => {
         Systems Implicated in AAD<sup>1,2</sup>
       </Header>
       <Header type='h3' custom={`${styles.h3} mb-14`}>
-        The activity of these compounds is based on in vitro data. The clinical
-        significance of the in vitro data is unknown.
+        The activity of these compounds is based on <i>in vitro</i> data. The clinical
+        significance of the <i>in vitro</i> data is unknown.
       </Header>
       <Paragraph custom={`mb-24 ${styles.chart_head}`}>
         <span>REXULTI</span> has high binding affinity* to 3 neurotransmitter
@@ -194,21 +194,19 @@ const PageContent = () => {
           ],
         }}
         references={{
+          custom: 'mb-8',
           data: [
             {
               text: (
                 <span>
-                  Maeda K, et al. <strong>J Pharmacol Exp Ther. </strong>
-                  2014;350(3):589-604.
+                  Maeda K, et al. J Pharmacol Exp Ther. 2014;350(3):589-604.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Rosenberg PB, et al. <strong>Mol Aspects Med.</strong>
-                  <br />
-                  2015;43-44:25-37.
+                  Rosenberg PB, et al. Mol Aspects Med. 2015;43-44:25-37.
                 </span>
               ),
             },

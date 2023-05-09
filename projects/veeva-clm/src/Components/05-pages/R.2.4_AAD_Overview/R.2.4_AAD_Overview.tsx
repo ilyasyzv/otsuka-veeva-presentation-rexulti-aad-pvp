@@ -38,8 +38,8 @@ const PageContent: React.FC = () => {
                 <span>
                   Conducted using 497 patients with Alzheimer’s dementia with
                   most of the patients being recruited from following 3 sites in
-                  New York, New York ,
-                  <br /> Baltimore, Maryland, and Boston, Massachusetts.
+                  New York, New York;
+                  <br /> Baltimore, Maryland; and Boston, Massachusetts.
                 </span>
               ),
             },
@@ -60,9 +60,9 @@ const PageContent: React.FC = () => {
               supLeft: '‡',
               innerText: (
                 <span>
-                  4 The Cache County Dementia Progression Study was a
+                  The Cache County Dementia Progression Study was a
                   longitudinal study of dementia progression in incident cases
-                  of the condition with 335 patients.
+                  of the condition with 335 patients.<sup>2</sup>
                 </span>
               ),
             },
@@ -70,9 +70,11 @@ const PageContent: React.FC = () => {
               supLeft: '§',
               innerText: (
                 <span>
-                  A retrospective analysis of 1349 patients utilizing US data
+                  A retrospective analysis of 1,349 patients utilizing US data
                   drawn from 2015/16 Adelphi Real World Dementia Disease
-                  Specific Programme (DSP)<sup>™</sup>.
+                  Specific Programme (DSP)<sup>™</sup>.<sup>3</sup>
+                  <br />
+                  HR, hazard ratio.
                 </span>
               ),
             },
@@ -84,7 +86,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Scarmeas N, et al. <strong>Arch Neurol</strong>.
+                  Scarmeas N, et al. Arch Neurol.
                   2007;64(12):1755-1761.
                 </span>
               ),
@@ -92,7 +94,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Peters ME, et al. <strong>Am J Psychiatry</strong>.
+                  Peters ME, et al. Am J Psychiatry.
                   2015;172(5):460-465.
                 </span>
               ),
@@ -100,7 +102,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <span>
-                  Jones E, et al. <strong>J Alzheimers Dis</strong>.<br />
+                  Jones E, et al. J Alzheimers Dis.<br />
                   2021;83(1):89-101.
                 </span>
               ),
