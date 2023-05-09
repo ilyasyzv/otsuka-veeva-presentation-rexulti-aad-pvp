@@ -32,10 +32,11 @@ export const ModalSelectionCriteria2 = () => (
             {
               innerText: (
                 <span>
-                  CT, computed tomography; MRI, magnetic resonance imaging;
-                  MMSE, Mini-Mental State Examination;
-                  NPI/NPI-NH=Neuropsychiatric Inventory/Neuropsychiatric
-                  Inventory-Nursing Home version.
+                  CMAI, Cohen-Mansfield Agitation Inventory; CT, computed
+                  tomography; IPA, International Psychogeriatric Association;
+                  MRI, magnetic resonance imaging; MMSE, Mini-Mental State
+                  Examination; NPI, Neuropsychiatric Inventory; NPI-NH,
+                  Neuropsychiatric Inventory − Nursing Home version.
                 </span>
               ),
             },
@@ -76,13 +77,18 @@ export const ModalSelectionCriteria2 = () => (
                 text: <>With a diagnosis of probable Alzheimer’s disease</>,
               },
               {
-                text: <>With a diagnosis of agitation</>,
+                text: (
+                  <>
+                    With a diagnosis of agitation meeting IPA provisional
+                    definition
+                  </>
+                ),
               },
               {
                 text: (
                   <>
                     With an MMSE score of 5 to 22, inclusive, at screening and
-                    baseline visits{' '}
+                    baseline visits
                   </>
                 ),
               },
@@ -90,7 +96,7 @@ export const ModalSelectionCriteria2 = () => (
                 text: (
                   <>
                     With a previous MRI or CT scan of the brain that was
-                    performed after the onset of symptoms of dementia, with
+                    performed after the onset of symptoms of dementia with
                     findings consistent with a diagnosis of Alzheimer’s disease
                   </>
                 ),
@@ -110,6 +116,9 @@ export const ModalSelectionCriteria2 = () => (
                     the NPI/NPI-NH
                   </>
                 ),
+              },
+              {
+                text: <>Subject met eligibility criteria for CMAI Factor 1</>,
               },
               {
                 text: (

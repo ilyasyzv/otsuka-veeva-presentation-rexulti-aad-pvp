@@ -19,7 +19,7 @@ const PageContent = () => {
       <Header custom={`${styles.h1} mb-12 mt-30`}>
         Study Design<sup>1</sup>
       </Header>
-      <div className={`${styles.study_design_points} mb-50`}>
+      <div className={`${styles.study_design_points} mb-60`}>
         <Paragraph>
           <strong>Study objective:</strong> To assess the efficacy, safety, and
           tolerability of 2 fixed doses of REXULTI® (brexpiprazole) in patients
@@ -45,6 +45,15 @@ const PageContent = () => {
           custom: `mb-8 ${styles.footnote}`,
           data: [
             {
+              innerText: (
+                <>
+                  <sup className='sup-left sup-left-asterisk'>*</sup>Efficacy
+                  sample contained n=224 for REXULTI 2 mg/day or 3 mg/day and
+                  n=116 for placebo.
+                </>
+              ),
+            },
+            {
               innerText:
                 'AAD, agitation associated with Alzheimer’s dementia; CMAI, Cohen-Mansfield Agitation Inventory.',
             },
@@ -54,7 +63,12 @@ const PageContent = () => {
           custom: 'mb-10',
           data: [
             {
-              text: <span>Data on file. Otsuka.</span>,
+              text: (
+                <span>
+                  Grossberg GT, et al. Poster presented at: Psych Congress;
+                  September 17-20, 2022; New Orleans, LA.
+                </span>
+              ),
             },
           ],
         }}
