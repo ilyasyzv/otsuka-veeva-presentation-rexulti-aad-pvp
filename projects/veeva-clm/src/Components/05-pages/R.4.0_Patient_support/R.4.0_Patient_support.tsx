@@ -19,21 +19,20 @@ const PageContent: React.FC = () => {
       </Header>
       <img className={styles.image_1} src={PageImage} alt='' width='545' />
       <div className={`${styles.support_text} bg-gray-200 mt-31`}>
-        <Paragraph position='center'>
+        <Paragraph position='center' custom={styles.support_text_inner}>
           <strong>
             Otsuka Patient Support is committed to providing personalized
             support for patients and their partners.
           </strong>
         </Paragraph>
-        <Paragraph position='center'>
+        <Paragraph position='center' custom={styles.support_text_inner}>
           <strong>
             Visit{' '}
             <a href='https://www.otsukapatientsupport.com/'>
-              otsukaPatientSupport.com
+              otsukapatientsupport.com
             </a>{' '}
-            to learn more about tools, resources and dedicated support team that
-            are <br />
-            available.
+            to learn more about the tools, resources, and dedicated support team
+            that are available.
           </strong>
         </Paragraph>
       </div>

@@ -9,7 +9,13 @@
   .support_text {
     max-width: 811px;
     border-radius: 24px;
-    padding: 45px 22px 19px;
+    padding: 45px 22px;
+
+    .support_text_inner {
+      font-weight: bold;
+      font-style: italic;
+      font-size: 15.5px;
+    }
 
     a {
       text-decoration: none;
