@@ -19,9 +19,14 @@ const PageContent = () => {
         Significant and Clinically Meaningful Reductions
         <br /> in Agitation Symptom Frequency vs Placebo<sup>1</sup>
       </Header>
-      <AnimationStudyGraphic/>
+      <AnimationStudyGraphic />
       <img className={styles.image_1} src={PageImage} alt='' width={'820'} />
-      <img className={styles.image_2} src={RexultiBanner} alt='' width={'824'} />
+      <img
+        className={styles.image_2}
+        src={RexultiBanner}
+        alt=''
+        width={'824'}
+      />
 
       <ModalCMAI />
       <Footer
@@ -47,8 +52,7 @@ const PageContent = () => {
             {
               text: (
                 <span>
-                  Grossberg GT, et al.{' '}
-                  <strong>Am J Geriatr Psychiatry. </strong>
+                  Grossberg GT, et al. <em>Am J Geriatr Psychiatry. </em>
                   2020;28(4):383-400.
                 </span>
               ),
