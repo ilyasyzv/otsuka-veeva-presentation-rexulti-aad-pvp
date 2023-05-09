@@ -26,15 +26,14 @@ export const ModalDemographics2 = () => (
     link={<Button text='Demographics' custom='button__type-a--active' />}
     footer={
       <Footer
-        custom={classNames(style.footer, 'mb-20', 'mw-839')}
+        custom={classNames(style.footer, 'mb-10', 'mw-839')}
         footnotes={{
           data: [
             {
               innerText: (
                 <span>
-                  CGI-S, Clinical Global Impression – Severity of Illness; CMAI,
-                  Cohen-Mansfield Agitation Inventory; MMSE, Mini-Mental State
-                  Examination.
+                  CMAI, Cohen-Mansfield Agitation Inventory; MMSE, Mini-Mental
+                  State Examination.
                 </span>
               ),
             },
@@ -44,7 +43,12 @@ export const ModalDemographics2 = () => (
           custom: 'mt-9',
           data: [
             {
-              text: <span>Data on file. Otsuka.</span>,
+              text: (
+                <span>
+                  Grossberg GT, et al. Poster presented at: Psych Congress;
+                  September 17-20, 2022; New Orleans, LA.
+                </span>
+              ),
             },
           ],
         }}
