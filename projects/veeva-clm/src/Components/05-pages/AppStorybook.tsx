@@ -4,6 +4,7 @@ import { ErrorBoundary, Page } from '@pages';
 import { Layout } from '@templates';
 import { PageProvider } from '@/context/PageContext';
 import { BackgroundType } from '@/Components/03-organisms/Background/Background';
+import { ISIModalProvider } from '@/context/ISIModalContext';
 
 interface AppStorybookProps {
   path: string;
@@ -22,9 +23,11 @@ export const AppStorybook: React.FC<AppStorybookProps> = ({
     <ErrorBoundary>
       <Suspense fallback={<h1>Loading application...</h1>}>
         <PageProvider currPage={path}>
-          <Layout>
-            <Route path={`/${path}`} component={page} />
-          </Layout>
+          <ISIModalProvider>
+            <Layout>
+              <Route path={`/${path}`} component={page} />
+            </Layout>
+          </ISIModalProvider>
         </PageProvider>
       </Suspense>
     </ErrorBoundary>
