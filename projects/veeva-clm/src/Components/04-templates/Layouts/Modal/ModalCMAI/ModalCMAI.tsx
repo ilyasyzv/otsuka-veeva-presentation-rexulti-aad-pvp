@@ -47,19 +47,20 @@ export const ModalCMAI = () => (
                   Cohen-Mansfield, J. (1991). Instruction Manual for the
                   Cohen-Mansfield Agitation Inventory (CMAI). Rockville, MD:
                   Research Institute of the Hebrew Home of Greater Washington.
-                  Accessed March 17, 2023.
+                  Available at https://uiowa2.instructure.com &#62; files &#62;
+                  download. Accessed March 17, 2023.
                 </span>
               ),
             },
             {
               text: (
                 <span>
-                  Panca M, et al. <b>PLoS One.</b> 2019;14(2):e0211953.
+                  Panca M, et al. <em>PLoS One.</em> 2019;14(2):e0211953.
                 </span>
               ),
             },
             {
-              text: <span>Data on file. Otsuka.</span>,
+              text: <span>Data on file. Rex-504.</span>,
             },
           ],
         }}
@@ -67,8 +68,9 @@ export const ModalCMAI = () => (
     }
   >
     <span className={classNames(style.text, 'mb-25')}>
-      <b className={style.boldText}>Overview:</b> A caregiver rating
-      questionnaire that measures the frequency of manifestations
+      <b className={style.boldText}>Overview:</b> A caregivers
+      <span className={style.fontItalic}>' </span>
+      rating questionnaire that measures the frequency of manifestations
       <br /> of 29 agitated behaviors in elderly persons on a 7-point scale over
       the last 2 weeks with 1 <br />
       being never and 7 being several times an hour.<sup>1</sup>

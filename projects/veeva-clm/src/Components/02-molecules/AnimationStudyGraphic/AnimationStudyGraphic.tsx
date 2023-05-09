@@ -16,6 +16,8 @@ const AnimationStudyGraphic = () => {
     const ls = sessionStorage.getItem(STORAGE_KEYS.animationR332);
     if (ls === '1') {
       setAnimationPlay(false);
+    } else {
+      startAnimate();
     }
   }, []);
 
@@ -145,7 +147,7 @@ const AnimationStudyGraphic = () => {
 
   return (
     <div className={animationPlay ? '' : 'disable-animation'}>
-      <div className='click-area' onClick={startAnimate} />
+      <div className='click-area'/>
       <div className='chart-wrapper study-graphic'>
         <svg width="500" height="304.4" viewBox="0 0 1000 608.834">
           <defs>
