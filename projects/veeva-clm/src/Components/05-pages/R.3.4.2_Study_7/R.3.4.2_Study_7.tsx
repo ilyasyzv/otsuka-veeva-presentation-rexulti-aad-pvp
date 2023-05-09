@@ -44,7 +44,12 @@ const PageContent: React.FC = () => {
           custom: 'mb-10 mw-600',
           data: [
             {
-              text: <span>Data on file. Otsuka.</span>,
+              text: (
+                <span>
+                  Grossberg GT, et al. Poster presented at: Psych Congress;
+                  September 17-20, 2022; New Orleans, LA.
+                </span>
+              ),
             },
             {
               text: (
