@@ -40,7 +40,7 @@ const PageContent: React.FC = () => {
                 text: (
                   <>
                     <strong>Study 6:</strong> REXULTI 2 mg/day demonstrated a
-                    3.8-point greater reduction in the CMAI score compared with
+                    3.8-point-greater reduction in the CMAI score compared with
                     placebo
                   </>
                 ),
@@ -50,7 +50,7 @@ const PageContent: React.FC = () => {
                 text: (
                   <>
                     <strong>Study 7:</strong> REXULTI 2 mg or 3 mg/day
-                    demonstrated a 5.3-point greater reduction in the CMAI score
+                    demonstrated a 5.3-point-greater reduction in the CMAI score
                     compared with placebo
                   </>
                 ),
@@ -63,8 +63,9 @@ const PageContent: React.FC = () => {
       </div>
       <div className={`${styles.heading} bg-gray-200 mt-12`}>
         <Header type='h3' custom={styles.h3}>
-          Most common adverse reactions ≥2% and greater than placebo: dizziness, insomnia, somnolence, 
-          <br/>
+          Most common adverse reactions ≥2% and greater than placebo: dizziness,
+          insomnia, somnolence,
+          <br />
           urinary tract infection, and nasopharyngitis.
         </Header>
       </div>
@@ -98,7 +99,7 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <>
-                  Grossberg GT, et al. <strong>Am J Geriatr Psychiatry.</strong>{' '}
+                  Grossberg GT, et al. <em>Am J Geriatr Psychiatry.</em>{' '}
                   2020;28(4):383-4003.
                 </>
               ),
@@ -106,8 +107,8 @@ const PageContent: React.FC = () => {
             {
               text: (
                 <>
-                  Grossberg GT, et al. Poster presented at: Psych 
-                  <br/> 
+                  Grossberg GT, et al. Poster presented at: Psych
+                  <br />
                   Congress; September 17-20, 2022; New Orleans, LA.
                 </>
               ),
