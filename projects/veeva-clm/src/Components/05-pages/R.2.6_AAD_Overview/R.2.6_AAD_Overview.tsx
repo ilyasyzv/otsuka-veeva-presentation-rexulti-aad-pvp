@@ -39,7 +39,7 @@ export const PageContent = () => (
           {
             text: (
               <span>
-                Phan SV, et al. <strong>Drugs R D</strong>. <br />
+                Phan SV, et al. <em>Drugs R D</em>. <br />
                 2019;19(2):93-115.
               </span>
             ),
@@ -47,7 +47,7 @@ export const PageContent = () => (
           {
             text: (
               <span>
-                McDermott CL, et al. <strong>Curr Geriatr Rep</strong>
+                McDermott CL, et al. <em>Curr Geriatr Rep</em>
                 .&nbsp;2019;8(1):1-11.
               </span>
             ),
