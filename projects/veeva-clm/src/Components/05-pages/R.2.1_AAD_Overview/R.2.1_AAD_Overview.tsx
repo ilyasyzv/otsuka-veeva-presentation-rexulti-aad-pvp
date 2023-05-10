@@ -41,14 +41,14 @@ const PageContent = () => {
             {
               text: (
                 <>
-                  Kales HC, et al. <strong>BMJ.</strong> 2015;350:h369.
+                  Kales HC, et al. <em>BMJ.</em> 2015;350:h369.
                 </>
               ),
             },
             {
               text: (
                 <>
-                  Sano M, et al. <strong>Int Psychogeriatr.</strong> 2023;1-13.{' '}
+                  Sano M, et al. <em>Int Psychogeriatr.</em> 2023;1-13.{' '}
                 </>
               ),
             },
